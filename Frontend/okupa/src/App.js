@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Okupa
+          (Este cambio lo hizo David)
         </p>
         <a
           className="App-link"
