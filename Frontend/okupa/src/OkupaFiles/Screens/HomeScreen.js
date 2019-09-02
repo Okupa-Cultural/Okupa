@@ -10,6 +10,7 @@ function HomeScreen() {
             <img src={Logo} />
             <h1>Okupa</h1>
             <p>Organiza, Difunde, Okupa</p>
+            <button className="boton-registro">Registarse</button>
         </div>
     </div>
   );
