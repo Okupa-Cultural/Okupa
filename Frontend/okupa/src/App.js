@@ -1,12 +1,18 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import HomeScreen from './OkupaFiles/Screens/HomeScreen';
+import Dashboard from './OkupaFiles/Screens/Dashboard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <HomeScreen/>
+      <Route render={({location}) => (
+        <Switch>
+          <Route exact path="/" component={HomeScreen}/>
+          <Route path="/dashboard" component={Dashboard}/>
+        </Switch>
+      )} />
     </div>
   );
 }
