@@ -7,7 +7,7 @@ export default class NavBar extends Component {
     render() {
         return(
             <div className="nav-bar">
-                <img src={Logo} />
+                <img src={Logo} alt="Okupa"/>
             </div>
         );
     }

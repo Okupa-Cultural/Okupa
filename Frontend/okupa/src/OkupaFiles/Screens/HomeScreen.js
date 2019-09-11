@@ -30,7 +30,7 @@ export default class HomeScreen extends Component {
           <NavBar />
 
           <div className="banner">
-              <img src={Logo} />
+              <img src={Logo} alt="Okupa" />
               <h1>Okupa</h1>
               <p>Organiza, Difunde, Okupa</p>
               <Link to="/dashboard">
