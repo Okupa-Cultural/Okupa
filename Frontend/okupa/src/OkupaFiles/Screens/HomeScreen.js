@@ -15,7 +15,7 @@ export default class HomeScreen extends Component {
 
     var sectionStyle = {
       zIndex: -10,
-      position: 'absolute',
+      position: 'fixed',
       width: "100%",
       height: "100%",
       backgroundImage: "url(" + Fondo + ")"
