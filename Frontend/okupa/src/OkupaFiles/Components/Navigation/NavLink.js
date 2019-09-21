@@ -12,7 +12,7 @@ export default class NavLink extends Component {
 
       return (
         <div className="nav-link">
-          <Link to={this.props.link}>
+          <Link to={this.props.link} style={{textDecoration: "none"}}>
           <p className="nav-link-text">{this.props.titulo}</p>
           </Link>
         </div>
