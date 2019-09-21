@@ -22,7 +22,9 @@ export default class Dashboard extends Component {
          <div style={ sectionStyle } />
 
             <div className="banner">
-                <img src={Logo} />
+                <Link to="/">
+                  <img src={Logo} />
+                </Link>
                 <h1>Dashboard</h1>
                 <p>Placeholder Text</p>
                 <Link to="/">

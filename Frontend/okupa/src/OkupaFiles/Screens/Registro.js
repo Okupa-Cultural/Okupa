@@ -9,7 +9,7 @@ import NavBar from './../Components/Navigation/NavBar';
 //////
 import './css/HomeScreen.css';
 
-export default class HomeScreen extends Component {
+export default class Registro extends Component {
   
   render() {
 
@@ -30,16 +30,15 @@ export default class HomeScreen extends Component {
           <NavBar />
 
           <div className="banner">
-              <img src={Logo} alt="Okupa" />
-              <h1>Okupa</h1>
-              <p>Organiza, Difunde, Okupa</p>
-              <Link to="/registro">
-                <input type="submit" className="boton-registro" value="Registrarse"/>
-              </Link>
-              <Link to="/dashboard">
-                <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
-              </Link>
-          </div>
+                <Link to="/">
+                  <img src={Logo} />
+                </Link>
+                <h1>Reg&iacute;strate</h1>
+                <p>Placeholder Text</p>
+                <Link to="/">
+                    <input type="submit" className="boton-registro" value="Inicio"/>
+                </Link>
+            </div>
       </div>
     );
   }
