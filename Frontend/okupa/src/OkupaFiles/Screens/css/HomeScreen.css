@@ -62,3 +62,31 @@ button, input{
     width: 17em;
     border: 1px solid white;
 }
+
+/*Cosas que agregó chicho para el Registro*/
+body{
+    color:#FFF;
+}
+
+.formularios{
+    margin: auto;
+    width: 12em;
+    border:solid 5px #F5912F;
+}
+
+form {
+    width: 10em;
+    border:solid 3px #0F312F;
+    float: left;
+    margin: auto;
+    padding: 3em;
+}
+
+.input-text{
+    background: none;
+    font-size: 1em;
+    color: #FFF;
+    margin:0.5em;
+    border-radius: 1em;
+    padding: 0.5em;
+}

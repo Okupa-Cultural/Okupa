@@ -3,6 +3,8 @@ import { Router, Route, Link } from 'react-router-dom';
 import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import './css/HomeScreen.css';
 import Fondo from './../../Images/bg2.jpg';
+//Components
+import NavBar from './../Components/Navigation/NavBar';
 
 export default class Dashboard extends Component {
 
@@ -19,7 +21,10 @@ export default class Dashboard extends Component {
       return (
         <div className="home-screen">
 
+
          <div style={ sectionStyle } />
+
+          <NavBar />
 
             <div className="banner">
                 <Link to="/">
