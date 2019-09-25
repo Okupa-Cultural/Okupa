@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router-dom';
 //Imagenes
-import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
+//import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
@@ -25,20 +24,15 @@ export default class HomeScreen extends Component {
       
       <div className="home-screen">
 
-          <div style={ sectionStyle } />
+          <div style={ sectionStyle } alt="okupa"/>
 
           <NavBar />
-
+          <header>
+            <h1>¿Buscas un evento?</h1>
+            <h2>¡Okúpate!</h2>
+          </header>
           <div className="banner">
-              <img src={Logo} alt="Okupa" />
-              <h1>Okupa</h1>
-              <p>Organiza, Difunde, Okupa</p>
-              <Link to="/registro">
-                <input type="submit" className="boton-registro" value="Registrarse"/>
-              </Link>
-              <Link to="/dashboard">
-                <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
-              </Link>
+              
           </div>
       </div>
     );

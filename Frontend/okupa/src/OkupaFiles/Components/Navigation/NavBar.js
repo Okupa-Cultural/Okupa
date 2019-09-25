@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './css/NavBar.css';
-import Logo from './../../../Images/Logo/okupa-logo-blanco-transparente.png';
-import NavLink from './NavLink';
+import Logo from './../../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
+import { Link } from 'react-router-dom';
+//import NavLink from './NavLink';
 
 export default class NavBar extends Component {
 
@@ -11,8 +12,13 @@ export default class NavBar extends Component {
                 <img src={Logo} alt="Okupa"/>
 
                 <div className="nav-bar-links">
-                	<NavLink link="/" titulo="Inicio" />
-                	<NavLink link="/Dashboard" titulo="Dashboard" />
+                	<p className="nav-bar-titulo">OKUPA</p>
+                    <Link to="/registro">
+                        <input type="submit" className="boton-registro" value="Registrarse"/>
+                    </Link>
+                    <Link to="/dashboard">
+                        <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
+                    </Link>
                 </div>
             </div>
         );

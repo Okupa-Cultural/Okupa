@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import './css/HomeScreen.css';
 import Fondo from './../../Images/bg2.jpg';
@@ -23,7 +23,7 @@ export default class Dashboard extends Component {
 
             <div className="banner">
                 <Link to="/">
-                  <img src={Logo} />
+                  <img src={Logo} alt="okupa"/>
                 </Link>
                 <h1>Dashboard</h1>
                 <p>Placeholder Text</p>

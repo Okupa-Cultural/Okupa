@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //Imagenes
 import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import Fondo from './../../Images/bg2.jpg';
@@ -31,7 +31,7 @@ export default class Registro extends Component {
 
           <div className="banner">
                 <Link to="/">
-                  <img src={Logo} />
+                  <img src={Logo} alt="okupa"/>
                 </Link>
                 <h1>Reg&iacute;strate</h1>
                 <p>Placeholder Text</p>
