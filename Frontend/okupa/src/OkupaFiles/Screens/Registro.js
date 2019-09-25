@@ -6,6 +6,7 @@ import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
 import NavBar from './../Components/Navigation/NavBar';
+import formArtista from './../Components/forms/formArtista';
 //////
 import './css/HomeScreen.css';
 
@@ -28,6 +29,7 @@ export default class Registro extends Component {
           <div style={ sectionStyle } />
 
           <NavBar />
+<<<<<<< HEAD
 
           <div className="banner">
                 <Link to="/">
@@ -39,6 +41,9 @@ export default class Registro extends Component {
                     <input type="submit" className="boton-registro" value="Inicio"/>
                 </Link>
             </div>
+=======
+        
+>>>>>>> 10f3c9b59e76fa995213c7566447127d973142ea
       </div>
     );
   }
