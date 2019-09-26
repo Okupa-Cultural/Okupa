@@ -29,7 +29,7 @@ export default class Registro extends Component {
           <NavBar />
 
           <ul>
-          	<link =><li>
+          	<link><li>
           		<p>Quiero presentarme en eventos y también organizarlos</p>
           	</li></link>
           	<link><li>
