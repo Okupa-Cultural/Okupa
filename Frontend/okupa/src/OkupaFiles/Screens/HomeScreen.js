@@ -31,10 +31,9 @@ export default class HomeScreen extends Component {
             <h1>¿Buscas un evento?</h1>
             <h2>¡Okúpate!</h2>
           </header>
-
           
           <div className="banner">
-                
+                <input type="text" className="banner-search-bar" placeholder="Ingrese nombre del evento..."></input>
           </div>
       </div>
     );
