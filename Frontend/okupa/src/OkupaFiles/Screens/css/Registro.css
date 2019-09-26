@@ -1,0 +1,27 @@
+ul{
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	height: 5.9em;
+	color:#FFF;
+	font-family: 'Merriweather', serif;
+	font-size: 2em;
+	list-style:none;
+	background-image: url(http://www.lafuga.cl/media/articulo/imagenes/adicionales/okupas.jpg.1100x550_q85_crop-smart_upscale.jpg);	
+}
+
+ul li:nth-child(1){
+	background-image: url(https://culto.latercera.com/wp-content/uploads/2019/01/0029088776-900x600.jpg);	
+}
+
+ul li:nth-child(2){
+	background-image: url(https://media.cdn.eldestapeweb.com/eldestape/012017/1558046655850.jpg);	
+}
+
+ul li p {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
