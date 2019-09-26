@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 //Imagenes
-import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
