@@ -1,27 +1,37 @@
-ul{
-	list-style-type:none;
+a{
+	text-decoration: none;
+	color: inherit;
 	padding: 0;
 	margin: 0;
 }
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+
 ul li{
-	height: 5.9em;
+	height: 6em;
+	margin: 0;
+	padding: 0;
 	color:#FFF;
 	font-family: 'Merriweather', serif;
 	font-size: 2em;
-	list-style:none;
-	background-image: url(http://www.lafuga.cl/media/articulo/imagenes/adicionales/okupas.jpg.1100x550_q85_crop-smart_upscale.jpg);	
+	display: block;
 }
 
-ul li:nth-child(1){
-	background-image: url(https://culto.latercera.com/wp-content/uploads/2019/01/0029088776-900x600.jpg);	
+.middle{
+	height: 6em;
+	display: table-cell;
+	vertical-align: middle;
+	border: solid 3px #FF0000;
+	margin: auto;
 }
 
-ul li:nth-child(2){
-	background-image: url(https://media.cdn.eldestapeweb.com/eldestape/012017/1558046655850.jpg);	
-}
+.cosito{width: 1px;}
 
-ul li p {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-}
+.artista{ background-image: url(http://www.lafuga.cl/media/articulo/imagenes/adicionales/okupas.jpg.1100x550_q85_crop-smart_upscale.jpg);}
+.espacio { background-image: url(https://culto.latercera.com/wp-content/uploads/2019/01/0029088776-900x600.jpg); }
+.butaca  { background-image: url(https://media.cdn.eldestapeweb.com/eldestape/012017/1558046655850.jpg); }

@@ -1,0 +1,83 @@
+.nav-bar{ 
+	margin-top:0.5em;
+	display: block;
+	text-align: left;
+}
+
+.nav-bar .logo{
+	height: 3.5em;
+    margin: 0;
+	overflow: none;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.nav-bar .logo img{
+	height: 3.5em;
+}
+
+.nav-bar .logo p{
+	display: inline-block;
+	margin: 0;
+	padding:0;
+	vertical-align:top;
+}
+
+.nav-bar-links{
+	height: 3.5em;
+    display: inline-block;
+    outline: none;
+}
+
+.nav-bar .nav-bar-links a{ display: inline-block; }
+
+.boton-registro {
+	width: 12em;
+    height: 2.3em;
+    margin: 0 0.5em;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 80px;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    transition: 0.5s ease;
+    display: inline-block;
+}
+
+.boton-registro:hover {
+    cursor: pointer;
+    width: 14em;
+    display: block;
+    border: 1px solid white;
+}
+
+.nav-bar-titulo {
+	margin: 0 0 0 .5em;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+@media (max-width: 500px) {
+
+	.nav-bar{ 
+	margin-top:0.5em;
+	margin-bottom: 1em;
+	display: block;
+	text-align: center;
+	}
+
+    .boton-registro {
+        margin: 0.2em;
+        transition: none;
+    }
+    .boton-registro:hover{
+    	width: 12em;
+    }
+
+	.nav-bar .logo p{
+	padding-top:0.2em;
+	}
+}
