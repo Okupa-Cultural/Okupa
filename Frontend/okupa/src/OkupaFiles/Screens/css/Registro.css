@@ -11,27 +11,68 @@ ul{
 	list-style-type:none;
 }
 
-
 ul li{
 	height: 6em;
-	margin: 0;
 	padding: 0;
 	color:#FFF;
 	font-family: 'Merriweather', serif;
 	font-size: 2em;
-	display: block;
 }
 
 .middle{
-	height: 6em;
-	display: table-cell;
-	vertical-align: middle;
-	border: solid 3px #FF0000;
-	margin: auto;
+	position: relative;
+	top: 2.5em;
 }
 
-.cosito{width: 1px;}
+.artista{ 
+	background-image: url(http://www.lafuga.cl/media/articulo/imagenes/adicionales/okupas.jpg.1100x550_q85_crop-smart_upscale.jpg);
+}
+.espacio{ 
+	background-image: url(https://culto.latercera.com/wp-content/uploads/2019/01/0029088776-900x600.jpg);
+}
+.butaca{
+	background-image: url(https://media.cdn.eldestapeweb.com/eldestape/012017/1558046655850.jpg);
+}
 
-.artista{ background-image: url(http://www.lafuga.cl/media/articulo/imagenes/adicionales/okupas.jpg.1100x550_q85_crop-smart_upscale.jpg);}
-.espacio { background-image: url(https://culto.latercera.com/wp-content/uploads/2019/01/0029088776-900x600.jpg); }
-.butaca  { background-image: url(https://media.cdn.eldestapeweb.com/eldestape/012017/1558046655850.jpg); }
+@media (max-width: 500px) {
+
+	.middle{
+		position:unset;
+		top:unset;
+		height: 6em;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+}
+
+@media (max-width: 289px) {
+
+	ul li{
+		font-size: 1em;
+	}
+
+	.artista, .espacio, .butaca{
+		background-image: unset;
+	}
+
+	.artista{
+		background-color: #FF9F22;
+	}
+
+	.espacio{
+		background-color: #38DBF3;
+	}
+
+	.butaca{
+		background-color: #E8FF4B;
+	}
+
+}
+
+@media (max-width: 139px) {
+
+	ul li{
+		font-size: .5em;
+	}
+}

@@ -32,6 +32,7 @@ export default class Registro extends Component {
           <ul>
             <Link to="/">
               <li className="artista" id="artista">
+                <span className="hueco"></span>
                 <span className="middle">
                 Quiero presentarme en eventos y también organizarlos
                 </span>
@@ -39,6 +40,7 @@ export default class Registro extends Component {
             </Link>
             <Link to="/Dashboard">
               <li className="espacio" id="espacio">
+                <span className="hueco"></span>
                 <span className="middle">
                 Quiero solo organizar eventos
                 </span>
@@ -46,6 +48,7 @@ export default class Registro extends Component {
             </Link>
             <a href="https://www.google.com/search?sxsrf=ACYBGNRPHmAa-_UgvhcXDJMA6kpDKFB7hQ%3A1569534494953&source=hp&ei=HjKNXfDwN_Kz5OUPkuqQuA4&q=okupa&oq=okupa&gs_l=psy-ab.3..35i39l2j0l8.1326.1792..1857...0.0..0.122.500.3j2......0....1..gws-wiz.....10..35i362i39j0i131.N7rS7vO_RE8&ved=0ahUKEwjw96DQu-_kAhXyGbkGHRI1BOcQ4dUDCAY&uact=5">
               <li className="butaca" id="butaca">
+                <span className="hueco"></span>
                 <span className="middle">
                 ¡Ninguna! Solo quiero información
                 </span>

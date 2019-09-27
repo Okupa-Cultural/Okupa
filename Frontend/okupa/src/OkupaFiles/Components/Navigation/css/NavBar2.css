@@ -6,7 +6,7 @@
 
 .nav-bar .logo{
 	height: 3.5em;
-    margin: 0;
+    margin-left: 1em;
 	overflow: none;
     display: inline-block;
     vertical-align:top;
@@ -27,9 +27,13 @@
 	height: 3.5em;
     display: inline-block;
     outline: none;
+    position: absolute;
+    right: 0;
 }
 
-.nav-bar .nav-bar-links a{ display: inline-block; }
+.nav-bar .nav-bar-links a{ 
+    display: inline-block; 
+}
 
 .boton-registro {
 	width: 12em;
@@ -60,7 +64,7 @@
     color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 675px) {
 
 	.nav-bar{ 
 	margin-top:0.5em;
@@ -69,9 +73,13 @@
 	text-align: center;
 	}
 
+    .nav-bar-links{
+        position: unset;
+    }
+
     .boton-registro {
         margin: 0.2em;
-        transition: none;
+        transition: unset;
     }
     .boton-registro:hover{
     	width: 12em;
@@ -80,4 +88,38 @@
 	.nav-bar .logo p{
 	padding-top:0.2em;
 	}
+}
+
+@media (max-width: 238px) {
+
+    .boton-registro{
+        width: inherit;
+        font-size: 1em;
+    }
+
+    .nav-bar .logo p{
+        display: none;
+    }
+
+}
+
+@media (max-width: 139px) {
+
+    .boton-registro{
+        font-size: .5em;
+    }
+    
+    .nav-bar .logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar .logo img{
+        display: none;
+    }
+
+    .nav-bar .logo p{
+        display: inherit;
+        font-size: inherit;
+    }
 }
