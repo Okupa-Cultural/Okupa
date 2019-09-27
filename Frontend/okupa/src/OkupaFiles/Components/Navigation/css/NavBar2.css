@@ -79,10 +79,20 @@
 
     .boton-registro {
         margin: 0.2em;
-        transition: unset;
+        transition-property: all;
+        transition-delay: 0;
+        transition-duration: 0.05s;
+        transition-timing-function: ease-in-out;
     }
+        
     .boton-registro:hover{
-    	width: 12em;
+        width: 12em;
+        border:none;
+    }
+
+    .boton-registro:active{
+        box-shadow: inset 0 0 0 6em rgba(255,255,255,0.5);
+        padding: 0.5em;
     }
 
 	.nav-bar .logo p{

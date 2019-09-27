@@ -57,12 +57,12 @@ ul li{
 	.artista, .espacio, .butaca{
 		transition-property: all;
 		transition-delay: 0;
-		transition-duration: 0.1s;
+		transition-duration: 0.08s;
 		transition-timing-function: ease-in-out;
 	}
 
 	.artista:active, .espacio:active, .butaca:active{
-		padding:0.1em;
+		box-shadow: inset 0 0 0 6em rgba(255,255,255,0.5);
 	}
 
 }
