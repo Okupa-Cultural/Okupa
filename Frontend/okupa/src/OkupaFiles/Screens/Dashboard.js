@@ -5,6 +5,9 @@ import './css/HomeScreen.css';
 import Fondo from './../../Images/bg2.jpg';
 //Components
 import NavBar from './../Components/Navigation/NavBar';
+//
+import './css/EstilosGenerales.css';
+
 
 export default class Dashboard extends Component {
 

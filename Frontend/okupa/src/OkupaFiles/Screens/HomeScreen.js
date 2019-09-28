@@ -7,6 +7,7 @@ import Fondo from './../../Images/bg2.jpg';
 import NavBar from './../Components/Navigation/NavBar';
 //////
 import './css/HomeScreen.css';
+import './css/EstilosGenerales.css';
 
 export default class HomeScreen extends Component {
   

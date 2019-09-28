@@ -1,0 +1,116 @@
+/*/// 
+Foto de perfil 
+///*/
+
+.foto-perfil{
+	height: 16em;
+	width: 16em;
+	display: inline-block;
+	background-image: url('http://nicolasperezphotography.com/img/galerias/88/180315AM-0026-Diego-Peretti_1.jpg');
+	background-repeat: no-repeat;
+	background-size: 16em;
+	background-position: 0 -1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.8);
+}
+
+/*/// 
+Info
+///*/
+
+.cabecera{
+	display:inline-block;
+	margin: 1em;
+	padding:0;
+	vertical-align:top;
+}
+
+.nombre-de-usuario{
+	color: rgb(255,255,255);
+	font-family: Merriweather, serif;
+	font-size: 3em;
+}
+
+.lista-etiquetas{
+	margin-top: 1em;
+}
+
+.etiqueta, .etiqueta-puntos-suspensivos{
+	border: solid 3px #FF0000;
+	width: inherit;
+	height: 1em;
+	margin:0 .5em;
+	padding: .2em .6em .6em .6em;
+	display: inline-block;
+	font-size: 1em;
+	border-radius: 1em;
+}
+
+
+/*Esto es para que solo despliegue
+las primeras 5 etiquetas
+(cinco incluyendo la de puntos suspendivos)
+==============================================
+*/
+.etiqueta:nth-child(n+5){
+		display: none;
+}
+.etiqueta-puntos-suspensivos{
+	width: 2em;
+	display: inline-block;
+}
+/*==============================================
+*/
+
+
+
+/*/// 
+Media querys
+///*/
+@media (max-width: 500px) {
+
+	.foto-perfil{
+		width: unset;
+		margin: 0;
+		display: block;
+		background-size: 22.5em;
+		background-position: 0 -5em;
+	}
+
+	.nombre-de-usuario{
+		display: unset;
+		margin: 0;
+	}
+	
+	.lista-etiquetas{
+		margin:unset;
+	}
+
+	.etiqueta, .etiqueta-puntos-suspensivos{
+		font-size: .8em;
+		margin:0 .3em;
+	}
+
+
+	/*Esto es para que solo despliegue
+	las primeras  etiquetas
+	(cuatro incluyendo la de puntos suspendivos)
+	==============================================
+	*/
+	.etiqueta:nth-child(n+4){
+		display: none;
+	}
+	.etiqueta-puntos-suspensivos{
+		display: inline-block;
+	}
+	/*==============================================
+	*/
+
+}
+
+@media (max-width: 289px) {
+
+}
+
+@media (max-width: 139px) {
+
+}

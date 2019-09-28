@@ -8,6 +8,7 @@ import NavBar from './../Components/Navigation/NavBar';
 //import formArtista from './../Components/forms/formArtista';
 //////
 import './css/Registro.css';
+import './css/EstilosGenerales.css';
 
 export default class Registro extends Component {
   
