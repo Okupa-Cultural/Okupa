@@ -1,3 +1,7 @@
+body, div, li, span, p, input{
+	font-family: roboto, sans-serif;
+	color: rgb(255,255,255);
+}
 a{
 	text-decoration: none;
 	color: inherit;
@@ -16,10 +20,12 @@ ul{
 
 @media (max-width: 500px) {
 
-	/*Para remover el cuadro azul al tocar un link en Chrome*/
+	/*Para remover el cuadro azul al tocar 
+	un link en Chrome pero solo lo tengan 
+	los elementos con la clase "boton"*/
 	a{
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
-		-moz-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-tap-highlight-color:rgba(255,255,255,.5);
+		-moz-tap-highlight-color:rgba(255,255,255,.5);
 	}
-
+	
 }

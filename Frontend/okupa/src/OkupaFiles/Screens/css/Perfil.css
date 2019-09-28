@@ -6,6 +6,7 @@ Foto de perfil
 	height: 16em;
 	width: 16em;
 	display: inline-block;
+	margin-right: 2em;
 	background-image: url('http://nicolasperezphotography.com/img/galerias/88/180315AM-0026-Diego-Peretti_1.jpg');
 	background-repeat: no-repeat;
 	background-size: 16em;
@@ -14,20 +15,45 @@ Foto de perfil
 }
 
 /*/// 
-Info
+Cabecera
 ///*/
 
 .cabecera{
 	display:inline-block;
-	margin: 1em;
+	margin: 0;
 	padding:0;
 	vertical-align:top;
+	text-align: left;
 }
 
 .nombre-de-usuario{
+	margin-bottom: .1em;
 	color: rgb(255,255,255);
-	font-family: Merriweather, serif;
-	font-size: 3em;
+	font-family: Roboto, sans-serif;
+	font-size: 2.5em;
+	text-shadow: .05em .05em .1em rgba(0,0,0,.5);
+}
+
+.estadisticas ul li{
+	display: inline-block;
+	width: 30%;
+	height: inherit;
+	margin-bottom: .5em;
+}
+
+.estadisticas .cifra, .estadisticas .leyenda{
+	width: 30%;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.estadisticas .cifra{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.estadisticas .leyenda{
+	font-size:.35em;
 }
 
 .lista-etiquetas{
@@ -35,14 +61,18 @@ Info
 }
 
 .etiqueta, .etiqueta-puntos-suspensivos{
-	border: solid 3px #FF0000;
 	width: inherit;
 	height: 1em;
 	margin:0 .5em;
-	padding: .2em .6em .6em .6em;
+	padding: 0.5em 1em;
 	display: inline-block;
-	font-size: 1em;
+	background:linear-gradient(0.25turn, #FAAD70, #EB6B85);
+	font-size: .8em;
+	font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 	border-radius: 1em;
+	box-shadow: .1em .1em .3em rgba(0,0,0,0.8);
 }
 
 
@@ -51,29 +81,60 @@ las primeras 5 etiquetas
 (cinco incluyendo la de puntos suspendivos)
 ==============================================
 */
-.etiqueta:nth-child(n+5){
+.etiqueta:nth-child(n+4){
 		display: none;
 }
 .etiqueta-puntos-suspensivos{
 	width: 2em;
 	display: inline-block;
+	text-align: center;
 }
 /*==============================================
 */
 
+.perfil-botonera{
+	display: inline-block;
+	margin:1em 0;
+	padding: 0;
+}
 
+.perfil-boton {
+	width: 12em;
+    margin: 0 .5em;
+    padding:1em;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border:none;
+    border-radius: 2em;
+    color: white;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
 
+.perfil-boton:active, .etiqueta-puntos-suspensivos:active{
+	box-shadow: inset 0 0 5em rgba(255,255,255,.5);
+	text-shadow: none;
+	}
 /*/// 
-Media querys
+Mediaquerys
 ///*/
 @media (max-width: 500px) {
 
 	.foto-perfil{
 		width: unset;
+		height: 80%;
 		margin: 0;
+		margin-bottom:14em;
 		display: block;
 		background-size: 22.5em;
-		background-position: 0 -5em;
+		box-shadow: inset 0 -5em 6em rgba(0,0,0,.8);
+	}
+
+	.cabecera{
+		position: absolute;
+		left: .5em;
+		bottom: -3.4em;
 	}
 
 	.nombre-de-usuario{
@@ -86,24 +147,9 @@ Media querys
 	}
 
 	.etiqueta, .etiqueta-puntos-suspensivos{
-		font-size: .8em;
+		font-size: .7em;
 		margin:0 .3em;
 	}
-
-
-	/*Esto es para que solo despliegue
-	las primeras  etiquetas
-	(cuatro incluyendo la de puntos suspendivos)
-	==============================================
-	*/
-	.etiqueta:nth-child(n+4){
-		display: none;
-	}
-	.etiqueta-puntos-suspensivos{
-		display: inline-block;
-	}
-	/*==============================================
-	*/
 
 }
 
@@ -113,4 +159,10 @@ Media querys
 
 @media (max-width: 139px) {
 
+}
+
+
+.reyenador-de-espacio{
+	margin:auto;
+	max-width: 40em;
 }
