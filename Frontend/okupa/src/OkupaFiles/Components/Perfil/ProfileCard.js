@@ -12,7 +12,9 @@ export default class ProfileCard extends Component {
     render() {
         return(
             <div className="tarjeta-perfil">
-                <div className="foto-perfil"></div>
+                <div className="foto-perfil">
+                    <p>Cambiar foto de perfil</p>
+                </div>
                 
                 {/*==========Datos de Cabecera==========*/}
 

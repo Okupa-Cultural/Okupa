@@ -1,7 +1,9 @@
 .nav-bar{ 
+    position: relative;
 	margin-top:0.5em;
 	display: block;
-	text-align: left;
+    text-align: left;
+    background-color: rgba(0,0,0,.3);
 }
 
 .nav-bar .logo{
@@ -10,6 +12,7 @@
 	overflow: none;
     display: inline-block;
     vertical-align:top;
+    justify-content: center;
 }
 
 .nav-bar .logo img{
@@ -20,7 +23,7 @@
 	display: inline-block;
 	margin: 0;
 	padding:0;
-	vertical-align:top;
+    vertical-align:top;
 }
 
 .nav-bar-links{
