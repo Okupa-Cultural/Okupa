@@ -27,7 +27,7 @@ export default class HomeScreen extends Component {
 
           <div style={ sectionStyle } alt="okupa"/>
 
-          <NavBar />
+          <NavBar showSearchBar={false}/>
           <header>
             <h1>¿Buscas un evento?</h1>
             <h2>¡Okúpate!</h2>

@@ -1,0 +1,15 @@
+.nav-bar-search {
+    display: inline-block;
+}
+
+.nav-bar-search-bar {
+    transform: translateX(5%);
+    margin-top: 0.3em;
+    width: 80em;
+    border-radius: 16px;
+    border: none;
+    padding: 0.7em;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,.7);
+}

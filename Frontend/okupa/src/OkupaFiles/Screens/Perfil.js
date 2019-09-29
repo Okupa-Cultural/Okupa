@@ -4,6 +4,7 @@ import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
 import ProfileCard from './../Components/Perfil/ProfileCard';
+import NavBar from './../Components/Navigation/NavBar';
 //import formArtista from './../Components/forms/formArtista';
 //////
 import './css/Perfil.css';
@@ -26,6 +27,8 @@ export default class Perfil extends Component {
       <div className="home-screen"> {/*==========Inicio de div Contenedor==========*/}
 
         <div style={ sectionStyle } />
+
+        <NavBar showSearchBar ={true}/>
     
         {/*==========Tarjeta de perfil==========*/}
         <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
