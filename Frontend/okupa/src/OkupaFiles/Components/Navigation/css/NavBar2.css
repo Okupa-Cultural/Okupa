@@ -1,29 +1,31 @@
 .nav-bar{ 
-    position: relative;
-	margin-top:0.5em;
-	display: block;
+    margin: 0;
+	display: inline-block;
     text-align: left;
-    background-color: rgba(0,0,0,.3);
+    background-color: #24292E;
+    width: 99%;
+    padding: 0.5em;
+    justify-content: center;
+    vertical-align:middle;
 }
 
 .nav-bar .logo{
-	height: 3.5em;
+	height: 3em;
     margin-left: 1em;
 	overflow: none;
     display: inline-block;
-    vertical-align:top;
-    justify-content: center;
+    vertical-align:bottom;
 }
 
 .nav-bar .logo img{
-	height: 3.5em;
+	height: 3em;
 }
 
 .nav-bar .logo p{
 	display: inline-block;
 	margin: 0;
 	padding:0;
-    vertical-align:top;
+    vertical-align:bottom;
 }
 
 .nav-bar-links{
@@ -31,6 +33,7 @@
     display: inline-block;
     outline: none;
     position: absolute;
+    vertical-align: middle;
     right: 0;
 }
 

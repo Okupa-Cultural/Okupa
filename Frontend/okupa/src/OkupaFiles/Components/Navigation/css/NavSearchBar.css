@@ -6,10 +6,27 @@
     transform: translateX(5%);
     margin-top: 0.3em;
     width: 80em;
-    border-radius: 16px;
+    border-radius: 360px;
     border: none;
     padding: 0.7em;
     color:white;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(0,0,0,.7);
+    background-color: #3F4448;
+}
+
+.nav-bar-search-list {
+    position: absolute;
+    z-index: 30;
+    margin-left: 60px;
+    width: 66em;
+    background-color: rgba(50,50,50,.8);
+    height: fit-content;
+    padding-left: 1em;
+    opacity: 0;
+}
+
+.nav-bar-search-list-links li {
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 1em;
 }

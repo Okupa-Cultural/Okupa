@@ -18,9 +18,10 @@ export default class Perfil extends Component {
     var sectionStyle = {
       zIndex: -10,
       position: 'fixed',
-      width: "100%",
-      height: "100%",
-      backgroundImage: "url(" + Fondo + ")"
+      width: "100vw",
+      height: "100vh",
+      backgroundImage: "url(" + Fondo + ")",
+      overflowX: "hidden"
     }; 
 
     return (
