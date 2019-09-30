@@ -35,7 +35,7 @@ export default class Perfil extends Component {
         {/*==========Tarjeta de perfil==========*/}
         <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
         {/*==========Descripcion de perfil======*/}
-        <ProfileDescription />
+        <ProfileDescripcion />
 
       </div>
     );

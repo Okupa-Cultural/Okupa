@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ProfileDescription extends Component {
+export default class ProfileDescripcion extends Component {
 
     render() {
         return(
