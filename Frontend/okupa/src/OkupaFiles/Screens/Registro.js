@@ -38,7 +38,7 @@ export default class Registro extends Component {
                 </span>
               </li>
             </Link>
-            <Link to="/Dashboard">
+            <Link to="/Perfil">
               <li className="espacio" id="espacio">
                 <span className="middle">
                 Quiero solo organizar eventos
