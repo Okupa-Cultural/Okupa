@@ -18,7 +18,7 @@ export default class NavSearchBar extends Component {
     }
 
     dropdownSearch() {
-        if(this._inputElement != "") {
+        if(this._inputElement !== "") {
             return(<ul><li>{this._inputElement}</li></ul>);
         } else {
             return null;
@@ -28,6 +28,7 @@ export default class NavSearchBar extends Component {
 
     render() {
 
+        // eslint-disable-next-line
         let ListaDeBusqueda = this.dropdownSearch;
 
         if(this.props.show) {

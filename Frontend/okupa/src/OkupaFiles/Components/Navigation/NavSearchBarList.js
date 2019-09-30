@@ -13,7 +13,7 @@ export default class NavSearchBarList extends Component {
     }
 
     dropdownSearch() {
-        if(this.props.texto != "") {
+        if(this.props.texto !== "") {
             return(<ul><li>{this.props.texto}</li></ul>);
         } else {
             alert("holita");

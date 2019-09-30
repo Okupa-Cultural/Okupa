@@ -11,6 +11,7 @@ import NavSearchBar from './NavSearchBar';
 ///
 export default class NavBar extends Component {
 
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }

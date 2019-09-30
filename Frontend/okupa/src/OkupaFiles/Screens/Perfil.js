@@ -4,11 +4,10 @@ import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
 import ProfileCard from './../Components/Perfil/ProfileCard';
-import ProfileDescription from './../Components/Perfil/ProfileDescription';
+import ProfileDescripcion from './../Components/Perfil/ProfileDescripcion';
 import NavBar from './../Components/Navigation/NavBar';
 //import formArtista from './../Components/forms/formArtista';
 //////
-import './css/Perfil.css';
 import './css/EstilosGenerales.css';
 
 export default class Perfil extends Component {
@@ -30,7 +29,11 @@ export default class Perfil extends Component {
 
         <div style={ sectionStyle } />
 
-        <NavBar showSearchBar ={true}/>
+        <div className="ocultar-en-moviles">
+
+            <NavBar showSearchBar ={true}/>
+
+        </div>
 
         {/*==========Tarjeta de perfil==========*/}
         <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>

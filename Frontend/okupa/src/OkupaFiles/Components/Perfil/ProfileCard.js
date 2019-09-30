@@ -5,6 +5,7 @@ import './css/ProfileCard.css';
 
 export default class ProfileCard extends Component {
 
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }

@@ -38,7 +38,7 @@
 }
 
 .nav-bar .nav-bar-links a{ 
-    display: inline-block; 
+    display: inline-block;
 }
 
 .boton-registro {
@@ -49,7 +49,9 @@
     border: none;
     border-radius: 80px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 50;
+    letter-spacing: .15em;
     font-family: 'Roboto';
     transition: 0.5s ease;
     display: inline-block;
@@ -59,7 +61,6 @@
     cursor: pointer;
     width: 14em;
     display: block;
-    border: 1px solid white;
 }
 
 .nav-bar-titulo {

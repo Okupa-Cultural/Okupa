@@ -24,9 +24,17 @@ ul{
 	/*Para remover el cuadro azul al tocar 
 	un link en Chrome pero solo lo tengan 
 	los elementos con la clase "boton"*/
-	a{
-		-webkit-tap-highlight-color:rgba(255,255,255,.5);
-		-moz-tap-highlight-color:rgba(255,255,255,.5);
+	a, div{
+		-webkit-tap-highlight-color:rgba(255,255,255,0);
+		-moz-tap-highlight-color:rgba(255,255,255,0);
+	}
+
+	/*Todo lo que tenga esta clase no se
+	despliega en pantallas menores a 500px"*/
+
+	.ocultar-en-moviles{
+		all:unset;
+		display: none;
 	}
 	
 }
