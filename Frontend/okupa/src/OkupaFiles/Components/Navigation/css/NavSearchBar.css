@@ -1,11 +1,11 @@
 .nav-bar-search {
-    display: inline-block;
+    display: flex;
 }
 
 .nav-bar-search-bar {
-    transform: translateX(5%);
-    margin-top: 0.3em;
-    width: 80em;
+    flex: 1;
+    width: 50vw;
+    height: 1.5em;
     border-radius: 360px;
     border: none;
     padding: 0.7em;

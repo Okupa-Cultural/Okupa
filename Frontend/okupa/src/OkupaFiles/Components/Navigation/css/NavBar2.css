@@ -1,6 +1,6 @@
 .nav-bar{ 
     margin: 0;
-	display: inline-block;
+    display: flex;
     text-align: left;
     background-color: #24292E;
     width: 99%;
@@ -10,11 +10,12 @@
 }
 
 .nav-bar .logo{
+    flex: 1 1 auto;
+    margin-top: 0.3em;
 	height: 3em;
     margin-left: 1em;
 	overflow: none;
-    display: inline-block;
-    vertical-align:bottom;
+    vertical-align:middle;
 }
 
 .nav-bar .logo img{
@@ -22,26 +23,27 @@
 }
 
 .nav-bar .logo p{
+    position: absolute;
+    margin-top: 0.2em;
 	display: inline-block;
-	margin: 0;
-	padding:0;
-    vertical-align:bottom;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .nav-bar-links{
+    
 	height: 3.5em;
-    display: inline-block;
     outline: none;
-    position: absolute;
-    vertical-align: middle;
-    right: 0;
+    flex: 1 end;
 }
 
 .nav-bar .nav-bar-links a{ 
-    display: inline-block;
+    display: flex;
 }
 
 .boton-registro {
+    flex: 1 1 auto;
+    justify-content: center;
 	width: 12em;
     height: 2.3em;
     margin: 0 0.5em;
@@ -54,12 +56,11 @@
     letter-spacing: .15em;
     font-family: 'Roboto';
     transition: 0.5s ease;
-    display: inline-block;
 }
 
 .boton-registro:hover {
     cursor: pointer;
-    width: 14em;
+    opacity: 0.5;
     display: block;
 }
 

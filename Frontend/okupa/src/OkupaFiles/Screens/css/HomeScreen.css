@@ -1,6 +1,5 @@
 button, input{
     outline: none !important;
-    webkit-outline: none !important;
 }
 
 .home-screen {
