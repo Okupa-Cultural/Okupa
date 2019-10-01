@@ -75,6 +75,19 @@ header h2 {
     border: none;
 }
 
+.banner-datetime-input {
+    text-align: left;
+    margin-top: 5em;
+    width: 25em;
+    height: 2.5em;
+    border-radius: 360px;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 1em;
+    padding-left: 15px;
+    border: none;
+}
+
 .banner-search-bar::placeholder {
     color: black;
     opacity: .5;

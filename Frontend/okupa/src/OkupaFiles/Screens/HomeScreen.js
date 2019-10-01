@@ -35,6 +35,7 @@ export default class HomeScreen extends Component {
           
           <div className="banner">
                 <input type="text" className="banner-search-bar" placeholder="Ingrese nombre del evento..."></input>
+                {/* <input type="datetime-local" className="banner-datetime-input"></input> */}
           </div>
       </div>
     );
