@@ -3,6 +3,10 @@ body, div, li, span, p, input{
 	color: rgb(255,255,255);
 }
 
+html, body, .homescreen {
+    overflow-x: hidden;
+}
+
 a{
 	text-decoration: none;
 	color: inherit;
