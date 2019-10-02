@@ -5,14 +5,11 @@
     background-color: rgba(0, 0, 35, .5); /* #353F7A; */
 }
 
+
 .fondo {
     position: fixed;
     width: 100%;
     height: 100%;
-}
-
-.cabecera {
-    margin:auto;
 }
 
 .titulo-principal{
@@ -52,7 +49,7 @@
     border: none;
 }
 
-.barra-busqueda::placeholder {
+.nav-bar-search-bar::placeholder {
     color: black;
     opacity: .5;
     font-style: italic;
@@ -73,24 +70,24 @@
 @media (max-width: 500px) {
 
     .titulo-principal{
-        display: inline-block;
         margin:0;
-        font-size:2em;
+        font-size:2em;;
     }
 
     .subtitulo{
-        font-size: 1.3em;
+        font-size: 2em;
     }
 
     .banner{
-        width: 90%;
+        width: 100%;
         height: inherit;
         padding-bottom: .5em;
     }
 
-    .barra-busqueda{
-        width: 90%;
-        display: unset;
+    .nav-bar-search-bar{
+        width: 75%;
+        height: 2em;
+        display: unset;   
     }
     
     .datepicker{

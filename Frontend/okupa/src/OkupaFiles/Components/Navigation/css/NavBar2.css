@@ -83,6 +83,8 @@
     }
 
     .boton-registro {
+        width:18em;
+        height: 3em;
         margin: 0.2em;
         transition-property: all;
         transition-delay: 0;
