@@ -28,14 +28,16 @@ export default class HomeScreen extends Component {
           <div style={ sectionStyle } alt="okupa"/>
 
           <NavBar showSearchBar={false}/>
-          <header>
-            <h1>¿Buscas un evento?</h1>
-            <h2>¡Okúpate!</h2>
-          </header>
-          
-          <div className="banner">
-                <input type="text" className="banner-search-bar" placeholder="Ingrese nombre del evento..."></input>
-                {/* <input type="datetime-local" className="banner-datetime-input"></input> */}
+          <div className="contenedor">
+            <header className="cabecera">
+              <h1 className="titulo-principal">¿Buscas un evento?</h1>
+              <h2 className="subtitulo">¡Okúpate!</h2>
+            </header>
+            
+            <div className="banner">
+              <input type="text" className="barra-busqueda" placeholder="Ingrese nombre del evento..."></input>
+              <input type="date" className="datepicker" placeholder="elige una fecha"></input>
+            </div>
           </div>
       </div>
     );

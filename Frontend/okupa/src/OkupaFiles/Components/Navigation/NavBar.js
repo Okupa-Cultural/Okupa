@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import './css/NavBar.css';
 import './css/NavBar2.css';
-import Logo from './../../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
+import Logo from './../../../Images/Logo/okupa-logo-color-transparente.png';
 import { Link } from 'react-router-dom';
 
 //import NavLink from './NavLink';
@@ -25,7 +25,7 @@ export default class NavBar extends Component {
                     <p className="nav-bar-titulo">OKUPA</p>
                 </div>
 
-                <NavSearchBar show={this.props.showSearchBar} />
+                {/*<NavSearchBar show={this.props.showSearchBar} />*/}
                 
                 <div className="nav-bar-links">
                     <Link to="/registro">

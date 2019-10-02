@@ -1,40 +1,40 @@
 .nav-bar{ 
-    margin: 0;
+    width: 100%;
+    height: 4em;
     display: flex;
-    text-align: left;
+    overflow: hidden;
     background-color: #24292E;
-    width: 99%;
-    padding: 0.5em;
-    justify-content: center;
-    vertical-align:middle;
 }
 
 .nav-bar .logo{
-    flex: 1 1 auto;
-    margin-top: 0.3em;
-	height: 3em;
+    margin-top: .5em;
+    height: 3em;
+    margin-right:1em;
     margin-left: 1em;
-	overflow: none;
-    vertical-align:middle;
 }
 
 .nav-bar .logo img{
 	height: 3em;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .nav-bar .logo p{
-    position: absolute;
-    margin-top: 0.2em;
 	display: inline-block;
-    justify-content: center;
     cursor: pointer;
+    margin-top: .6em;
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: .3em;
 }
 
 .nav-bar-links{
-    
 	height: 3.5em;
     outline: none;
-    flex: 1 end;
+    margin-top: .5em;
+    position: absolute;
+    right: 1em;
+    display: flex;
 }
 
 .nav-bar .nav-bar-links a{ 
@@ -42,20 +42,15 @@
 }
 
 .boton-registro {
-    flex: 1 1 auto;
-    justify-content: center;
+    flex: 1;
 	width: 12em;
-    height: 2.3em;
-    margin: 0 0.5em;
+    height: 2.7em;
+    margin: .6em 1em;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
+    border:none;
     border-radius: 80px;
     color: white;
-    font-size: 1em;
-    font-weight: 50;
-    letter-spacing: .15em;
-    font-family: 'Roboto';
-    transition: 0.5s ease;
+    transition: 0.2s ease-in-out;
 }
 
 .boton-registro:hover {
@@ -72,17 +67,19 @@
     color: white;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 555px) {
 
-	.nav-bar{ 
+	.nav-bar{
+    height:10em; 
 	margin-top:0.5em;
 	margin-bottom: 1em;
-	display: block;
 	text-align: center;
+    display: inline-block;
 	}
 
     .nav-bar-links{
         position: unset;
+        display: inline-block;
     }
 
     .boton-registro {

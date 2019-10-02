@@ -1,11 +1,14 @@
-.nav-bar-search {
+ .nav-bar-search {
     display: flex;
+    margin-top: .5em;
+
 }
 
 .nav-bar-search-bar {
     flex: 1;
     width: 50vw;
     height: 1.5em;
+    margin-top: .5em;
     border-radius: 360px;
     border: none;
     padding: 0.7em;
