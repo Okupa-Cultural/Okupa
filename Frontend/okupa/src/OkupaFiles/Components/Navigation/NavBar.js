@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 //import NavLink from './NavLink';
 
 //COMPONENTS
+
 import NavSearchBar from './NavSearchBar';
 ///
 export default class NavBar extends Component {
@@ -25,7 +26,7 @@ export default class NavBar extends Component {
                     <p className="nav-bar-titulo">OKUPA</p>
                 </div>
 
-                {/*<NavSearchBar show={this.props.showSearchBar} />*/}
+                <NavSearchBar show={this.props.showSearchBar} />
                 
                 <div className="nav-bar-links">
                     <Link to="/registro">

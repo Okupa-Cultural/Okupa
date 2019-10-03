@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 export default class ProfileSeguidores extends Component {
 
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }
