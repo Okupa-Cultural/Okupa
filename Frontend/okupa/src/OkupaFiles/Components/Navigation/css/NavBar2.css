@@ -37,10 +37,6 @@
     display: flex;
 }
 
-.nav-bar .nav-bar-links a{ 
-    display: flex;
-}
-
 .boton-registro {
     flex: 1;
 	width: 12em;
@@ -56,7 +52,6 @@
 .boton-registro:hover {
     cursor: pointer;
     opacity: 0.5;
-    display: block;
 }
 
 .nav-bar-titulo {

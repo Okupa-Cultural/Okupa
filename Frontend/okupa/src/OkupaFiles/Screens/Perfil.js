@@ -25,20 +25,19 @@ export default class Perfil extends Component {
 
     return (
 
-      <div className="home-screen"> {/*==========Inicio de div Contenedor==========*/}
+      <div className="home-screen">
 
-        <div style={ sectionStyle } />
+            <div style={ sectionStyle } />
 
-        <div className="ocultar-en-moviles">
+            <div className="ocultar-en-moviles">
 
-            <NavBar showSearchBar ={true}/>
+                <NavBar showSearchBar ={true}/>
 
-        </div>
+            </div>
 
-        {/*==========Tarjeta de perfil==========*/}
-        <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
-        {/*==========Descripcion de perfil======*/}
-        <ProfileDescripcion />
+            <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
+            
+            <ProfileDescripcion />
 
       </div>
     );

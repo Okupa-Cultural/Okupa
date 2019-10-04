@@ -28,7 +28,7 @@ export default class Registro extends Component {
 
           <div style={ sectionStyle } />
 
-          <NavBar showSearchBar={false}/> 
+          <NavBar showSearchBar={true}/> 
 
           <ul>
             <Link to="/">

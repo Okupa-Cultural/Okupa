@@ -34,7 +34,7 @@ export default class NavSearchBar extends Component {
         if(this.props.show) {
             return(
                 <div className="nav-bar-search">
-                    <input type="text" className="nav-bar-search-bar" ref={(a) => this._inputElement = a } placeholder="Buscar eventos..."></input>
+                    <input type="text" className="nav-bar-search-bar2" ref={(a) => this._inputElement = a } placeholder="Buscar eventos..."></input>
                     <NavSearchBarList texto={this._inputElement}/>
                 </div>
             );
