@@ -102,6 +102,14 @@
 	}
 }
 
+@media (max-width: 1250px) {
+    .boton-registro {
+        opacity: 0;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
 @media (max-width: 238px) {
 
     .boton-registro{
