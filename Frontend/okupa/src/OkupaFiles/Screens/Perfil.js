@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import Fondo from './../../Images/bg2.jpg';
 ///////
 //Components
+import NavBar from './../Components/Navigation/NavBar';
 import ProfileCard from './../Components/Perfil/ProfileCard';
 import ProfileDescripcion from './../Components/Perfil/ProfileDescripcion';
-import NavBar from './../Components/Navigation/NavBar';
-//import formArtista from './../Components/forms/formArtista';
+import ProfileGaleria from './../Components/Perfil/ProfileGaleria';
+import ProfileEventos from './../Components/Perfil/ProfileEventos';
+
 //////
+//CSS
 import './css/EstilosGenerales.css';
 
 export default class Perfil extends Component {
@@ -38,6 +41,10 @@ export default class Perfil extends Component {
             <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
             
             <ProfileDescripcion />
+
+            <ProfileGaleria />
+
+            <ProfileEventos />
 
       </div>
     );
