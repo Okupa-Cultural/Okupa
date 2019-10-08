@@ -13,6 +13,8 @@ export default class HomeScreen extends Component {
   
   render() {
 
+    //var urlFondo = "https://i.imgur.com/GuNMUN0.png";
+
     var sectionStyle = {
       zIndex: -10,
       position: 'fixed',
