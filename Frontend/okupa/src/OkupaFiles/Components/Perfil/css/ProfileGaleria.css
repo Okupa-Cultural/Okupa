@@ -1,0 +1,8 @@
+.galeria{
+	display: inline-block;
+}
+.imagen{
+	width: 15em;
+	height: 15em;
+	margin: 0 0.125em;
+}

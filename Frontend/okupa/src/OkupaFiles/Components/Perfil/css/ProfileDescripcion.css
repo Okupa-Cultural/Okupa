@@ -1,4 +1,20 @@
 .perfil-info{
-    margin:4em auto;
     max-width: 48em;
+    font-size: 1em;
+}
+
+.bio, .somos, .somos h3{
+	font-weight: 100;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.somos{
+	margin: .3em 0;
+	font-size: 2em;
+}
+
+.bio{
+	text-indent: 2em;
 }

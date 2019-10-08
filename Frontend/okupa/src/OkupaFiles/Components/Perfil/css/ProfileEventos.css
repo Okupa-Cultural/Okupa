@@ -1,0 +1,63 @@
+.proximos-eventos{
+	background-color: rgb(255,255,255);
+    width: 90%;
+    max-width: 48em;
+    border-radius: 1em;
+    padding: 1em;
+    display: inline-block;
+}
+
+.listado-eventos{
+	display: table;
+	width: 100%;
+}
+
+.tabla-titulo{
+	margin-bottom:.8em;
+}
+
+.tabla-titulo h3{
+	font-size: 2em;
+	font-weight: 100;
+	text-align: left;
+	color: black;
+}
+
+.evento{
+	display: table-row;
+}
+
+.sombra{
+	display: table-row;
+	height: .1em;
+	box-shadow: 0 .06em .09em rgba(0,0,0,.2);
+}
+
+.evento-info, .evento-icono{
+	padding-top:.2em;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.evento-icono{
+font-size: 1.5em;
+text-shadow: 0 .07em .09em rgba(0,0,0,.3)
+}
+
+.evento-titulo, .evento-fecha, .evento-ubicacion, .evento-icono{
+	color: rgb(100,100,100);
+	font-weight: 100;
+}
+
+.evento-titulo{
+	font-size: 1.5em;
+}
+
+.evento-fecha{
+	font-size: 1em;
+}
+
+.evento-ubicacion{
+	font-size: .9em;
+}
