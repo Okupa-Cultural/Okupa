@@ -62,6 +62,14 @@
     color: white;
 }
 
+@media (max-width: 1250px) {
+    .boton-registro {
+        opacity: 0;
+        pointer-events: none;
+        cursor: none;
+    }
+}
+
 @media (max-width: 555px) {
 
 	.nav-bar{
