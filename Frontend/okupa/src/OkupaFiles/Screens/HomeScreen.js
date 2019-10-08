@@ -40,12 +40,14 @@ export default class HomeScreen extends Component {
 
             </header>
 
-            <div className="banner">
+            <form className="banner">
 
-              <input type="text" className="nav-bar-search-bar" placeholder="Ingrese nombre del evento..."/>
-              <input type="date" className="datepicker" placeholder="we are the world"/>
+              <input type="text" className="nav-bar-search-bar" name="busqueda" placeholder="Ingrese nombre del evento..."/>
+              <input type="date" className="datepicker" name="fecha" placeholder="we are the world"/>
 
-            </div>
+              <input type="submit" className="banner-buscar-btn" value="Buscar"></input>
+
+            </form>
 
           </div>
 

@@ -41,7 +41,7 @@
     width: 55em;
     height: 3em; 
     background-color: rgb(255,255,255);
-    border-radius: 360px;
+    border-radius: 5px;
     color: black;
     font-size: 1em;
     padding-left: 15px;
@@ -54,17 +54,31 @@
     font-style: italic;
 }
 
+.banner-buscar-btn {
+    background-color: #568DE8;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    width: 7em;
+    height: 1.5em;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
 .datepicker{
     margin:1em auto;
     display: block;
     background-color: rgb(58,58,58);
-    border-radius: 1em;
+    border-radius: 5px;
     border: none;
-    font-size: 3em;
+    font-size: 2em;
+    padding: 2px;
     text-transform: uppercase;
     font-weight: 100;
     text-align: center;
     color: rgb(255,255,255);
+    width: 9em;
+    height: 1.5em;
 }
 
 .datepicker::-webkit-calendar-picker-indicator{

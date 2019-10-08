@@ -23,7 +23,9 @@ export default class NavBar extends Component {
             <div className="nav-bar">
                 <div className="logo">
                     <img src={Logo} alt="Okupa"/>
-                    <p className="nav-bar-titulo">OKUPA</p>
+                    <Link to="/">
+                        <p className="nav-bar-titulo">OKUPA</p>
+                    </Link>
                 </div>
 
                 <NavSearchBar show={this.props.showSearchBar} />
