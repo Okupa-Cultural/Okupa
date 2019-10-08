@@ -13,7 +13,7 @@ export default class HomeScreen extends Component {
   
   render() {
 
-    //var urlFondo = "https://i.imgur.com/GuNMUN0.png";
+    //var urlFondo = "https://www.hendersonparkinn.com/wp-content/uploads/2018/02/A-breathtaking-sunset-over-a-beach-in-Destin-FL.jpg";
 
     var sectionStyle = {
       zIndex: -10,
