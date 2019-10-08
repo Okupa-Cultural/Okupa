@@ -5,4 +5,10 @@
 	width: 15em;
 	height: 15em;
 	margin: 0 0.125em;
+	transition: 250ms ease;
+	cursor: pointer;
+}
+
+.imagen:hover {
+	opacity: 0.5;
 }

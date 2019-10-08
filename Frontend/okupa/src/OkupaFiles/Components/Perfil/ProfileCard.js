@@ -8,6 +8,7 @@ import './css/ProfileCard.css';
 import ProfileEtiquetas from './ProfileEtiquetas';
 import ProfileSeguidores from './ProfileSeguidores';
 import ProfileAvatar from './ProfileAvatar';
+import ProfileBanner from './ProfileBanner';
 //
 
 
@@ -22,9 +23,11 @@ export default class ProfileCard extends Component {
         return(
             <div className="tarjeta-perfil">
               
-              { /* Avatar del perfil  */}
+                <ProfileBanner banner="https://www.hotelprovidence.com/resourcefiles/mainimages/providence-theater-dinner-package-of-hotel-providence-top.jpg"/>
 
-              <ProfileAvatar />
+              { /* Avatar del perfil  */}
+                
+                <ProfileAvatar />
 
                 {/*==========Datos de Cabecera==========*/}
 
