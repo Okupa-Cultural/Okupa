@@ -29,10 +29,10 @@ export default class NavBar extends Component {
                 <NavSearchBar show={this.props.showSearchBar} />
                 
                 <div className="nav-bar-links">
-                    <Link to="/registro">
+                    <Link className="boton-navbar" to="/registro">
                         <input type="submit" className="boton-registro" value="Registrarse"/>
                     </Link>
-                    <Link to="/dashboard">
+                    <Link className="boton-navbar" to="/dashboard">
                         <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
                     </Link>
                 </div>
