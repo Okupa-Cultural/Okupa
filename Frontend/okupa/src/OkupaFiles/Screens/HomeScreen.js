@@ -29,6 +29,8 @@ export default class HomeScreen extends Component {
 
           <div style={ sectionStyle } alt="okupa"/>
 
+          <div className="filtro-fondo" />
+
           <NavBar showSearchBar={false}/>
 
           <div className="contenedor">
@@ -42,8 +44,8 @@ export default class HomeScreen extends Component {
 
             <form className="banner">
 
-              <input type="text" className="nav-bar-search-bar" name="busqueda" placeholder="Ingrese nombre del evento..."/>
-              <input type="date" className="datepicker" name="fecha" placeholder="we are the world"/>
+              <input type="text" className="nav-bar-search-bar" name="busqueda" autocomplete="off" placeholder="Ingrese nombre del evento..."/>
+              <input type="date" className="datepicker" name="fecha" placeholder="we are the world" />
 
               <input type="submit" className="banner-buscar-btn" value="Buscar"></input>
 

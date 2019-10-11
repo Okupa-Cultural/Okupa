@@ -32,6 +32,8 @@ export default class Perfil extends Component {
 
             <div style={ sectionStyle } />
 
+            <div className="filtro-fondo" />
+
             <div className="ocultar-en-moviles">
 
                 <NavBar showSearchBar ={true}/>

@@ -27,6 +27,8 @@ export default class Dashboard extends Component {
 
          <div style={ sectionStyle } />
 
+         <div className="filtro-fondo" />
+
           <NavBar />
 
             <div className="banner">

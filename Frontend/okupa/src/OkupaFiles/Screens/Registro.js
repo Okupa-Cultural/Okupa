@@ -28,6 +28,8 @@ export default class Registro extends Component {
 
           <div style={ sectionStyle } />
 
+          <div className="filtro-fondo" />
+
           <NavBar showSearchBar={true}/> 
 
           <ul>
