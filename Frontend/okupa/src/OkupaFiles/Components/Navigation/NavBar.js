@@ -20,23 +20,25 @@ export default class NavBar extends Component {
     render() {
 
         return(
-            <div className="nav-bar">
-                <div className="logo">
-                    <img src={Logo} alt="Okupa"/>
-                    <Link to="/">
-                        <p className="nav-bar-titulo">OKUPA</p>
-                    </Link>
-                </div>
+            <div className="nav-bar-container">
+                <div className="nav-bar">
+                    <div className="logo">
+                        <img src={Logo} alt="Okupa"/>
+                        <Link to="/">
+                            <p className="nav-bar-titulo">OKUPA</p>
+                        </Link>
+                    </div>
 
-                <NavSearchBar show={this.props.showSearchBar} />
-                
-                <div className="nav-bar-links">
-                    <Link className="boton-navbar" to="/registro">
-                        <input type="submit" className="boton-registro" value="Registrarse"/>
-                    </Link>
-                    <Link className="boton-navbar" to="/dashboard">
-                        <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
-                    </Link>
+                    <NavSearchBar show={this.props.showSearchBar} />
+                    
+                    <div className="nav-bar-links">
+                        <Link className="boton-navbar" to="/registro">
+                            <input type="submit" className="boton-registro" value="Registrarse"/>
+                        </Link>
+                        <Link className="boton-navbar" to="/dashboard">
+                            <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );

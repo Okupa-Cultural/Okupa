@@ -4,7 +4,8 @@
     display: flex;
     overflow: hidden;
     background-color: #24292E;
-    position: fixed;
+    position: sticky;
+    top:0;
 }
 
 .nav-bar .logo{
