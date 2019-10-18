@@ -1,0 +1,33 @@
+.evento-portada{
+	max-width: 43em;
+	height: 20em;
+	margin: auto;
+	background: url(https://dla.cdncimeco.com/uploads/2019/10/image5d9fc94e75bff.jpg);
+	background-size: 43em;
+	background-repeat: no-repeat;
+}
+
+.evento-cuerpo{
+	max-width: 43em;
+	margin: auto;
+	text-align: left;
+}
+
+.evento-titulo{
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.evento-ubicacion{
+	margin-top: 1em;
+	text-transform: uppercase;
+}
+
+.evento-espacio{
+	font-size: 2em;
+	font-weight: 100;
+}
+
+.evento-descripcion{
+	font-weight: 100;
+}
