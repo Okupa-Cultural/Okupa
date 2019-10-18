@@ -1,0 +1,35 @@
+.listado-enlaces{
+	display: table;
+	width: 40em;
+	margin: auto;
+	text-align: left;
+}
+
+.enlaces-titulo{
+	font-size: 2em;
+	font-weight: 100;
+	margin: auto;
+}
+
+.enlace{
+	display: table-row;
+}
+
+.enlace-icono, .enlace-descripcion{
+	display: table-cell;
+	padding-top:.2em;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 100;
+}
+
+.enlace-icono{
+	font-size: 2.5em;
+	padding:0;
+}
+
+.enlace-descripcion{
+	width: 100%;
+	padding-left: 2em;
+}
+

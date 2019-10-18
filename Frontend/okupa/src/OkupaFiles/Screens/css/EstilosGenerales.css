@@ -1,3 +1,5 @@
+/*============= Elementos básicos =============*/
+
 body, div, li, span, p, input{
 	font-family: roboto, sans-serif;
 	font-weight: 400;
@@ -27,6 +29,50 @@ h1, h2, h3, h4, ul{
 ul{
 	list-style-type:none;
 }
+
+/*============= Iconos de FontAwesome a medida =============*/
+
+
+/*Facebook*/
+.fa-facebook-square{
+	background: -webkit-linear-gradient(0.2turn, #3B5998, #6582BE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Twitter*/
+.fa-twitter-square{
+	background: -webkit-linear-gradient(0.2turn, #00ACEE, #42CBFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Instagram*/
+.fa-instagram{
+	background: -webkit-linear-gradient(0.2turn, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Spotify*/
+.fa-spotify{
+	background: -webkit-linear-gradient(0.2turn, #1ED761, #353535);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: .05em 0 0 0;
+	font-size: .92em;
+}
+
+/*Soundcloud*/
+.fa-soundcloud{
+	background: -webkit-linear-gradient(#FF9533, #FF4137);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: .7em;
+}
+
+
+/*============= Mediaquerys =============*/
 
 @media (max-width: 500px) {
 

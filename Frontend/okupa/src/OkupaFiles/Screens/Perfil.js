@@ -8,6 +8,7 @@ import ProfileCard from './../Components/Perfil/ProfileCard';
 import ProfileDescripcion from './../Components/Perfil/ProfileDescripcion';
 import ProfileGaleria from './../Components/Perfil/ProfileGaleria';
 import ProfileEventos from './../Components/Perfil/ProfileEventos';
+import ProfileEnlaces from './../Components/Perfil/ProfileEnlaces';
 
 //////
 //CSS
@@ -47,6 +48,8 @@ export default class Perfil extends Component {
             <ProfileGaleria />
 
             <ProfileEventos />
+
+            <ProfileEnlaces />
 
       </div>
     );

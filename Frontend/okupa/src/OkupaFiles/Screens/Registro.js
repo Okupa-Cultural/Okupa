@@ -47,7 +47,7 @@ export default class Registro extends Component {
                 </span>
               </li>
             </Link>
-            <a target="_blank" href="https://www.google.com/search?sxsrf=ACYBGNRPHmAa-_UgvhcXDJMA6kpDKFB7hQ%3A1569534494953&source=hp&ei=HjKNXfDwN_Kz5OUPkuqQuA4&q=okupa&oq=okupa&gs_l=psy-ab.3..35i39l2j0l8.1326.1792..1857...0.0..0.122.500.3j2......0....1..gws-wiz.....10..35i362i39j0i131.N7rS7vO_RE8&ved=0ahUKEwjw96DQu-_kAhXyGbkGHRI1BOcQ4dUDCAY&uact=5">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?sxsrf=ACYBGNRPHmAa-_UgvhcXDJMA6kpDKFB7hQ%3A1569534494953&source=hp&ei=HjKNXfDwN_Kz5OUPkuqQuA4&q=okupa&oq=okupa&gs_l=psy-ab.3..35i39l2j0l8.1326.1792..1857...0.0..0.122.500.3j2......0....1..gws-wiz.....10..35i362i39j0i131.N7rS7vO_RE8&ved=0ahUKEwjw96DQu-_kAhXyGbkGHRI1BOcQ4dUDCAY&uact=5">
               <li className="butaca" id="butaca">
                 <span className="middle">
                 ¡Ninguna! Solo quiero información

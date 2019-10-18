@@ -1,26 +1,16 @@
 .proximos-eventos{
-	background-color: rgb(255,255,255);
-    width: 90%;
-    max-width: 48em;
-    border-radius: 1em;
-    padding: 1em;
     display: inline-block;
 }
 
 .listado-eventos{
 	display: table;
-	width: 100%;
+	width: 40em;
+	margin: auto;
+	text-align: left;
 }
 
 .tabla-titulo{
 	margin-bottom:.8em;
-}
-
-.tabla-titulo h3{
-	font-size: 2em;
-	font-weight: 100;
-	text-align: left;
-	color: black;
 }
 
 .evento{
@@ -30,11 +20,11 @@
 .sombra{
 	display: table-row;
 	height: .1em;
-	box-shadow: 0 .06em .09em rgba(0,0,0,.2);
+	box-shadow: 0 .06em .1em rgba(255,255,255,.2);
 }
 
 .evento-info, .evento-icono{
-	padding-top:.2em;
+	padding:.7em 0;
 	display: table-cell;
 	text-align: left;
 	vertical-align: middle;
@@ -46,9 +36,7 @@ text-shadow: 0 .07em .09em rgba(0,0,0,.3)
 }
 
 .evento-titulo, .evento-fecha, .evento-ubicacion, .evento-icono{
-	color: rgb(100,100,100);
-	/* font-weight: 100; */
-	/* es poco legible el texto, se ve bonito pero no se entiende muy bien */
+	color: rgb(200,200,200);
 }
 
 .evento-titulo{
@@ -61,4 +49,8 @@ text-shadow: 0 .07em .09em rgba(0,0,0,.3)
 
 .evento-ubicacion{
 	font-size: .9em;
+}
+
+.fa-facebook-square{
+	color: rgb(59,89,152);
 }
