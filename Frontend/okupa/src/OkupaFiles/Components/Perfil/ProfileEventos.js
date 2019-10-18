@@ -49,7 +49,7 @@ export default class ProfileEventos extends Component {
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>
             			</div>
-            		</div>
+            		</div> 
             		<div className="sombra"></div>
             		<div className="evento">
             			<div className="evento-info">

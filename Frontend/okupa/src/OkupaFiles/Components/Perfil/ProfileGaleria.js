@@ -22,6 +22,9 @@ export default class ProfileGaleria extends Component {
             <div className="tarjeta-perfil">
             	<div className="galeria">
             		<img src={imagen1} alt="imagen1" className="imagen" />
+                    <img src={imagen1} alt="imagen1" className="imagen" />
+                    <img src={imagen1} alt="imagen1" className="imagen" />
+                    <img src={imagen1} alt="imagen1" className="imagen" />
             		<img src={imagen2} alt="imagen2" className="imagen" />
             		<img src={imagen3} alt="imagen3" className="imagen" />
             		<img src={imagen4} alt="imagen4" className="imagen" />
