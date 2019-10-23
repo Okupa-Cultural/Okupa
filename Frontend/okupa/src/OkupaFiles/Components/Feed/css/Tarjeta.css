@@ -1,0 +1,23 @@
+.tarjeta{
+	max-width: 43em;
+	margin: 1em auto;
+	box-shadow: 0 .1em .5em rgba(0,0,0,.8);	
+}
+
+.tarjeta-fotoperfil{
+	width: 4em;
+	height: 4em;
+	margin: 1em;
+	border-radius: 2em;
+	background: url(https://img.buzzfeed.com/buzzfeed-static/static/2015-11/19/17/enhanced/webdr02/original-grid-image-23059-1447970713-6.jpg?downsize=900:*&output-format=auto&output-quality=auto);
+	background-repeat: none;
+	background-size: 7em;
+	background-position: -1.5em 0;
+	flex: 1;
+}
+
+.tarjeta-datos{
+	vertical-align: top;
+	text-align: left;
+}
+
