@@ -1,7 +1,13 @@
 .tarjeta{
 	max-width: 43em;
+	padding: 0.3em;
 	margin: 1em auto;
 	box-shadow: 0 .1em .5em rgba(0,0,0,.8);	
+	background-color: #24292E;
+}
+
+.tarjeta-cabecera {
+	display:flex;
 }
 
 .tarjeta-fotoperfil{
@@ -17,6 +23,7 @@
 }
 
 .tarjeta-datos{
+	padding:0.2em;
 	vertical-align: top;
 	text-align: left;
 }
