@@ -1,0 +1,19 @@
+.tarjeta-foto{
+	width: 43em;
+	height: 21.5em;
+	background-image: url(https://sc2.elpais.com.uy/files/article_default_content/uploads/2017/09/10/59b5d5d0e150f.jpeg);
+	background-repeat: no-repeat;
+	background-size: 43em;	
+}
+
+.tarjeta-titulo{
+	font-size: 2em;
+	text-align: left;
+	padding: 0.4em;
+}
+
+.tarjeta-descrpcion{
+	font-size: .8em;
+	font-weight: 100;
+	text-align: left;
+}
