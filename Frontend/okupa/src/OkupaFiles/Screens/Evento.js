@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {  Link } from 'react-router-dom';
-
 import Fondo from './../../Images/bg2.jpg';
 
 //Componentes

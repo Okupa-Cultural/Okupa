@@ -1,0 +1,31 @@
+.tarjeta-cabecera{
+	flex-basis: 43em;
+	display: flex;
+	align-items: center;
+}
+
+.tarjeta-fotoperfil{
+	height: 4em;
+	width: 4em;
+	border-radius: 4em;
+	background: url(https://img.buzzfeed.com/buzzfeed-static/static/2015-11/19/17/enhanced/webdr02/original-grid-image-23059-1447970713-6.jpg?downsize=900:*&output-format=auto&output-quality=auto);
+	background-size: 4em;
+	margin: 1em 1.5em 1em 0;
+}
+
+.tarjeta-datos{
+	flex:1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tarjeta-nombre{
+	font-weight: 700;
+}
+
+.tarjeta-fechayhora{
+	font-weight: 100;
+	margin-right: 1em;
+}
+
+

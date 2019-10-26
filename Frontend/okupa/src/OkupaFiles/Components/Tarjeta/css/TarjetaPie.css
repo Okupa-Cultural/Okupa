@@ -1,0 +1,30 @@
+.tarjeta-pie{
+	display: flex;
+	text-align: left;
+	flex-direction: column;	
+}
+
+.tarjeta-estadisticas{
+	font-size: .9em;
+}
+
+.tarjeta-botonera{
+	display: flex;
+	margin-top: 1em;
+}
+
+.tarjeta-boton{
+	font-size: 2em;
+	margin-right: 1em;
+}
+
+	.tarjeta-boton i{
+		font-weight: 100;
+	}
+
+.separador{
+	height: 1px;
+	width: 18em;
+	margin: 1.5em auto;
+	background: #F1F1F1;
+}

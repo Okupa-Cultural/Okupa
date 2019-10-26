@@ -1,0 +1,44 @@
+.tarjeta-cuerpo{
+	width: 43em;
+	text-align: left;
+}
+
+.tarjeta-imagen{
+	height: 23em;
+	background-image: url(https://sc2.elpais.com.uy/files/article_default_content/uploads/2017/09/10/59b5d5d0e150f.jpeg);
+	background-repeat: no-repeat;
+	background-size: 43em;
+}
+
+.tarjeta-titulo{
+	margin-bottom: .5em;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+	.tarjeta-titulo i{
+		margin-right: .5em;
+		font-weight: 100;
+	}
+
+.info-distancia, .info-espacioyfecha{
+	padding: .5em;
+}
+
+.info-distancia{
+	font-size: .8em;
+	background: rgba(255,8,130,.8);
+	text-transform: uppercase;
+}
+
+.info-espacioyfecha{
+	background: rgba(235,4,100,.8);
+	font-size: 1.5em;
+}
+
+.info-descripcion{
+	font-weight: 100;
+	background: rgba(19,205,203,.8);
+	padding: .5em;
+	margin: 0;
+}

@@ -4,7 +4,7 @@ import Fondo from './../../Images/bg2.jpg';
 
 //Componentes
 import NavBar from './../Components/Navigation/NavBar';
-import Tarjeta from './../Components/Feed/Tarjeta';
+import Tarjeta from './../Components/Tarjeta/Tarjeta';
 
 //CSS
 import './css/EstilosGenerales.css';
