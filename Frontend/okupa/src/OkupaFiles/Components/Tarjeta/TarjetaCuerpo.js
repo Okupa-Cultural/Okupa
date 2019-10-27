@@ -15,7 +15,7 @@ export default class TarjetaCuerpo extends Component {
                             <i class="far fa-calendar-alt"></i>
                             Jony Mitchell: en vivo en Plaza Bomberitos
                         </h4>
-                        <div className="tarjeta-imagen"></div>
+                        <img src="https://sc2.elpais.com.uy/files/article_default_content/uploads/2017/09/10/59b5d5d0e150f.jpeg" alt="" className="tarjeta-imagen"/>
                         <p className="info-descripcion">
                             Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. 

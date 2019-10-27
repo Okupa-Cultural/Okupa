@@ -15,13 +15,9 @@ export default class CasillaComentarios extends Component {
 
             <div className="casilla-comentarios">
 
-            	<input type="text" ClassName="comentario-textbox"name="NuevoComentario" autocomplete="off" placeholder="Ingrese un comentario..."></input>
-                
-                <br />
-                <br />
-                <br />  
+                <input type="text" className="comentario-textbox" />
 
-            	<input type="submit" className="banner-buscar-btn" value="Enviar"></input>
+            	<input type="submit" className="btn-enviar" value="Enviar"></input>
                 	
 				<div className="listado-comentarios" id="listado-comentarios">
 		        	<Comentario />  
