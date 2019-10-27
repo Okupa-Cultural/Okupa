@@ -9,7 +9,7 @@ import NavBar from './../Components/Navigation/NavBar';
 import './css/EstilosGenerales.css';
 
 
-export default class Dashboard extends Component {
+export default class Login extends Component {
 
     render() {
 
