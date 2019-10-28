@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import {  Link } from 'react-router-dom';
-import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
-import './css/HomeScreen.css';
+//import {  Link } from 'react-router-dom';
 import Fondo from './../../Images/bg2.jpg';
+import LogoBlanco from './../../Images/Logo/okupa-logo-blanco-transparente.png'
+
 //Components
 import NavBar from './../Components/Navigation/NavBar';
-//
+
+//CSS
 import './css/EstilosGenerales.css';
+import './css/Login.css'
 
 
 export default class Login extends Component {
@@ -31,16 +33,37 @@ export default class Login extends Component {
 
           <NavBar />
 
-            <div className="banner">
-                <Link to="/">
-                  <img src={Logo} alt="okupa"/>
-                </Link>
-                <h1>Dashboard</h1>
-                <p>Placeholder Text</p>
-                <Link to="/">
-                    <input type="submit" className="boton-registro" value="Inicio"/>
-                </Link>
-            </div>
+          <div className="login-contenedor">
+
+              <div className="columna1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, consectetur reprehenderit dolores delectus quod cum tenetur quisquam vero nemo eum, rerum ullam eveniet. Sint expedita quisquam, deleniti esse hic maxime.</div>
+              
+              <div className="columna2">
+
+                <img src={LogoBlanco} alt="Okupa logo blanco" />
+
+                <div className="login-formulario">
+
+                  <label htmlFor="">
+                    Usuario
+                    <br />
+                    <input type="text"/>
+                  </label>
+
+                  <label htmlFor="">
+                    Password
+                    <br />
+                    <input type="text"/>
+                  </label>
+
+                  <input type="button" />
+
+                </div>
+
+              </div>
+        
+          </div>
+
+      
         </div>
       );
     }    
