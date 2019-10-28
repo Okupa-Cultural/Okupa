@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 //import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import Fondo from './../../Images/bg2.jpg';
 ///////
-//Components
+//Componentes
 import NavBar from './../Components/Navigation/NavBar';
+import ToggleCheckbox from './../Components/ToggleCheckbox/ToggleCheckbox'
+
 //////
 import './css/HomeScreen.css';
 import './css/EstilosGenerales.css';
@@ -25,47 +27,63 @@ export default class HomeScreen extends Component {
 
     return (
       
-      <div className="home-screen">
+    <div className="home-screen">
 
-          <div style={ sectionStyle } alt="okupa"/>
+		<div style={ sectionStyle } alt="okupa"/>
 
-          <div className="filtro-fondo" />
+		<div className="filtro-fondo" />
 
-          <NavBar showSearchBar={false}/>
+		<NavBar showSearchBar={false}/>
 
-          <div className="contenedor">
+		<div className="contenedor">
 
-            <header className="home-cabecera">
+			<header className="home-cabecera">
 
-              <h1 className="titulo-principal"> ¿Buscas un evento?</h1>
-              <h2 className="subtitulo">¡Okúpate!</h2>
+			 	<h1 className="titulo-principal"> ¿Buscas un evento?</h1>
+			 	<h2 className="subtitulo">¡Okúpate!</h2>
 
-            </header>
+			</header>
 
-            <form className="banner">
+			<form className="banner">
 
-              <input type="text" className="nav-bar-search-bar" name="busqueda" autocomplete="off" placeholder="Ingrese nombre del evento..."/>
-              <input type="date" className="datepicker" name="fecha" placeholder="we are the world" />
+				<input type="text" className="nav-bar-search-bar" name="busqueda" autocomplete="off" placeholder="Ingrese nombre del evento..."/>
+				<input type="date" className="datepicker" name="fecha" placeholder="we are the world" />
 
-              <input type="submit" className="banner-buscar-btn" value="Buscar"></input>
+				<input type="submit" className="banner-buscar-btn" value="Buscar"></input>
 
-            </form>
+				<div className="toggles">
 
-          </div>
+			      	<h4 className="toggles-titulo">
+			      		¿Nos das permiso? 
+			      		<br />
+			      		<i class="fad fa-laugh"></i>
+			      	</h4>
 
-          {/*<div className="contenedor">
-            <header className="cabecera">
-              <h1 className="titulo-principal">¿Buscas un eventolalala?</h1>
-              <h2 className="subtitulo">¡Okúpate!</h2>
-            </header>
-            
-            <div className="banner">
-              <input type="text" className="nav-bar-search-bar" placeholder="Ingrese nombre del evento..."></input>
-              <input type="date" className="datepicker" placeholder="elige una fecha"></input>
-            </div>
-          </div>
-        */}
-      </div>
+			    	{/*Ahora el título está en estos h5.
+			    	Habría que ver cómo mandárselo como propiedad*/}
+
+			    	<h5 className="toggle-label">
+			    		Notificaciones
+			    	</h5>
+					<ToggleCheckbox />
+
+					<h5 className="toggle-label">
+			    		Ubicación
+			    	</h5>
+					<ToggleCheckbox />
+
+					<h5 className="toggle-label">
+			    		Agregar a pantalla de inicio
+			    	</h5>
+					<ToggleCheckbox />
+
+				</div>
+
+			</form>
+
+		</div>
+
+    </div>
     );
   }
 }

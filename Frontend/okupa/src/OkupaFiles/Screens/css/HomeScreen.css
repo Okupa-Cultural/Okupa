@@ -6,7 +6,6 @@
     background-color: rgba(0, 0, 35, .5); /* #353F7A; */
 }
 
-
 .fondo {
     position: fixed;
     width: 100%;
@@ -30,9 +29,10 @@
 }
 
 .banner {
-    max-width: 80em;
-    height: 20em;
+    max-width: 75em;
+    height: inherit;
     margin: 2em auto;
+    padding-bottom: 1em;
     background-image: linear-gradient(rgb(20,20,20), rgb(25,25,25));
     box-shadow: 0 .5em .3em rgba(0,0,0,.5);
 }
@@ -88,7 +88,27 @@
 }
 .datepicker::-webkit-inner-spin-button{
     display: none;
-}   
+}  
+
+.toggles{
+    max-width: 43em;
+    margin: 1.5em auto;
+    border-top: solid 1px rgba(0,0,0,.8);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
+}
+
+.toggles-titulo{
+    font-size: 2em;
+    font-weight: 100;
+    margin: .5em;
+}
+    
+    .toggles-titulo i{
+        margin-top: .5em;
+    }
+
+
+
 
 @media (max-width: 500px) {
 
