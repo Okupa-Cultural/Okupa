@@ -14,7 +14,7 @@ export default class ProfileEventos extends Component {
         return(
             <div className="tarjeta-perfil">
 
-            <h3 className="seccion-titulo">Proximos p-eventos</h3>
+            <h3 className="seccion-titulo">Proximos eventos</h3>
 
             	<div className="listado-p-p-eventos">
             		<div className="p-evento">

@@ -15,7 +15,7 @@ export default class CasillaComentarios extends Component {
 
             <div className="casilla-comentarios">
 
-                <input type="text" className="comentario-textbox" />
+                <textarea className="comentario-textbox" />
 
             	<input type="submit" className="btn-enviar" value="Enviar"></input>
                 	
