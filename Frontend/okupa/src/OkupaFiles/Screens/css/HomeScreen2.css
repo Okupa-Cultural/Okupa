@@ -1,8 +1,8 @@
-.home2{
+.home{
     background: #221C35;
 }
 
-.home2-header{
+.home-header{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -17,7 +17,7 @@ Navbar - barra de navegacion (logo + botonera)
 */
 
 
-.home2-nav{
+.home-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,17 +30,17 @@ Navbar > logo - imagen - img - okupa
 */
 
 
-.home2-logo{
+.home-logo{
     display: flex;
     align-items: center;
     margin-bottom: 1em;
 }
 
-    .home2-logo-img{
+    .home-logo-img{
         width: 5em;
     }
 
-    .home2-logo span{
+    .home-logo span{
         margin-left: .5em;
         font-size: 1.5em;
         font-weight: 100;
@@ -51,14 +51,15 @@ Navbar > Botonera - botones
 =========================================
 */
 
-.home2-botonera{
+.home-botonera{
     display: flex;
     flex-wrap: wrap;
 }
 
-    .home2-botonera .nav-boton{
+    .home-botonera .nav-boton{
         font-weight: 700;
         padding: .5em 1em;
+        transition: all 250ms ease;
     }
 
     .resaltado{
@@ -66,25 +67,31 @@ Navbar > Botonera - botones
         border-radius: .5em;
     }
 
+    .nav-boton:hover {
+        font-size:1.1em;
+        padding: 0 .5em;
+    }
+
+
 /*=======================================
 Presentacion
 =========================================
 */
 
 
-.home2-presentacion{
+.home-presentacion{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.home2-intro{
+.home-intro{
     max-width: 12em;
     font-size: 3em;
     text-align: left;
 }
 
-    .home2-intro span{
+    .home-intro span{
         font-weight: 700;
     }
 
@@ -94,14 +101,19 @@ Formulario
 =========================================
 */
 
-.home2-form{
+.home-form-container {
+    width:100%;
+    text-align: left;
+}
+
+.home-form{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.home2-label{
+.home-label{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -109,13 +121,13 @@ Formulario
     margin: 1em 0;
 }
 
-.home2-label h4{
+.home-label h4{
     margin-bottom: .5em;
     font-size: 2em;
     font-weight: 100;
 }
 
-.home2-label input{
+.home-label input{
     flex-grow: 1;
     height: 2em;
     color: #1A1A1A;
@@ -124,7 +136,7 @@ Formulario
     border-radius: .8em;
 }
 
-.home2-btn-buscar{
+.home-btn-buscar{
     width: 10em;
     margin-top: .5em;
     padding: .3em 0;
@@ -136,7 +148,11 @@ Formulario
     font-weight: 100;
 }
 
-.home2-datepicker{
+.home-btn-buscar:hover {
+    cursor: pointer;
+}
+
+.home-datepicker{
     margin-left: 2em;
 }
 
@@ -178,7 +194,7 @@ Media querys
 
 @media (max-width: 500px){
 
-    .home2-logo{
+    .home-logo{
         margin: unset;
     }
 
@@ -187,12 +203,12 @@ Media querys
         margin: 0 .5em;
     }
 
-    .home2-nav{
+    .home-nav{
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
-    .home2-botonera{
+    .home-botonera{
         width: 100%;
         flex-direction:column;
         align-items: flex-end;
@@ -204,22 +220,23 @@ Media querys
         margin:.7em 0;
     }
     
-    #burguer:checked + .home2-botonera{
+    
+    #burguer:checked + .home-botonera{
           display: flex;  
     }
 
-    .home2-datepicker{
+    .home-datepicker{
         margin-left:.5em;
     }
 
 
 
-    .home2-intro{
+    .home-intro{
         font-size: 2em;
         margin-bottom: 0; 
     }
 
-    .home2-label h4{
+    .home-label h4{
         font-size: 1.5em;
     }
 
@@ -227,7 +244,7 @@ Media querys
 
 @media (max-width: 324px){
 
-    .home2-presentacion{
+    .home-presentacion{
         font-size: .5em;
     }
 
@@ -235,7 +252,7 @@ Media querys
 
 @media (max-width: 290px){
 
-    .home2-logo{
+    .home-logo{
         display: none;
     }
 
