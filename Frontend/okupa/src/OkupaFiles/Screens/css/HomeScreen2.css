@@ -212,6 +212,14 @@ Media querys
         margin-left:.5em;
     }
 
+    .home2-intro{
+        font-size: 2em;
+    }
+
+    .home2-label h4{
+        font-size: 1.7em;
+    }
+
 }
 
 @media (max-width: 324px){
