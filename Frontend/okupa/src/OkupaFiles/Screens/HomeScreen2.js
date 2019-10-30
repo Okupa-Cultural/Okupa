@@ -73,7 +73,7 @@ export default class HomeScreen2 extends Component {
 
 				<p className="home2-intro">
 					Una nueva forma de <span>difundir&nbsp;</span>y <span>conectar&nbsp;</span>
-					con el arte indpendeiente
+					con el arte independiente
 				</p>
 
 				<form className="home2-form">
