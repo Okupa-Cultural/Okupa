@@ -3,6 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 //Pantallas
 import HomeScreen from './OkupaFiles/Screens/HomeScreen';
+import HomeScreen2 from './OkupaFiles/Screens/HomeScreen2';
 import Login from './OkupaFiles/Screens/Login';
 import Registro from './OkupaFiles/Screens/Registro';
 import Perfil from './OkupaFiles/Screens/Perfil';
@@ -18,6 +19,7 @@ function App() {
       <Route render={({location}) => (
         <Switch>
           <Route exact path="/" component={HomeScreen}/>
+          <Route exact path="/homedos" component={HomeScreen2}/>
           <Route path="/login" component={Login}/>
           <Route path="/registro" component={Registro}/>
           <Route path="/perfil" component={Perfil}/>

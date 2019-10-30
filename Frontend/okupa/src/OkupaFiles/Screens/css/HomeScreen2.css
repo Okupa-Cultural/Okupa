@@ -1,0 +1,231 @@
+.home2{
+    background: #221C35;
+}
+
+.home2-header{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 2em;
+    background-image: linear-gradient(to top right, #ff085a, #0877ff);
+    background-size: 200%;
+}
+
+/*=======================================
+Navbar - barra de navegacion (logo + botonera)
+=========================================
+*/
+
+
+.home2-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*=======================================
+Navbar > logo - imagen - img - okupa
+=========================================
+*/
+
+
+.home2-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+    .home2-logo-img{
+        width: 5em;
+    }
+
+    .home2-logo span{
+        margin-left: .5em;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+/*=======================================
+Navbar > Botonera - botones
+=========================================
+*/
+
+.home2-botonera{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .home2-botonera .nav-boton{
+        font-weight: 700;
+        padding: .5em 1em;
+    }
+
+    .resaltado{
+        background: rgba(34,28,53,.8);
+        border-radius: .5em;
+    }
+
+/*=======================================
+Presentacion
+=========================================
+*/
+
+
+.home2-presentacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.home2-intro{
+    max-width: 12em;
+    font-size: 3em;
+    text-align: left;
+}
+
+    .home2-intro span{
+        font-weight: 700;
+    }
+
+
+/*=======================================
+Formulario
+=========================================
+*/
+
+.home2-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.home2-label{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.home2-label h4{
+    margin-bottom: .5em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.home2-label input{
+    flex-grow: 1;
+    height: 2em;
+    color: #1A1A1A;
+    padding: 1em;
+    border: none;
+    border-radius: .8em;
+}
+
+.home2-btn-buscar{
+    width: 10em;
+    margin-top: .5em;
+    padding: .3em 0;
+    border: none;
+    border-radius: .4em;
+    background: #1F1F1F;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.home2-datepicker{
+    margin-left: 2em;
+}
+
+
+/*=======================================
+Burguer Menu- hamburguesa - amvorguesa
+=========================================
+*/
+
+.btn-burguer{
+    font-size: 2em;
+    padding-top:.25em;
+    border-radius: .2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.8);
+    display: none;
+}
+
+#burguer{
+    display: none;
+}
+
+
+/*=====================================
+una atadita con alambre :$
+=======================================
+*/
+.mrhide{
+    visibility: hidden;
+}
+
+
+
+
+/*=======================================
+Media querys
+=========================================
+*/
+
+
+@media (max-width: 500px){
+
+    .home2-logo{
+        margin: unset;
+    }
+
+    .btn-burguer{
+        display: unset;
+        margin: 0 .5em;
+    }
+
+    .home2-nav{
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .home2-botonera{
+        width: 100%;
+        flex-direction:column;
+        align-items: flex-end;
+        text-align: right;
+        display: none;
+    }
+
+    .nav-boton{
+        margin:.7em 0;
+    }
+    
+    #burguer:checked + .home2-botonera{
+          display: flex;  
+    }
+
+    .home2-datepicker{
+        margin-left:.5em;
+    }
+
+}
+
+@media (max-width: 324px){
+
+    .home2-presentacion{
+        font-size: .5em;
+    }
+
+}
+
+@media (max-width: 290px){
+
+    .home2-logo{
+        display: none;
+    }
+
+}

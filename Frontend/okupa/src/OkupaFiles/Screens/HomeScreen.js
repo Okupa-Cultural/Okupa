@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 //Imagenes
 //import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
 import Fondo from './../../Images/bg2.jpg';
@@ -50,6 +51,13 @@ export default class HomeScreen extends Component {
 				<input type="date" className="datepicker" name="fecha" placeholder="we are the world" />
 
 				<input type="submit" className="banner-buscar-btn" value="Buscar"></input>
+
+				<br/>
+				<br/>
+				
+				<Link to="/homedos">
+					<input type="submit" className="banner-buscar-btn" value="HomeScreen 2"></input>
+				</Link>
 
 				<div className="toggles">
 
