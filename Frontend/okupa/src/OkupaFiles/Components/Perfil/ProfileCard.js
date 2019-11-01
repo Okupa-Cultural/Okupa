@@ -6,7 +6,7 @@ import './css/ProfileCard.css';
 
 //Componentes
 import ProfileEtiquetas from './ProfileEtiquetas';
-import ProfileSeguidores from './ProfileSeguidores';
+import ProfileEstadisticas from './ProfileEstadisticas';
 import ProfileAvatar from './ProfileAvatar';
 import ProfileBanner from './ProfileBanner';
 //
@@ -36,7 +36,7 @@ export default class ProfileCard extends Component {
                 
                 {/* Seguidores y presentaciones del usuario */ }
 
-                <ProfileSeguidores seguidores="600" presentaciones="200" seguidos="100" />
+                <ProfileEstadisticas seguidores="600" presentaciones="200" seguidos="100" />
 
                 { /* Etiquetas del Usuario */ }
                 <ProfileEtiquetas />

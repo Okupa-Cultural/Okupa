@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ProfileSeguidores extends Component {
+export default class ProfileEstadisticas extends Component {
 
     // eslint-disable-next-line
     constructor(props) {

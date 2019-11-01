@@ -10,7 +10,7 @@ import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
 //import ToggleCheckbox from './../Components/ToggleCheckbox/ToggleCheckbox'
 
 //CSS
-import './css/HomeScreen2.css';
+import './css/HomeScreen.css';
 import './css/EstilosGenerales.css';
 import "react-datepicker/dist/react-datepicker.css";
 
