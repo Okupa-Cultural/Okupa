@@ -1,62 +1,157 @@
-div, span{
-	color: black;
-}
 .perfil2{
-	background: rgba(0,0,0,.2);
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 23em 1fr;
+	grid-template-rows: 15em 1fr;
+	background: #ececeb;
+}
+
+/*===================
+MAQUETADO DE GRILLA PRINCIPAL
+*/
+
+
+.perfil2-columnaizq{
+	/*background: red;*/
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	display: grid;
+	grid-template-columns: 3em 1fr;
+	grid-template-rows: 25em 1fr;
+	z-index: 1;
+
 }
 
 .perfil2-cabecera{
-	background: rgba(255,0,0,.2);
-	width: 100%;
-	display: flex;
+	background-image: linear-gradient(to top right, #ff085a, #0877ff);
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 23em 1fr;
+	grid-gap: 1em;
 }
-	.perfil2-foto-perfil{
-		width: 30%;
-		height: 20em;
-		background: url(http://nicolasperezphotography.com/img/galerias/88/180315AM-0026-Diego-Peretti_1.jpg);
-		background-size: 100%;
-		background-position: 0 -5em;
-		background-repeat: no-repeat;
-	}
-
-.perfil2-lateral{
-	background: rgba(0,255,0,.2);
-	width: 30%;
-	display: flex;
-	flex-wrap: wrap;
-	text-align: left;
-}
-
-	.lateral-botones, .lateral-bloque{
-		width: 100%;
-	}
-
-	.lateral-botones{
-		display: flex;
-		justify-content: center;
-	}
 
 .perfil2-cuerpo{
-	background: rgba(0,0,255,.2);
-	width: 70%;
-	display: flex;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+/*===================
+CABECERA
+*/
+
+.cabecera-datosusuario{
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	max-width: 22em;
+	text-align: left;
+	margin-top: 3em;
 	flex-wrap: wrap;
+}
+
+.datosusuario-nombre{
+	font-size: 2.2em;
+	margin-left: .1em;
+}
+
+.datosusuario-estadisticas{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	margin-top: .8em;
+}
+
+.estadistica{
 	text-align: left;
 }
 
-	.cuerpo-nav{
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
+	.estadistica-cifra{
+		font-size: 1.3em;
+		font-weight: 400;
+		margin-left: .2em;
 	}
 
-	.cuerpo-nav-boton{
-		margin-right:2em;
+	.estadistica-label{
+		font-size: .8em;
+		font-weight: 100;
+		margin-left: .4em;
 	}
 
-.perfil2-pie{
-	background: rgba(200,200,0,.2);
-	width: 100%;
+.cabecera-botonera{
+	max-width: 17em;
+	margin-top: .6em;
+	display: flex;
+	justify-content: space-between;
 }
+
+.botonera-boton{
+	width: 6em;
+    padding:.6em;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border:none;
+    border-radius: 2em;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+
+/*===================
+COLUMNA IZQUIERDA
+*/
+
+.columnaizq-sombra{
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+	box-shadow: 0 0 .5em rgba(0,0,0,.6);
+}
+
+.columnaizq-fotoperfil{
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	background-image: url('http://nicolasperezphotography.com/img/galerias/88/180315AM-0026-Diego-Peretti_1.jpg');
+	background-size: 20em;
+}
+
+.columnaizq-secciones{
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	background: #fff;
+	text-align: left;
+	padding: .5em;
+}
+
+	.seccion-titulo, .seccion-caja, .enlaceexterno{
+		color: #252527;
+	}
+
+	.seccion-titulo{
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+
+	.seccion-caja{
+		border: dotted 1px rgba(37, 37, 39, .2);
+	}
+
+	.enlaceexterno{
+		height: unset;
+		margin:0;
+		padding: 0;
+		font-size: 1em;
+	}
+
+
+
+.proxevento-evento{
+	width: 100%;
+	display: flex;
+	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+}
+
+	.datos-titulo, .datos-fecha, .datos-espacio, .icono-agendar{
+		color: black;
+	}
