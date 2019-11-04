@@ -1,119 +1,259 @@
-.filtro-fondo {
-    position: fixed;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 35, .5); /* #353F7A; */
+.home{
+    background: #221C35;
+}
+
+.home-header{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 2em;
+    background-image: linear-gradient(to top right, #ff085a, #0877ff);
+    background-size: 200%;
+}
+
+/*=======================================
+Navbar - barra de navegacion (logo + botonera)
+=========================================
+*/
+
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*=======================================
+Navbar > logo - imagen - img - okupa
+=========================================
+*/
+
+
+.home-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+    .home-logo-img{
+        width: 5em;
+    }
+
+    .home-logo span{
+        margin-left: .5em;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+/*=======================================
+Navbar > Botonera - botones
+=========================================
+*/
+
+.home-botonera{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .home-botonera .nav-boton{
+        font-weight: 700;
+        padding: .5em 1em;
+        transition: all 250ms ease;
+    }
+
+    .resaltado{
+        background: rgba(34,28,53,.8);
+        border-radius: .5em;
+    }
+
+    .nav-boton:hover {
+        font-size:1.1em;
+        padding: 0 .5em;
+    }
+
+
+/*=======================================
+Presentacion
+=========================================
+*/
+
+
+.home-presentacion{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-.fondo {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-.titulo-principal{
-    margin-top: .2em;
-    color: white;
-    font-size: 5em;
-}
-
-.subtitulo {
-    color: white;
+.home-intro{
+    max-width: 12em;
     font-size: 3em;
+    text-align: left;
+}
+
+    .home-intro span{
+        font-weight: 700;
+    }
+
+
+/*=======================================
+Formulario
+=========================================
+*/
+
+.home-form-container {
+    width:100%;
+    text-align: left;
+}
+
+.home-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.home-label{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.home-label h4{
+    margin-bottom: .5em;
+    font-size: 2em;
     font-weight: 100;
 }
 
-.titulo-principal, .subtitulo{
-    text-align: center;
-}
-
-.banner {
-    max-width: 80em;
-    height: 20em;
-    margin: 2em auto;
-    background-image: linear-gradient(rgb(20,20,20), rgb(25,25,25));
-    box-shadow: 0 .5em .3em rgba(0,0,0,.5);
-}
-
-.nav-bar-search-bar {
-    margin-top: 5em;
-    width: 55em;
-    height: 3em; 
-    background-color: rgb(255,255,255);
-    border-radius: 5px;
-    color: black;
-    font-size: 1em;
-    padding-left: 15px;
+.home-label input{
+    flex-grow: 1;
+    height: 2em;
+    color: #1A1A1A;
+    padding: 1em;
     border: none;
+    border-radius: .8em;
 }
 
-.nav-bar-search-bar::placeholder {
-    color: black;
-    opacity: .5;
-    font-style: italic;
-}
-
-.banner-buscar-btn {
-    background-color: #568DE8;
+.home-btn-buscar{
+    width: 10em;
+    margin-top: .5em;
+    padding: .3em 0;
     border: none;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
-    width: 7em;
-    height: 1.5em;
-    font-size: 1.8em;
+    border-radius: .4em;
+    background: #1F1F1F;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.home-btn-buscar:hover {
     cursor: pointer;
 }
 
-.datepicker{
-    margin:1em auto;
-    display: block;
-    background-color: rgb(58,58,58);
-    border-radius: 5px;
-    border: none;
+.home-datepicker{
+    margin-left: 2em;
+}
+
+
+/*=======================================
+Burguer Menu- hamburguesa - amvorguesa
+=========================================
+*/
+
+.btn-burguer{
     font-size: 2em;
-    padding: 2px;
-    text-transform: uppercase;
-    font-weight: 100;
-    text-align: center;
-    color: rgb(255,255,255);
-    width: 9em;
-    height: 1.5em;
-}
-
-.datepicker::-webkit-calendar-picker-indicator{
-    color:rgb(45,45,45);
-    background: rgb(58,58,58);
-}
-.datepicker::-webkit-inner-spin-button{
+    padding-top:.25em;
+    border-radius: .2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.8);
     display: none;
-}   
+}
 
-@media (max-width: 500px) {
+#burguer{
+    display: none;
+}
 
-    .titulo-principal{
-        margin:0;
-        font-size:2em;;
+
+/*=====================================
+una atadita con alambre :$
+=======================================
+*/
+.mrhide{
+    visibility: hidden;
+}
+
+
+
+
+/*=======================================
+Media querys
+=========================================
+*/
+
+
+@media (max-width: 500px){
+
+    .home-logo{
+        margin: unset;
     }
 
-    .subtitulo{
-        font-size: 2em;
+    .btn-burguer{
+        display: unset;
+        margin: 0 .5em;
     }
 
-    .banner{
+    .home-nav{
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .home-botonera{
         width: 100%;
-        height: inherit;
-        padding-bottom: .5em;
+        flex-direction:column;
+        align-items: flex-end;
+        text-align: right;
+        display: none;
     }
 
-    .nav-bar-search-bar{
-        width: 75%;
-        height: 2em;
-        display: unset;   
+    .nav-boton{
+        margin:.7em 0;
     }
     
-    .datepicker{
-        width: 60%;
+    
+    #burguer:checked + .home-botonera{
+          display: flex;  
     }
- }
+
+    .home-datepicker{
+        margin-left:.5em;
+    }
+
+
+
+    .home-intro{
+        font-size: 2em;
+        margin-bottom: 0; 
+    }
+
+    .home-label h4{
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 324px){
+
+    .home-presentacion{
+        font-size: .5em;
+    }
+
+}
+
+@media (max-width: 290px){
+
+    .home-logo{
+        display: none;
+    }
+
+}

@@ -1,0 +1,27 @@
+.login-contenedor{
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+
+
+.columna2{
+	margin: 
+}
+
+.login-formulario{
+	display: flex;
+	flex-direction: column;
+}
+
+	.login-formulario label{
+		margin: 1em 0;
+	}
+
+	.login-formulario label input, .loging-formulario input{
+		color: #080808;
+	}
+
+	.login-formulario label input{
+		width: 100%;
+	}
+

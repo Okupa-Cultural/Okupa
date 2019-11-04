@@ -1,8 +1,8 @@
-.proximos-eventos{
+.proximos-p-eventos{
     display: inline-block;
 }
 
-.listado-eventos{
+.listado-p-eventos{
 	display: table;
 	width: 40em;
 	margin: auto;
@@ -13,7 +13,7 @@
 	margin-bottom:.8em;
 }
 
-.evento{
+.p-evento{
 	display: table-row;
 }
 
@@ -23,31 +23,31 @@
 	box-shadow: 0 .06em .1em rgba(255,255,255,.2);
 }
 
-.evento-info, .evento-icono{
+.p-evento-info, .p-evento-icono{
 	padding:.7em 0;
 	display: table-cell;
 	text-align: left;
 	vertical-align: middle;
 }
 
-.evento-icono{
+.p-evento-icono{
 font-size: 1.5em;
 text-shadow: 0 .07em .09em rgba(0,0,0,.3)
 }
 
-.evento-titulo, .evento-fecha, .evento-ubicacion, .evento-icono{
+.p-evento-titulo, .p-evento-fecha, .p-evento-ubicacion, .p-evento-icono{
 	color: rgb(200,200,200);
 }
 
-.evento-titulo{
+.p-evento-titulo{
 	font-size: 1.5em;
 }
 
-.evento-fecha{
+.p-evento-fecha{
 	font-size: 1em;
 }
 
-.evento-ubicacion{
+.p-evento-ubicacion{
 	font-size: .9em;
 }
 

@@ -1,33 +1,38 @@
-.evento-portada{
-	max-width: 43em;
-	height: 20em;
-	margin: auto;
-	background: url(https://dla.cdncimeco.com/uploads/2019/10/image5d9fc94e75bff.jpg);
-	background-size: 43em;
-	background-repeat: no-repeat;
-}
-
-.evento-cuerpo{
+.evento{
 	max-width: 43em;
 	margin: auto;
 	text-align: left;
 }
 
+.evento-portada{
+	max-width: 100%;
+	height: 18em;
+	margin-bottom: 1em;
+	background: url(https://images.clarin.com/2017/12/03/rkws2pZWM_1256x620.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .evento-titulo{
 	text-transform: uppercase;
 	font-size: 2em;
+	margin-bottom: 1em;
 }
 
-.evento-ubicacion{
-	margin-top: 1em;
-	text-transform: uppercase;
+.evento-direccion, .evento-fechayhora, .evento-espacio{
+	font-weight: 400;
+	font-size: 1.3em;
+	margin: .5em 0;
 }
 
-.evento-espacio{
-	font-size: 2em;
-	font-weight: 100;
+.evento-direccion i, .evento-fechayhora i, .evento-espacio i{
+	width: 1em;
+	padding-left: .5em;
+	margin-right: 1em;
 }
 
-.evento-descripcion{
-	font-weight: 100;
+@media (max-width: 500px) {
+	.evento-portada{
+		height: 10em;
+	}
 }

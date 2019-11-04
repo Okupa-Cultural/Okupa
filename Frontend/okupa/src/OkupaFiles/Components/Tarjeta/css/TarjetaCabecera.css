@@ -6,7 +6,7 @@
 
 .tarjeta-fotoperfil{
 	height: 4em;
-	width: 4em;
+	flex-basis: 4em;
 	border-radius: 4em;
 	background: url(https://img.buzzfeed.com/buzzfeed-static/static/2015-11/19/17/enhanced/webdr02/original-grid-image-23059-1447970713-6.jpg?downsize=900:*&output-format=auto&output-quality=auto);
 	background-size: 4em;
@@ -29,3 +29,8 @@
 }
 
 
+@media (max-width: 500px) {
+	.tarjeta-nombre, .tarjeta-fechayhora{
+		font-size: .8em;
+	}
+}

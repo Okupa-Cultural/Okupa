@@ -1,13 +1,12 @@
 .tarjeta-cuerpo{
-	width: 43em;
 	text-align: left;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 43em;
 }
 
 .tarjeta-imagen{
-	height: 23em;
-	background-image: url(https://sc2.elpais.com.uy/files/article_default_content/uploads/2017/09/10/59b5d5d0e150f.jpeg);
-	background-repeat: no-repeat;
-	background-size: 43em;
+	width: 100%;
 }
 
 .tarjeta-titulo{
@@ -41,4 +40,14 @@
 	background: rgba(19,205,203,.8);
 	padding: .5em;
 	margin: 0;
+}
+
+@media (max-width: 500px) {
+	.tarjeta-titulo{
+		font-size: 1em;
+	}
+
+	.info-espacioyfecha{
+		font-size: 1em;
+	}
 }

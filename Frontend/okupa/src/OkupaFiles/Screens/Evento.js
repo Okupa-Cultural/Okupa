@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import {  Link } from 'react-router-dom';
+//import {  Link } from 'react-router-dom';
 import Fondo from './../../Images/bg2.jpg';
 
 //Componentes
 import NavBar from './../Components/Navigation/NavBar';
 import CasillaComentarios from './../Components/CasillaComentarios/CasillaComentarios';
+import TarjetaPie from './../Components/Tarjeta/TarjetaPie.js';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -24,54 +25,59 @@ export default class Evento extends Component {
         };
 
       return (
-        <div className="home-screen">
+        <div>
 
+          <div style={ sectionStyle } />
 
-        <div style={ sectionStyle } />
+          <div className="filtro-fondo" />
 
-        <div className="filtro-fondo" />
+          <NavBar />
 
-        <NavBar />
+          <div className="evento">
 
-        <div className="evento-portada"></div>
-
-        <div className="evento-cuerpo">
-          <div className="evento-cabecera">
-            <div className="evento-titulo">
-              <h3>
-                Variette del Nacho con Cheddar
+            <div className="evento-cabecera">
+              <div className="evento-portada"></div>
+              <h3 className="evento-titulo">
+                Variette del nacho con cheddar
               </h3>
-            </div>
-            <div className="evento-ubicacion">
-              <Link to="/perfil">
-                <h4 className="evento-espacio">
-                  Zeugma casa cultural
-                </h4>
-              </Link>
               <div className="evento-direccion">
-                Uruguay 636, Haedo
+                <i class="fal fa-map-marker-alt"></i>
+                Uruguay 636 - HAEDO
+              </div>
+              <div className="evento-fechayhora">
+                <i class="fal fa-alarm-clock"></i>
+                21/10/2021 - 21:30hs
+              </div>
+              <div className="evento-espacio">
+                <i class="fal fa-ticket-alt"></i>
+                Zeugma Cultural
               </div>
             </div>
-            <div className="evento-horario">
-              <div className="evento-dia">Martes 21/10/2020</div>
-              <div className="evento-hora">21hs</div>
-            </div>
-          </div>
-          <p className="evento-descripcion">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. In vero, nam, ex quasi 
-            provident sed nihil culpa accusamus commodi 
-            explicabo consequatur corrupti numquam facere?
-            Animi officiis voluptas voluptatum adipisci quod.
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. In vero, nam, ex quasi 
-            provident sed nihil culpa accusamus commodi 
-            explicabo consequatur corrupti numquam facere?
-            Animi officiis voluptas voluptatum adipisci quod.
-          </p>
-        </div>
 
-        <CasillaComentarios />
+            <p className="evento-descripcion">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. 
+              Dolore, dolorem, repudiandae ex 
+              dignissimos quos animi eius 
+              voluptate autem reiciendis quia 
+              blanditiis, facere nobis. 
+              Laudantium obcaecati natus, 
+              corrupti, aliquid possimus soluta.
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. 
+              Dolore, dolorem, repudiandae ex 
+              dignissimos quos animi eius 
+              voluptate autem reiciendis quia 
+              blanditiis, facere nobis. 
+              Laudantium obcaecati natus, 
+              corrupti, aliquid possimus soluta.
+            </p>
+
+            <TarjetaPie />
+
+          </div>
+
+          <CasillaComentarios />
 
         </div>
       );

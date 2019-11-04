@@ -16,86 +16,86 @@ export default class ProfileEventos extends Component {
 
             <h3 className="seccion-titulo">Proximos eventos</h3>
 
-            	<div className="listado-eventos">
-            		<div className="evento">
-            			<div className="evento-info">
+            	<div className="listado-p-p-eventos">
+            		<div className="p-evento">
+            			<div className="p-evento-info">
                                     <Link to="/">
-                  				<div className="evento-titulo">Buenardo Varietté</div>
-                  				<div className="evento-fecha">21/10/2020</div>
+                  				<div className="p-evento-titulo">Buenardo Varietté</div>
+                  				<div className="p-evento-fecha">21/10/2020</div>
                   			</Link>
                                     <Link to="/Registro">	
-                                          <div className="evento-ubicacion">Zeugma Cultural (Haedo, Buenos Aires)</div>
+                                          <div className="p-evento-ubicacion">Zeugma Cultural (Haedo, Buenos Aires)</div>
                                     </Link>
                               </div>
-            			<div className="evento-icono">
+            			<div className="p-evento-icono">
             				<Link to="/">
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>
             			</div>
             		</div>
             		<div className="sombra"></div>
-            		<div className="evento">
-            			<div className="evento-info">
+            		<div className="p-evento">
+            			<div className="p-evento-info">
                                     <Link to="/">
-                  				<div className="evento-titulo">Fiesta de la primavera</div>
-                  				<div className="evento-fecha">25/10/2020</div>
+                  				<div className="p-evento-titulo">Fiesta de la primavera</div>
+                  				<div className="p-evento-fecha">25/10/2020</div>
             				</Link>
                                     <Link to="/Registro">
-                                          <div className="evento-ubicacion">Casa Floripondio (San Miguel, Buenos Aires)</div>
+                                          <div className="p-evento-ubicacion">Casa Floripondio (San Miguel, Buenos Aires)</div>
                                     </Link>           			   
                               </div>
-            			<div className="evento-icono">
+            			<div className="p-evento-icono">
             				<Link to="/">
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>
             			</div>
             		</div> 
             		<div className="sombra"></div>
-            		<div className="evento">
-            			<div className="evento-info">
+            		<div className="p-evento">
+            			<div className="p-evento-info">
                                     <Link to="/">
-                  				<div className="evento-titulo">"Querido fulano" en Capital!</div>
-                  				<div className="evento-fecha">01/11/2020</div>
+                  				<div className="p-evento-titulo">"Querido fulano" en Capital!</div>
+                  				<div className="p-evento-fecha">01/11/2020</div>
             				</Link>
                                     <Link to="/Registro">
-                                          <div className="evento-ubicacion">Paseo La Plaza (Balvanera, CABA)</div>
+                                          <div className="p-evento-ubicacion">Paseo La Plaza (Balvanera, CABA)</div>
                                     </Link>
                               </div>
-            			<div className="evento-icono">
+            			<div className="p-evento-icono">
             				<Link to="/">
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>
             			</div>
             		</div>
             		<div className="sombra"></div>
-            		<div className="evento">
-            			<div className="evento-info">
+            		<div className="p-evento">
+            			<div className="p-evento-info">
                                     <Link to="/">
-                  				<div className="evento-titulo">Batalla de las bandas - Edición Oeste</div>
-                  				<div className="evento-fecha">14/11/2020</div>
+                  				<div className="p-evento-titulo">Batalla de las bandas - Edición Oeste</div>
+                  				<div className="p-evento-fecha">14/11/2020</div>
             				</Link>
                                     <Link to="/Registro">
-                                          <div className="evento-ubicacion">Auditorio Oeste (Haedo, Buenos Aires)</div>
+                                          <div className="p-evento-ubicacion">Auditorio Oeste (Haedo, Buenos Aires)</div>
                                     </Link>
                               </div>
-            			<div className="evento-icono">
+            			<div className="p-evento-icono">
             				<Link to="/">
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>
             			</div>
             		</div>
             		<div className="sombra"></div>
-            		<div className="evento">
-            			<div className="evento-info">
+            		<div className="p-evento">
+            			<div className="p-evento-info">
                                     <Link to="/">
-                  				<div className="evento-titulo">Verano sin vicky</div>
-                  				<div className="evento-fecha">01/01/2021</div>
+                  				<div className="p-evento-titulo">Verano sin vicky</div>
+                  				<div className="p-evento-fecha">01/01/2021</div>
             				</Link>
                                     <Link to="/Registro">
-                                          <div className="evento-ubicacion">Los Padrino Mágicos (Massachussets, EEUU)</div>
+                                          <div className="p-evento-ubicacion">Los Padrino Mágicos (Massachussets, EEUU)</div>
                                     </Link>
                               </div>
-            			<div className="evento-icono">
+            			<div className="p-evento-icono">
             				<Link to="/">
             					<i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             				</Link>

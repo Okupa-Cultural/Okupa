@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //Componentes
 import TarjetaCabecera from './TarjetaCabecera';
@@ -18,7 +18,9 @@ export default class Tarjeta extends Component {
         return (
         <div className="tarjeta">
 
-            <TarjetaCabecera />
+        	<Link to="/perfil">
+        		<TarjetaCabecera />
+        	</Link>
                 
             <TarjetaCuerpo />
 

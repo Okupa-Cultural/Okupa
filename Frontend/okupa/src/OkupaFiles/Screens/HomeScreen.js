@@ -1,71 +1,105 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+import DatePicker from "react-datepicker";
+
 //Imagenes
-//import Logo from './../../Images/Logo/okupa-logo-colorYtitulo-transparente.png';
-import Fondo from './../../Images/bg2.jpg';
-///////
-//Components
-import NavBar from './../Components/Navigation/NavBar';
-//////
+import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
+
+//Componentes
+//import NavBar from './../Components/Navigation/NavBar';
+//import ToggleCheckbox from './../Components/ToggleCheckbox/ToggleCheckbox'
+
+//CSS
 import './css/HomeScreen.css';
 import './css/EstilosGenerales.css';
+import "react-datepicker/dist/react-datepicker.css";
 
 export default class HomeScreen extends Component {
+
+	state = {
+    startDate: new Date()
+  };
+ 
+  handleChange = date => {
+    this.setState({
+      startDate: date
+    });
+  };
   
   render() {
 
-    //var urlFondo = "https://www.hendersonparkinn.com/wp-content/uploads/2018/02/A-breathtaking-sunset-over-a-beach-in-Destin-FL.jpg";
-
-    var sectionStyle = {
-      zIndex: -10,
-      position: 'fixed',
-      width: "100%",
-      height: "100%",
-      backgroundImage: "url(" + Fondo + ")"
-    };  
-
     return (
       
-      <div className="home-screen">
+    <div className="home">
 
-          <div style={ sectionStyle } alt="okupa"/>
+    	<header className="home-header">
 
-          <div className="filtro-fondo" />
+    		<div className="home-nav">
 
-          <NavBar showSearchBar={false}/>
+	    		<div className="home-logo">
+	    			<img src={logo} alt="Okupa Logo" className="home-logo-img" />
+	    			<span>OKUPA</span>
+	    		</div>
 
-          <div className="contenedor">
+				<label htmlFor="burguer" className="btn-burguer">
+					<i class="fas fa-bars"></i>
+				</label>
+				<input type="checkbox" id="burguer" />
 
-            <header className="home-cabecera">
+	    		<nav className="home-botonera">
+	    			<Link to="/homedos">
+	    				<div className="nav-boton">HOME</div>
+	    			</Link>
+	    			<Link to="/homedos">
+	    				<div className="nav-boton">CARACTERÍSTICAS</div>
+	    			</Link>
+	    			<Link to="/homedos">
+	    				<div className="nav-boton">QUIÉNES SOMOS</div>
+	    			</Link>
+	    			<Link to="/homedos">
+	    				<div className="nav-boton">CONTACTO</div>
+	    			</Link>
+	    			<Link to="/homedos">
+	    				<div className="nav-boton">REGÍSTRATE</div>
+	    			</Link>
+	    			<Link to="/homedos">
+	    				<div className="nav-boton resaltado">LOGIN</div>
+	    			</Link>
+	    		</nav>
 
-              <h1 className="titulo-principal"> ¿Buscas un evento?</h1>
-              <h2 className="subtitulo">¡Okúpate!</h2>
+    		</div>
 
-            </header>
+    		<div className="home-presentacion">
 
-            <form className="banner">
+				<p className="home-intro">
+					Una nueva forma de <span>difundir&nbsp;</span>y <span>conectar&nbsp;</span>
+					con el arte independiente
+				</p>
+				<form className="home-form-container">
+					<div className="home-form">
+						<label className="home-label">
+							<h4>Buscar eventos por su nombre</h4>
+							<input type="text" className="home-searchbar" name="busqueda" autocomplete="off" placeholder="Busca un evento por su nombre..."/>
+						</label>
+						<label className="home-label">
+							<h4>o por su fecha</h4>
+							<DatePicker 
+							className="home-datepicker"
+							selected={this.state.startDate}
+							onChange={this.handleChange}
+							/>
+						</label>
 
-              <input type="text" className="nav-bar-search-bar" name="busqueda" autocomplete="off" placeholder="Ingrese nombre del evento..."/>
-              <input type="date" className="datepicker" name="fecha" placeholder="we are the world" />
+						
 
-              <input type="submit" className="banner-buscar-btn" value="Buscar"></input>
+					</div>
+					<input type="submit" className="home-btn-buscar" value="Buscar" />
+				</form>
+    		</div>
 
-            </form>
+    	</header>
 
-          </div>
-
-          {/*<div className="contenedor">
-            <header className="cabecera">
-              <h1 className="titulo-principal">¿Buscas un eventolalala?</h1>
-              <h2 className="subtitulo">¡Okúpate!</h2>
-            </header>
-            
-            <div className="banner">
-              <input type="text" className="nav-bar-search-bar" placeholder="Ingrese nombre del evento..."></input>
-              <input type="date" className="datepicker" placeholder="elige una fecha"></input>
-            </div>
-          </div>
-        */}
-      </div>
+    </div>
     );
   }
 }
