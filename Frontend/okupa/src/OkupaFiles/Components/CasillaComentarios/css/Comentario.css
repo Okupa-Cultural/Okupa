@@ -1,5 +1,7 @@
 .comentario-contenedor{
 	max-width: 43em;
+	background-color: #24292E;
+	padding: 10px;
 	margin:auto;
 }
 

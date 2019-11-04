@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //CSS
 import './css/TarjetaCabecera.css';
-import ProfileEtiquetas from './../Perfil/ProfileEtiquetas';
+//import ProfileEtiquetas from './../Perfil/ProfileEtiquetas';
 
 export default class TarjetaCabecera extends Component {
 

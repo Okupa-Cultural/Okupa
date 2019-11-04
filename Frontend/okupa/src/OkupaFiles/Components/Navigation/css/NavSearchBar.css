@@ -15,6 +15,12 @@
     background-color: #3F4448;
 
 }
+
+@media (max-width: 1250) {
+    .nav-bar-search-bar2 {
+        flex: 2;
+    }
+}
 /*
 .nav-bar-search-list {
     position: absolute;
