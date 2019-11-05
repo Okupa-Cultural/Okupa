@@ -55,7 +55,7 @@ ul{
 
 /*Spotify*/
 .fa-spotify{
-	background: -webkit-linear-gradient(0.2turn, #1ED761, #353535);
+	background: -webkit-linear-gradient(1turn, #1ED761, #36e374);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding: .05em 0 0 0;

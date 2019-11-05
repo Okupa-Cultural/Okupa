@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 //Imagenes
 //import Fondo from './../../Images/bg2.jpg';
 ///////
@@ -29,10 +29,11 @@ render() {
       <header className="perfil2-cabecera">
 
         <div className="cabecera-datosusuario">
+
           <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
           
           <ProfileEtiquetas />
-          
+
           <div className="datosusuario-estadisticas">
             <seccion className="estadistica">
               <div className="estadistica-cifra">650</div>
@@ -51,13 +52,16 @@ render() {
           <div className="cabecera-botonera">
             <input type="sumbit" className="botonera-boton" value="Seguir"/>
             <input type="sumbit" className="botonera-boton" value="Invitar"/>
-          </div>
-
+          </div> 
+            
         </div>
       </header>
+
       <aside className="perfil2-columnaizq">
         <div className="columnaizq-sombra"></div>
+
         <div className="columnaizq-fotoperfil"></div>
+
         <div className="columnaizq-secciones">
           <seccion className="seccion">
             <h4 className="seccion-titulo">
@@ -88,16 +92,36 @@ render() {
             </h4>
             <div className="seccion-caja">
               <ul>
-                <li className="enlaceexterno">Enlace externo 1</li>
-                <li className="enlaceexterno">Enlace externo 2</li>
-                <li className="enlaceexterno">Enlace externo 3</li>
-                <li className="enlaceexterno">Enlace externo 4</li>
-                <li className="enlaceexterno">Enlace externo 5</li>
-                <li className="enlaceexterno">Enlace externo 6</li>
-                <li className="enlaceexterno">Enlace externo 7</li>
-                <li className="enlaceexterno">Enlace externo 8</li>
-                <li className="enlaceexterno">Enlace externo 9</li>
-                <li className="enlaceexterno">Enlace externo 10</li>
+                <li className="enlaceexterno">
+                  <Link to="/perfil2">
+                    <i className="fab fa-facebook-square"></i>
+                    Facebook
+                  </Link>
+                </li>
+                <li className="enlaceexterno">
+                  <Link to="/perfil2">
+                    <i className="fab fa-twitter-square"></i>
+                    Twitter
+                  </Link>
+                </li>
+                <li className="enlaceexterno">
+                  <Link to="/perfil2">
+                    <i className="fab fa-instagram"></i>
+                    Instagram
+                  </Link>
+                </li>
+                <li className="enlaceexterno">
+                  <Link to="/perfil2">
+                    <i className="fab fa-spotify"></i>
+                    Spotify
+                  </Link>
+                </li>
+                <li className="enlaceexterno">
+                  <Link to="/perfil2">
+                    <i className="fab fa-soundcloud"></i>
+                    Soundcloud
+                  </Link>
+                </li>
               </ul>
             </div>
           </seccion>
@@ -105,9 +129,24 @@ render() {
       </aside>
       <main className="box perfil2-cuerpo">
 
-        <seccion className="cuerpo-proxevento">
+        <seccion className="cuerpo-galeria">
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+          <div className="galeria-elemento"></div>
+        </seccion>
 
-          <div className="proxevento-evento">
+        <seccion className="cuerpo-proxeventos">
+          <h3 className="seccion-titulo proxeventos">Proximos eventos</h3>
+          <div className="proxeventos-evento">
             <div className="evento-datos">
               <div className="datos-titulo">Variette del nacho con cheddar</div>
               <div className="datos-fecha">25/10/2021</div>
@@ -117,7 +156,7 @@ render() {
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             </div>
           </div>
-          <div className="proxevento-evento">
+          <div className="proxeventos-evento">
             <div className="evento-datos">
               <div className="datos-titulo">Variette del nacho con cheddar</div>
               <div className="datos-fecha">25/10/2021</div>
@@ -127,7 +166,7 @@ render() {
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             </div>
           </div>
-          <div className="proxevento-evento">
+          <div className="proxeventos-evento">
             <div className="evento-datos">
               <div className="datos-titulo">Variette del nacho con cheddar</div>
               <div className="datos-fecha">25/10/2021</div>
@@ -137,7 +176,7 @@ render() {
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
             </div>
           </div>
-          <div className="proxevento-evento">
+          <div className="proxeventos-evento">
             <div className="evento-datos">
               <div className="datos-titulo">Variette del nacho con cheddar</div>
               <div className="datos-fecha">25/10/2021</div>

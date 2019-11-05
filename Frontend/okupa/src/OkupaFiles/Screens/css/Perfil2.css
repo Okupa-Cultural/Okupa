@@ -16,7 +16,7 @@ MAQUETADO DE GRILLA PRINCIPAL
 	grid-row: 1 / 3;
 	display: grid;
 	grid-template-columns: 3em 1fr;
-	grid-template-rows: 25em 1fr;
+	grid-template-rows: 2em 30em 1fr;
 	z-index: 1;
 
 }
@@ -27,7 +27,8 @@ MAQUETADO DE GRILLA PRINCIPAL
 	grid-row: 1 / 2;
 	display: grid;
 	grid-template-columns: 23em 1fr;
-	grid-gap: 1em;
+	grid-gap: 2em;
+	box-shadow: inset 0 -5em 5em rgba(0,0,0,.2);
 }
 
 .perfil2-cuerpo{
@@ -42,19 +43,21 @@ CABECERA
 .cabecera-datosusuario{
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	max-width: 22em;
+	margin-bottom: 1em;
 	text-align: left;
-	margin-top: 3em;
-	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .datosusuario-nombre{
-	font-size: 2.2em;
+	font-size: 2.3em;
 	margin-left: .1em;
+	font-weight: 100;
 }
 
 .datosusuario-estadisticas{
-	width: 100%;
+	width: 16em;
 	display: flex;
 	justify-content: space-between;
 	text-align: left;
@@ -66,8 +69,8 @@ CABECERA
 }
 
 	.estadistica-cifra{
-		font-size: 1.3em;
-		font-weight: 400;
+		font-size: 1.5em;
+		font-weight: 100;
 		margin-left: .2em;
 	}
 
@@ -78,24 +81,29 @@ CABECERA
 	}
 
 .cabecera-botonera{
-	max-width: 17em;
-	margin-top: .6em;
+	max-width: 21em;
 	display: flex;
 	justify-content: space-between;
 }
 
 .botonera-boton{
-	width: 6em;
-    padding:.6em;
+	height: 1.8em;
+    margin-top: .8em;
+    /*background: white;*/
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border:none;
     border-radius: 2em;
-    color: white;
-    font-size: 1em;
+    color: #3c175f;
+    font-size: .9em;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .15em;
+    box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+}
+
+.botonera-boton:hover{
+	cursor: pointer;
 }
 
 
@@ -103,55 +111,117 @@ CABECERA
 COLUMNA IZQUIERDA
 */
 
-.columnaizq-sombra{
+/*.columnaizq-sombra{
 	grid-column: 2 / 3;
-	grid-row: 1 / 3;
-	box-shadow: 0 0 .5em rgba(0,0,0,.6);
-}
+	grid-row: 2 / 4;
+	box-shadow: 0 0 1em rgba(0,0,0,.1);
+}*/
 
 .columnaizq-fotoperfil{
 	grid-column: 2 / 3;
-	grid-row: 1 / 2;
+	grid-row: 2 / 3;
 	background-image: url('http://nicolasperezphotography.com/img/galerias/88/180315AM-0026-Diego-Peretti_1.jpg');
 	background-size: 20em;
 }
 
 .columnaizq-secciones{
 	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	background: #fff;
+	grid-row: 3 / 4;
 	text-align: left;
-	padding: .5em;
 }
 
 	.seccion-titulo, .seccion-caja, .enlaceexterno{
-		color: #252527;
+		color: #3f3245;
+	}
+
+	.seccion-caja, .enlaceexterno{
+		background: #fff;
+		padding: 1em;
 	}
 
 	.seccion-titulo{
-		font-size: 1.5em;
-		font-weight: 400;
+		font-size: 1em;
+		font-weight: 100;
+		padding: .5em 1em;
+		background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
+		color: #fff;
 	}
 
-	.seccion-caja{
-		border: dotted 1px rgba(37, 37, 39, .2);
+	.columnaizq-fotoperfil, .seccion-caja{
+		margin-bottom: 1em;
+		box-shadow: 0 .1em .3em rgba(0,0,0,.3);
 	}
 
 	.enlaceexterno{
 		height: unset;
-		margin:0;
+		margin:0 0 .1em 0;
 		padding: 0;
-		font-size: 1em;
+		font-size: 1.2em;
+		font-family: Roboto, sans-serif;
 	}
+		.enlaceexterno i{
+			margin-right: .5em;
+			font-size: 1.5em;
+		}
 
 
 
-.proxevento-evento{
-	width: 100%;
+/*===================
+CUERPO
+*/
+
+.cuerpo-galeria{
 	display: flex;
-	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	margin-top: .5em;
 }
 
-	.datos-titulo, .datos-fecha, .datos-espacio, .icono-agendar{
-		color: black;
-	}
+.galeria-elemento{
+	height: 13em;
+	width: 13em;
+	margin: .5em;
+	background-image: linear-gradient(#3c175f, #ae1639);
+	box-shadow: 0 .1em .2em rgba(0,0,0,.2);
+}
+
+.proxeventos{
+	margin:2em 0 0 1em;
+}
+
+.cuerpo-proxeventos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.proxeventos-evento{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+	background: #fff;
+	text-align: left;
+	box-shadow: 0 .1em .15em rgba(0,0,0,.2);
+}
+
+.icono-agendar{
+	margin-right: 1em;
+	font-size: 2em;
+	color: #3F3F3F;
+}
+
+.datos-titulo, .datos-fecha, .datos-espacio{
+	color: #3f3245;
+}
+
+.datos-titulo{
+	font-size: 1.5em;
+}
+
+.datos-fecha{
+	font-size: 2em;
+	font-weight: 100;
+}
