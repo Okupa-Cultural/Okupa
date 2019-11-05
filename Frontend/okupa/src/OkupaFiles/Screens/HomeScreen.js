@@ -62,7 +62,7 @@ export default class HomeScreen extends Component {
 	    			<Link to="/homedos">
 	    				<div className="nav-boton">REGÍSTRATE</div>
 	    			</Link>
-	    			<Link to="/homedos">
+	    			<Link to="/perfil2">
 	    				<div className="nav-boton resaltado">LOGIN</div>
 	    			</Link>
 	    		</nav>

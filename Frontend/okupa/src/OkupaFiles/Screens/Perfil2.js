@@ -28,6 +28,8 @@ render() {
       
       <header className="perfil2-cabecera">
 
+        <div className="fotoperfil-movile"></div>
+
         <div className="cabecera-datosusuario">
 
           <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
@@ -50,8 +52,17 @@ render() {
           </div>
 
           <div className="cabecera-botonera">
-            <input type="sumbit" className="botonera-boton" value="Seguir"/>
-            <input type="sumbit" className="botonera-boton" value="Invitar"/>
+            <button>
+              <div className="botonera-boton">
+                Seguir
+              </div>
+            </button>
+
+            <button>
+              <div className="botonera-boton">
+                Invitar
+              </div>
+            </button>
           </div> 
             
         </div>
@@ -152,9 +163,9 @@ render() {
               <div className="datos-fecha">25/10/2021</div>
               <div className="datos-espacio">Zeugma Cultural, Haedo</div>
             </div>
-            <div className="icono-agendar">
+            <button className="icono-agendar">
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
-            </div>
+            </button>
           </div>
           <div className="proxeventos-evento">
             <div className="evento-datos">
@@ -162,9 +173,9 @@ render() {
               <div className="datos-fecha">25/10/2021</div>
               <div className="datos-espacio">Zeugma Cultural, Haedo</div>
             </div>
-            <div className="icono-agendar">
+            <button className="icono-agendar">
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
-            </div>
+            </button>
           </div>
           <div className="proxeventos-evento">
             <div className="evento-datos">
@@ -172,9 +183,9 @@ render() {
               <div className="datos-fecha">25/10/2021</div>
               <div className="datos-espacio">Zeugma Cultural, Haedo</div>
             </div>
-            <div className="icono-agendar">
+            <button className="icono-agendar">
               <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
-            </div>
+            </button>
           </div>
           <div className="proxeventos-evento">
             <div className="evento-datos">
@@ -182,9 +193,9 @@ render() {
               <div className="datos-fecha">25/10/2021</div>
               <div className="datos-espacio">Zeugma Cultural, Haedo</div>
             </div>
-            <div className="icono-agendar">
-              <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
-            </div>
+            <button className="icono-agendar">
+                <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
+            </button>
           </div>
 
         </seccion>

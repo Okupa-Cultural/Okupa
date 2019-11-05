@@ -6,6 +6,25 @@ body, div, li, span, p, input{
 	color: rgb(255,255,255);
 }
 
+button{
+	width: inherit;
+	height: inherit;
+	margin:0;
+	padding:0;
+	background: none;
+	border: none;
+}
+
+	
+
+	button:active div{
+		box-shadow: inset 0 -100em 100em rgba(255,255,255,.3);
+	}
+
+	button:active i{
+		text-shadow: inset 0 0 0 rgba(255,255,255,1);
+	}
+
 html, body, .homescreen {
     overflow-x: hidden;
 }
@@ -17,7 +36,7 @@ a{
 	margin: 0;
 }
 
-input{
+input, button{
     outline: none !important;
 }
 
@@ -78,7 +97,7 @@ ul{
 	/*Para remover el cuadro azul al tocar 
 	un link en Chrome pero solo lo tengan 
 	los elementos con la clase "boton"*/
-	a, div{
+	a, div, button, input{
 		-webkit-tap-highlight-color:rgba(255,255,255,0);
 		-moz-tap-highlight-color:rgba(255,255,255,0);
 	}

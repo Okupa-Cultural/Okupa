@@ -185,6 +185,13 @@ las primeras 5 etiquetas
     }
 }
 
+@media (max-width: 640px){
+    .etiqueta, .etiqueta-puntos-suspensivos{
+        font-size: .65em;
+        padding-bottom: .65em;
+    }
+}
+
 @media (max-width: 558px) {
     .etiqueta, .etiqueta-puntos-suspensivos{
         padding: .55em 1em;
