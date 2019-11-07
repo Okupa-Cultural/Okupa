@@ -1,0 +1,64 @@
+.lista-etiquetas{
+    margin-top: .5em;
+}
+
+.etiqueta, .etiqueta-puntos-suspensivos{
+    width: inherit;
+    height: 1em;
+    margin:0 .25em;
+    padding: .55em 1em;
+    display: inline-block;
+    background:linear-gradient(0.25turn, #FAAD70, #EB6B85);
+    font-size: .7em;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 1em;
+    box-shadow: .1em .1em .3em rgba(0,0,0,0.3);
+}
+
+
+/*Esto es para que solo despliegue
+las primeras 5 etiquetas
+(cinco incluyendo la de puntos suspendivos)
+================================================
+*/
+.etiqueta:nth-child(n+4){
+        display: none;
+}
+.etiqueta-puntos-suspensivos{
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+}
+
+
+@media (max-width: 687px) {
+    .etiqueta, .etiqueta-puntos-suspensivos{
+        padding: .55em 1em;
+        font-size: .7em;
+        box-shadow: .1em .1em .3em rgba(0,0,0,0.6);
+    }
+}
+
+@media (max-width: 640px){
+    .etiqueta, .etiqueta-puntos-suspensivos{
+        font-size: .65em;
+        padding-bottom: .65em;
+    }
+}
+
+@media (max-width: 558px) {
+    .etiqueta, .etiqueta-puntos-suspensivos{
+        padding: .55em 1em;
+        font-size: .55em;
+        box-shadow: .1em .1em .3em rgba(0,0,0,0.6);
+    }
+}
+
+@media (max-width: 500px) {
+    .lista-etiquetas{
+        margin:unset;
+    }
+}

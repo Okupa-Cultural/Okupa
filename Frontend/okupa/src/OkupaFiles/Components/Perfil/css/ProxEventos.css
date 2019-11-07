@@ -1,0 +1,44 @@
+.proxeventos{
+	margin:2em 0 0 1em;
+}
+
+.cuerpo-proxeventos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.proxeventos-evento{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+	background: #fff;
+	text-align: left;
+	box-shadow: 0 .1em .15em rgba(0,0,0,.2);
+}
+
+.btn-icono-contenedor{
+	max-width: 1em;
+	max-height: 1em;
+}
+
+.icono-agendar{
+	max-width: 1em;
+	font-size: 2em;
+	color: #3F3F3F;
+}
+
+.datos-titulo, .datos-fecha, .datos-espacio{
+	color: #3f3245;
+}
+
+.datos-titulo{
+	font-size: 1.5em;
+}
+
+.datos-fecha{
+	font-size: 2em;
+	font-weight: 100;
+}

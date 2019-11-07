@@ -1,57 +1,56 @@
 import React, { Component } from 'react';
-//Imagenes
-import Fondo from './../../Images/bg2.jpg';
-///////
-//Components
-import NavBar from './../Components/Navigation/NavBar';
-import ProfileCard from './../Components/Perfil/ProfileCard';
-import ProfileDescripcion from './../Components/Perfil/ProfileDescripcion';
-import ProfileGaleria from './../Components/Perfil/ProfileGaleria';
-import ProfileEventos from './../Components/Perfil/ProfileEventos';
-import ProfileEnlaces from './../Components/Perfil/ProfileEnlaces';
 
-//////
+//Imagenes
+
+//Components
+import PerfilEtiquetas from './../Components/Perfil/PerfilEtiquetas'
+import PerfilBotonera from './../Components/Perfil/PerfilBotonera'
+import Estadisticas from './../Components/Perfil/Estadisticas'
+import Bio from './../Components/Perfil/Bio'
+import FechaDeFormacion from './../Components/Perfil/FechaDeFormacion';
+import EnlacesExternos from './../Components/Perfil/EnlacesExternos';
+import Galeria from './../Components/Perfil/Galeria'
+import ProxEventos from './../Components/Perfil/ProxEventos'
+
 //CSS
 import './css/EstilosGenerales.css';
+import './css/Perfil.css';
 
 export default class Perfil extends Component {
   
-  render() {
+render() {
 
-    var sectionStyle = {
-      zIndex: -10,
-      position: 'fixed',
-      width: "100vw",
-      height: "100vh",
-      backgroundImage: "url(" + Fondo + ")",
-      overflowX: "hidden"
-    }; 
+  return (
 
-    return (
+    <div className="perfil">
+      
+      <header className="perfil-cabecera">
 
-      <div className="home-screen">
+        <div className="fotoperfil-movile"></div>
 
-            <div style={ sectionStyle } />
+        <div className="cabecera-datosusuario">
+          <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
+          <PerfilEtiquetas />
+          <Estadisticas />
+          <PerfilBotonera /> 
+        </div>
+      </header>
 
-            <div className="filtro-fondo" />
+      <aside className="perfil-columnaizq">
+        <div className="columnaizq-fotoperfil"></div>
+        <div className="columnaizq-secciones">
+          <FechaDeFormacion />
+          <Bio />
+          <EnlacesExternos />
+        </div>
+      </aside>
 
-            <div className="ocultar-en-moviles">
+      <main className="box perfil-cuerpo">
+        <Galeria />
+        <ProxEventos />
+      </main>
 
-                <NavBar showSearchBar ={true}/>
-
-            </div>
-
-            <ProfileCard presentaciones="250" seguidores="600" seguidos="100"/>
-            
-            <ProfileDescripcion />
-
-            <ProfileGaleria />
-
-            <ProfileEventos />
-
-            <ProfileEnlaces />
-
-      </div>
-    );
-  }
+    </div>
+  );
+}
 }

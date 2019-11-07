@@ -38,7 +38,7 @@ export default class NavBar extends Component {
                         <Link className="boton-navbar" to="/login">
                             <input type="submit" className="boton-registro" value="Iniciar Sesión"/>
                         </Link>
-                        <Link className="boton-navbar" to="/homedos">
+                        <Link className="boton-navbar" to="/">
                             <input type="submit" className="boton-registro" value="HomeScreen 2"/>
                         </Link>
                     </div>

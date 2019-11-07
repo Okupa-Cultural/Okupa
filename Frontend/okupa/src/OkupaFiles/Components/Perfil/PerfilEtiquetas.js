@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
-export default class ProfileEtiquetas extends Component {
+//CSS
+import './css/PerfilEtiquetas.css'
+
+export default class PerfilEtiquetas extends Component {
 
     render() {
         return(

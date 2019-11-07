@@ -6,7 +6,6 @@ import HomeScreen from './OkupaFiles/Screens/HomeScreen';
 import Login from './OkupaFiles/Screens/Login';
 import Registro from './OkupaFiles/Screens/Registro';
 import Perfil from './OkupaFiles/Screens/Perfil';
-import Perfil2 from './OkupaFiles/Screens/Perfil2';
 import Evento from './OkupaFiles/Screens/Evento';
 import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
@@ -22,7 +21,6 @@ function App() {
           <Route path="/login" component={Login}/>
           <Route path="/registro" component={Registro}/>
           <Route path="/perfil" component={Perfil}/>
-          <Route path="/perfil2" component={Perfil2}/>
           <Route path="/soporte" component={Mantenimiento}/>
           <Route path="/evento" component={Evento}/>
           <Route path="/feed" component={Feed}/>

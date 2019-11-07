@@ -47,22 +47,22 @@ export default class HomeScreen extends Component {
 				<input type="checkbox" id="burguer" />
 
 	    		<nav className="home-botonera">
-	    			<Link to="/homedos">
+	    			<Link to="/">
 	    				<div className="nav-boton">HOME</div>
 	    			</Link>
-	    			<Link to="/homedos">
+	    			<Link to="/">
 	    				<div className="nav-boton">CARACTERÍSTICAS</div>
 	    			</Link>
-	    			<Link to="/homedos">
+	    			<Link to="/evento">
 	    				<div className="nav-boton">QUIÉNES SOMOS</div>
 	    			</Link>
-	    			<Link to="/homedos">
+	    			<Link to="/feed">
 	    				<div className="nav-boton">CONTACTO</div>
 	    			</Link>
-	    			<Link to="/homedos">
+	    			<Link to="/registro">
 	    				<div className="nav-boton">REGÍSTRATE</div>
 	    			</Link>
-	    			<Link to="/perfil2">
+	    			<Link to="/perfil">
 	    				<div className="nav-boton resaltado">LOGIN</div>
 	    			</Link>
 	    		</nav>
