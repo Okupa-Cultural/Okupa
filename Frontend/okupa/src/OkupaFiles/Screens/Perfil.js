@@ -8,6 +8,7 @@ import PerfilBotonera from './../Components/Perfil/PerfilBotonera'
 import Estadisticas from './../Components/Perfil/Estadisticas'
 import Bio from './../Components/Perfil/Bio'
 import FechaDeFormacion from './../Components/Perfil/FechaDeFormacion';
+import NavBar from './../Components/Navigation/NavBar';
 import EnlacesExternos from './../Components/Perfil/EnlacesExternos';
 import Galeria from './../Components/Perfil/Galeria'
 import ProxEventos from './../Components/Perfil/ProxEventos'
@@ -23,6 +24,8 @@ render() {
   return (
 
     <div className="perfil">
+
+      <NavBar showSearchBar={true}/>
       
       <header className="perfil-cabecera">
 
