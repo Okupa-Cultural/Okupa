@@ -12,7 +12,7 @@ export default class Galeria extends Component {
 
     render() {
         return(
-            <seccion className="cuerpo-galeria">
+            <section className="cuerpo-galeria">
                 <div className="galeria-elemento"></div>
                 <div className="galeria-elemento"></div>
                 <div className="galeria-elemento"></div>
@@ -25,7 +25,7 @@ export default class Galeria extends Component {
                 <div className="galeria-elemento"></div>
                 <div className="galeria-elemento"></div>
                 <div className="galeria-elemento"></div>
-            </seccion>
+            </section>
                  
         );
     }

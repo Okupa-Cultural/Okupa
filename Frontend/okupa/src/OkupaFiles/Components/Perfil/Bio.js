@@ -7,7 +7,7 @@ export default class Bio extends Component {
 
     render() {
         return(
-            <seccion className="seccion">
+            <section className="seccion">
                 <h4 className="seccion-titulo">
                 Bio
                 </h4>
@@ -21,7 +21,7 @@ export default class Bio extends Component {
                 dolor consequuntur praesentium
                 neque nihil nesciunt quibusdam.
                 </div>
-            </seccion>
+            </section>
         );
     }
 }

@@ -1,0 +1,13 @@
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: .5em;
+    margin: .5em;
+}
+
+.main-nav input{
+    color: black;
+    border: 0;
+
+}

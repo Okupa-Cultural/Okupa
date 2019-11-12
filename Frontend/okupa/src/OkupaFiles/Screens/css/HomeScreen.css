@@ -67,9 +67,9 @@ Navbar > Botonera - botones
         border-radius: .5em;
     }
 
-    .nav-boton:hover {
+    .home-botonera a:hover .nav-boton {
         font-size:1.1em;
-        padding: 0 .5em;
+        padding: 0 .9em;
     }
 
 

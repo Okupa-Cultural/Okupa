@@ -8,7 +8,7 @@ export default class EnlacesExternos extends Component {
 
     render() {
         return(
-            <seccion className="seccion">
+            <section className="seccion">
                 <h4 className="seccion-titulo">
                 Enlaces externos
                 </h4>
@@ -46,7 +46,7 @@ export default class EnlacesExternos extends Component {
                         </li>
                     </ul>
                 </div>
-            </seccion>
+            </section>
         );
     }
 }
