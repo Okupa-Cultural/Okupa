@@ -7,7 +7,7 @@ export default class ProxEventos extends Component {
 
     render() {
         return(
-            <seccion className="cuerpo-proxeventos">
+            <section className="cuerpo-proxeventos">
                 <h3 className="seccion-titulo proxeventos">Proximos eventos</h3>
                 <div className="proxeventos-evento">
                     <div className="evento-datos">
@@ -16,7 +16,7 @@ export default class ProxEventos extends Component {
                         <div className="datos-espacio">Zeugma Cultural, Haedo</div>
                     </div>
                     <button className="icono-agendar">
-                        <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
+                        <i className="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
                     </button>
                 </div>
                 <div className="proxeventos-evento">
@@ -26,7 +26,7 @@ export default class ProxEventos extends Component {
                         <div className="datos-espacio">Zeugma Cultural, Haedo</div>
                     </div>
                     <button className="icono-agendar">
-                        <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
+                        <i className="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
                     </button>
                 </div>
                 <div className="proxeventos-evento">
@@ -36,7 +36,7 @@ export default class ProxEventos extends Component {
                         <div className="datos-espacio">Zeugma Cultural, Haedo</div>
                     </div>
                     <button className="icono-agendar">
-                        <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
+                        <i className="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
                     </button>
                 </div>
                 <div className="proxeventos-evento">
@@ -46,11 +46,11 @@ export default class ProxEventos extends Component {
                         <div className="datos-espacio">Zeugma Cultural, Haedo</div>
                     </div>
                     <button className="icono-agendar">
-                        <i class="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
+                        <i className="fa fa-calendar" aria-hidden="true" title="Agendar"></i>
                     </button>
                 </div>
 
-            </seccion>
+            </section>
         );
     }
 }
