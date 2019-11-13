@@ -1,13 +1,25 @@
 .main-nav{
     display: flex;
-    justify-content: space-between;
-    background: white;
-    padding: .5em;
-    margin: .5em;
+    justify-content: flex-start;
+ 
 }
 
-.main-nav input{
-    color: black;
-    border: 0;
+.main-nav-boton{
+	color:#3f3245;
+	font-size: 1em;
+	padding: .5em;
+	border:0;
+	border-radius: .25em;
+	margin-right: .5em;
+	-moz-font-weight:100;
+	text-align: left;
+	transition: 250ms ease;
+	background-size:0;
+}
 
+.main-nav-boton:focus, .main-nav-boton::after{
+	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
+	background-size: 100%;
+	color: white;
+	box-shadow: 0 2px .1em rgba(0,0,0,.3);
 }

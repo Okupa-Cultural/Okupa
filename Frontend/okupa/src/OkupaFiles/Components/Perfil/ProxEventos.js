@@ -8,7 +8,6 @@ export default class ProxEventos extends Component {
     render() {
         return(
             <seccion className="cuerpo-proxeventos">
-                <h3 className="seccion-titulo proxeventos">Proximos eventos</h3>
                 <div className="proxeventos-evento">
                     <div className="evento-datos">
                         <div className="datos-titulo">Variette del nacho con cheddar</div>
