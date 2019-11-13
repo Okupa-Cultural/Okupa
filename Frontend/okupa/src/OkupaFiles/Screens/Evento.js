@@ -41,15 +41,15 @@ export default class Evento extends Component {
                 Variette del nacho con cheddar
               </h3>
               <div className="evento-direccion">
-                <i class="fal fa-map-marker-alt"></i>
+                <i className="fal fa-map-marker-alt"></i>
                 Uruguay 636 - HAEDO
               </div>
               <div className="evento-fechayhora">
-                <i class="fal fa-alarm-clock"></i>
+                <i className="fal fa-alarm-clock"></i>
                 21/10/2021 - 21:30hs
               </div>
               <div className="evento-espacio">
-                <i class="fal fa-ticket-alt"></i>
+                <i className="fal fa-ticket-alt"></i>
                 Zeugma Cultural
               </div>
             </div>
@@ -77,7 +77,7 @@ export default class Evento extends Component {
 
           </div>
 
-          <CasillaComentarios />
+          <CasillaComentarios/>
 
         </div>
       );

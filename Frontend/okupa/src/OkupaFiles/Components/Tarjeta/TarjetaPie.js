@@ -16,17 +16,17 @@ export default class TarjetaPie extends Component {
                 <div className="tarjeta-botonera">
                     <Link to="/Perfil">
                         <div className="tarjeta-boton">
-                            <i class="far fa-sign-language"></i>
+                            <i className="far fa-sign-language"></i>
                         </div>
                     </Link>
                     <Link to="/Perfil">
                         <div className="tarjeta-boton con-bordes">
-                            <i class="far fa-calendar-alt"></i>
+                            <i className="far fa-calendar-alt"></i>
                         </div>
                     </Link>
                     <Link to="/Perfil">
                         <div className="tarjeta-boton">
-                            <i class="far fa-comment-dots"></i>
+                            <i className="far fa-comment-dots"></i>
                         </div>
                     </Link>
                 </div>

@@ -17,7 +17,7 @@ export default class Comentario extends Component {
                             <div className="comentario-foto"></div>
                             <div className="comentario-datos">
                                 <div className="comentario-usuario">
-                                    Pepito el lechero
+                                    {this.props.username}
                                 </div>
                                 <div className="comentario-fechayhora">
                                     10/09/2020 · 22:01
@@ -26,11 +26,7 @@ export default class Comentario extends Component {
                         </div>
                     </Link>
                     <p className="comentario-texto">
-                      Hater, heiteeeer! Soy un hater!
-                      <br />.
-                      <br />.
-                      <br />.
-                      <br />Hater!
+                        {this.props.content}
                     </p>
                 </div> 
 
