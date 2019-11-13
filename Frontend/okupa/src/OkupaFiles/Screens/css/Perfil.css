@@ -33,11 +33,6 @@ MAQUETADO DE GRILLA PRINCIPAL
 	box-shadow: inset 0 -5em 5em rgba(0,0,0,.2);
 }
 
-.perfil-cuerpo{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
 /*===================
 CABECERA
 */
@@ -82,6 +77,9 @@ CUERPO
 
 .perfil-cuerpo{
 	max-width: 60em;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	padding: 1.5em;
 }
 
 

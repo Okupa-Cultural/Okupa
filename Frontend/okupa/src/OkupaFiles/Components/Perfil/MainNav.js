@@ -20,9 +20,9 @@ export default class MainNav extends Component {
     render() {
         return(
             <nav className="main-nav">
-                <input type="button" onClick={() => this.changeScreenValue(1)} value="Próximos Eventos"/>
-                <input type="button" onClick={() => this.changeScreenValue(2)} value="Galeria" />
-                <input type="button" onClick={() => this.changeScreenValue(3)} value="Tienda"/>
+                <button type="button" className="main-nav-boton" onClick={() => this.changeScreenValue(1)}>Próximos Eventos</button>
+                <button type="button" className="main-nav-boton" onClick={() => this.changeScreenValue(2)}>Galeria</button>
+                <button type="button" className="main-nav-boton" onClick={() => this.changeScreenValue(3)}>Tienda</button>
             </nav>
         );
     }
