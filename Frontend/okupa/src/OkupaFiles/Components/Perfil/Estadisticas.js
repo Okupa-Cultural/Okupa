@@ -13,18 +13,18 @@ export default class Estadisticas extends Component {
     render() {
         return(
             <div className="datosusuario-estadisticas">
-                <seccion className="estadistica">
+                <section className="estadistica">
                     <div className="estadistica-cifra">650</div>
                     <div className="estadistica-label">Seguidores</div>
-                </seccion>
-                <seccion className="estadistica">
+                </section>
+                <section className="estadistica">
                     <div className="estadistica-cifra">121</div>
                     <div className="estadistica-label">Seguidos</div>
-                </seccion>
-                <seccion className="estadistica">
+                </section>
+                <section className="estadistica">
                     <div className="estadistica-cifra">937</div>
                     <div className="estadistica-label">Eventos</div>
-                </seccion>
+                </section>
             </div>
                  
         );
