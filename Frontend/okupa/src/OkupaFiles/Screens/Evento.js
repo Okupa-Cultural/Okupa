@@ -16,20 +16,8 @@ export default class Evento extends Component {
 
     render() {
 
-         var sectionStyle = {
-          zIndex: -10,
-          position: 'fixed',
-          width: "100%",
-          height: "100%",
-          backgroundImage: "url(" + Fondo + ")"
-        };
-
       return (
         <div>
-
-          <div style={ sectionStyle } />
-
-          <div className="filtro-fondo" />
 
           <NavBar />
 

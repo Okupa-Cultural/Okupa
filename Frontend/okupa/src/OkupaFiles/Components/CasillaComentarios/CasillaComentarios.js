@@ -44,8 +44,8 @@ export default class CasillaComentarios extends Component {
 
             	<input type="submit" className="btn-enviar" value="Enviar"></input>
                 	
-				<div className="listado-comentarios" id="listado-comentarios">
-		        	{ListaDeComentarios}
+			      	<div className="listado-comentarios" id="listado-comentarios">
+		          	{ListaDeComentarios}
 	            </div>
 
             </div>
