@@ -6,6 +6,10 @@
 	margin-top: .5em;
 }
 
+.galeria-elemento:nth-child(n+13) {
+	display:none;
+}
+
 .galeria-elemento{
 	height: 13em;
 	width: 13em;
