@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import './css/Galeria.css';
 
 //Componentes
-import FullScreenImage from './FullScreenImage';
 
 export default class Galeria extends Component {
 
@@ -15,17 +14,14 @@ export default class Galeria extends Component {
         this.state = {
             imagenes: this.props.imagenes,
             imagenSeleccionada: '',
-            fullScreenImageActive: 'fullscreen-image-background',
-            fullScreenImageInactive: 'fullscreen-image-inactive',
             fullscreenState: 2 //1: Active, 2: Inactive
         };
     }
 
     imageOnClick = (imagen) => {
-        this.setState({
-            fullscreenState: 1,
-            imagenSeleccionada: imagen
-        });
+        window.store.dispatch(window.setToFullscreenSelectedImage(imagen));
+        window.store.dispatch(window.setFullscreenStatus(1));
+        console.log(window.store.getState());
     }
 
     renderImagenes = (data, index) => {
@@ -37,36 +33,12 @@ export default class Galeria extends Component {
                 />;
     }
 
-    renderFullscreen = (origen) => {
-        //Origen: 1 (Viene de Galeria, practicamente uso esto para usar la misma funcion
-        //           en lugar de crear dos separadas, el valor 2 significa que viene del
-        //           componente FullScreenImage)
-        console.log(this.state.fullscreenState);
-        if(origen === 1) {
-            if(this.state.fullscreenState === 1) {
-                return this.state.fullScreenImageActive;
-            } else {
-                return this.state.fullScreenImageInactive;
-            }
-        } else {
-            this.setState({
-                fullscreenState: 2
-            })
-        }
-    }
-
     render() {
 
         var GaleriaDeImagenes = this.state.imagenes.map(this.renderImagenes);
 
         return(
             <div className="galeria">
-
-                <FullScreenImage clase={this.renderFullscreen(1)} 
-                                 imagen={this.state.imagenSeleccionada}
-                                 callback={() => this.renderFullscreen(2)}
-                />
-
                 <section className="cuerpo-galeria">
                     {GaleriaDeImagenes}
                 </section>
