@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 //import {  Link } from 'react-router-dom';
-import Fondo from './../../Images/bg2.jpg';
 
 //Componentes
 import NavBar from './../Components/Navigation/NavBar';
@@ -16,20 +15,8 @@ export default class Evento extends Component {
 
     render() {
 
-         var sectionStyle = {
-          zIndex: -10,
-          position: 'fixed',
-          width: "100%",
-          height: "100%",
-          backgroundImage: "url(" + Fondo + ")"
-        };
-
       return (
         <div>
-
-          <div style={ sectionStyle } />
-
-          <div className="filtro-fondo" />
 
           <NavBar />
 

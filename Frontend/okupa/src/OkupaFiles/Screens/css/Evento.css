@@ -3,9 +3,12 @@
 }
 
 .evento{
+	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	background-color: white;
 	max-width: 43em;
 	margin: auto;
 	text-align: left;
+	padding: 10px;
 }
 
 .evento-portada{
@@ -18,21 +21,30 @@
 }
 
 .evento-titulo{
+	padding:0.4em;
 	text-transform: uppercase;
+	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
 	font-size: 2em;
 	margin-bottom: 1em;
+	color: white;
 }
 
 .evento-direccion, .evento-fechayhora, .evento-espacio{
 	font-weight: 400;
 	font-size: 1.3em;
 	margin: .5em 0;
+	color: black;
 }
 
 .evento-direccion i, .evento-fechayhora i, .evento-espacio i{
 	width: 1em;
 	padding-left: .5em;
 	margin-right: 1em;
+	color: black;
+}
+
+.evento-descripcion {
+	color: black;
 }
 
 @media (max-width: 500px) {

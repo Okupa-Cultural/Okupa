@@ -7,17 +7,20 @@
 .tarjeta-estadisticas{
 	font-size: .9em;
 	margin-top: 1em;
+	color: black;
 	font-weight: 700;
 }
 
 .tarjeta-botonera{
 	display: flex;
+	color: black;
 	margin-top: 1em;
 }
 
 .tarjeta-boton{
 	font-size: 2em;
 	margin-right: 1em;
+	color: black;
 }
 
 	.tarjeta-boton i{

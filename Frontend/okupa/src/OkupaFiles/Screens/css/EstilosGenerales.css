@@ -1,5 +1,9 @@
 /*============= Elementos básicos =============*/
 
+body {
+	background-color: #ececeb;
+}
+
 body, div, li, span, p, input{
 	font-family: roboto, sans-serif;
 	font-weight: 400;

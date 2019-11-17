@@ -25,17 +25,25 @@ export default class Perfil extends Component {
     this.state = {
       pantallaActual: 1,
       claseActiva: 'visible',
-      claseInactiva: 'invisible'
+      claseInactiva: 'invisible',
+      imagenes: [{ urls : {small:''}}, {urls : {small:''}  }]
     };
 
     this.TabNavigator = this.TabNavigator.bind(this);
   }
 
+  
+  componentDidMount() {
+    fetch('https://api.unsplash.com/photos/?client_id=05883571daf3b1e01c789ef7cd850e9fb242f48d3b9432b46fae325a7eba6c0b')
+      .then(response => response.json())
+      .then(json => { this.setState({ imagenes: json});});
+  }
+
   TabNavigator() {
     switch(this.state.pantallaActual) {
       case 1: return <ProxEventos />;
-      case 2: return <Galeria />;
-      case 3: return <Galeria />;
+      case 2: return <Galeria imagenes={this.state.imagenes}/>;
+      case 3: return <Galeria imagenes={this.state.imagenes}/>;
       default: break;
     }
   }
@@ -58,7 +66,7 @@ render() {
       
       <header className="perfil-cabecera">
 
-        <div className="fotoperfil-movile"></div>
+        <img className="fotoperfil-movile" alt="perfil-mobile"></img>
 
         <div className="cabecera-datosusuario">
           <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
@@ -69,7 +77,7 @@ render() {
       </header>
 
       <aside className="perfil-columnaizq">
-        <div className="columnaizq-fotoperfil"></div>
+        <img className="columnaizq-fotoperfil" src={this.state.imagenes[1].urls.small} alt="foto de perfil"></img>
         <div className="columnaizq-secciones">
           <FechaDeFormacion />
           <Bio />

@@ -22,13 +22,13 @@ export default class CasillaComentarios extends Component {
       }
   
       componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+        fetch('https://jsonplaceholder.typicode.com/comments/')
             .then(response => response.json())
             .then(json => { this.setState({ comentarios: json}); });
       }
 
     renderComentarios = (comentario) => {
-        return <Comentario content={comentario.body} username={comentario.name} />
+        return <Comentario content={comentario.body} username={comentario.email} />
     }
   
 
@@ -44,8 +44,8 @@ export default class CasillaComentarios extends Component {
 
             	<input type="submit" className="btn-enviar" value="Enviar"></input>
                 	
-				<div className="listado-comentarios" id="listado-comentarios">
-		        	{ListaDeComentarios}
+			      	<div className="listado-comentarios" id="listado-comentarios">
+		          	{ListaDeComentarios}
 	            </div>
 
             </div>

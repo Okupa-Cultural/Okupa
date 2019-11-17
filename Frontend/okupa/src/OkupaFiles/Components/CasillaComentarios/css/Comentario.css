@@ -1,8 +1,9 @@
 .comentario-contenedor{
 	max-width: 43em;
-	background-color: #24292E;
+	background-color: white;
 	padding: 10px;
-	margin:auto;
+	margin:10px;
+	border-radius: 16px;
 }
 
 .comentario{
@@ -36,12 +37,15 @@
 .comentario-usuario{
 	font-size: 1.2em;
 	font-weight: 400;
+	color: black;
 }
 
 .comentario-fechayhora{
-	font-weight: 100;
+	font-weight: 400;
+	color: black;
 }
 
 .comentario-texto{
 	font-weight: 400;
+	color: black;
 }
