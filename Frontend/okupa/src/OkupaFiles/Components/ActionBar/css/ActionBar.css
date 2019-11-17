@@ -1,0 +1,24 @@
+.actionbar{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 3em;
+	justify-content: space-around;
+	background: #EFEFE8;
+	box-shadow: 0 -2px 2px rgba(0,0,0,.2);
+}
+
+.action-boton:active{
+	box-shadow: inset 0 -5em 0em rgba(0,0,0,.1);
+}
+
+.action-boton i{
+	font-size: 2em;
+}
+
+@media (max-width: 500px){
+	.actionbar{
+		display: flex;
+	}
+}

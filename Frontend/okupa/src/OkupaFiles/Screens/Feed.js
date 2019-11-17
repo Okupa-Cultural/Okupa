@@ -24,6 +24,8 @@ export default class Evento extends Component {
       return (
         <div className="home-screen">
 
+          <br />
+          <br />
 
           <div style={ sectionStyle } />
 

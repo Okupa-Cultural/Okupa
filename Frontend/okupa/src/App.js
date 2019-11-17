@@ -10,6 +10,10 @@ import Perfil from './OkupaFiles/Screens/Perfil';
 import Evento from './OkupaFiles/Screens/Evento';
 import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
+
+//Componentes
+import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+
 //CSS
 import './App.css';
 
@@ -27,6 +31,8 @@ function App() {
           <Route path="/feed" component={Feed}/>
         </Switch>
       )} />
+
+      <ActionBar />
     </div>
   );
 }
