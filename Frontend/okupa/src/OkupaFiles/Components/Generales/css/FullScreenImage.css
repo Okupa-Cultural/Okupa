@@ -9,6 +9,11 @@
     z-index: 5;
 }
 
+.fullscreen-image-inactive {
+	display: none;
+	pointer-events: none;
+}
+
 .fullscreen-image-background img {
     grid-column: 2/3;
     grid-row: 2/3;

@@ -10,11 +10,6 @@
 	display:none;
 }
 
-.fullscreen-image-inactive {
-	display: none;
-	pointer-events: none;
-}
-
 .galeria-elemento{
 	height: 13em;
 	width: 13em;

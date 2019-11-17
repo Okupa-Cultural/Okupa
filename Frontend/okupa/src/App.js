@@ -1,6 +1,8 @@
 //Componentes
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import FullScreenImage from './OkupaFiles/Components/Generales/FullScreenImage';
+import './Redux/index';
 //import { CSSTransition, TransitionGroup } from 'react-transition-group';
 //Pantallas
 import HomeScreen from './OkupaFiles/Screens/HomeScreen';
@@ -20,6 +22,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+      <FullScreenImage />
+
       <Route render={({location}) => (
         <Switch>
           <Route exact path="/" component={HomeScreen}/>
