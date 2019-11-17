@@ -19,8 +19,6 @@ button{
 	border: none;
 }
 
-	
-
 	button:active div{
 		box-shadow: inset 0 -100em 100em rgba(255,255,255,.3);
 	}
@@ -52,6 +50,10 @@ h1, h2, h3, h4, ul{
 
 ul{
 	list-style-type:none;
+}
+
+.solo-en-moviles{
+	display: none;
 }
 
 /*============= Iconos de FontAwesome a medida =============*/
@@ -99,6 +101,10 @@ ul{
 
 @media (max-width: 500px) {
 
+	body{
+		padding-bottom: 8vh;
+	}
+
 	/*Para remover el cuadro azul al tocar 
 	un link en Chrome pero solo lo tengan 
 	los elementos con la clase "boton"*/
@@ -107,12 +113,17 @@ ul{
 		-moz-tap-highlight-color:rgba(255,255,255,0);
 	}
 
-	/*Todo lo que tenga esta clase no se
-	despliega en pantallas menores a 500px"*/
+	/*Para desplegar elementos solo en 
+	pantallas menores a 500px"*/
 
+	.solo-en-moviles{
+		display: unset;
+	}
+	
+	/*Para ocultar elementos solo en 
+	pantallas menores a 500px"*/
 	.ocultar-en-moviles{
-		all:unset;
-		display: none;
+		display: none
 	}
 	
 }

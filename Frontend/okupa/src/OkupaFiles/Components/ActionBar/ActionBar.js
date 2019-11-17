@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 //import {Link} from 'react-router-dom';
 
 //CSS
@@ -8,13 +9,23 @@ export default class ActionBar extends Component {
 
     render() {
         return(
-            <nav className="actionbar">
-               <button type="button" className="action-boton"><i class="fad fa-search"></i>x</button>
-               <button type="button" className="action-boton">Botón 2</button>
-               <button type="button" className="action-boton">Botón 3</button>
-               <button type="button" className="action-boton">Botón 4</button>
-               <button type="button" className="action-boton">Botón 5</button>
-            </nav>
+          <nav className="actionbar">
+            <Link to="/evento">
+              <button type="button" className="action-boton"><i className="fad fa-search"></i></button>
+            </Link>
+            <Link to="/evento">
+              <button type="button" className="action-boton"><i className="fad fa-bell"></i></button>
+            </Link>
+            <Link to="/feed">
+              <button type="button" className="action-boton"><i className="fad fa-home-lg"></i></button>
+            </Link>
+            <Link to="/evento">
+              <button type="button" className="action-boton"><i className="fad fa-calendar-alt"></i></button>
+            </Link>
+            <Link to="/perfil">
+              <button type="button" className="action-boton"><i className="fad fa-user-circle"></i></button>
+            </Link>
+          </nav>
         );
     }
 }

@@ -220,6 +220,10 @@ Media querys
         margin:.7em 0;
     }
     
+    .home-botonera a:hover .nav-boton {
+        font-size: unset;
+        padding: .5em 1em;
+    }
     
     #burguer:checked + .home-botonera{
           display: flex;  

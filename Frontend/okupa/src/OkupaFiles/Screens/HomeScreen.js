@@ -25,6 +25,7 @@ export default class HomeScreen extends Component {
       startDate: date
     });
   };
+
   
   render() {
 
@@ -84,10 +85,11 @@ export default class HomeScreen extends Component {
 						<label className="home-label">
 							<h4>o por su fecha</h4>
 							<DatePicker 
-							className="home-datepicker"
+							className="home-datepicker ocultar-en-moviles"
 							selected={this.state.startDate}
 							onChange={this.handleChange}
 							/>
+							<input type="date" id="datePickerMovil" className="home-datepicker solo-en-moviles" value="2020-05-01" />
 						</label>
 
 						
