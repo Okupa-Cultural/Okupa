@@ -23,7 +23,7 @@ export default class MainNav extends Component {
     }
 
     setClass = (pantalla) => {
-        if(this.state.pantalla == pantalla) { 
+        if(this.state.pantalla === pantalla) { 
             return this.state.claseActiva;
         } else {
             return this.state.claseInactiva;

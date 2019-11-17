@@ -10,12 +10,23 @@
 	display:none;
 }
 
+.fullscreen-image-inactive {
+	display: none;
+	pointer-events: none;
+}
+
 .galeria-elemento{
 	height: 13em;
 	width: 13em;
 	margin-bottom: 1em;
 	background-image: linear-gradient(#3c175f, #ae1639);
 	box-shadow: 0 .1em .2em rgba(0,0,0,.2);
+	cursor: pointer;
+	transition: 250ms ease;
+}
+
+.galeria-elemento:hover {
+	opacity: 0.5;
 }
 
 

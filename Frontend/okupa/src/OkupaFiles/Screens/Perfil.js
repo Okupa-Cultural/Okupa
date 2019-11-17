@@ -36,7 +36,7 @@ export default class Perfil extends Component {
   componentDidMount() {
     fetch('https://api.unsplash.com/photos/?client_id=05883571daf3b1e01c789ef7cd850e9fb242f48d3b9432b46fae325a7eba6c0b')
       .then(response => response.json())
-      .then(json => { this.setState({ imagenes: json}); console.log(this.state.imagenes) });
+      .then(json => { this.setState({ imagenes: json});});
   }
 
   TabNavigator() {
@@ -66,7 +66,7 @@ render() {
       
       <header className="perfil-cabecera">
 
-        <img className="fotoperfil-movile"></img>
+        <img className="fotoperfil-movile" alt="perfil-mobile"></img>
 
         <div className="cabecera-datosusuario">
           <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
@@ -77,7 +77,7 @@ render() {
       </header>
 
       <aside className="perfil-columnaizq">
-        <img className="columnaizq-fotoperfil" src={this.state.imagenes[1].urls.small}></img>
+        <img className="columnaizq-fotoperfil" src={this.state.imagenes[1].urls.small} alt="foto de perfil"></img>
         <div className="columnaizq-secciones">
           <FechaDeFormacion />
           <Bio />
