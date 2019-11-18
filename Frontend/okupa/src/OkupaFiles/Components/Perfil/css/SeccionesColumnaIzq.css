@@ -14,6 +14,7 @@
 	}
 
 	.seccion-titulo{
+		margin-top: 1em;
 		font-size: 1em;
 		font-weight: 100;
 		padding: .5em 1em;
@@ -22,8 +23,11 @@
 	}
 
 	.seccion-caja{
-		margin-bottom: 1em;
 		box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+	}
+
+	.seccion-caja:last-child{
+		margin-bottom: 1em;
 	}
 
 	.enlaceexterno{

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import DatePicker from "react-datepicker";
-
 //Imagenes
 import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
 
@@ -51,7 +50,7 @@ export default class HomeScreen extends Component {
 	    			<Link to="/">
 	    				<div className="nav-boton">HOME</div>
 	    			</Link>
-	    			<Link to="/">
+	    			<Link to="/perfil">
 	    				<div className="nav-boton">CARACTERÍSTICAS</div>
 	    			</Link>
 	    			<Link to="/evento">
@@ -63,7 +62,7 @@ export default class HomeScreen extends Component {
 	    			<Link to="/registro">
 	    				<div className="nav-boton">REGÍSTRATE</div>
 	    			</Link>
-	    			<Link to="/perfil">
+	    			<Link to="/login">
 	    				<div className="nav-boton resaltado">LOGIN</div>
 	    			</Link>
 	    		</nav>

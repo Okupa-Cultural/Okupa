@@ -1,5 +1,5 @@
-import React, { Component, ReactPropTypes } from 'react';
-import { connect } from 'react-redux';
+import React, { Component/*, ReactPropTypes*/ } from 'react';
+//import { connect } from 'react-redux';
 import '../../../Redux/index';
 
 //CSS

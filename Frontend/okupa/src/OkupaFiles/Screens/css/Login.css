@@ -1,27 +1,103 @@
-.login-contenedor{
-	display: grid;
-	grid-template-columns: 60% 40%;
+.login{
+	display:grid;
+	grid-template-columns: 35em 17fr;
+	height: 100vh;
+	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
 }
 
-
-.columna2{
-	margin: 
+.login-form{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	padding: 0 2em;
+	box-shadow: .5em 0 2em rgba(0,0,0,.3);
+	z-index: 1;
 }
 
-.login-formulario{
+.login-form-fondo{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	z-index: 1;
+	background:url(./../../../Images/login-fondo.jpg);
+	background-size: 200%;
+	background-position: -3em;
+	background-repeat: no-repeat;
+	z-index: 0;
+	opacity: .5;
+ }
+
+.login-form form{
+	width: 100%;
+	margin-right: 2.5em;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-	.login-formulario label{
+.login-form-logo{
+	width: 100%;
+	padding:2em 9em;
+}
+
+.login-form-label{
+	margin: .5em 1em .1em 1em;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.login-form-input{
+	width: 100%;
+	padding: 1em 1.5em;
+	color: #3f3245;
+	font-size: 1em;
+	border-radius: 2em;
+}
+
+.login-form-boton{
+    width: 100%;
+    padding: 1em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius: 2em;
+    color: rgba(255,255,255,.8);
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+}
+
+@media (max-width: 500px){
+	.login{
+		grid-template-columns: 1fr;
+		grid-template-rows: unset;
+		padding: unset;
+		overflow-y: hidden;
+	}
+
+	.login-form-fondo{
+		background-size: 300%;
+		background-position: -12em;
+	}
+
+	.login-form-logo{
+		padding: unset;
+		margin-bottom: 2em;
+	}
+
+	.login-form-label{
+		display: none;
+	}
+
+	.login-form-input{
 		margin: 1em 0;
 	}
-
-	.login-formulario label input, .loging-formulario input{
-		color: #080808;
-	}
-
-	.login-formulario label input{
-		width: 100%;
-	}
-
+}

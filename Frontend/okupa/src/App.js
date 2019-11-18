@@ -14,7 +14,7 @@ import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
 
 //Componentes
-import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+//import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
 
 //CSS
 import './App.css';
@@ -37,7 +37,7 @@ function App() {
         </Switch>
       )} />
 
-      <ActionBar />
+      {/*<ActionBar />*/}
     </div>
   );
 }
