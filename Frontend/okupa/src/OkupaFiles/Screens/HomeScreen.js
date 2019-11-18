@@ -88,7 +88,7 @@ export default class HomeScreen extends Component {
 							selected={this.state.startDate}
 							onChange={this.handleChange}
 							/>
-							<input type="date" id="datePickerMovil" className="home-datepicker solo-en-moviles" value="2020-05-01" />
+							<input type="date" id="datePickerMovil" className="home-datepicker solo-en-moviles" placeholder="2010-10-10" />
 						</label>
 
 						

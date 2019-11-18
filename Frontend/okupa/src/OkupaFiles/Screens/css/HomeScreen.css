@@ -199,6 +199,7 @@ Media querys
     }
 
     .btn-burguer{
+        width: inherit;
         display: unset;
         margin: 0 .5em;
     }

@@ -11,6 +11,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
+	justify-content: center;
 	padding: 0 2em;
 	box-shadow: .5em 0 2em rgba(0,0,0,.3);
 	z-index: 1;
@@ -39,7 +40,7 @@
 }
 
 .login-form-logo{
-	width: 100%;
+	width: 15em;
 	padding:2em 9em;
 }
 
@@ -75,6 +76,10 @@
     box-shadow: 0 .1em .3em rgba(0,0,0,.3);
 }
 
+.fb-login-button{
+	margin-top: 2em;
+}
+
 @media (max-width: 500px){
 	.login{
 		grid-template-columns: 1fr;
@@ -89,6 +94,7 @@
 	}
 
 	.login-form-logo{
+		width: 10em;
 		padding: unset;
 		margin-bottom: 2em;
 	}

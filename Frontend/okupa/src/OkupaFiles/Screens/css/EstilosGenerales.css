@@ -118,9 +118,9 @@ label{
 
 @media (max-width: 500px) {
 
-	body{
+	/*body{
 		padding-bottom: 8vh;
-	}
+	}*/
 
 	/*Para remover el cuadro azul al tocar 
 	un link en Chrome pero solo lo tengan 
