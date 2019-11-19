@@ -37,6 +37,7 @@ export default class FullScreenImage extends Component {
 
     disableFullscreen = () => {
         window.store.dispatch(window.setFullscreenStatus(0));
+        console.log("cerrado");
         this.setState({
             fullscreenStatus: 2
         });
