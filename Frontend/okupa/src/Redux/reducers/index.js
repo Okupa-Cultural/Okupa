@@ -4,7 +4,8 @@ const initialState = {
     articles: [],
     userid: 0,
     selectedImage: '',
-    fullscreenState: 2
+    fullscreenState: 2,
+    ocultarActionBar: 0
 };
 
 function rootReducer(state = initialState, action) {
@@ -32,6 +33,13 @@ function rootReducer(state = initialState, action) {
 
         return Object.assign({}, state, {
             fullscreenState: estado
+        });
+    }
+
+    if(action.type === actionType.SET_ACTIONBARDISPLAY) {
+
+        return Object.assign({}, state, {
+            ocultarActionBar: action.payload
         });
     }
 

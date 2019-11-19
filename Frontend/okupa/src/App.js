@@ -14,7 +14,7 @@ import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
 
 //Componentes
-//import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
 
 //CSS
 import './App.css';
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
 
-      <FullScreenImage />
+      <FullScreenImage estadoFullscreen={window.store.getState().fullscreenState}/>
 
       <Route render={({location}) => (
         <Switch>
@@ -37,7 +37,7 @@ function App() {
         </Switch>
       )} />
 
-      {/*<ActionBar />*/}
+      <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
     </div>
   );
 }

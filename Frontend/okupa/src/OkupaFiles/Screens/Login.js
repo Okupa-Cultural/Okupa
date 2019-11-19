@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import LogoBlanco from './../../Images/Logo/okupa-logo-blanco-transparente.png'
 
 //Components
-
+import { Link } from 'react-router-dom';
 //CSS
 import './css/EstilosGenerales.css';
 import './css/Login.css'
@@ -21,16 +21,18 @@ export default class Login extends Component {
           <div className="login-form-fondo"></div>
 
           <section className="login-form">
-            <img src={LogoBlanco} alt="Okupa logo blanco" className="login-form-logo"/>
+            <Link to="/">
+              <img src={LogoBlanco} alt="Okupa logo blanco" className="login-form-logo"/>
+            </Link>
             <form action="">
               <label htmlFor="" className="login-form-label">
                 Nombre de usuario
               </label>
-              <input type="text" name="nombre-de-usuario" placeholder="Nombre de usuario o email" className="login-form-input" />
+              <input type="text" name="username" placeholder="Nombre de usuario o email" className="login-form-input" />
               <label htmlFor="" className="login-form-label">
                 Contraseña
               </label>
-              <input type="password" name="nombre-de-usuario" placeholder="Contraseña" className="login-form-input" />
+              <input type="password" name="password" placeholder="Contraseña" className="login-form-input" />
               <input type="submit" name="Ingresar" value="Ingresar" className="login-form-boton"/>
             </form>
 

@@ -25,6 +25,14 @@ export default class HomeScreen extends Component {
     });
   };
 
+  componentDidMount() {
+	  window.store.dispatch(window.mostrarOcultarActionBar(1));
+  }
+
+  componentWillUnmount() {
+	window.store.dispatch(window.mostrarOcultarActionBar(0));
+  }
+
   
   render() {
 

@@ -12,3 +12,6 @@ export function setToFullscreenSelectedImage(payload) {
 export function setFullsceenImage(payload) {
     return { type: 'SET_FULLSCREENSTATUS', payload}
 };
+export function mostrarOcultarActionBar(payload) {
+    return { type: 'SET_ACTIONBARDISPLAY', payload}
+};

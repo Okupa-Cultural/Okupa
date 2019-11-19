@@ -1,6 +1,6 @@
 import React, { Component/*, ReactPropTypes*/ } from 'react';
 //import { connect } from 'react-redux';
-import '../../../Redux/index';
+import  '../../../Redux/index';
 
 //CSS
 import './css/FullScreenImage.css'
@@ -18,14 +18,17 @@ export default class FullScreenImage extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log(window.store.getState().fullscreenState);
+    componentDidUpdate() {
+        if(this.state.fullscreenStatus !== window.store.getState().fullscreenState) {
+            this.setState({
+                fullscreenStatus : window.store.getState().fullscreenState
+            });
+        }
     }
 
-    renderFullscreen = () => {
-        var estado = window.store.getState();
-        console.log("el estado es: " + estado.fullscreenState);
-        if(estado.fullscreenState === 1) {
+    renderFullscreen = (estado) => {
+       // alert("hola")
+        if(estado === 1) {
             return this.state.fullScreenImageActive;
         } else {
             return this.state.fullScreenImageInactive;
@@ -39,23 +42,13 @@ export default class FullScreenImage extends Component {
         });
     };
 
-    renderComponent = (data, store) => {
-        return (
-            <div className={data} onClick={this.disableFullscreen}>
-                <img src={store.selectedImage} alt="imagen"/>
-            </div>
-        );
-    };
-
     render() {
 
         var estado = window.store.getState();
-        var esVisible = this.renderFullscreen();
-        var componente = this.renderComponent(esVisible, estado);
 
         return(
-            <div>
-                {componente}
+            <div className={this.renderFullscreen(this.props.estadoFullscreen)} onClick={() => this.disableFullscreen()}>
+                <img src={window.store.getState().selectedImage} alt="imagen"/>
             </div>
         );
     }
