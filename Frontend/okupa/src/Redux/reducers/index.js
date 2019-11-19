@@ -14,6 +14,9 @@ function rootReducer(state = initialState, action) {
         });
     }
     if(action.type === actionType.SET_SELECTEDIMAGE) {
+
+        
+
         return Object.assign({}, state, {
             selectedImage: action.payload
         });

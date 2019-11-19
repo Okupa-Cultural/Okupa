@@ -16,9 +16,11 @@ export default class Login extends Component {
       return (
         <div className="login">
 
+          <div className="login-form-fondo-principal"></div>
+
           <div className="login-form-fondo"></div>
 
-          <seccion className="login-form">
+          <section className="login-form">
             <img src={LogoBlanco} alt="Okupa logo blanco" className="login-form-logo"/>
             <form action="">
               <label htmlFor="" className="login-form-label">
@@ -32,9 +34,9 @@ export default class Login extends Component {
               <input type="submit" name="Ingresar" value="Ingresar" className="login-form-boton"/>
             </form>
 
-            <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            <div className="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
-          </seccion>
+          </section>
         </div>
       );
     }    

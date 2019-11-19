@@ -2,7 +2,14 @@
 	display:grid;
 	grid-template-columns: 35em 17fr;
 	height: 100vh;
+	background: #ececeb;
+}
+
+.login-form-fondo-principal {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
+	z-index: 1;
 }
 
 .login-form{
@@ -14,7 +21,7 @@
 	justify-content: center;
 	padding: 0 2em;
 	box-shadow: .5em 0 2em rgba(0,0,0,.3);
-	z-index: 1;
+	z-index: 2;
 }
 
 .login-form-fondo{
@@ -25,7 +32,7 @@
 	background-size: 200%;
 	background-position: -3em;
 	background-repeat: no-repeat;
-	z-index: 0;
+	z-index: 1;
 	opacity: .5;
  }
 
