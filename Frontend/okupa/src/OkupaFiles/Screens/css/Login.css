@@ -65,22 +65,8 @@
 	border-radius: 2em;
 }
 
-.login-form-boton{
-    width: 100%;
-    padding: 1em;
-    margin-top: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border:none;
-    border-radius: 2em;
-    color: rgba(255,255,255,.8);
-    font-size: 1em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+.login-boton{
+	width: 100%;
 }
 
 .fb-login-button{

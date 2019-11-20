@@ -154,6 +154,21 @@ Formulario
 
 .home-datepicker{
     margin-left: 2em;
+    background: white;
+}
+
+/*Para poder mostrar un placeholder en dispositivos móviles.
+De otro modo no funciona*/
+
+input[type="date"]::before {
+   content: "dd/mm/aaa" !important;
+   vertical-align: middle;
+   color: #777;
+}
+
+input[type="date"]:focus::before{
+   content: "" !important;
+   vertical-align: middle;
 }
 
 

@@ -51,4 +51,8 @@
 			grid-row: unset;
 		}
 
+	.seccion-titulo, .seccion-caja, .enlaceexterno{
+		width: 100vw;
+	}
+
 }

@@ -32,7 +32,6 @@ export default class HomeScreen extends Component {
   componentWillUnmount() {
 	window.store.dispatch(window.mostrarOcultarActionBar(0));
   }
-
   
   render() {
 
@@ -96,7 +95,8 @@ export default class HomeScreen extends Component {
 							selected={this.state.startDate}
 							onChange={this.handleChange}
 							/>
-							<input type="date" id="datePickerMovil" className="home-datepicker solo-en-moviles" placeholder="2010-10-10" />
+							{/*El placeholder de este input se despliega por CSS*/}
+							<input type="date" id="datePickerMovil" className="home-datepicker solo-en-moviles" />
 						</label>
 
 						

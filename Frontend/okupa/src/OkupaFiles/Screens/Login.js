@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-//import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LogoBlanco from './../../Images/Logo/okupa-logo-blanco-transparente.png'
 
 //Components
-import { Link } from 'react-router-dom';
+
 //CSS
 import './css/EstilosGenerales.css';
 import './css/Login.css'
@@ -33,7 +33,7 @@ export default class Login extends Component {
                 Contraseña
               </label>
               <input type="password" name="password" placeholder="Contraseña" className="login-form-input" />
-              <input type="submit" name="Ingresar" value="Ingresar" className="login-form-boton"/>
+              <input type="submit" name="Ingresar" value="Ingresar" className="form-boton login-boton" />
             </form>
 
             <div className="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
