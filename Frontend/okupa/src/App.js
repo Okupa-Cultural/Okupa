@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
 
-      <FullScreenImage estadoFullscreen={window.store.getState().fullscreenState}/>
+      <FullScreenImage selectedImage={window.store.getState().selectedImage} estado={window.store.getState().fullscreenState}/>
 
       <Route render={({location}) => (
         <Switch>

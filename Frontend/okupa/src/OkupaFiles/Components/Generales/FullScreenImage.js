@@ -14,22 +14,37 @@ export default class FullScreenImage extends Component {
         this.state = {
             fullScreenImageActive: 'fullscreen-image-background',
             fullScreenImageInactive: 'fullscreen-image-inactive',
-            fullscreenStatus: window.store.getState().fullscreenStatus
+            fullscreenStatus: 2,
+            selectedImage: '',
         }
     }
-
-    componentDidUpdate() {
+    /*
+    checkChanges = () => {
         if(this.state.fullscreenStatus !== window.store.getState().fullscreenState) {
             this.setState({
                 fullscreenStatus : window.store.getState().fullscreenState
             });
         }
+    };
+    */
+    
+    componentDidMount() {
+        window.store.subscribe(() => {
+            this.setState({
+                fullscreenStatus : window.store.getState().fullscreenState,
+                selectedImage : window.store.getState().selectedImage,
+            });
+        });
     }
-
+    
+    /*
+    componentDidUpdate() {
+       this.checkChanges();
+    }
+    */
     renderFullscreen = (estado) => {
-       // alert("hola")
         if(estado === 1) {
-            return this.state.fullScreenImageActive;
+            return this.state.fullScreenImageActive
         } else {
             return this.state.fullScreenImageInactive;
         }
@@ -37,20 +52,28 @@ export default class FullScreenImage extends Component {
 
     disableFullscreen = () => {
         window.store.dispatch(window.setFullscreenStatus(0));
-        console.log("cerrado");
         this.setState({
             fullscreenStatus: 2
         });
     };
 
     render() {
-
-        var estado = window.store.getState();
-
         return(
-            <div className={this.renderFullscreen(this.props.estadoFullscreen)} onClick={() => this.disableFullscreen()}>
-                <img src={window.store.getState().selectedImage} alt="imagen"/>
+            <div className={this.renderFullscreen(this.state.fullscreenStatus)} onClick={() => this.disableFullscreen()}>
+                <div className="imageContainer">
+                    <img src={this.state.selectedImage} alt="imagen"/>
+                </div>
             </div>
         );
     }
 }
+
+/*
+export const mapStateToProps = function(state) {
+    return {
+      estadoFullscreen: state.fullscreenState,
+      image: state.selectedImage,
+    }
+}
+*/
+//export default connect(mapStateToProps)(FullScreenImage);

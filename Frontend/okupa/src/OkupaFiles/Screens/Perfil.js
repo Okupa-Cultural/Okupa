@@ -17,7 +17,6 @@ import ProxEventos from './../Components/Perfil/ProxEventos';
 //CSS
 import './css/EstilosGenerales.css';
 import './css/Perfil.css';
-import store from '../../Redux/store';
 
 export default class Perfil extends Component {
 
@@ -39,8 +38,6 @@ export default class Perfil extends Component {
     fetch('https://api.unsplash.com/photos/?client_id=05883571daf3b1e01c789ef7cd850e9fb242f48d3b9432b46fae325a7eba6c0b')
       .then(response => response.json())
       .then(json => { this.setState({ imagenes: json});});
-
-    console.log(store.getState());
   }
 
   TabNavigator() {
