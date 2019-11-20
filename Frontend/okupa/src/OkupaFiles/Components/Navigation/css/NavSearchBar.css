@@ -2,7 +2,7 @@
     border-radius: 5px;
     border: none;
     padding: 0.5em;
-    width: 30%;
+    width: 70%;
     color:white;
     background-color: #3F4448;
 
@@ -16,25 +16,4 @@
     .nav-bar-search-bar2 {
         width: 22em;
     }
-}
-
-
-@media (max-width: 1250) {
-}
-/*
-.nav-bar-search-list {
-    position: absolute;
-    z-index: 30;
-    margin-left: 60px;
-    width: 66em;
-    background-color: rgba(50,50,50,.8);
-    height: fit-content;
-    padding-left: 1em;
-    opacity: 1;
-}
-*/
-.nav-bar-search-list-links li {
-    text-align: left;
-    font-family: 'Roboto';
-    font-size: 1em;
 }

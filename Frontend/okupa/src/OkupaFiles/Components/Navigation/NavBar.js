@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 //import NavLink from './NavLink';
 
 //COMPONENTS
-
+import Notifications from './Notifications';
 import NavSearchBar from './NavSearchBar';
 ///
 export default class NavBar extends Component {
@@ -35,9 +35,7 @@ export default class NavBar extends Component {
                     </div>
                     
                     <div className="notifications">
-                        <i className="fas fa-envelope notificacion"></i>
-                        <i className="fas fa-bell notificacion"></i>
-                        <i className="fas fa-user-friends notificacion"></i>
+                        <Notifications />
                     </div>
                     
                 </div>
