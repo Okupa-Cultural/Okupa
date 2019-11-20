@@ -63,11 +63,12 @@ render() {
 
     <div className="perfil">
 
+    <div className="nav-perfil">
       <NavBar showSearchBar={true}/>
-      
+      </div>
       <header className="perfil-cabecera">
 
-        <img className="fotoperfil-movile" alt="perfil-mobile"></img>
+        <img className="fotoperfil-movile" src={this.state.imagenes[1].urls.small} alt="perfil-mobile"></img>
 
         <div className="cabecera-datosusuario">
           <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>

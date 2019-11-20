@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 ///////
 //Components
-import NavBar from './../Components/Navigation/NavBar';
+//import NavBar from './../Components/Navigation/NavBar';
 import TarjetaRegistro from '../Components/Registro/TarjetaRegistro';
 //import formArtista from './../Components/forms/formArtista';
 //////
@@ -17,8 +17,6 @@ export default class Registro extends Component {
     return (
       
       <div className="registro-screen">
-
-          <NavBar />
 
           <div className="tarjeta-1">
             <TarjetaRegistro body="Quiero presentarme en eventos y también organizarlos" clase="artista"/>

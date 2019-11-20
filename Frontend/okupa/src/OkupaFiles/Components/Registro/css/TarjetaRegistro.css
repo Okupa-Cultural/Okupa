@@ -9,6 +9,18 @@
 	box-shadow: .7em 1em 2em rgba(0,0,0,.3);
 }
 
+#artista {
+	background-color: rgb(255,200,200);
+}
+
+#espacio {
+	background-color: rgb(200,255,200);
+}
+
+#butaca {
+	background-color: rgb(200,200,255);
+}
+
 
 .artista , .espacio, .butaca{ 
 	height: 100%;

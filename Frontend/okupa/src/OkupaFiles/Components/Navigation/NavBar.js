@@ -23,16 +23,23 @@ export default class NavBar extends Component {
             <div className="nav-bar-container">
                 <div className="nav-bar">
                     <div className="logo">
-                        <img src={Logo} alt="Okupa"/>
+                        <Link to="/">
+                            <img src={Logo} alt="Okupa"/>
+                        </Link>
                         <Link to="/">
                             <p className="nav-bar-titulo">OKUPA</p>
                         </Link>
+                        <div className="nav-bar-busqueda">
+                            <NavSearchBar show={this.props.showSearchBar} />
+                        </div>
                     </div>
-
-                    <NavSearchBar show={this.props.showSearchBar} />
                     
-                    <div className="nav-bar-links">
+                    <div className="notifications">
+                        <i className="fas fa-envelope notificacion"></i>
+                        <i className="fas fa-bell notificacion"></i>
+                        <i className="fas fa-user-friends notificacion"></i>
                     </div>
+                    
                 </div>
             </div>
         );

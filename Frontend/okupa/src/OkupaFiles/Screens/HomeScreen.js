@@ -24,7 +24,7 @@ export default class HomeScreen extends Component {
       startDate: date
     });
   };
-
+  /*
   componentDidMount() {
 	  window.store.dispatch(window.mostrarOcultarActionBar(1));
   }
@@ -32,7 +32,7 @@ export default class HomeScreen extends Component {
   componentWillUnmount() {
 	window.store.dispatch(window.mostrarOcultarActionBar(0));
   }
-  
+  */
   render() {
 
     return (

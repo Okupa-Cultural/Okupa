@@ -1,25 +1,25 @@
- .nav-bar-search {
-    display: inline-block;
-    margin-top: .5em;
-}
-
 .nav-bar-search-bar2 {
-    flex: 1;
-    width: 50vw;
-    height: 1.2em;
-    margin-top: .6em;
     border-radius: 5px;
     border: none;
-    padding: 0.7em;
+    padding: 0.5em;
+    width: 30%;
     color:white;
     background-color: #3F4448;
 
 }
 
-@media (max-width: 1250) {
-    .nav-bar-search-bar2 {
-        flex: 2;
+@media (max-width: 500px) {
+    .nav-bar-search {
+        width:100%;
     }
+
+    .nav-bar-search-bar2 {
+        width: 22em;
+    }
+}
+
+
+@media (max-width: 1250) {
 }
 /*
 .nav-bar-search-list {

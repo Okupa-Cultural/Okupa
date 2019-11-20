@@ -8,8 +8,8 @@ export default class TarjetaRegistro extends Component {
     render() {
         return(
             <Link to="/">
-                <div className="tarjeta-registro">
-                    <div className={this.props.clase} id={this.props.clase}>
+                <div className="tarjeta-registro"  id={this.props.clase}>
+                    <div className={this.props.clase}>
                         <span className="middle">
                             {this.props.body}
                         </span>
