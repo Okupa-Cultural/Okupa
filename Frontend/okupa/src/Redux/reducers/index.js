@@ -16,14 +16,13 @@ function rootReducer(state = initialState, action) {
     }
     if(action.type === actionType.SET_SELECTEDIMAGE) {
 
-        
+        let nuevoEstado = JSON.parse(JSON.stringify(state));
+        nuevoEstado.selectedImage = action.payload;
 
-        return Object.assign({}, state, {
-            selectedImage: action.payload
-        });
+        return nuevoEstado;
     }
     if(action.type === actionType.SET_FULLSCREENSTATUS) {
-
+        // eslint-disable-next-line
         var estado = 2;
         if(action.payload === 0) {
             estado = 2;
@@ -31,16 +30,16 @@ function rootReducer(state = initialState, action) {
             estado = 1;
         }
 
-        return Object.assign({}, state, {
-            fullscreenState: estado
-        });
+        let nuevoEstado = JSON.parse(JSON.stringify(state));
+        nuevoEstado.fullscreenState = estado;
+        return nuevoEstado;
     }
 
     if(action.type === actionType.SET_ACTIONBARDISPLAY) {
 
-        return Object.assign({}, state, {
-            ocultarActionBar: action.payload
-        });
+        let nuevoEstado = JSON.parse(JSON.stringify(state));
+        nuevoEstado.ocultarActionBar = action.payload;
+        return nuevoEstado;
     }
 
     return state;

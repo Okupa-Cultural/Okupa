@@ -87,7 +87,7 @@ export default class HomeScreen extends Component {
 					<div className="home-form">
 						<label className="home-label">
 							<h4>Buscar eventos por su nombre</h4>
-							<input type="text" className="home-searchbar" name="busqueda" autocomplete="off" placeholder="Busca un evento por su nombre..."/>
+							<input type="text" className="home-searchbar" name="busqueda" autoComplete="off" placeholder="Busca un evento por su nombre..."/>
 						</label>
 						<label className="home-label">
 							<h4>o por su fecha</h4>
