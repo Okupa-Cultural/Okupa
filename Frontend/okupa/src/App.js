@@ -14,8 +14,9 @@ import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
 import UsuarioABM from './OkupaFiles/Screens/UsuarioABM'     
 //Componentes
-import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
-
+//import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+import { BottomNavigation, BottomNavigationAction } from '@material-ui/core';
+import { RestoreIcon, FavoriteIcon, LocationOnIcon  } from '@material-ui/icons';
 //CSS
 import './App.css';
 
@@ -38,7 +39,12 @@ function App() {
         </Switch>
       )} />
 
-      <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
+      {/* <ActionBar ocultar={window.store.getState().ocultarActionBar}/> */}
+      <BottomNavigation>
+        <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+        <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      </BottomNavigation>
     </div>
   );
 }
