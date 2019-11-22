@@ -91,6 +91,15 @@
         justify-content: flex-start;
     }
 
+    .notificacion-activa:nth-child(2), .notificacion-activa:nth-child(3), .notificacion:nth-child(2), .notificacion:nth-child(3) {
+        display: none;
+        pointer-events: none;
+    }
+
+    .notificacion:nth-child(1), .notificacion-activa:nth-child(1) {
+        font-size: 1.8em;
+    }
+
     .nav-bar .logo p {
         display: none;
     }

@@ -12,8 +12,8 @@ export default class TarjetaCabecera extends Component {
         <div className="tarjeta-cabecera">
             <div className="tarjeta-fotoperfil"></div>
             <div className="tarjeta-datos">
-                <div className="tarjeta-nombre">Leandro Garcia Luzzi</div>
-                <div className="tarjeta-fechayhora">21/06/2020 · 23:59</div>
+                <div className="tarjeta-nombre">{this.props.name}</div>
+                <div className="tarjeta-fechayhora">{this.props.date}</div>
             </div>
         </div>
 

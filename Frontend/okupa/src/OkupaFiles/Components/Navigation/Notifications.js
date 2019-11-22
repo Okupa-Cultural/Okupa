@@ -6,9 +6,9 @@ export default class Notifications extends Component {
         super(props);
 
         this.state = {
-            MensajeNotificacion : [{visto: 0}],
-            Notificacion : [{visto: 0}],
-            AmigoNotificacion : [{visto: 0}],
+            MensajeNotificacion : [{visto: 1}],
+            Notificacion : [{visto: 1}],
+            AmigoNotificacion : [{visto: 1}],
             NotificacionesSinLeer: 0,
             NotificacionesMensajeSinLeer: 0,
             NotificacionesAmigoSinLeer: 0,
@@ -18,6 +18,7 @@ export default class Notifications extends Component {
     componentDidMount() {
         this.checkearNotificaciones(1);
         this.checkearNotificaciones(2);
+        this.checkearNotificaciones(3);
     }
 
     checkearNotificaciones = (tipoNotificacion) => {
