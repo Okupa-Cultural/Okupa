@@ -21,19 +21,19 @@ export default class Post extends Component {
 
         return (
         <div className="post-main">
-
+            
             <div className="post-cabecera">
                 <Link to="/perfil">
-                    <img className="post-fotoperfil" src={this.props.image} />
+                    <img className="post-fotoperfil" src={this.props.image} alt="foto de perfil" />
                 </Link>
                 <Link to="/perfil">
                     <p className="post-usuario">{this.props.name}</p>
                 </Link>
+                <i class="fas fa-ellipsis-h post-menu-btn"></i>
             </div>
 
             <div className="post-contenido">
-                <img src={this.props.imagenContenido}>
-                </img>
+                <img src={this.props.imagenContenido} alt="post"/>
             </div>
         
             <div className="post-descripcion">

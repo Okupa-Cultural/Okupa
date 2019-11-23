@@ -20,7 +20,7 @@ export default class Bio extends Component {
     componentDidMount() {
         fetch('http://127.0.0.1:8000/Usuarios/')
             .then(response => response.json())
-            .then(json => { this.setState({ biografia: json[0].Descripcion}) });
+            .then(json => { try { this.setState({ biografia: json[0].description}) } catch { }});
     }
 
     render() {
