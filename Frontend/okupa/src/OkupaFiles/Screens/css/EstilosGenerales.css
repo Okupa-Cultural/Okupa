@@ -5,7 +5,7 @@ body {
 	overflow: hidden;
 }
 
-body, div, li, span, p, input{
+body, div, li, span, p, input, textarea{
 	font-family: roboto, sans-serif;
 	font-weight: 400;
 	color: rgb(255,255,255);

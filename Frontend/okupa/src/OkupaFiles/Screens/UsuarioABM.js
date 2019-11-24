@@ -11,8 +11,8 @@ export default class UsuarioABM extends Component {
     render() {
 
       return (
-        <div className="usuario-abm">
-          <section className="login-seccion" name="seccion1" id="seccion1">
+        <div className="usuario-abm abm">
+          <section className="abm-seccion" name="seccion1" id="seccion1">
             <h2>Bienvenidx a OKUPA!</h2>
             <label>Elije tu nombre de usuario</label>
             <input type="text" name="username" id="username" className="abm-input" autocomplete="off" placeholder="El nombre con el que ingresarás a Okupa" />
@@ -26,7 +26,7 @@ export default class UsuarioABM extends Component {
             <button type="button" className="form-boton abm-boton">Siguiente</button>
           </section>
 
-          <section className="login-seccion" name="seccion2" id="seccion2">
+          <section className="abm-seccion" name="seccion2" id="seccion2">
             <h2>Hablanos de vos...</h2>
             <label>Nombre</label>
             <input type="text" name="nombre" id="nombre" className="abm-input" autocomplete="off" placeholder="Tu nombre o el de tu grupo" />
@@ -40,7 +40,7 @@ export default class UsuarioABM extends Component {
             <button type="button" className="form-boton abm-boton">Siguiente</button>
           </section>
           
-          <section className="login-seccion" name="seccion3" id="seccion3">
+          <section className="abm-seccion" name="seccion3" id="seccion3">
             <h2>Elije tus etiquetas!</h2>
             <h3>No escatimes! con ellas, los espacios u otrxs artistas van a poder encontrarte más fácilmente</h3>
             <div>Aca va el selector de etiquetas :D</div>
@@ -50,7 +50,7 @@ export default class UsuarioABM extends Component {
             <button type="button" className="form-boton abm-boton">Siguiente</button>
           </section>
 
-          <section className="login-seccion" name="seccion4" id="seccion4">
+          <section className="abm-seccion" name="seccion4" id="seccion4">
             <h2>Ya casi terminamos!</h2>
             <h3>Indica la lista de elementos que necesitas para tu puesta en escena. Es <b>opcional</b>, pero altamente <b>recomendable!</b></h3>
             
@@ -71,7 +71,7 @@ export default class UsuarioABM extends Component {
             <button type="button" className="form-boton abm-boton">Finalizar</button>
           </section>
 
-          <section className="login-seccion" name="seccion4" id="seccion4">
+          <section className="abm-seccion" name="seccion4" id="seccion4">
           <h2>Todo listo!</h2>
           <h3>Gracias por unirte a OKUPA. Esperamos que tengas una agradable experiencia</h3>
             
