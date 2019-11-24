@@ -20,7 +20,7 @@
 }
 
 .tarjeta-nombre{
-	font-weight: 700;
+	color:black;
 }
 
 .tarjeta-fechayhora{
@@ -31,6 +31,13 @@
 
 @media (max-width: 500px) {
 	.tarjeta-nombre, .tarjeta-fechayhora{
-		font-size: .8em;
+		font-size: 1.2em;
+	}
+
+	.tarjeta-fotoperfil {
+		margin-left: .5em;
+		height: 2.4em;
+		max-width: 2.4em;
+		background-size: 2.4em;
 	}
 }

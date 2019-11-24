@@ -15,7 +15,6 @@ import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
 import UsuarioABM from './OkupaFiles/Screens/UsuarioABM'     
 //Componentes
 import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
-
 //CSS
 import './App.css';
 
@@ -38,7 +37,7 @@ function App() {
         </Switch>
       )} />
 
-      <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
+     <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
     </div>
   );
 }
