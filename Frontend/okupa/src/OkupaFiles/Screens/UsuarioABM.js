@@ -15,31 +15,36 @@ export default class UsuarioABM extends Component {
         <div className="usuario-abm abm">
           <h1 className="abm-titulo">Registro</h1>
           <section className="abm-seccion" name="seccion1" id="seccion1">
-            <h2>Bienvenidx a OKUPA!</h2>
-            <label>Elije tu nombre de usuario</label>
-            <input type="text" name="username" id="username" className="abm-input" autocomplete="off" autocapitalize="none" tabindex="1" placeholder="El nombre con el que ingresarás a Okupa" />
-            
-            <label>Ingresa tu email</label>
-            <input type="email" name="email" id="email" className="abm-input" autocomplete="off" tabindex="2" placeholder="Para recibir información y que podamos validar tu cuenta" />
+              <h2>Bienvenidx a OKUPA!</h2>
+            <form action="">
+              <label>Elije tu nombre de usuario</label>
+              <input type="text" name="username" id="username" className="abm-input" autocomplete="off" autocapitalize="none" tabindex="1" placeholder="El nombre con el que ingresarás a Okupa" />
+              
+              <label>Ingresa tu email</label>
+              <input type="email" name="email" id="email" className="abm-input" autocomplete="off" tabindex="2" placeholder="Para recibir información y que podamos validar tu cuenta" />
 
-            <label>Elige una contraseña</label>
-            <input type="password" name="password" id="password" className="abm-input" autocomplete="off" tabindex="3" placeholder="Que sea lo más segura posible! :o" />
-          
-            <button type="button" className="form-boton abm-boton">Siguiente</button>
+              <label>Elige una contraseña</label>
+              <input type="password" name="password" id="password" className="abm-input" autocomplete="off" tabindex="3" placeholder="Que sea lo más segura posible! :o" />
+            
+              <button type="button" className="form-boton abm-boton">Siguiente</button>
+            </form>
           </section>
 
           <section className="abm-seccion" name="seccion2" id="seccion2">
             <h2>Hablanos de vos...</h2>
-            <label>Nombre</label>
-            <input type="text" name="nombre" id="nombre" className="abm-input" autocomplete="off" tabindex="4" placeholder="Tu nombre o el de tu grupo" />
 
-            <label>Fecha de inicio</label>
-            <input type="date" name="fechaInicio" id="fechaInicio" className="abm-input input-fecha" autocomplete="off" tabindex="5" placeholder="El día en que tu o tu grupo comenzaron a presentar :')" />
-            
-            <label>Biografía</label>
-            <textarea name="bio" id="bio" className="abm-textarea" autocomplete="off" tabindex="6" placeholder="Una descripción tuya...o de ustedes" />
+            <form action="">
+              <label>Nombre</label>
+              <input type="text" name="nombre" id="nombre" className="abm-input" autocomplete="off" tabindex="4" placeholder="Tu nombre o el de tu grupo" />
 
-            <button type="button" className="form-boton abm-boton">Siguiente</button>
+              <label>Fecha de inicio</label>
+              <input type="date" name="fechaInicio" id="fechaInicio" className="abm-input input-fecha" autocomplete="off" tabindex="5" placeholder="El día en que tu o tu grupo comenzaron a presentar :')" />
+              
+              <label>Biografía</label>
+              <textarea name="bio" id="bio" className="abm-textarea" autocomplete="off" tabindex="6" placeholder="Una descripción tuya...o de ustedes" />
+
+              <button type="button" className="form-boton abm-boton">Siguiente</button>
+            </form>
           </section>
           
           <section className="abm-seccion" name="seccion3" id="seccion3">
