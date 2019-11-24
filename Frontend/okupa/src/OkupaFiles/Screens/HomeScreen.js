@@ -60,7 +60,7 @@ export default class HomeScreen extends Component {
 	    			<Link to="/perfil">
 	    				<div className="nav-boton">CARACTERÍSTICAS</div>
 	    			</Link>
-	    			<Link to="/evento">
+	    			<Link to="/usuarioabm">
 	    				<div className="nav-boton">QUIÉNES SOMOS</div>
 	    			</Link>
 	    			<Link to="/feed">

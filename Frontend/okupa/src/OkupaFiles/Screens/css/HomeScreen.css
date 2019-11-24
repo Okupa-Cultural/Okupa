@@ -158,7 +158,7 @@ Formulario
 }
 
 /*Para poder mostrar un placeholder en dispositivos móviles.
-De otro modo no funciona*/
+De otro modo no funciona
 
 input[type="date"]::before {
    content: "dd/mm/aaa" !important;
@@ -169,7 +169,7 @@ input[type="date"]::before {
 input[type="date"]:focus::before{
    content: "" !important;
    vertical-align: middle;
-}
+}*/
 
 
 /*=======================================
