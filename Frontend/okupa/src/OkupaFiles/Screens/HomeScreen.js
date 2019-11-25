@@ -49,7 +49,7 @@ export default class HomeScreen extends Component {
 	    		</div>
 
 				<label htmlFor="burguer" className="btn-burguer">
-					<i class="fas fa-bars"></i>
+					<i className="fas fa-bars"></i>
 				</label>
 				<input type="checkbox" id="burguer" />
 

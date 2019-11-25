@@ -21,18 +21,19 @@
 	font-weight: 100;
 }
 
+.fa-arrow-alt-circle-up{
+	margin-right: .5em;
+}
+
 @media (max-width: 500px) {
 
 	.input-file-contenedor{
 		margin: 1.5em;
 	}
 	.input-file-texto, .fa-arrow-alt-circle-up{
-		font-size: 1em;
+		font-size: .9em;
 	}
 	.input-file-texto{
 		font-weight: 700;
-	}
-	.fa-arrow-alt-circle-up{
-		margin-right: .5em;
 	}
 }

@@ -105,7 +105,7 @@ label{
     border:none;
     border-radius: 2em;
     color: rgba(255,255,255,.8);
-    font-size: 1em;
+    font-size: .8em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -163,7 +163,7 @@ label{
 @media (max-width: 500px) {
 
 	body{
-		padding-bottom: 8vh;
+		padding-bottom: 16vh;
 	}
 
 	/*Para remover el cuadro azul al tocar 
