@@ -55,11 +55,12 @@ export default class FullScreenImage extends Component {
         this.setState({
             fullscreenStatus: 2
         });
+        window.store.unsubscribe();
     };
 
     render() {
         return(
-            <div className={this.renderFullscreen(this.state.fullscreenStatus)} onClick={() => this.disableFullscreen()}>
+            <div className={this.renderFullscreen(window.store.getState().fullscreenStatus)} onClick={() => this.disableFullscreen()}>
                 <div className="imageContainer">
                     <img src={this.state.selectedImage} alt="imagen"/>
                 </div>
