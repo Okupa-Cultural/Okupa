@@ -1,0 +1,227 @@
+.abm{
+	position: absolute;
+	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
+	width:100vw;
+}
+
+.abm > * {
+	color: #3f3245;
+}
+
+.usuario-abm{
+	display: grid;
+	grid-template-columns: 1fr 35em 1fr;
+	grid-template-rows: 2em 1fr;
+	min-height: 100vh;
+}
+
+.abm-titulo{
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 1.3em;
+	height: 5em;
+	font-size: 1em;
+	background-color: #485461;
+	background-image: linear-gradient(250deg, #485461 0%, #28313b 74%);
+}
+	.abm-titulo h1{
+		font-weight: 100;
+	}
+
+.abm-titulo-texto {
+	font-weight: 400;
+	font-size: 1.5em;
+	color: rgba(255,255,255,.9);
+}
+
+.tarjetas-registro-abm {
+	grid-column: 2 / 3;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.abm-seccion{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 3em;
+	background-color: white;
+	align-self: center;
+	border-radius: .8em;
+	box-shadow: 0 .5em 1.5em rgba(0,0,0,.25);
+}
+
+	.abm-seccion h2{
+		font-size: 3em;
+	}
+
+	.abm-seccion label{
+		font-size: 1.5em;
+		font-weight: 100;
+	}
+
+	.abm-seccion label{
+		margin-top: .5em;
+	}
+
+	.abm-seccion input{
+		font-size: .9em;
+	}
+
+	.abm-seccion input, 
+	.abm-seccion label, 
+	.abm-seccion textarea{
+		width: 100%;
+	}
+
+	.abm-seccion input[type=date]{
+		color: #999;
+	}
+
+	.abm-seccion textarea{
+		margin-top: 1em;
+		padding: 1em;
+		font-size: 1em;
+		color: #222;
+		border: solid 1px rgba(0,0,0,.3);
+		border-radius: 1em;
+		height: 6em;
+	}
+
+	.abm-seccion h2{
+		margin-bottom: .5em;
+	}
+
+	.abm-seccion h3{
+		font-weight: 400;
+	}
+
+.abm-input{
+	padding: 1em;
+	font-size: 1em;
+	color: #3f3245;
+	border-bottom: 1px solid black;
+	border-radius: 0;
+	border-color: rgba(0,0,0,.3);
+}
+
+.abm-boton{
+	width: 15em;
+}
+
+.elemento-temporal{
+	color: black;
+	background-color: #eaeaee;
+	font-size: 2em;
+	font-weight: 100;
+	border-radius: .5em;
+	padding: .5em;
+	margin: .5em;
+}
+
+.indicador-pantalla-actual {
+	grid-column: 2/3;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+.circulo {
+	color: gray;
+	margin-right: 1.5em;
+}
+
+.circuloActivo {
+	color: white;
+	margin-right: 1.5em;
+	animation: inicioCirculo 250ms ease;
+}
+
+@keyframes inicioCirculo {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 500px){
+	
+	.abm-titulo{
+		grid-column: unset;
+		grid-row: unset;
+		height: unset;
+		width: 100vw;
+		padding: 1em 0;
+		padding-left: 2em;
+		font-size: .9em;
+		box-shadow: unset;
+		position: fixed;
+	}
+
+	.usuario-abm{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		grid-template-columns: unset;
+		grid-template-rows: unset;
+		padding-bottom: 8vh;
+		}
+
+	.abm-seccion{
+		grid-column: unset;
+		border-radius: 2em;
+		width: 100vw;
+		padding-top: 1em;
+		margin:0 1em;
+		margin-top: 4.5em;
+		margin-bottom: 5vh;
+	}
+
+	.abm-seccion h2{
+		font-size: 2em;
+		margin: 0;
+		margin-bottom: .5em;
+	}
+
+	.abm-seccion label{
+		font-size: 1em;
+		font-weight: 400;
+	}
+
+	.abm-seccion input, .abm-seccion textarea{
+		font-size: .85em;
+	}
+
+	.abm-seccion input[type=date]{
+		background: white;
+	}
+
+	.indicador-pantalla-actual {
+		display: none;
+		pointer-events: none;
+	}
+
+	.circulo {
+		color: gray;
+		margin-right: 1.5;
+		border: solid 3px red;
+	}
+	
+	.circuloActivo {
+		color: white;
+		margin-right: 1.5em;
+		margin-left: 1.5em;
+		animation: inicioCirculo 250ms ease;
+	}
+}

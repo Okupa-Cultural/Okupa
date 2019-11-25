@@ -2,10 +2,9 @@
 
 body {
 	background-color: #ececeb;
-	overflow: hidden;
 }
 
-body, div, li, span, p, input{
+body, div, li, span, p, input, textarea{
 	font-family: roboto, sans-serif;
 	font-weight: 400;
 	color: rgb(255,255,255);
@@ -20,7 +19,7 @@ button{
 	border: none;
 }
 
-	button:active div, input:active{
+	button:active, button:active div, input:active{
 		box-shadow: inset 0 -100em 100em rgba(255,255,255,.3);
 	}
 
@@ -28,8 +27,9 @@ button{
 		text-shadow: inset 0 0 0 rgba(255,255,255,1);
 	}
 
-html, body, .homescreen {
+html, body {
     overflow-x: hidden;
+    padding: 0;
 }
 
 a{
@@ -39,13 +39,35 @@ a{
 	margin: 0;
 }
 
-input, input:active, button, button:active, a{
+input, 
+input:active, 
+textarea, 
+textarea:active, 
+button, 
+button:active, a{
     outline: none !important;
     -moz-outline:none !important;
 }
 
 input{
 	border: none;
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+textarea{
+	resize: none;
 }
 
 h1, h2, h3, h4, ul{
@@ -83,12 +105,16 @@ label{
     border:none;
     border-radius: 2em;
     color: rgba(255,255,255,.8);
-    font-size: 1em;
+    font-size: .8em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .15em;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+}
+
+.form-boton:hover{
+	cursor: pointer;
 }
 
 /*============= Iconos de FontAwesome a medida =============*/
@@ -136,9 +162,9 @@ label{
 
 @media (max-width: 500px) {
 
-	/*body{
-		padding-bottom: 8vh;
-	}*/
+	body{
+		padding-bottom: 16vh;
+	}
 
 	/*Para remover el cuadro azul al tocar 
 	un link en Chrome pero solo lo tengan 

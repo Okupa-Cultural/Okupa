@@ -1,0 +1,39 @@
+.input-file-contenedor{
+	margin: 3em;
+}
+.input-file {
+    background: #eaeaee;
+    border-radius: 1em;
+    padding: .5em;
+    cursor: pointer;
+    border: solid .3em #eaeaee;
+}
+
+.input-file-texto, .fa-arrow-alt-circle-up{
+	font-size: .9em;
+}
+
+.input-file, .input-file-texto{
+	color:#3f3245;
+}
+
+.input-file-texto{
+	font-weight: 100;
+}
+
+.fa-arrow-alt-circle-up{
+	margin-right: .5em;
+}
+
+@media (max-width: 500px) {
+
+	.input-file-contenedor{
+		margin: 1.5em;
+	}
+	.input-file-texto, .fa-arrow-alt-circle-up{
+		font-size: .9em;
+	}
+	.input-file-texto{
+		font-weight: 700;
+	}
+}

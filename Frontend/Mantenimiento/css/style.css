@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(to top right, #ff085a, #0877ff);
+}
+
+.cuerpo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+
+img {
+	width: 10em;
+	padding-bottom: 5em;
+	transform:translateX(15px);
+}
+
+h1, h2 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.tuerquitas {
+	padding-top: 0.6em;
+	font-size: 5em;
+	color: white;
+}
+
+@media(max-width: 500px) {
+	.h1 {
+		font-size: 5em;
+	}
+
+	img {
+		transform:translateX(10px);
+	}
+
+	h2 {
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		text-align: center;
+	}
+}
