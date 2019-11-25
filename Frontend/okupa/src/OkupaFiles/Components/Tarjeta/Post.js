@@ -24,7 +24,7 @@ export default class Post extends Component {
 
             <div className="post-cabecera">
                 <Link to="/perfil">
-                    <img className="post-fotoperfil" src={this.props.image} />
+                    <img alt="fotoperfil" className="post-fotoperfil" src={this.props.image} />
                 </Link>
                 <Link to="/perfil">
                     <p className="post-usuario">{this.props.name}</p>
@@ -32,7 +32,7 @@ export default class Post extends Component {
             </div>
 
             <div className="post-contenido">
-                <img src={this.props.imagenContenido}>
+                <img alt="imagen del post" src={this.props.imagenContenido}>
                 </img>
             </div>
         
