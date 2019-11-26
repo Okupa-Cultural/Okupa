@@ -11,12 +11,24 @@ export default class Notificaciones extends Component {
         super(props);
 
         this.state = {
-            notificaciones: [{ message: 'Mensaje de prueba', type: 0,}],
+            notificaciones: [{ message: '¡Un usuario te ha aplaudido!', type: 0,},
+                             { message: '¡Un usuario te ha seguido!', type: 1,},
+                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                             { message: '¡Un usuario te ha seguido!', type: 1,},
+                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                             { message: '¡Un usuario te ha seguido!', type: 1,},
+                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                             { message: '¡Un usuario te ha seguido!', type: 1,},
+                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                            ],
         };
     }
 
-    renderNotificaciones = (data) => {
-        return <Notification type={data.type} message={data.message} />;
+    renderNotificaciones = (data, index) => {
+        return <Notification key={index} type={data.type} message={data.message} />;
     }
 
     render() {
@@ -30,6 +42,9 @@ export default class Notificaciones extends Component {
                 </nav>
 
                 <div className="notificacion-notificaciones">
+                    <div className="notificaciones-titulo">
+                        <h2>Notificaciones</h2>
+                    </div>
                     {ContenedorDeNotificaciones}
                 </div>
             </div>

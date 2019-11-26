@@ -1,4 +1,58 @@
 .notificacion-body {
-    background-color: black;
-    width: 100%;
+    background-color: #24292E;
+    border-radius: 10px;
+    display: flex;
+    padding: 0.6em;
+    transition: 250ms ease;
+    margin-bottom: 1em;
+}
+
+.notificacion-body:hover {
+    background-color: #6172FF;
+    cursor: pointer;
+}
+
+.notificacion-body > * {
+    color:white;
+}
+
+.notificacion-body .icono {
+    align-self: center;
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+
+.notificacion-body .clap {
+    color: #E8C05D;
+}
+
+.notificacion-body .follower {
+    color: #FF5E51;
+}
+
+.notificacion-body .comment {
+    color: #63EB9A;
+}
+
+.notificacion-body p {
+    align-self: center;
+    margin-left: 2em;
+}
+
+@media(max-width:500px) {
+
+    .notificacion-body {
+        transition: 50ms ease-in;
+    }
+    .notificacion-body:hover {
+        background-color: #24292E;
+    }
+
+    .notificacion-body:active {
+        background-color: #6172FF;
+    }
+
+    .notificacion-body p {
+        text-align: left;
+    }
 }

@@ -55,7 +55,6 @@ export default class FullScreenImage extends Component {
         this.setState({
             fullscreenStatus: 2
         });
-        window.store.unsubscribe();
     };
 
     render() {

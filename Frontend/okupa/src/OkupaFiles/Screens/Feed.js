@@ -53,6 +53,7 @@ export default class Feed extends Component {
             <Post image="https://avatarfiles.alphacoders.com/142/142187.png" name="hidanshira" imagenContenido="https://c.wallhere.com/photos/f0/31/anime_manga_fan_art_Oshino_Shinobu_Monogatari_Series_vampire_anime_digital_digital_art-1584967.jpg!d"/>
             <Post image="https://avatarfiles.alphacoders.com/142/142187.png" name="hidanshira" imagenContenido="https://imgix.ranker.com/user_node_img/50062/1001223395/original/sasha-looooves-food-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"/>
             <Post image="https://avatarfiles.alphacoders.com/142/142187.png" name="hidanshira" imagenContenido="https://cdna.artstation.com/p/assets/images/images/013/844/846/large/star-yoru-trish.jpg?1541351398"/>
+            <Post image="https://avatarfiles.alphacoders.com/142/142187.png" name="hidanshira" imagenContenido="https://image.winudf.com/v2/image/Y29tLnN1YWRhaDA2MTEuYW5pbWVnaXJsa2F3YWlpYXBwX3NjcmVlbl8yXzE1MjM4OTA0OTRfMDI0/screen-2.jpg?fakeurl=1&type=.jpg"/>
           </div>
         </div>
       );

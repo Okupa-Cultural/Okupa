@@ -15,7 +15,7 @@ export default class ActionBar extends Component {
               <Link to="/evento">
                 <button type="button" className="action-boton"><i className="fad fa-search"></i></button>
               </Link>
-              <Link to="/evento">
+              <Link to="/Notifications">
                 <button type="button" className="action-boton"><i className="fad fa-bell"></i></button>
               </Link>
               <Link to="/feed">

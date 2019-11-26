@@ -3,8 +3,8 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 25em 1fr 25em ;
-    grid-template-rows: 3em 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr ;
+    grid-template-rows: 2em 1fr;
     background-color: #ececeb;
 }
 
@@ -17,4 +17,26 @@
 .notificacion-notificaciones {
     grid-row: 2/3;
     grid-column: 2/3;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+.notificaciones-titulo h2 {
+    color: black;
+    margin: 1em;
+    font-size: 2.5em;
+}
+
+@media(max-width: 500px) {
+    .notificacion-notificaciones {
+        display: flex;
+        margin: 0.5em;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        grid-column: 1/4;
+    }
+
+    .notificaciones-titulo h2 {
+        display: none;
+    }
 }
