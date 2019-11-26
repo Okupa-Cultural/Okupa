@@ -20,13 +20,40 @@ export default class UsuarioABM extends Component {
 
     this.state = {
       pantallaActual : 0,
+      username: '',
+      email: '',
+      password: '',
+      name: '',
+      fechaInicio: '',
+      bio: '',
     };
   }
 
-  cambiarEstadoPantallaActual = (pantallaNueva) => {
+  cambiarEstadoPantallaActual = (pantallaNueva , formPantalla) => {
+
+    switch(pantallaNueva) {
+      case 1:
+          this.setState({
+            username : formPantalla.get('username'),
+            email: formPantalla.get('mail'),
+            password: formPantalla.get('password'),
+          }); break;
+      case 2: 
+        this.setState({
+          name : formPantalla.get('name'),
+          fechaInicio: formPantalla.get('fechaInicio'),
+          bio: formPantalla.get('bio'),
+      }); break;
+      case 3: break;
+      case 4: break;
+      default: break;
+    }
+
     this.setState({
       pantallaActual : pantallaNueva,
     });
+
+    console.log(this.state)
   };
 
   indicadorPantallaActual = (cantidadPantallas) => {
@@ -35,9 +62,9 @@ export default class UsuarioABM extends Component {
 
     for(var i = 0; i < cantidadPantallas; i++) {
       if(i !== this.state.pantallaActual) {
-        circulitos[i] = <i className="fas fa-circle circulo"/>
+        circulitos[i] = <i key={i} className="fas fa-circle circulo"/>
       } else {
-        circulitos[i] = <i className="fas fa-circle circuloActivo"/>
+        circulitos[i] = <i key={i} className="fas fa-circle circuloActivo"/>
       }
     }
 

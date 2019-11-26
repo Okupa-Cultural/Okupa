@@ -5,7 +5,9 @@ const initialState = {
     userid: 0,
     selectedImage: '',
     fullscreenState: 2,
-    ocultarActionBar: 0
+    ocultarActionBar: 0,
+    notifications: [],
+    notificacionesSinLeer: 0,
 };
 
 function rootReducer(state = initialState, action) {
