@@ -29,7 +29,7 @@ export default class Post extends Component {
                 <Link to="/perfil">
                     <p className="post-usuario">{this.props.name}</p>
                 </Link>
-                <i class="fas fa-ellipsis-h post-menu-btn"></i>
+                <i className="fas fa-ellipsis-h post-menu-btn"></i>
             </div>
 
             <div className="post-contenido">

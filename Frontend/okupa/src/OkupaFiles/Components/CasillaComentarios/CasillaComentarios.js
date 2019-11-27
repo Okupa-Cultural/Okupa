@@ -22,13 +22,13 @@ export default class CasillaComentarios extends Component {
       }
   
       componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/comments/')
+        fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
             .then(response => response.json())
             .then(json => { this.setState({ comentarios: json}); });
       }
 
     renderComentarios = (comentario) => {
-        return <Comentario content={comentario.body} username={comentario.email} />
+        return <Comentario className="comentario-casilla-body" content={comentario.body} username={comentario.email} />
     }
   
 

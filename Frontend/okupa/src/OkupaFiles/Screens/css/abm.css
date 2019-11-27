@@ -11,6 +11,23 @@
 	color: #3f3245;
 }
 
+<<<<<<< HEAD
+=======
+.usuario-abm{
+	display: grid;
+	grid-template-columns: 1fr 35em 1fr;
+	grid-template-rows: 2em 1fr;
+	min-height: 100vh;
+}
+
+.tarjetas-registro-abm-form {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+>>>>>>> cb31224282a6ae8e50df3e6cc8eac2f7dd773746
 .abm-titulo{
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
@@ -35,6 +52,7 @@
 
 .tarjetas-registro-abm {
 	grid-column: 2 / 3;
+	grid-row:2/3;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -69,7 +87,7 @@
 	}
 
 	.abm-seccion input{
-		font-size: .9em;
+		font-size: 1em;
 	}
 
 	.abm-seccion input, 

@@ -14,6 +14,7 @@ import Feed from './OkupaFiles/Screens/Feed';
 import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
 import UsuarioABM from './OkupaFiles/Screens/UsuarioABM';
 import EventoABM from './OkupaFiles/Screens/EventoABM';     
+import Notificaciones from './OkupaFiles/Screens/Notificaciones';     
 
 //Componentes
 import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
@@ -37,6 +38,7 @@ function App() {
           <Route path="/feed" component={Feed}/>
           <Route path="/usuarioAbm" component={UsuarioABM}/>
           <Route path="/eventoAbm" component={EventoABM}/>
+          <Route path="/notifications" component={Notificaciones}/>
         </Switch>
       )} />
 
