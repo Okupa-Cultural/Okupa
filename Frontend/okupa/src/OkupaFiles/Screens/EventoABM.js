@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import {  Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
  
 //Components
 //import InputFile from './../Components/Generales/InputFile/InputFile';
@@ -13,7 +13,13 @@ export default class EventoABM extends Component {
 
       return (
         <div className="evento-abm abm">
-          <h1 className="abm-titulo">Nuevo evento</h1>
+          
+          <div className="abm-titulo">
+            <Link to="/">
+              <h1 className="abm-titulo-texto">Nuevo evento</h1>
+            </Link>
+          </div>
+
           <section className="abm-seccion" name="evento-abm-seccion" id="seccion1">
             
             <form action="">
