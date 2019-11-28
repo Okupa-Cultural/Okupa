@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //Imagenes
 
 ///////
+import SwipeableViews from 'react-swipeable-views';
 //Components
 //import NavBar from './../Components/Navigation/NavBar';
 import TarjetaRegistro from '../Components/Registro/TarjetaRegistro';
@@ -10,6 +11,12 @@ import TarjetaRegistro from '../Components/Registro/TarjetaRegistro';
 import './css/Registro.css';
 import './css/EstilosGenerales.css';
 
+const slide = {
+  slide1 : <TarjetaRegistro body="Quiero presentarme en eventos y también organizarlos" clase="artista"/>,
+  slide2 : <TarjetaRegistro body="Quiero solo organizar eventos" clase="espacio" />,
+  slide3 : <TarjetaRegistro body="¡Ninguna! Solo quiero información" clase="butaca"/>,
+};
+
 export default class Registro extends Component {
   
   render() {
@@ -17,17 +24,17 @@ export default class Registro extends Component {
     return (
       
       <div className="registro-screen">
-
+        <SwipeableViews className="swipe-registro">
           <div className="tarjeta-1">
-            <TarjetaRegistro body="Quiero presentarme en eventos y también organizarlos" clase="artista"/>
+            {slide.slide1}
           </div>
           <div className="tarjeta-2">
-           <TarjetaRegistro body="Quiero solo organizar eventos" clase="espacio" />
+            {slide.slide2}
           </div>
           <div className="tarjeta-3">
-           <TarjetaRegistro body="¡Ninguna! Solo quiero información" clase="butaca"/>  
+            {slide.slide3}
           </div>
-          
+        </SwipeableViews>
       </div>
     );
   }

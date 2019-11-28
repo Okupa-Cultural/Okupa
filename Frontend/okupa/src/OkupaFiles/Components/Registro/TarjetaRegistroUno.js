@@ -20,7 +20,7 @@ export default class TarjetaRegistroUno extends Component {
                     <input type="text" name="name" id="username" className="abm-input" autoComplete="off" autoCapitalize="none" tabIndex="1" required={true} placeholder="El nombre con el que ingresarás a Okupa" />
                     
                     <label>Ingresa tu email</label>
-                    <input type="email" name="mail" id="email" className="abm-input" autoComplete="off" tabIndex="2" required={true} placeholder="Para recibir información y que podamos validar tu cuenta" />
+                    <input type="email" name="mail" id="email" className="abm-input" autoComplete="off" tabIndex="2" required={true} placeholder="Para que podamos validar tu cuenta" />
         
                     <label>Elige una contraseña</label>
                     <input type="password" name="password" id="password" className="abm-input" autoComplete="off" tabIndex="3" required={true} placeholder="Que sea lo más segura posible! :o" />

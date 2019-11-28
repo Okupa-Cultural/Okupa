@@ -26,9 +26,10 @@ export default class TarjetaRegistroCuatro extends Component {
                     <div className="elemento-temporal">Acá va a estar la tabla para cargar el rider de luces <br /> C|:=)</div>
                     
                     <label htmlFor="">Planos escénicos</label>
-
-                    <InputFile valor="Plano de escenario" inputId="plano-escenario"/>
-                    <InputFile valor="Plano de luces" inputId="plano-luces" />
+                    <div className="tarjeta-registro-planos">
+                        <InputFile valor="Plano de escenario" inputId="plano-escenario"/>
+                        <InputFile valor="Plano de luces" inputId="plano-luces" />
+                    </div>
 
                     <Link to="/feed">
                         <input type="submit" className="form-boton abm-boton" value="Finalizar"></input>

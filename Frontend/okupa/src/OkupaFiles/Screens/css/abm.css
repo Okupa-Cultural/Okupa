@@ -11,8 +11,6 @@
 	color: #3f3245;
 }
 
-<<<<<<< HEAD
-=======
 .usuario-abm{
 	display: grid;
 	grid-template-columns: 1fr 35em 1fr;
@@ -27,7 +25,17 @@
 	align-items: center;
 }
 
->>>>>>> cb31224282a6ae8e50df3e6cc8eac2f7dd773746
+.abm-seccion {
+	animation: aparicion 1.5s ease;
+}
+
+@keyframes aparicion {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
 .abm-titulo{
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
@@ -158,6 +166,20 @@
 	color: white;
 	margin-right: 1.5em;
 	animation: inicioCirculo 250ms ease;
+}
+
+.abm-input {
+	transition: 250ms ease;
+}
+
+.abm-input:focus {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.2em;
+}
+
+.abm-input::placeholder {
+	color: lightgray;
 }
 
 @keyframes inicioCirculo {
