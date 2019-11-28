@@ -14,14 +14,18 @@ export default class TarjetaRegistroTres extends Component {
     render() {
         return(
             <section className="abm-seccion" name="seccion3" id="seccion3">
-                <form className="tarjetas-registro-abm-form" onSubmit={this.handleForm} action="">
-                    <h2>Elije tus etiquetas!</h2>
-                    <h3>No escatimes! con ellas, otros espacios y artistas van a poder encontrarte más fácilmente</h3>
-                    
-                    <div className="elemento-temporal">Aca va el selector de etiquetas <br /> :D</div>
-        
-                    <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
-                </form>
+                <div className="abm-seccion-cabecera">
+                        <h1>Registro</h1>
+                </div>
+                <div className="abm-seccion-cuerpo">
+                    <h2>Elegí tus etiquetas!</h2>
+                    <h3>Son para que espacios y artistas te puedan encontrar</h3>
+                    <form onSubmit={this.handleForm} action="">
+                        <div className="elemento-temporal">Aca va el selector de etiquetas <br /> :D</div>
+
+                        <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
+                    </form>
+                </div>
             </section>
         );
     }

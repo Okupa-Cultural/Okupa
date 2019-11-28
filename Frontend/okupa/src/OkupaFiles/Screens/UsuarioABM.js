@@ -7,6 +7,7 @@ import {  Link } from 'react-router-dom';
 import './css/EstilosGenerales.css';
 import './css/abm.css'
 
+
 //TarjetasFormulario
 import TarjetaRegistroUno from './../Components/Registro/TarjetaRegistroUno';
 import TarjetaRegistroDos from './../Components/Registro/TarjetaRegistroDos';
@@ -92,15 +93,9 @@ export default class UsuarioABM extends Component {
 
     return (
       <div className="usuario-abm abm">
-        <div className="abm-titulo">
-          <Link to="/">
-            <h1 className="abm-titulo-texto">Registro</h1>
-          </Link>
-        </div>
-
-        {renderIndicadorActual}
         
         <div className="tarjetas-registro-abm">
+          {renderIndicadorActual}
           {renderPantallaActual}
         </div>
         

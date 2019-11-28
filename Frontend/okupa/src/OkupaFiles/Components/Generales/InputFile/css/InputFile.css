@@ -26,12 +26,17 @@
 }
 
 @media (max-width: 500px) {
-
-	.input-file-contenedor{
-		margin: 1.5em;
+	.input-file, .input-file-contenedor{
+		margin: .75em;
+		padding: 0;
+		min-width: 100%;
 	}
+	.input-file{
+		padding: 0 1em;
+	}
+
 	.input-file-texto, .fa-arrow-alt-circle-up{
-		font-size: .9em;
+		font-size: .8em;
 	}
 	.input-file-texto{
 		font-weight: 700;

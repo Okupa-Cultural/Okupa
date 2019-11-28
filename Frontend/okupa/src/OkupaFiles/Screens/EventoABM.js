@@ -5,7 +5,7 @@ import {  Link } from 'react-router-dom';
 //import InputFile from './../Components/Generales/InputFile/InputFile';
 //CSS
 import './css/EstilosGenerales.css';
-import './css/abm.css'
+//import './css/abm.css'
 
 export default class EventoABM extends Component {
 
