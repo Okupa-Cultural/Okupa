@@ -35,6 +35,9 @@ export default class Registro extends Component {
             {slide.slide3}
           </div>
         </SwipeableViews>
+        <div className="swipe-tutorial">
+          <i className="fad fa-chevron-double-right"></i>
+        </div>
       </div>
     );
   }
