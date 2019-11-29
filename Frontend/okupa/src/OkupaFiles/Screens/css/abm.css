@@ -18,6 +18,7 @@ Tarjeta
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 2em;
 	animation: aparicion 1s ease;
 }
 
@@ -59,7 +60,8 @@ Tarjeta
 
 	.abm-seccion-cuerpo label{
 		font-size:1.4em;
-		font-weight: 100;
+		font-weight: 400;
+		opacity: .8;
 		margin: .5em 0;
 	}
 
@@ -72,6 +74,7 @@ Tarjeta
 
 .abm-input, .abm-seccion-cuerpo textarea{
 	font-size: .85em;
+	font-weight: 400;
 	color: #3f3245;
 	border-bottom: 1px solid black;
 	border-color: rgba(0,0,0,.3);
@@ -169,7 +172,7 @@ Mediaquerys - Media querys
 
 	.tarjetas-registro-abm{
 		grid-column: unset;
-		margin-top: 0;
+		padding:0;
 		min-width: 20em;
 		max-width: 89%;
 	}
