@@ -13,9 +13,48 @@ export default class Post extends Component {
         super(props);
 
         this.state = {
-            name : 'hidanshira'
+            name : 'hidanshira',
+            clapTouched: false,
+            scheduleTouched: false,
+            claps: 0,
         }
     }
+
+    touchedButton = (buttonType) => {
+        switch(buttonType) {
+            case 1: let estado = !this.state.clapTouched; 
+                    let aplausos = this.state.claps;
+                    if(estado) {
+                        this.setState({claps : aplausos + 1});
+                    } else {
+                        this.setState({claps : aplausos - 1});
+                    }
+                    this.setState({
+                        clapTouched: estado,
+                    }); break;
+            case 2: let estado2 = !this.state.scheduleTouched;
+                this.setState({
+                    scheduleTouched: estado2,
+                 }); break;
+            default: break;
+        }
+    };
+
+    displayButton = (buttonType) => {
+        if(buttonType === 1) {
+            if(this.state.clapTouched) {
+                return 'post-boton-likeActivo';
+            } else {
+                return 'post-boton-like';
+            }
+        } else {
+            if(this.state.scheduleTouched) {
+                return 'post-boton-agendarActivo';
+            } else {
+                return 'post-boton-agendar';
+            }
+        }
+    };
 
     render() {
 
@@ -42,14 +81,18 @@ export default class Post extends Component {
                     Morbi egestas, leo eu interdum cursus, 
                     augue ligula faucibus est, quis consectetur 
                     lacus velit vitae metus. Proin vulputate 
-                    feugiat con</p>
+                    feugiat con
+                    <br/>
+                    <br/>
+                    {this.state.claps} Aplausos
+                </p>
             </div>
 
             
-            <div className="post-boton post-boton-like">
+            <div onClick={() => this.touchedButton(1)} className={"post-boton " + this.displayButton(1)}>
                 <i className="far fa-sign-language"></i>
             </div>
-            <div className="post-boton post-boton-agendar">
+            <div onClick={() => this.touchedButton(2)} className={"post-boton " + this.displayButton(2)}>
                 <i className="far fa-calendar-alt"></i>
             </div>
             <div className="post-boton post-boton-comentar">

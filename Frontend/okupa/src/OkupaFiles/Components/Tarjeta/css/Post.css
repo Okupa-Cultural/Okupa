@@ -115,7 +115,31 @@
 	align-self: center;
 }
 
+
+.post-boton-likeActivo {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	height: 100%;
+	max-width: 100%;
+	border-right: 1px solid lightgray;
+}
+
+
+
+.post-boton-likeActivo i {
+	font-size: 2em;
+	align-self: center;
+	color:#FFDE67;
+}
+
 .post-boton-agendar {
+	grid-column: 2/3;
+	grid-row: 4/5;
+	height: 100%;
+	max-width: 100%;
+}
+
+.post-boton-agendarActivo {
 	grid-column: 2/3;
 	grid-row: 4/5;
 	height: 100%;
@@ -125,6 +149,12 @@
 .post-boton-agendar i {
 	font-size: 2em;
 	align-self: center;
+}
+
+.post-boton-agendarActivo i {
+	font-size: 2em;
+	align-self: center;
+	color: #5A87E8;
 }
 
 .post-botonera {
