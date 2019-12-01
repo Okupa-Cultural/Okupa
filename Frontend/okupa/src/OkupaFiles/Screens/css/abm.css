@@ -1,10 +1,23 @@
 
 .abm{
-	display: grid;
-	grid-template-columns: 1fr 35em 1fr;
 	min-height: 100vh;
 	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
 	width:100vw;
+}
+
+/*
+===================================
+Grilla de los distintos abm
+===================================
+*/
+.usuario-abm{
+	display: grid;
+	grid-template-columns: 1fr 35em 1fr;
+}
+
+.evento-abm{
+	display: grid;
+	grid-template-columns: 1em 10fr 1fr;
 }
 
 /*
@@ -13,14 +26,21 @@ Tarjeta
 ===================================
 */
 
-.tarjetas-registro-abm{
-	grid-column: 2 /  3;
+/*Conenedor de tarjetas (ct) general*/
+
+.contenedor-tarjetas{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 2em;
 	animation: aparicion 1s ease;
 }
+
+	/*Conenedor de tarjetas (ct) por abm*/
+
+	.ct-usuario, .ct-evento{
+		grid-column: 2 /  3;
+	}
 
 .abm-seccion{
 	margin-top: 1em;
@@ -47,6 +67,9 @@ Tarjeta
 	background: white;
 	border-bottom-left-radius: 1em;
 	border-bottom-right-radius: 1em;
+}
+
+.abm-seccion-cuerpo *{
 	color: #3f3245;
 }
 	.abm-seccion-cuerpo h2, .abm-seccion-cuerpo h3{
@@ -62,7 +85,7 @@ Tarjeta
 		font-size:1.4em;
 		font-weight: 400;
 		opacity: .8;
-		margin: .5em 0;
+		margin: .85em 0 .5em 0;
 	}
 
 	.abm-seccion-cuerpo textarea{
@@ -78,23 +101,61 @@ Tarjeta
 	color: #3f3245;
 	border-bottom: 1px solid black;
 	border-color: rgba(0,0,0,.3);
-	transition: 75ms ease-in-out;
+	transition: 18ms ease;
 }
 
-	.abm-input:focus {
-	font-size: .9em;
-	border-color: rgba(0,0,0,.3);
+	.abm-input::placeholder,
+	input[type="date"]::placeholder,
+	textarea::placeholder{
+		color: rgba(0,0,0,.7);
 	}
 
-	.abm-input::placeholder, input[type="date"]::placeholder {
-	color: rgba(0,0,0,.3);
-}
+	input[type="date"]{
+		font-size: 1.5em;
+	}
+
 
 .abm-boton{
 	min-width: 100%;
 }
 
+/*=============================
+	Elementos particulares
+===============================
+*/
 
+/*EventoAbm - abm de eventos*/
+
+.evento-abm-titulo{
+	width: 100%;
+	font-weight: 700 !important;
+}
+
+.evento-abm-fechas, .evento-abm-horario{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+	.fecha-elemento, .horario-elemento{
+		width: 50%;
+		text-align: left;
+	}
+
+.evento-abm-dias{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+		.evento-abm-dias label{
+			font-size: 1.3em;
+		}
+
+.evento-abm-fechas, 
+.evento-abm-dias, 
+.evento-abm-horario{
+	margin-top: 1.5em;
+}
 /*
 ===================================
 Indicador de pantalla
@@ -166,11 +227,20 @@ Mediaquerys - Media querys
 		align-items: flex-start;
 	}
 
+	.usuario-abm, .evento-abm{
+		display: flex;
+		grid-template-columns: unset;
+	}
+
+	.evento-abm{
+		width: 100vw;
+	}
+
 	.indicador-pantalla-actual{
 		margin-top: 2em;
 	}
 
-	.tarjetas-registro-abm{
+	.contenedor-tarjetas{
 		grid-column: unset;
 		padding:0;
 		min-width: 20em;
@@ -191,6 +261,10 @@ Mediaquerys - Media querys
 
 	.abm-seccion[name=seccion4]{
 		margin-bottom:16vh;
+	}
+
+	.abm-seccion[name=seccion2]{
+		width: 85vw;
 	}
 
 	.abm-seccion-cuerpo{

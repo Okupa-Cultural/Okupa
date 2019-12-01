@@ -4,7 +4,12 @@ body {
 	background-color: #ececeb;
 }
 
-body, div, li, span, p, input, textarea{
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+body, div, li, span, p, input, textarea, select, option{
 	font-family: roboto, sans-serif;
 	font-weight: 400;
 	color: rgb(255,255,255);
@@ -19,20 +24,19 @@ button{
 	border: none;
 }
 
-	button:active, button:active div, input:active{
-		box-shadow: inset 0 -100em 100em rgba(255,255,255,.3);
+	button:active, 
+	button:active div, 
+	input:active{
+		box-shadow: inset 0 100em 100em rgba(255,255,255,.3)
 	}
 
-	button:active, button:active i{
+	button:active, 
+	button:active i{
 		text-shadow: inset 0 0 0 rgba(255,255,255,1);
 	}
 
-html, body {
-    overflow-x: hidden;
-    padding: 0;
-}
-
-a{
+a, 
+a:visited{
 	text-decoration: none;
 	color: inherit;
 	padding: 0;
@@ -42,29 +46,49 @@ a{
 input, 
 input:active, 
 textarea, 
-textarea:active, 
+textarea:active,
+label,
+label:active,
 button, 
-button:active, a{
+button:active, 
+a,
+select,
+select:active,
+select:focus,
+select option{
     outline: none !important;
     -moz-outline:none !important;
+    border-color: inherit !important;
 }
 
 input{
 	border: none;
 }
 
+input::-moz-focus-inner,
+label::-moz-focus-inner,
+textarea::-moz-focus-inner,
+select::-moz-focus-inner{
+	border: none;
+}
+
 input[type=date]::-webkit-inner-spin-button, 
-input[type=date]::-webkit-outer-spin-button { 
+input[type=date]::-webkit-outer-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button{ 
   -webkit-appearance: none; 
   margin: 0; 
 }
-
-
 
 input[type="file"] {
     display: none;
 }
 
+input:-moz-ui-invalid{
+	border: none;
+	background: rgba(255,10,25,.3);
+	box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+}
 
 textarea{
 	resize: none;
@@ -88,6 +112,10 @@ form{
 
 label{
 	text-align: left;
+}
+
+.abm-select select:focus{
+	font-weight: 700;
 }
 
 

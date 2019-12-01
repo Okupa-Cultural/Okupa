@@ -21,13 +21,13 @@ export default class TarjetaRegistroDos extends Component {
                     <h2>Hablanos de vos...</h2>
                     <form onSubmit={this.handleForm} action="">
                         <label htmlFor="">Nombre</label>
-                        <input type="text" name="nombre" required={false} id="nombre" className="abm-input" autoComplete="off" tabIndex="4" placeholder="Tu nombre o el de tu grupo" />
+                        <input type="text" name="nombre" required={true} id="nombre" className="abm-input" autoComplete="off" tabIndex="4" placeholder="Tu nombre o el de tu grupo" />
 
                         <label htmlFor="">Fecha de inicio</label>
-                        <input type="date" name="fechaInicio" id="fechaInicio" required={false} className="abm-input input-fecha" autoComplete="off" tabIndex="5" placeholder="El día en que tu o tu grupo comenzaron a presentar :')" />
+                        <input type="date" name="fechaInicio" id="fechaInicio" required={true} className="abm-input input-fecha" autoComplete="off" tabIndex="5" placeholder="El día en que tu o tu grupo comenzaron a presentar :')" />
 
                         <label htmlFor="">Biografia</label>
-                        <textarea name="bio" id="bio" required={false} className="abm-textarea" autoComplete="off" tabIndex="6" placeholder="Una descripción tuya...o de ustedes" />
+                        <textarea name="bio" id="bio" required={true} className="abm-textarea" autoComplete="off" tabIndex="6" placeholder="Una descripción tuya...o de ustedes" />
 
                         <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
                     </form>

@@ -94,7 +94,7 @@ export default class UsuarioABM extends Component {
     return (
       <div className="usuario-abm abm">
         
-        <div className="tarjetas-registro-abm">
+        <div className="contenedor-tarjetas ct-usuario">
           {renderIndicadorActual}
           {renderPantallaActual}
         </div>
