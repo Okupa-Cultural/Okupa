@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 //CSS
 import './css/EstilosGenerales.css';
-import './css/abm.css'
+import './css/UsuarioABM.css'
 
 
 //TarjetasFormulario
@@ -92,9 +92,9 @@ export default class UsuarioABM extends Component {
     let renderIndicadorActual = this.indicadorPantallaActual(4);
 
     return (
-      <div className="usuario-abm abm">
+      <div className="usuario-abm">
         
-        <div className="contenedor-tarjetas ct-usuario">
+        <div className="contenedor-tarjetas">
           {renderIndicadorActual}
           {renderPantallaActual}
         </div>

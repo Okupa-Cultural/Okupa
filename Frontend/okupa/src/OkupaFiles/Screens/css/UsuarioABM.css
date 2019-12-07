@@ -1,23 +1,10 @@
 
-.abm{
+.usuario-abm{
 	min-height: 100vh;
 	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
 	width:100vw;
-}
-
-/*
-===================================
-Grilla de los distintos abm
-===================================
-*/
-.usuario-abm{
 	display: grid;
 	grid-template-columns: 1fr 35em 1fr;
-}
-
-.evento-abm{
-	display: grid;
-	grid-template-columns: 1em 10fr 1fr;
 }
 
 /*
@@ -29,6 +16,7 @@ Tarjeta
 /*Conenedor de tarjetas (ct) general*/
 
 .contenedor-tarjetas{
+	grid-column: 2 /  3;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -36,11 +24,6 @@ Tarjeta
 	animation: aparicion 1s ease;
 }
 
-	/*Conenedor de tarjetas (ct) por abm*/
-
-	.ct-usuario, .ct-evento{
-		grid-column: 2 /  3;
-	}
 
 .abm-seccion{
 	margin-top: 1em;
@@ -124,38 +107,7 @@ Tarjeta
 ===============================
 */
 
-/*EventoAbm - abm de eventos*/
 
-.evento-abm-titulo{
-	width: 100%;
-	font-weight: 700 !important;
-}
-
-.evento-abm-fechas, .evento-abm-horario{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-	.fecha-elemento, .horario-elemento{
-		width: 50%;
-		text-align: left;
-	}
-
-.evento-abm-dias{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-		.evento-abm-dias label{
-			font-size: 1.3em;
-		}
-
-.evento-abm-fechas, 
-.evento-abm-dias, 
-.evento-abm-horario{
-	margin-top: 1.5em;
-}
 /*
 ===================================
 Indicador de pantalla
@@ -212,6 +164,7 @@ Mediaquerys - Media querys
 	.abm{
 		grid-template-columns: 1fr 30em 1fr;
 	}
+
 }
 
 @media (max-width: 500px) {
