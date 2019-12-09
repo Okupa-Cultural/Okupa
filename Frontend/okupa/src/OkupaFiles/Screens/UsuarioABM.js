@@ -45,8 +45,8 @@ export default class UsuarioABM extends Component {
           fechaInicio: formPantalla.get('fechaInicio'),
           bio: formPantalla.get('bio'),
       }); break;
-      case 3: break;
-      case 4: break;
+      case 3: this.postJson(); break;
+      case 4: this.postJson(); break;
       default: break;
     }
 
@@ -54,8 +54,24 @@ export default class UsuarioABM extends Component {
       pantallaActual : pantallaNueva,
     });
 
-    console.log(this.state)
+    //console.log(this.state)
   };
+
+  postJson = () => {
+    console.log("entro");
+    var url = 'http://127.0.0.1:8000/users';
+    var data = this.state;
+    
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(data), // data can be `string` or {object}!
+      headers:{
+        'Content-Type': 'application/json'
+      }
+    }).then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => console.log('Success:', response));
+  }
 
   indicadorPantallaActual = (cantidadPantallas) => {
 
