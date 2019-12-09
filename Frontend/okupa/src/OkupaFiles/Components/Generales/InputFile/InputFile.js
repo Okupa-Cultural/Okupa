@@ -10,13 +10,13 @@ export default class InputFile extends Component {
         return(
 
             <div className="input-file-contenedor">
-                <label htmlFor={this.props.inputId} className="input-file">
+                <label htmlFor={this.props.inputId} className="input-file" tabIndex={this.props.tabindex}>
                     <i className="fas fa-arrow-alt-circle-up"></i> 
                     <span className="input-file-texto">
                         {this.props.valor}
                     </span>
                 </label>
-                <input type="file" name={this.props.inputId} id={this.props.inputId} tabIndex="9" />
+                <input type="file" name={this.props.inputId} id={this.props.inputId} tabIndex={this.props.tabindex} />
             </div>
         );
     }
