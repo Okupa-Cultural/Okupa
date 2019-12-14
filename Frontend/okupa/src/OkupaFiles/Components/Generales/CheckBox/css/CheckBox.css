@@ -7,6 +7,11 @@
 	padding: .2em .15em;
 }
 
+.input-check-contenedor, 
+.input-check-contenedor-disabled{
+	margin-right: .25em;
+}
+
 .input-check-contenedor,
 .input-check-contenedor-disabled,
 .input-check-contenedor:active,

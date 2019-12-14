@@ -22,39 +22,47 @@ export default class EventoABM extends Component {
 
               <fieldset>
                 <legend>Horario</legend>
-                    <div>
+                    <div className="fechas">
                       <label htmlFor="">Inicio</label>
-                      <input type="datetime" name="start"  tabindex="1"/>
+                      <input type="date" name="start"  tabindex="1"/>
                     </div>
-                    <div>
+                    <div className="fechas">
                       <label htmlFor="">Fin</label>
-                      <input type="datetime-local" name="end"  tabindex="1"/>
+                      <input type="date" name="end"  tabindex="1"/>
                     </div>
               </fieldset>
               <fieldset>
                 <legend>Período</legend>
 
                 <div className="semana">
-                  <CheckBox CheckID="lunes" />
-                  <label htmlFor="lunes" className="dias" tabindex="1">Lunes</label>
-                  
-                  <CheckBox CheckID="martes" />
-                  <label htmlFor="martes" className="dias" tabindex="1">Martes</label>
-                  
-                  <CheckBox CheckID="miercoles" />
-                  <label htmlFor="miercoles" className="dias" tabindex="1">Miércoles</label>
-                  
-                  <CheckBox CheckID="jueves" />
-                  <label htmlFor="jueves" className="dias" tabindex="1">Jueves</label>
-                  
-                  <CheckBox CheckID="viernes" />
-                  <label htmlFor="viernes" className="dias" tabindex="1">Viernes</label>
-                  
-                  <CheckBox CheckID="sabado" />
-                  <label htmlFor="sabado" className="dias" tabindex="1">Sábado</label>
-                  
-                  <CheckBox CheckID="domingo" /> 
-                  <label htmlFor="domingo" className="dias" tabindex="1">Domingo</label>
+                  <div className="dias">
+                      <CheckBox CheckID="lunes" />
+                      <label htmlFor="lunes" tabindex="1" className="dia-descripcion">Lunes</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="martes" />
+                      <label htmlFor="martes"tabindex="1" className="dia-descripcion">Martes</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="miercoles" />
+                      <label htmlFor="miercoles" tabindex="1" className="dia-descripcion">Miercoles</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="jueves" />
+                      <label htmlFor="jueves" tabindex="1" className="dia-descripcion">Jueves</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="viernes" />
+                      <label htmlFor="viernes" tabindex="1" className="dia-descripcion">Viernes</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="sabado" />
+                      <label htmlFor="sabado" tabindex="1" className="dia-descripcion">Sábado</label>
+                  </div>
+                  <div className="dias">
+                      <CheckBox CheckID="domingo" />
+                      <label htmlFor="domingo" tabindex="1" className="dia-descripcion">Domingo</label>
+                  </div>
                 </div>
                 <div className="repeticion">
                   <label htmlFor="">Cada</label>
