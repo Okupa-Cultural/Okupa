@@ -1,6 +1,6 @@
 .perfil{
 	display: grid;
-	grid-template-columns: 23em 1fr 23em;
+	grid-template-columns: 23em 5fr 1fr;
 	grid-template-rows: 18em 1fr;
 	background: #ececeb;
 }
@@ -83,7 +83,6 @@ CUERPO
 */
 
 .perfil-cuerpo{
-	max-width: 60em;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	padding: 1.5em;
