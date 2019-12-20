@@ -12,14 +12,16 @@
 	z-index: 100;
 }
 
-.actionbar a{
+.actionbar a,
+.nuevo-contenedor{
 	width: 100%;
 	height: 100%;
 	background-position: center;
   	transition: background 0.8s;
 }
 
-.actionbar a:active{
+.actionbar a:active,
+.nuevo-contenedor:active{
   	background-color: #CfCfCf;
   	background-size: 100%;
  	transition: background 0s;
@@ -27,6 +29,113 @@
 
 .action-boton i{
 	font-size: 2em;
+}
+
+.nuevo i,
+.nuevo-revelado i{
+	font-size: 1.5em;
+	padding: .125em .25em;
+	border: solid 2px rgba(0,0,0,1);
+	border-radius: 2em;
+	transform: rotate(0deg);
+	z-index: 10;
+}
+
+.nuevo,
+.nuevo i,
+.nuevo-revelado,
+.nuevo-revelado i{
+	transition: 250ms ease;
+}
+
+.nuevo, .nuevo-revelado{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nuevo-revelado i{
+	padding: .2em .3em;
+	border: solid 2px rgba(0,0,0,0);
+	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
+	color: rgba(255,255,255,.8);
+	font-size: 2.5em;
+	box-shadow: 0 0 5px rgba(255,50,50,.5);
+	transform: translateY(-8vh) rotate(45deg);
+}
+
+.action-boton-oculto, 
+.action-boton-revelado,
+.primero,
+.segundo,
+.tercero,
+.cuarto{
+	display: flex;
+	width: 2.5em;
+	height: 2.5em;
+	margin-left: .7em;
+	justify-content: center;
+	align-items: center;
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 10em;
+	z-index: 1;
+	transition: 250ms ease;
+}
+
+.action-boton-oculto{
+	opacity: 0;
+}
+
+.action-boton-revelado{
+	opacity: 1;
+}
+
+	.primero{
+		transform: translate(0em, -20em);
+		transition-delay: 25ms;
+	}
+
+	.segundo{
+		transform: translate(-5.5em, -19em);
+		transition-delay: 50ms;
+	}
+
+	.tercero{
+		transform: translate(-9em, -17.5em);
+		transition-delay: 100ms;
+	}
+
+	.cuarto{
+		transform: translate(-10.5em, -15.5em);
+		transition-delay: 125ms;
+	}
+
+	.primero div,
+	.segundo div,
+	.tercero div,
+	.cuarto div{
+		padding: 1em;
+		transform: translate(-6.5em, -1em);
+		background: rgba(255,255,255,.5);
+		border-radius: 1.5em;
+		color: black;
+		text-shadow: 0 0 5px rgb(255,255,255);
+		animation-name: aparicion;
+		animation-duration: .5s;
+	}
+
+
+@keyframes aparicion{
+	from{
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	to{
+		transform: translate(-6.5em, -1em);
+		opacity: 1;
+	}
 }
 
 @media (max-width: 500px){
