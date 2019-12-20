@@ -93,17 +93,17 @@
 }
 
 	.primero{
-		transform: translate(0em, -20em);
+		transform: translate(1em, -20em);
 		transition-delay: 25ms;
 	}
 
 	.segundo{
-		transform: translate(-5.5em, -19em);
+		transform: translate(-4.5em, -19em);
 		transition-delay: 50ms;
 	}
 
 	.tercero{
-		transform: translate(-9em, -17.5em);
+		transform: translate(-8.5em, -17.5em);
 		transition-delay: 100ms;
 	}
 
@@ -118,14 +118,23 @@
 	.cuarto div{
 		padding: 1em;
 		transform: translate(-6.5em, -1em);
-		background: rgba(255,255,255,.5);
+		background: rgba(255,255,255,8);
 		border-radius: 1.5em;
+		box-shadow: 0 0 3px rgba(255,255,255,.9);
 		color: black;
-		text-shadow: 0 0 5px rgb(255,255,255);
 		animation-name: aparicion;
 		animation-duration: .5s;
 	}
 
+	.primero div{
+		transform: translate(-5.5em, -1em);
+	}
+
+	.segundo div,
+	.tercero div,
+	.cuarto div{
+		transform: translate(-6.5em, -1em);
+	}
 
 @keyframes aparicion{
 	from{
@@ -133,7 +142,6 @@
 		opacity: 0;
 	}
 	to{
-		transform: translate(-6.5em, -1em);
 		opacity: 1;
 	}
 }
@@ -142,4 +150,9 @@
 	.actionbar{
 		display: flex;
 	}
+}
+
+
+.fucku{
+	background: black;
 }

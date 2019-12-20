@@ -9,18 +9,18 @@ export default class ActionBar extends Component {
 
     constructor(props) {
       super(props);
-      this.revelar = this.revelar.bind(this);
+      this.revelarOcultar = this.revelarOcultar.bind(this);
     }
-    revelar() {
-      document.getElementById('nuevo').className ='nuevo-revelado';
-      document.getElementById('primero').className ='primero';
-      document.getElementById('segundo').className ='segundo';
-      document.getElementById('tercero').className ='tercero';
-      document.getElementById('cuarto').className ='cuarto';
+
+    revelarOcultar(trigger) {
+        document.getElementById('nuevo').className ='nuevo-revelado';
+        document.getElementById('primero').className ='primero';
+        document.getElementById('segundo').className ='segundo';
+        document.getElementById('tercero').className ='tercero';
+        document.getElementById('cuarto').className ='cuarto';
     }
 
     render() {
-
       if(this.props.ocultar === 0) {
           return(
             <nav className="actionbar">
@@ -37,7 +37,7 @@ export default class ActionBar extends Component {
                 <button type="button" className="action-boton"><i className="fal fa-user-circle"></i></button>
               </Link>
               <div className="nuevo-contenedor action-boton">
-                <button type="button" className="nuevo" id="nuevo" onClick={this.revelar}><i className="fal fa-plus"></i></button>
+                <button type="button" className="nuevo" id="nuevo" onClick={this.revelarOcultar}><i className="fal fa-plus"></i></button>
 
                 <Link className="link-oculto" to="/feed">
                   <button className="action-boton-oculto" id="primero">
