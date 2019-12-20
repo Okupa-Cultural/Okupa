@@ -80,6 +80,7 @@
 	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 10em;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 	z-index: 1;
 	transition: 250ms ease;
 }
@@ -120,7 +121,7 @@
 		transform: translate(-6.5em, -1em);
 		background: rgba(255,255,255,8);
 		border-radius: 1.5em;
-		box-shadow: 0 0 3px rgba(255,255,255,.9);
+		box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 		color: black;
 		animation-name: aparicion;
 		animation-duration: .5s;
