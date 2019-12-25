@@ -13,6 +13,7 @@ export default class ActionBar extends Component {
       this.state = {btn: 0,};
     }
 
+
     revelarOcultar() {
       if(!this.state.boton){
         document.getElementById('nuevo').className ='nuevo-revelado';
