@@ -168,18 +168,3 @@
 	font-size: 2em;
 	align-self: center;
 }
-
-@media(max-width:500px) {
-
-	.post-main {
-		grid-template-rows: 3em 1fr 8em 3em;
-		height: 42em;
-	}
-
-	.post-fotoperfil {
-		margin-top:0.2em;
-		margin-right: 0.5em;
-		width:2.5em;
-		height: 2.5em;
-	}
-}

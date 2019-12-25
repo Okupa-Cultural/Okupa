@@ -10,14 +10,25 @@ export default class ActionBar extends Component {
     constructor(props) {
       super(props);
       this.revelarOcultar = this.revelarOcultar.bind(this);
+      this.state = {btn: 0,};
     }
 
-    revelarOcultar(trigger) {
+    revelarOcultar() {
+      if(!this.state.boton){
         document.getElementById('nuevo').className ='nuevo-revelado';
         document.getElementById('primero').className ='primero';
         document.getElementById('segundo').className ='segundo';
         document.getElementById('tercero').className ='tercero';
         document.getElementById('cuarto').className ='cuarto';
+        this.setState({boton: 1,});
+      }else{
+        document.getElementById('nuevo').className ='nuevo';
+        document.getElementById('primero').className ='action-boton-oculto';
+        document.getElementById('segundo').className ='action-boton-oculto';
+        document.getElementById('tercero').className ='action-boton-oculto';
+        document.getElementById('cuarto').className ='action-boton-oculto';
+        this.setState({boton: 0,});
+      }
     }
 
     render() {
