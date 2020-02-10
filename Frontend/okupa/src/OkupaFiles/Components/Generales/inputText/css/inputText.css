@@ -1,0 +1,10 @@
+.inputText{
+    border-radius: .5em;
+    background-color: rgba(255,255,255,0);
+    padding: .8em;
+    border: solid .1em rgba(255,255,255,.8);
+    color: #FFF;
+}
+.inputText::placeholder{
+    color: rgba(255,255,255,.8)
+}

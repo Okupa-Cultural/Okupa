@@ -3,16 +3,6 @@ import React, { Component } from 'react';
 //Imagenes
 
 //Components
-import PerfilEtiquetas from './../Components/Perfil/PerfilEtiquetas';
-import PerfilBotonera from './../Components/Perfil/PerfilBotonera';
-import Estadisticas from './../Components/Perfil/Estadisticas';
-import Bio from './../Components/Perfil/Bio';
-import MainNav from './../Components/Perfil/MainNav';
-import FechaDeFormacion from './../Components/Perfil/FechaDeFormacion';
-import NavBar from './../Components/Navigation/NavBar';
-import EnlacesExternos from './../Components/Perfil/EnlacesExternos';
-import Galeria from './../Components/Perfil/Galeria';
-import ProxEventos from './../Components/Perfil/ProxEventos';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -32,7 +22,7 @@ export default class Perfil extends Component {
     this.TabNavigator = this.TabNavigator.bind(this);
   }
 
-  
+  /*
   componentDidMount() {
     // eslint-disable-next-line
     fetch('https://api.unsplash.com/photos/?client_id=05883571daf3b1e01c789ef7cd850e9fb242f48d3b9432b46fae325a7eba6c0b')
@@ -53,7 +43,7 @@ export default class Perfil extends Component {
       this.setState({
         pantallaActual: dataFromChild
       });
-  }
+  }*/
   
 render() {
 
@@ -63,34 +53,6 @@ render() {
 
     <div className="perfil">
 
-    <div className="nav-perfil">
-      <NavBar showSearchBar={true}/>
-      </div>
-      <header className="perfil-cabecera">
-
-        <img className="fotoperfil-movile" src={this.state.imagenes[1].urls.small} alt="perfil-mobile"></img>
-
-        <div className="cabecera-datosusuario">
-          <h2 className="datosusuario-nombre">Los hijos de la Rossi</h2>
-          <PerfilEtiquetas />
-          <Estadisticas />
-          <PerfilBotonera /> 
-        </div>
-      </header>
-
-      <aside className="perfil-columnaizq">
-        <img className="columnaizq-fotoperfil" src={this.state.imagenes[1].urls.small} alt="foto de perfil"></img>
-        <div className="columnaizq-secciones">
-          <FechaDeFormacion />
-          <Bio />
-          <EnlacesExternos />
-        </div>
-      </aside>
-
-      <main className="box perfil-cuerpo">
-        <MainNav callback={this.TabNavigatorCallback}/>
-        {PantallaActual}
-      </main>
 
     </div>
   );
