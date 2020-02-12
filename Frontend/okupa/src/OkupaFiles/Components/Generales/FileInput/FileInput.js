@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 //CSS
-import './css/InputFile.css';
+import './css/FileInput.css';
 
-export default class InputFile extends Component {
+export default class FileInput extends Component {
 
     render() {
 

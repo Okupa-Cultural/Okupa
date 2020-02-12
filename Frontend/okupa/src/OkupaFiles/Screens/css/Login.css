@@ -1,0 +1,61 @@
+.login{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.contenedor{
+    padding: 10vw;
+    margin: 5vw;
+    background: rgba(255,255,255,.15);
+    border-radius: .6em;
+}
+
+    .contenedor input{
+        margin: .4em 0;
+    }
+
+    .contenedor button{
+        margin-top: 2.4em;
+    }
+
+    .login h1,
+    .contenedor h2{
+        margin: 1em;
+        font-weight: 700;
+    }
+    .contenedor h2{
+        font-size: 1.3em;
+    }
+
+.recupero,
+.registrate{
+    display: flex;
+    margin: 1em 0;
+}
+
+.registrate{
+    justify-content: center;
+}
+
+.recupero{
+    justify-content: flex-end;
+    font-size: .85em;
+}
+
+    .recupero b{
+        font-weight: 100;
+    }
+
+
+@media (max-width: 321px){
+    .login h1{
+        margin: .3em .5em 0 .5em;
+    }
+    .contenedor h2{
+        margin: .1em .5em;
+    }
+
+    .contenedor button{
+        margin-top: .8em;
+    }
+}

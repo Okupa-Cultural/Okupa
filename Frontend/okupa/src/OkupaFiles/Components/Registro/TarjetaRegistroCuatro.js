@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputFile from '../Generales/InputFile/InputFile';
+import FileInput from '../Generales/FileInput/FileInput';
 import { Link } from 'react-router-dom';
 
 
@@ -27,8 +27,8 @@ export default class TarjetaRegistroCuatro extends Component {
                         <br />
                         <h3>También podés cargar planos de tu puesta en escena!</h3>
                         
-                        <InputFile valor="Plano de escenario" inputId="plano-escenario"/>
-                        <InputFile valor="Plano de luces" inputId="plano-luces" />
+                        <FileInput valor="Plano de escenario" inputId="plano-escenario"/>
+                        <FileInput valor="Plano de luces" inputId="plano-luces" />
                     </form>
 
                     <Link to="/feed">

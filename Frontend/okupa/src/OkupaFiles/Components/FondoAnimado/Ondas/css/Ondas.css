@@ -1,0 +1,93 @@
+.lin-contenedor{
+    width: 98.55vw;
+    height: 98vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    overflow-y: hidden;
+    opacity: .8;
+    animation: lin-aparecer 1s ease;
+}
+
+.particula1{
+    animation: flotar1 5s ease infinite;
+}
+
+.particula2{
+    animation: flotar2 4s ease infinite;
+}
+
+.onda1,
+.onda2,
+.onda3,
+.bola{
+    transform-origin: center;
+}
+
+.onda1,
+.onda2,
+.onda3{
+    opacity: 0;
+    animation: onda 2s ease infinite;
+}
+
+.onda1{
+    animation-delay: .2s;
+}
+.onda2{
+    animation-delay: .4s;
+}
+.onda3{
+    animation-delay: .6s;
+}
+
+@keyframes onda {
+    0%{
+        transform: scale(.1);
+        opacity: 0;
+    }
+    40%{
+        opacity: .3;
+    }
+    80%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes flotar1{
+    0%{
+        transform: translate(-23vw, -.5em);
+    }
+    50%{
+        transform: translate(-23vw, 0em);
+    }
+    100%{
+        transform: translate(-23vw, -.5em);
+    }
+}
+
+@keyframes flotar2{
+    0%{
+        transform: translate(20vw, 9vh);
+    }
+    50%{
+        transform: translate(20vw, 10vh);
+    }
+    100%{
+        transform: translate(20vw, 9vh);
+    }
+}
+
+@keyframes lin-aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .8;
+    }
+}

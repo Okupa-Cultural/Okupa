@@ -46,7 +46,7 @@ export default class Perfil extends Component {
   }*/
   
 render() {
-
+  // eslint-disable-next-line
   var PantallaActual = this.TabNavigator();
 
   return (

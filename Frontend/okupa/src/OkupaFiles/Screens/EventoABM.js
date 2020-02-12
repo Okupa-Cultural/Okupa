@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import {  Link } from 'react-router-dom';
  
 //Components
-import InputFile from './../Components/Generales/InputFile/InputFile';
+import FileInput from './../Components/Generales/FileInput/FileInput';
 import CheckBox from './../Components/Generales/CheckBox/CheckBox';
 //CSS
 import './css/EstilosGenerales.css';
@@ -81,7 +81,7 @@ export default class EventoABM extends Component {
               <fieldset>
                 <legend>Portada</legend>
                 <label htmlFor="">Foto de portada</label>
-                <InputFile valor="Subir foto" inputID="fotoPortada" tabindex="1"/>
+                <FileInput valor="Subir foto" inputID="fotoPortada" tabindex="1"/>
 
                 <label htmlFor="">Descripcion</label>
                 <textarea name="" id="" cols="30" rows="5" tabindex="1"></textarea>
