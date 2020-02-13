@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 //import {  Link } from 'react-router-dom';
  
-//Components
+//Componentes
+import Triangulos from '../Components/FondoAnimado/Triangulos/Triangulos';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -13,6 +14,7 @@ import TarjetaRegistroUno from './../Components/Registro/TarjetaRegistroUno';
 import TarjetaRegistroDos from './../Components/Registro/TarjetaRegistroDos';
 import TarjetaRegistroTres from './../Components/Registro/TarjetaRegistroTres';
 import TarjetaRegistroCuatro from './../Components/Registro/TarjetaRegistroCuatro';
+import TarjetaRegistroCinco from './../Components/Registro/TarjetaRegistroCinco';
 
 export default class UsuarioABM extends Component {
 
@@ -98,6 +100,7 @@ export default class UsuarioABM extends Component {
       case 1 : return <TarjetaRegistroDos callback={this.cambiarEstadoPantallaActual}/>;
       case 2 : return <TarjetaRegistroTres callback={this.cambiarEstadoPantallaActual}/>;
       case 3 : return <TarjetaRegistroCuatro callback={this.cambiarEstadoPantallaActual}/>;
+      case 4 : return <TarjetaRegistroCinco callback={this.cambiarEstadoPantallaActual}/>;
       default: break;
     }
   };
@@ -105,16 +108,15 @@ export default class UsuarioABM extends Component {
   render() {
 
     let renderPantallaActual = this.cambiarPantalla(this.state.pantallaActual);
-    let renderIndicadorActual = this.indicadorPantallaActual(4);
+    let renderIndicadorActual = this.indicadorPantallaActual(5);
 
     return (
       <div className="usuario-abm">
-        
         <div className="contenedor-tarjetas">
           {renderIndicadorActual}
           {renderPantallaActual}
         </div>
-        
+        <Triangulos />
       </div>
     );
   }    

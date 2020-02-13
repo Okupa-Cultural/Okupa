@@ -1,10 +1,20 @@
-.inputText{
+.input{
     border-radius: .65em;
     background-color: rgba(255,255,255,0);
     padding: .8em;
     border: solid .1em rgba(255,255,255,.8);
     color: #FFF;
+    border: solid 1px white;
 }
-.inputText::placeholder{
+.input::placeholder{
     color: rgba(255,255,255,.8);
+}
+
+.input[type="submit"]{
+    border: none !important;
+    border-radius: .65em;
+    background-image: linear-gradient(135deg, #04a5f0, #023c75);
+    padding: .8em;
+    color:rgba(255,255,255,.9);
+    font-size: .9em;
 }

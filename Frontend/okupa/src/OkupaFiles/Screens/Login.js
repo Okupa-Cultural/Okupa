@@ -37,7 +37,7 @@ export default class Login extends Component {
 				<OkBoton Value="Ingresar" Name="Submit" />
 			</form>
 
-			<Link to="/registro">
+			<Link to="/UsuarioABM">
 				<div className="registrate">
 					- O&nbsp;<b>regístrate</b>&nbsp;-
 				</div>

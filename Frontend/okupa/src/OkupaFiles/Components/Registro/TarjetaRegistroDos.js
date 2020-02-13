@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
+//Componentes
+import OkInput from '../Generales/OkInput/OkInput';
 
-export default class TarjetaRegistroDos extends Component {
+export default class TarjetaRegistroUno extends Component {
 
     handleForm = (event) => {
         event.preventDefault();
@@ -13,25 +16,22 @@ export default class TarjetaRegistroDos extends Component {
 
     render() {
         return(
-            <section className="abm-seccion" name="seccion2" id="seccion2">
-                <div className="abm-seccion-cabecera">
-                    <h1>Registro</h1>
-                </div>
-                <div className="abm-seccion-cuerpo">
-                    <h2>Hablanos de vos...</h2>
-                    <form onSubmit={this.handleForm} action="">
-                        <label htmlFor="">Nombre</label>
-                        <input type="text" name="nombre" required={true} id="nombre" className="abm-input" autoComplete="off" tabIndex="4" placeholder="Tu nombre o el de tu grupo" />
-
-                        <label htmlFor="">Fecha de inicio</label>
-                        <input type="date" name="fechaInicio" id="fechaInicio" required={true} className="abm-input input-fecha" autoComplete="off" tabIndex="5" placeholder="El día en que tu o tu grupo comenzaron a presentar :')" />
-
-                        <label htmlFor="">Biografia</label>
-                        <textarea name="bio" id="bio" required={true} className="abm-textarea" autoComplete="off" tabIndex="6" placeholder="Una descripción tuya...o de ustedes" />
-
-                        <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
-                    </form>
-                </div>
+            <section className="abm-seccion" name="seccion1" id="seccion1">
+                    <div className="abm-seccion-cuerpo">
+                        <h2>Comencemos</h2>
+                        <form onSubmit={this.handleForm} action="">
+                            <OkInput Type="Text" Placeholder="Nombre de usuario" Name="username" TabIndex="1" />
+                            <OkInput Type="email" Placeholder="E-mail" Name="email" TabIndex="1" />
+                            <OkInput Type="password" Placeholder="Contraseña" Name="password" TabIndex="1" />
+                            <OkInput Type="submit"  Value="Continuar" TabIndex="1" />
+                        </form>
+                        <p className="tyc">
+                            Si continuás, aceptás nuestras&nbsp;
+                            <Link><u>políticas de privacidad&nbsp;</u></Link>
+                            y nuestros&nbsp; 
+                            <Link><u>términos de uso</u>.</Link>
+                        </p>
+                    </div>
             </section>
         );
     }

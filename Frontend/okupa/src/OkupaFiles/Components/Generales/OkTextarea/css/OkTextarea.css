@@ -1,0 +1,12 @@
+.textarea{
+    border-radius: .65em;
+    background-color: rgba(255,255,255,0);
+    padding: .8em;
+    border: solid .1em rgba(255,255,255,.8);
+    color: #FFF;
+    border: solid 1px white;
+    font-size: 1em;
+}
+.textarea::placeholder{
+    color: rgba(255,255,255,.8);
+}

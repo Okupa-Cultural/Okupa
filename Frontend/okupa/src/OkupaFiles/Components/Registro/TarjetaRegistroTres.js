@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
+//Componentes
+import OkInput from '../Generales/OkInput/OkInput';
+import OkTextarea from '../Generales/OkTextarea/OkTextarea';
 
-export default class TarjetaRegistroTres extends Component {
+export default class TarjetaRegistroDos extends Component {
 
     handleForm = (event) => {
         event.preventDefault();
@@ -13,17 +16,16 @@ export default class TarjetaRegistroTres extends Component {
 
     render() {
         return(
-            <section className="abm-seccion" name="seccion3" id="seccion3">
-                <div className="abm-seccion-cabecera">
-                        <h1>Registro</h1>
-                </div>
+            <section className="abm-seccion" name="seccion2" id="seccion2">
                 <div className="abm-seccion-cuerpo">
-                    <h2>Elegí tus etiquetas!</h2>
-                    <h3>Son para que espacios y artistas te puedan encontrar</h3>
+                    <h2>Hablanos de tu proyecto</h2>
                     <form onSubmit={this.handleForm} action="">
-                        <div className="elemento-temporal">Aca va el selector de etiquetas <br /> :D</div>
-
-                        <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
+                    <OkInput Type="text" Placeholder="Nombre del proyecto*" Name="name" TabIndex="1" />
+                    <OkInput Type="date" Placeholder="Fecha de formación*" Name="name" TabIndex="1" />
+                    <OkTextarea Placeholder="Biografía*" Name="bio" Rows="4" TabIndex="1" />
+                    <OkInput Type="tel" Placeholder="Teléfono (opcional)" Name="phone" />
+                    <OkInput Type="text" Placeholder="Dirección (opcional)" Name="adress" />
+                    <OkInput Type="submit" Value="Continuar" />
                     </form>
                 </div>
             </section>

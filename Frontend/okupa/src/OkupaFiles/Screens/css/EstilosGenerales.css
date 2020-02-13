@@ -1,16 +1,17 @@
 /*============= Elementos básicos =============*/
 
+
 body {
 	background-color: #272732;
 }
 
 html, body {
-    overflow-x: hidden;
-    padding: 0;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 body, div, li, span, p, input, textarea, select, option{
-	font-family: roboto, sans-serif;
+	font-family: 'Source sans pro', sans-serif;
 	font-weight: 400;
 	color: rgb(255,255,255);
 }

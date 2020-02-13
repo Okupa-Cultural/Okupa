@@ -1,309 +1,73 @@
+.circulo,
+.circuloActivo{
+	font-size: .5em;
+	margin: .5em;
+	-webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+.circulo{
+	opacity: .3;
+}
+
+.circuloActivo{
+	opacity: .8;
+}
 
 .usuario-abm{
-	min-height: 100vh;
-	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
-	width:100vw;
 	display: grid;
-	grid-template-columns: 1fr 35em 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	height: 100vh;
+	align-items: center;
 }
-
-/*
-===================================
-Tarjeta
-===================================
-*/
-
-/*Conenedor de tarjetas (ct) general*/
-
-.contenedor-tarjetas{
-	grid-column: 2 /  3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 2em;
-	animation: aparicion 1s ease;
-}
-
 
 .abm-seccion{
-	margin-top: 1em;
-	border-radius: 1em;	
-	box-shadow: 0 .5em 1.5em rgba(0,0,0,.25);
-	transition: 75ms ease;
+	margin: 5vw;
+	padding: 5vw;
+	background: rgba(255,255,255,.2);
+	border-radius:.6em;
 }
 
-.abm-seccion-cabecera{
-	padding: 1em 3em;
-	border-top-left-radius: 1em;
-	border-top-right-radius: 1em;
-	background-image: linear-gradient(250deg, #485461 0%, #28313b 74%);
-}
+	.abm-seccion h2,
+	.abm-seccion h3{
+		margin:1em 0;
+	}
 
-	.abm-seccion-cabecera h1{
-		text-align: left;
-		font-size: 1.4em;
+	.abm-seccion h2{
+		font-weight: 600;
+	}
+
+	.abm-seccion h3{
+		font-size: .9em;
 		font-weight: 400;
 	}
 
-.abm-seccion-cuerpo{
-	padding: .5em 3em 1.5em 3em;
-	background: white;
-	border-bottom-left-radius: 1em;
-	border-bottom-right-radius: 1em;
-}
-
-.abm-seccion-cuerpo *{
-	color: #3f3245;
-}
-	.abm-seccion-cuerpo h2, .abm-seccion-cuerpo h3{
-		text-align: left;
-	}
-
-	.abm-seccion-cuerpo h3{
-		font-weight: 400;
+	.abm-seccion-cuerpo input,
+	.abm-seccion-cuerpo button{
 		font-size: 1em;
 	}
 
-	.abm-seccion-cuerpo label{
-		font-size:1.4em;
-		font-weight: 400;
-		opacity: .8;
-		margin: .85em 0 .5em 0;
+	.abm-seccion-cuerpo input{
+		margin: .3em 0;
 	}
 
-	.abm-seccion-cuerpo textarea{
-		padding: 1em;
-		border: solid 1px rgba(0,0,0,.3);
-		border-radius: 1em;
-		height: 6em;
+	.abm-seccion-cuerpo button{
+		margin: .5em 0;
 	}
 
-.abm-input, .abm-seccion-cuerpo textarea{
-	font-size: .85em;
-	font-weight: 400;
-	color: #3f3245;
-	border-bottom: 1px solid black;
-	border-color: rgba(0,0,0,.3);
-	transition: 18ms ease;
+.tyc{
+	font-size: .9em;
 }
 
-	.abm-input::placeholder,
-	input[type="date"]::placeholder,
-	textarea::placeholder{
-		color: rgba(0,0,0,.7);
+@media (max-width: 321px){
+	h2,
+	h3{
+		font-size: 1.1em;
 	}
 
-	input[type="date"]{
-		font-size: 1.5em;
+	input,
+	textarea{
+		padding: .5em !important;
 	}
-
-
-.abm-boton{
-	min-width: 100%;
-}
-
-/*=============================
-	Elementos particulares
-===============================
-*/
-
-
-/*
-===================================
-Indicador de pantalla
-===================================
-*/
-
-.indicador-pantalla-actual {
-	grid-column: 2/3;
-	display: flex;
-	justify-content: center;
-}
-
-.circulo {
-	color: gray;
-	margin-right: 1.5em;
-}
-
-.circuloActivo {
-	color: white;
-	margin-right: 1.5em;
-	animation: inicioCirculo .5s ease;
-}
-
-/*
-===================================
-Animaciones - Keyframes
-===================================
-*/
-
-@keyframes aparicion {
-	from {
-		opacity: 0;
-	} to {
-		opacity: 1;
-	}
-}
-
-@keyframes inicioCirculo {
-	from {
-		opacity: 0;
-	} to {
-		opacity: 1;
-	}
-}
-
-/*
-===================================
-Mediaquerys - Media querys
-===================================
-*/
-
-@media (max-width: 600px) {
-	
-	.abm{
-		grid-template-columns: 1fr 30em 1fr;
-	}
-
-}
-
-@media (max-width: 500px) {
-	body{
-		padding: unset;
-	}
-
-	.abm{
-		grid-template-columns: unset;
-		grid-template-rows: unset;
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
-	}
-
-	.usuario-abm, .evento-abm{
-		display: flex;
-		grid-template-columns: unset;
-	}
-
-	.evento-abm{
-		width: 100vw;
-	}
-
-	.indicador-pantalla-actual{
-		margin-top: 2em;
-	}
-
-	.contenedor-tarjetas{
-		grid-column: unset;
-		padding:0;
-		min-width: 20em;
-		max-width: 89%;
-	}
-
-	.circulo, .circuloActivo{
-		font-size: .5em;
-	}
-
-	.abm-seccion-cabecera{
-		padding: .5em 1.7em;
-	}
-	
-		.abm-seccion-cabecera h1{
-			font-weight: 100;
-		}
-
-	.abm-seccion[name=seccion4]{
-		margin-bottom:16vh;
-	}
-
-	.abm-seccion[name=seccion2]{
-		width: 85vw;
-	}
-
-	.abm-seccion-cuerpo{
-		padding: .5em 1.7em;
-	}
-
-		.abm-seccion-cuerpo label{
-			font-size: 1.2em;
-		}
-
-		.abm-seccion-cuerpo h2{
-			font-size: 1.3em;
-		}
-		
-		.abm-seccion-cuerpo h3{
-			font-size: .85em;
-			padding: 0;
-			margin: 0;
-		}
-
-	.abm-input{
-		margin:unset;
-		font-size: .85em;
-	}
-
-		.abm-input:focus{
-			font-size: .85em;
-			margin-b: unset;
-		}
-
-		.abm-input::placeholder{
-			font-weight: 100;
-			color: rgba(0,0,0,.5);
-		}
-
-}
-
-@media (max-width: 321px) {
-
-	.tarjetas-registro-abm{
-		min-width: 18em;
-		max-width: 89%;
-	}
-
-	.indicador-pantalla-actual{
-		margin: 0;
-		margin-top: 1.25em;
-		padding: 0;
-	}
-
-	.abm-seccion-cabecera{
-		padding: .5em 1.7em;
-	}
-
-		.abm-seccion-cabecera h1{
-			font-size: 1em;
-			font-weight: 400;
-		}
-
-	.abm-seccion-cuerpo{
-		padding: .5em 1.7em;
-	}
-
-		.abm-seccion-cuerpo label{
-			font-weight: 400;
-			font-size: .85em;
-		}
-
-		.abm-seccion-cuerpo h2{
-			font-size: 1em;
-		}
-		
-		.abm-seccion-cuerpo h3{
-			font-size: .85em;
-			padding: 0;
-			margin: 0;
-		}
-}
-
-
-.elemento-temporal{
-	color: black;
-	background-color: #eaeaee;
-	font-size: 1em;
-	font-weight: 100;
-	border-radius: .5em;
-	padding: .5em;
-	margin: .5em;
 }

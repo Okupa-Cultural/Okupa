@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 //Components
 //import NavBar from './../Components/Navigation/NavBar';
-import TarjetaRegistro from '../Components/Registro/TarjetaRegistro';
+import TarjetaRegistro from '../../OkupaFiles/Components/Registro/TarjetaRegistro';
 //import formArtista from './../Components/forms/formArtista';
 //////
 import './css/Registro.css';

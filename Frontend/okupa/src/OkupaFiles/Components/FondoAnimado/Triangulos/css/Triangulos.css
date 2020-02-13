@@ -4,9 +4,9 @@
     position: absolute;
     top: 0;
     z-index: -1;
-    overflow-y: hidden;
     opacity: .25;
     animation: tr-aparecer 2s ease;
+    overflow: hidden !important;
 }
 
 .sombra{

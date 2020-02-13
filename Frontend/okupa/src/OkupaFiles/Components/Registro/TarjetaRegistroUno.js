@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//Componentes
+import OkBoton from '../Generales/OkBoton/OkBoton';
 
 export default class TarjetaRegistroUno extends Component {
 
@@ -14,23 +16,17 @@ export default class TarjetaRegistroUno extends Component {
     render() {
         return(
             <section className="abm-seccion" name="seccion1" id="seccion1">
-                    <div className="abm-seccion-cabecera">
-                        <h1>Registro</h1>
-                    </div>
                     <div className="abm-seccion-cuerpo">
-                        <h2>Bienvenidx a OKUPA!</h2>
+                        <h2>¿Qué acciones deseas realizar en Okupa?</h2>
+                        <h3>- Elegí la opción que más se adapte a vos -</h3>
                         <form onSubmit={this.handleForm} action="">
-                            <label htmlFor="">Elije tu nombre de usuario</label>
-                            <input type="text" name="name" id="username" className="abm-input" autoComplete="off" autoCapitalize="none" tabIndex="1" required={true} placeholder="El nombre con el que ingresarás a Okupa" />
+                            <OkBoton Value="Presentarme en eventos y también organizarlos" Name="artista" TabIndex="1" />
 
-                            <label htmlFor="">Ingresa tu email</label>
-                            <input type="email" name="mail" id="email" className="abm-input" autoComplete="off" tabIndex="2" required={true} placeholder="Para que podamos validar tu cuenta" />
+                            <OkBoton Value="Presentarme en eventos y también organizarlos" Name="espacio" TabIndex="1" />
 
-                            <label htmlFor="">Elige una contraseña</label>
-                            <input type="password" name="password" id="password" className="abm-input" autoComplete="off" tabIndex="3" required={true} placeholder="Que sea lo más segura posible! :o" />
-
-                            <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
+                            <OkBoton Value="Presentarme en eventos y también organizarlos" Name="butaca" TabIndex="1" />
                         </form>
+                        <div>¿Necesitas ayuda?</div>
                     </div>
             </section>
         );
