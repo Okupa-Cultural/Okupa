@@ -1,4 +1,10 @@
+.input-contenedor{
+    width: 100%;
+
+}
+
 .input{
+    width: 100% !important;
     border-radius: .65em;
     background-color: rgba(255,255,255,0);
     padding: .8em;
@@ -6,6 +12,7 @@
     color: #FFF;
     border: solid 1px white;
 }
+
 .input::placeholder{
     color: rgba(255,255,255,.8);
 }
@@ -18,3 +25,45 @@
     color:rgba(255,255,255,.9);
     font-size: .9em;
 }
+
+.icono{
+    display: none;
+    width: 15%;
+    padding: .83em;
+    border: solid 1px white;
+    border-left: none;
+    border-top-right-radius: .65em;
+    border-bottom-right-radius: .65em;
+    color: inherit;
+}
+
+.input[type="search"]{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    width: 85% !important;
+}
+
+.input[type="search"]~.icono{
+    display: unset;
+}
+
+@media (max-width:414px){
+    .icono i{
+        margin: .1em;
+    }
+}
+
+@media (max-width:360px){
+    .icono i{
+        margin: unset;
+    }
+}
+
+@media (max-width:320px){
+    .icono{
+        padding: .55em;
+    }
+}
+
+

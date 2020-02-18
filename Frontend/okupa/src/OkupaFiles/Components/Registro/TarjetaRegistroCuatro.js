@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//Componentes
+import SelectorEtiquetas from '../Generales/SelectorEtiquetas/SelectorEtiquetas';
 
 export default class TarjetaRegistroTres extends Component {
 
@@ -14,16 +16,11 @@ export default class TarjetaRegistroTres extends Component {
     render() {
         return(
             <section className="abm-seccion" name="seccion3" id="seccion3">
-                <div className="abm-seccion-cabecera">
-                        <h1>Registro</h1>
-                </div>
                 <div className="abm-seccion-cuerpo">
-                    <h2>Elegí tus etiquetas!</h2>
-                    <h3>Son para que espacios y artistas te puedan encontrar</h3>
+                    <h2>Elegí tus etiquetas</h2>
+                    <h3>- Servirán para que otras personas te encuentren con facilidad -</h3>
                     <form onSubmit={this.handleForm} action="">
-                        <div className="elemento-temporal">Aca va el selector de etiquetas <br /> :D</div>
-
-                        <input type="submit" className="form-boton abm-boton" value="Siguiente"></input>
+                        <SelectorEtiquetas />
                     </form>
                 </div>
             </section>

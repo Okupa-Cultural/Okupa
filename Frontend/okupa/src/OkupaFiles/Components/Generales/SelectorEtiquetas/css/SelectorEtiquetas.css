@@ -1,0 +1,7 @@
+.etiquetas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .6em;
+    border:solid 1px white;
+    border-radius: .6em;
+}

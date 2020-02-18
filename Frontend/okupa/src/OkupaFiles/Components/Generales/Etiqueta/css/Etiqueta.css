@@ -1,0 +1,15 @@
+.etiqueta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: .3em;
+    margin: .3em;
+    background-image: linear-gradient(135deg, #04a5f0, #023c75);
+    border-radius: .3em;
+    font-size: .9em;
+}
+
+.x{
+    margin-left: .6em;
+}

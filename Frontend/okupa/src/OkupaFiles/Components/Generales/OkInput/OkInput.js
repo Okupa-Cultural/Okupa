@@ -7,16 +7,25 @@ export default class OkInput extends Component {
 
     render() {
         return(
-            <input 
-            type={this.props.Type} 
-            placeholder={this.props.Placeholder} 
-            value={this.props.Value} 
-            name={this.props.Name} 
-            id={this.props.Name}
-            tabIndex={this.props.TabIndex}
-            autoComplete={this.props.AutoComplete}
-            className="input" 
-            />
+            <div className="input-contenedor">
+                            
+                <input 
+                type={this.props.Type} 
+                placeholder={this.props.Placeholder} 
+                value={this.props.Value} 
+                name={this.props.Name} 
+                id={this.props.Name}
+                tabIndex={this.props.TabIndex}
+                autoComplete={this.props.AutoComplete}
+                className="input" 
+                />
+                
+                <button className="icono">
+                    <i className="fal fa-search"></i>
+                </button>
+
+            </div>
+
         );
     }
 }

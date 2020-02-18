@@ -60,6 +60,31 @@
 	font-size: .9em;
 }
 
+.input-contenedor{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.input-contenedor label{
+	width: 15%;
+	color: rgba(255,255,255,.9);
+}
+
+.input-contenedor input{
+	width: 85%;
+}
+
+@media (max-width: 426px){
+	.input-contenedor label{
+		width: unset;
+	}
+	
+	.input-contenedor input{
+		width: 100%;
+	}
+}
+
 @media (max-width: 321px){
 	h2,
 	h3{
@@ -70,4 +95,5 @@
 	textarea{
 		padding: .5em !important;
 	}
+
 }
