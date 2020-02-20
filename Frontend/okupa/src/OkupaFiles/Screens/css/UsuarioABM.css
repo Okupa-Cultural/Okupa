@@ -31,7 +31,7 @@
 
 	.abm-seccion h2,
 	.abm-seccion h3{
-		margin:1em 0;
+		margin: 1em 0;
 	}
 
 	.abm-seccion h2{
@@ -43,15 +43,6 @@
 		font-weight: 400;
 	}
 
-	.abm-seccion-cuerpo input,
-	.abm-seccion-cuerpo button{
-		font-size: 1em;
-	}
-
-	.abm-seccion-cuerpo input{
-		margin: .3em 0;
-	}
-
 	.abm-seccion-cuerpo button{
 		margin: .5em 0;
 	}
@@ -60,40 +51,10 @@
 	font-size: .9em;
 }
 
-.input-contenedor{
-	display: flex;
-	justify-content: start;
-	align-items: center;
-}
 
-.input-contenedor label{
-	width: 15%;
-	color: rgba(255,255,255,.9);
-}
-
-.input-contenedor input{
-	width: 85%;
-}
-
-@media (max-width: 426px){
-	.input-contenedor label{
-		width: unset;
-	}
-	
-	.input-contenedor input{
-		width: 100%;
-	}
-}
-
-@media (max-width: 321px){
+@media (max-width: 320px){
 	h2,
 	h3{
 		font-size: 1.1em;
 	}
-
-	input,
-	textarea{
-		padding: .5em !important;
-	}
-
 }

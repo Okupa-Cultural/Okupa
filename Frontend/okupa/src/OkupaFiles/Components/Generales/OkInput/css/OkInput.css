@@ -1,16 +1,31 @@
-.input-contenedor{
-    width: 100%;
-
+:root{
+    --margin-top: .8em;
+    --margin-top-doble: 1.2em;
+    --margin-top-movil: .25em;
+    --margin-top-movil-doble: .8em;
 }
 
-.input{
-    width: 100% !important;
+.input-contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: var(--margin-top);
+    border: solid 1px rgba(255,255,255,.8);
     border-radius: .65em;
-    background-color: rgba(255,255,255,0);
+}
+
+    .input-contenedor[type="submit"]{
+        margin-top: var(--margin-top-doble);
+        border: none;
+        box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    }
+
+.input{
+    flex: 1 1 auto;
     padding: .8em;
-    border: solid .1em rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,0);
+    border: none;
     color: #FFF;
-    border: solid 1px white;
+    font-size: .9em;
 }
 
 .input::placeholder{
@@ -18,52 +33,48 @@
 }
 
 .input[type="submit"]{
-    border: none !important;
     border-radius: .65em;
     background-image: linear-gradient(135deg, #04a5f0, #023c75);
-    padding: .8em;
     color:rgba(255,255,255,.9);
+}
+
+.input-contenedor[type="date"] .label{
+    display: unset;
     font-size: .9em;
+    color: rgba(255,255,255,.8);
+}
+
+.label{
+    display: none;
+    flex: ;
+    padding: .5em 0 .5em .8em;
 }
 
 .icono{
     display: none;
-    width: 15%;
-    padding: .83em;
-    border: solid 1px white;
+    padding: 0 .8em;
     border-left: none;
-    border-top-right-radius: .65em;
-    border-bottom-right-radius: .65em;
     color: inherit;
 }
 
-.input[type="search"]{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: none;
-    width: 85% !important;
-}
+    .icono i{
+        font-size: 1.3em;
+    }
 
 .input[type="search"]~.icono{
     display: unset;
 }
 
-@media (max-width:414px){
-    .icono i{
-        margin: .1em;
+@media (max-width: 320px){
+    .input-contenedor{
+        margin-top: var(--margin-top-movil);
+    }
+
+    .input-contenedor[type="submit"]{
+        margin-top: var(--margin-top-movil-doble);
+    }
+
+    .input{
+        padding: .5em;
     }
 }
-
-@media (max-width:360px){
-    .icono i{
-        margin: unset;
-    }
-}
-
-@media (max-width:320px){
-    .icono{
-        padding: .55em;
-    }
-}
-
-

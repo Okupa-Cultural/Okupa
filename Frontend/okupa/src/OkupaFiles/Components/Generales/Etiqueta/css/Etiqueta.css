@@ -8,8 +8,16 @@
     background-image: linear-gradient(135deg, #04a5f0, #023c75);
     border-radius: .3em;
     font-size: .9em;
+    box-shadow: 0 3px 4px rgba(0,0,0,.25);
 }
 
 .x{
     margin-left: .6em;
+}
+
+@media (max-width: 320px){
+    .etiqueta{
+        font-size: .8em;
+        box-shadow: 0 2px 3px rgba(0,0,0,.25);
+    }
 }

@@ -7,7 +7,11 @@ export default class OkInput extends Component {
 
     render() {
         return(
-            <div className="input-contenedor">
+            <div className="input-contenedor" type={this.props.Type}>
+
+                <label className="label">
+                    {this.props.Placeholder}
+                </label>
                             
                 <input 
                 type={this.props.Type} 
