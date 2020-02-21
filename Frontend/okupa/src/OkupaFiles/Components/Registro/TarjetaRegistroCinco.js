@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import FileInput from '../Generales/FileInput/FileInput';
 import { Link } from 'react-router-dom';
 
+//Componentes
+import OkTabla from '../Generales/OkTabla/OkTabla';
+import OkInput from '../Generales/OkInput/OkInput';
 
 export default class TarjetaRegistroCuatro extends Component {
 
@@ -14,27 +16,26 @@ export default class TarjetaRegistroCuatro extends Component {
     };
     render() {
         return(
-            <section className="abm-seccion" name="seccion4" id="seccion4">
-                <div className="abm-seccion-cabecera">
-                    <h1>Registro</h1>
-                </div>
-                <div className="abm-seccion-cuerpo">
-                    <h2>Ya casi terminamos!</h2>
-                    <h3>Cargá los elementos necesarios para tu puesta en escena. Es <b>opcional</b> pero muy <b>recomendable!</b></h3>
-                    <form onSubmit={this.handleForm} action="">
-                        <div className="elemento-temporal">Acá se cargan los elementos de escenario <br /> (っˆڡˆς)</div>
-                        <div className="elemento-temporal">Acá se cargan los elementos de iluminación <br /> (｡◕‿‿◕｡)</div>
+            <section className="abm-seccion">
+                <form className="tarjetas-registro-abm-form" onSubmit={this.handleForm} action="">
+                    <h2>¡Ya casi terminamos!</h2>
+                    <h3>
+                        - Completa la lista de elementos para tu puesta en escena -
                         <br />
-                        <h3>También podés cargar planos de tu puesta en escena!</h3>
-                        
-                        <FileInput valor="Plano de escenario" inputId="plano-escenario"/>
-                        <FileInput valor="Plano de luces" inputId="plano-luces" />
-                    </form>
+                        <b>Es opcional pero muy recomendable</b>
+                    </h3>
+                    
+                    <OkTabla Titulo="Elementos de escenario" />
+
+                    <OkTabla Titulo="Elementos de iluminacion" />
+                    
+                    <OkInput Type="file" Placeholder="Subí tu plano de escenario" Name="escenario" />
+                    <OkInput Type="file" Placeholder="Subí tu plano de luces" Name="luces" />
 
                     <Link to="/feed">
-                        <input type="submit" className="form-boton abm-boton" value="Finalizar"></input>
+                        <OkInput Type="submit" Value="Finalizar" />
                     </Link>
-                </div>
+                </form>
             </section>
         );
     }

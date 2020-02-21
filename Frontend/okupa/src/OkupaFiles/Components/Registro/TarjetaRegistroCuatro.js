@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //Componentes
 import SelectorEtiquetas from '../Generales/SelectorEtiquetas/SelectorEtiquetas';
+import OkInput from '../Generales/OkInput/OkInput';
 
 export default class TarjetaRegistroTres extends Component {
 
@@ -21,6 +22,7 @@ export default class TarjetaRegistroTres extends Component {
                     <h3>- Servirán para que otras personas te encuentren con facilidad -</h3>
                     <form onSubmit={this.handleForm} action="">
                         <SelectorEtiquetas />
+                        <OkInput Type="submit" Value="Continuar" Name="continue" />
                     </form>
                 </div>
             </section>

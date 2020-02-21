@@ -12,6 +12,14 @@ export default class OkInput extends Component {
                 <label className="label">
                     {this.props.Placeholder}
                 </label>
+
+                <label 
+                className="file"
+                htmlFor={this.props.Name}
+                >
+                    <i class="fal fa-upload"></i>
+                    {this.props.Placeholder}
+                </label>
                             
                 <input 
                 type={this.props.Type} 

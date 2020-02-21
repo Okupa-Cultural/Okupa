@@ -1,0 +1,30 @@
+.table{
+    margin-top: 1em;
+    width: 100%;
+}
+.t-titulo{
+    padding: .65em;
+    margin: 0;
+    border-top-right-radius: .65em;
+    border-top-left-radius: .65em;
+    border:none;
+    background: rgba(123, 133, 139);
+}
+
+.t-cantidad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.agregar{
+    widows: 100%;
+    text-align: right;
+    padding: .6em;
+    margin-top: .6em;
+}
+
+    .agregar i{
+        font-size: 1.3em;
+    }

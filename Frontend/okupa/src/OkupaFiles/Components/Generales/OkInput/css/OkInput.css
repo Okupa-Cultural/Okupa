@@ -1,8 +1,8 @@
 :root{
-    --margin-top: .8em;
-    --margin-top-doble: 1.2em;
-    --margin-top-movil: .25em;
-    --margin-top-movil-doble: .8em;
+    --margin-top: .9em;
+    --margin-top-doble: 2em;
+    --margin-top-movil: .5em;
+    --margin-top-movil-doble: .9em;
 }
 
 .input-contenedor{
@@ -13,10 +13,19 @@
     border-radius: .65em;
 }
 
-    .input-contenedor[type="submit"]{
-        margin-top: var(--margin-top-doble);
+    .input-contenedor[type="submit"],
+    .input-contenedor[type="file"]{
+        background-image: linear-gradient(135deg, #2059f6, #023c75) !important;
         border: none;
         box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    }
+
+    .input-contenedor[type="submit"]{
+        margin-top: var(--margin-top-doble);
+    }
+    
+    .input[type="submit"]{
+        background-image: linear-gradient(135deg, #04a5f0, #023c75);
     }
 
 .input{
@@ -28,21 +37,18 @@
     font-size: .9em;
 }
 
-.input::placeholder{
-    color: rgba(255,255,255,.8);
-}
+    .input::placeholder{
+        color: rgba(255,255,255,.8);
+    }
 
-.input[type="submit"]{
-    border-radius: .65em;
-    background-image: linear-gradient(135deg, #04a5f0, #023c75);
-    color:rgba(255,255,255,.9);
-}
+    .input[type="submit"]{
+        border-radius: .65em;
+        color:rgba(255,255,255,.9);
+    }
 
-.input-contenedor[type="date"] .label{
-    display: unset;
-    font-size: .9em;
-    color: rgba(255,255,255,.8);
-}
+    .input[type="file"]{
+        display: none;
+    }
 
 .label{
     display: none;
@@ -53,7 +59,7 @@
 .icono{
     display: none;
     padding: 0 .8em;
-    border-left: none;
+    border: none;
     color: inherit;
 }
 
@@ -63,6 +69,29 @@
 
 .input[type="search"]~.icono{
     display: unset;
+}
+
+.input-contenedor[type="file"] .file{
+    display: unset;
+}
+
+.input-contenedor[type="date"] .label{
+    display: unset;
+    font-size: .9em;
+    color: rgba(255,255,255,.8);
+}
+
+.file{
+    width: 100%;
+    border: none !important;
+    display: none;
+    padding: .65em;
+    border: solid 1px red;
+}
+
+.file i{
+    font-size: 1.3em;
+    margin-right: 1em;
 }
 
 @media (max-width: 320px){
