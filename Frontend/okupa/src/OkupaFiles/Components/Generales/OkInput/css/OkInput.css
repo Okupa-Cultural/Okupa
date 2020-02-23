@@ -7,6 +7,7 @@
 
 .input-contenedor{
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     margin-top: var(--margin-top);
     border: solid 1px rgba(255,255,255,.8);
@@ -23,10 +24,6 @@
     .input-contenedor[type="submit"]{
         margin-top: var(--margin-top-doble);
     }
-    
-    .input[type="submit"]{
-        background-image: linear-gradient(135deg, #04a5f0, #023c75);
-    }
 
 .input{
     flex: 1 1 auto;
@@ -42,6 +39,7 @@
     }
 
     .input[type="submit"]{
+        background-image: linear-gradient(135deg, #04a5f0, #023c75);
         border-radius: .65em;
         color:rgba(255,255,255,.9);
     }
@@ -50,38 +48,40 @@
         display: none;
     }
 
-.label{
+    .input[type="search"]~.s-icono{
+        display: unset;
+    }
+    
+    .input-contenedor[type="file"] .f-label{
+        display: unset;
+    }
+
+    .input-contenedor[type="date"] .d-label,
+    .input-contenedor[type="datetime-local"] .d-label,
+    .input-contenedor[type="time"] .d-label,
+    .input-contenedor[type="month"] .d-label{
+        display: unset;
+    }  
+
+.d-label{
     display: none;
-    flex: ;
     padding: .5em 0 .5em .8em;
+    font-size: .9em;
+    color: rgba(255,255,255,.8);
 }
 
-.icono{
+.s-icono{
     display: none;
     padding: 0 .8em;
     border: none;
     color: inherit;
 }
 
-    .icono i{
+    .s-icono i{
         font-size: 1.3em;
     }
 
-.input[type="search"]~.icono{
-    display: unset;
-}
-
-.input-contenedor[type="file"] .file{
-    display: unset;
-}
-
-.input-contenedor[type="date"] .label{
-    display: unset;
-    font-size: .9em;
-    color: rgba(255,255,255,.8);
-}
-
-.file{
+.f-label{
     width: 100%;
     border: none !important;
     display: none;
@@ -89,10 +89,11 @@
     border: solid 1px red;
 }
 
-.file i{
-    font-size: 1.3em;
-    margin-right: 1em;
-}
+    .f-label i{
+        font-size: 1.3em;
+        margin-right: 1em;
+    }
+
 
 @media (max-width: 320px){
     .input-contenedor{

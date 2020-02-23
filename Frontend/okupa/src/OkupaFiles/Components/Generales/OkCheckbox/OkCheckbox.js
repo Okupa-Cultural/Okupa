@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 //CSS
-import './css/CheckBox.css';
+import './css/OkCheckbox.css';
 
-export default class CheckBox extends Component {
+export default class OkCheckbox extends Component {
 
     //estadoActual = 0 (Desactivado) sino, (Activado)
     constructor(props) {
@@ -36,10 +36,10 @@ export default class CheckBox extends Component {
 
     render() {
         return(
-            <label htmlFor={this.props.checkID} className={this.setClase(this.state.claseActual)} tabIndex={this.props.tabindex}>
+            <label htmlFor={this.props.Name} className={this.setClase(this.state.claseActual)} tabIndex={this.props.Tabindex}>
                 <input ref={(valueCheckbox) => this.inputElement = valueCheckbox} 
                        onClick={this.setEstado} 
-                       id={this.props.checkID} 
+                       id={this.props.Name} 
                        type="checkbox"
                        className="oculto"
                 />

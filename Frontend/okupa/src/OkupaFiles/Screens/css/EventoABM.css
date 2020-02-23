@@ -1,175 +1,157 @@
-.evento-abm,
-.evento-abm-tarjeta form fieldset div,
-.evento-abm-tarjeta form fieldset select,
-.evento-abm-tarjeta form fieldset select option,
-.participantes-vacio p{
-	color: #6d6e80;
+.evento-abm *{
+    text-transform: uppercase;
 }
 
-.evento-abm{
-	background:linear-gradient(0.45turn, #FAAD70, #EB6B85);
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    .evento-abm h1{
+        font-size: 1.2em;
+    }
+
+    .evento-abm h2{
+        font-size: 1em;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .evento-abm section{
+        padding: .5em 1em;
+        margin-top: .5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .evento-abm section:first-child{
+            margin-top: 0 !important;
+        }
+
+.titulo{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+}
+
+    .titulo i{
+        margin-right: .75em;
+        font-size: .76em;
+    }
+
+.top-info *,
+.fyh *{
+    margin: 0;
+}
+
+.top-info{
+    background: #2a333c;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+
+    .top-info .nombre{
+        margin: .5em 0;
+    }
+
+.fyh{
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-gap: 5%;
+    padding-bottom: .5em;
+}
+
+.periodicidad{
+    padding: .65em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+}
+
+.casillero{
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.periodo-doble,
+.direccion{
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .periodo-doble *{
+        margin-right: 1em;
+    }
+
+    .direccion *{
+        font-size: .8em;
+    }
+
+    .direccion span{
+        margin: 0 1em;
+    }
+
+.input-linea{
+    border: none;
+    border-bottom: solid 2px white;
+    background: transparent;
+    font-size: 1em;
+}
+
+    .dias{
+        width: 2em;
+    }
+
+    .dir{
+        width: 45%;
+    }
+    .dir::placeholder{
+        font-size: .85em;
+    }
+
+select,
+option{
+    font-size: .9em;
+    font-weight: 600;
+}
+
+select{
+    border: none;
+    background-image: linear-gradient(135deg, #04a5f0, #023c75);
+    border-radius: .25em;
+    padding: .25em;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+
+option{
+    color: black;
+    border: none;
+}
+
+.s-label{
+    font-size: .9em;
+}
+
+.radio{
+    display: flex;
+    justify-content: flex-start;
 }
 
 
-.evento-abm-tarjeta{
-	margin: 6em;
-	padding: 2em;
-	background: #FAFAFA;
-	box-shadow: 0 .3em .7em rgba(0,0,0,.3);
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
-
-	.evento-abm-tarjeta form fieldset{
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		margin: 1em 2em;
-		padding: 0 2em 1em 2em;
-		text-align: left;
-		font-size: 1.2em;
-	}
-
-	.fechas{
-		font-size: .8em;
-	}
-
-	.evento-abm-tarjeta .semana{
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-			.evento-abm-tarjeta .semana .dias{
-				width: 7em;
-				margin-top: 1em;
-				font-size: .8em;
-			}
+    .card {
+      display: inline-block;
+      margin-right: .5em;
+    }
 
 
-	.evento-abm-tarjeta form fieldset legend{
-		font-weight: 700;
-		padding: .5em;
-	}
-
-	.evento-abm-tarjeta input, .evento-abm-tarjeta textarea{
-		color:black;
-		font-size: 1.2em;
-		background: none;
-		transition: 250ms ease;
-	}
-
-	.evento-abm-tarjeta textarea{
-		width: 100%;
-		border-bottom: solid 1px;
-		border-color: rgba(0,0,0,0) !important;;
-		background: white;
-		box-shadow: 0 0 .1em rgba(0,0,0,.2);
-	}
-
-	.evento-abm-tarjeta input{
-		margin-left: .5em;
-		border-bottom: solid 1px;
-		border-color: rgba(0,0,0,0) !important;
-	}
-			.evento-abm-tarjeta input:focus,
-			.evento-abm-tarjeta textarea:focus{
-				border-color: rgba(0,0,0,.3) !important;
-				box-shadow: none;
-			}
-	.evento-abm-tarjeta form fieldset select{
-		font-size: 1.3em;
-	}
-
-	.repeticion{
-		margin-top: 1em;
-	}
-		.repeticion input{
-			max-width: 4em;
-		}
-	
-	.dir{
-		width: 55%;
-	}
-
-.evento-nombre, .evento-subtitulo{
-	max-width: 100%;
-	background: none !important;
-	border: none !important;
-	color: #0c112b;
-}
-
-.evento-nombre{
-	margin: 1em 0 0 .8em;
-	font-size: 2.5em !important;
-}
-
-.evento-subtitulo{
-	margin: .3em 0 0 .93em !important;
-	font-size: 1.5em !important;
-}
-	.evento-nombre:focus, .evento-subtitulo:focus{
-		border-bottom: 0;
-	}
-
-.participantes-vacio{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-	
-	.participantes-vacio p{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		font-size: 1.3em;
-	}
-		.participantes-vacio p i{
-			margin-left: .5em;
-		}
-
-.boton-invitar{
-	max-width: 25em;
-	padding: 1em;
-	margin: .5em;
-	border: solid 3px black !important;
-	border-radius: 1em;
-}
-
-@media (max-width: 600px) {
-
-	.fechas{
-		font-size: .75em;
-	}
-
-}
-
-@media (max-width: 500px) {
-
-	.fechas{
-		font-size: .8em;
-		
-	}
-
-	.evento-abm-tarjeta{
-		margin: .5em;
-	}
-}
-
-@media (max-width: 400px) {
-
-	.evento-abm-tarjeta{
-		padding: 0;
-	}
-
-	.evento-abm-tarjeta form fieldset{
-		margin: 0;
-		border: 0;
-	}
-
-	.evento-abm-tarjeta form fieldset legend{
-		transform: translateX(-.5em);
-	}
-
+.card img{
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    object-position: center top;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }

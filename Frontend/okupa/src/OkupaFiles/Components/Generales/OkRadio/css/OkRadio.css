@@ -1,0 +1,25 @@
+/* Customize the label (the container) */
+.container {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    display: none;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 50%;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }

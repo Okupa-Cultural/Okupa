@@ -7,14 +7,19 @@ export default class OkInput extends Component {
 
     render() {
         return(
-            <div className="input-contenedor" type={this.props.Type}>
+            <div 
+            className="input-contenedor" 
+            type={this.props.Type}
+            >
 
-                <label className="label">
+                <label 
+                className="d-label"
+                >
                     {this.props.Placeholder}
                 </label>
 
                 <label 
-                className="file"
+                className="f-label"
                 htmlFor={this.props.Name}
                 >
                     <i class="fal fa-upload"></i>
@@ -22,7 +27,7 @@ export default class OkInput extends Component {
                 </label>
                             
                 <input 
-                type={this.props.Type} 
+                type={this.props.Type}
                 placeholder={this.props.Placeholder} 
                 value={this.props.Value} 
                 name={this.props.Name} 
@@ -32,7 +37,7 @@ export default class OkInput extends Component {
                 className="input" 
                 />
                 
-                <button className="icono">
+                <button className="s-icono">
                     <i className="fal fa-search"></i>
                 </button>
 
