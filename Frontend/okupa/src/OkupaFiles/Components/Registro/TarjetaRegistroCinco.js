@@ -29,8 +29,8 @@ export default class TarjetaRegistroCuatro extends Component {
 
                     <OkTabla Titulo="Elementos de iluminacion" />
                     
-                    <OkInput Type="file" Placeholder="Subí tu plano de escenario" Name="escenario" />
-                    <OkInput Type="file" Placeholder="Subí tu plano de luces" Name="luces" />
+                    <OkInput Type="file" Icon="upload" Placeholder="Subí tu plano de escenario" Name="escenario" />
+                    <OkInput Type="file" Icon="upload" Placeholder="Subí tu plano de luces" Name="luces" />
 
                     <Link to="/feed">
                         <OkInput Type="submit" Value="Finalizar" />

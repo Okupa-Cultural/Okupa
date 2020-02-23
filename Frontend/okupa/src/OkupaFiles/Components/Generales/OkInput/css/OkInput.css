@@ -3,6 +3,11 @@
     --margin-top-doble: 2em;
     --margin-top-movil: .5em;
     --margin-top-movil-doble: .9em;
+
+    --border-radius: .65em;
+    --border-radius-small: .35em;
+
+    --box-shadow: 0 3px 5px rgba(0,0,0,.25);
 }
 
 .input-contenedor{
@@ -11,24 +16,55 @@
     flex-wrap: nowrap;
     margin-top: var(--margin-top);
     border: solid 1px rgba(255,255,255,.8);
-    border-radius: .65em;
+    border-radius:  var(--border-radius);
 }
 
     .input-contenedor[type="submit"],
     .input-contenedor[type="file"]{
         background-image: linear-gradient(135deg, #2059f6, #023c75) !important;
         border: none;
-        box-shadow: 0 3px 5px rgba(0,0,0,.25);
+        box-shadow: var(--box-shadow);
+    }
+
+    .input-contenedor[type="file"][format="portada"]{
+        background: #b8b8ba !important;
+        border: solid 1px white;
+        padding: 2em 0;
     }
 
     .input-contenedor[type="submit"]{
         margin-top: var(--margin-top-doble);
     }
 
+    .input-contenedor[type=text][format="linea"],
+    .input-contenedor[type=number][format="linea"],
+    .input-contenedor[type=email][format="linea"],
+    .input-contenedor[type=password][format="linea"],
+    .input-contenedor[type=tel][format="linea"],
+    .input-contenedor[type=search][format="linea"],
+    .input-contenedor[type=url][format="linea"]{
+        border: none;
+        border-bottom: solid 2px white;
+        border-radius: 0;
+        padding: 0 !important;
+    }
+
+    .input-contenedor[type="date"][format="small"],
+    .input-contenedor[type="datetime-local"][format="small"],
+    .input-contenedor[type="time"][format="small"],
+    .input-contenedor[type="month"][format="small"]{
+        padding: .35em .25em;
+        border: none;
+        border-radius: var(--border-radius-small) !important;
+        background-image: linear-gradient(135deg, #04a5f0, #023c75);
+        font-weight: 600;
+        box-shadow: var(--box-shadow);
+    }
+
 .input{
     flex: 1 1 auto;
     padding: .8em;
-    background-color: rgba(255,255,255,0);
+    background-color: transparent;
     border: none;
     color: #FFF;
     font-size: .9em;
@@ -40,7 +76,7 @@
 
     .input[type="submit"]{
         background-image: linear-gradient(135deg, #04a5f0, #023c75);
-        border-radius: .65em;
+        border-radius:  var(--border-radius);
         color:rgba(255,255,255,.9);
     }
 
@@ -48,50 +84,139 @@
         display: none;
     }
 
-    .input[type="search"]~.s-icono{
-        display: unset;
-    }
+    .input[type="date"][format="small"]::-webkit-calendar-picker-indicator,
+    .input[type="date"][format="small"]::-webkit-datetime-edit,
+    .input[type="date"][format="small"]::-webkit-datetime-edit-fields-wrapper,
+    .input[type="date"][format="small"]::-webkit-datetime-edit-text,
+    .input[type="date"][format="small"]::-webkit-datetime-edit-month-field,
+    .input[type="date"][format="small"]::-webkit-datetime-edit-day-field,
+    .input[type="date"][format="small"]::-webkit-datetime-edit-year-field,
+    .input[type="date"][format="small"]::-webkit-inner-spin-button,
+
+    .input[type="datetime-local"][format="small"]::-webkit-calendar-picker-indicator,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit-fields-wrapper,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit-text,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit-month-field,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit-day-field,
+    .input[type="datetime-local"][format="small"]::-webkit-datetime-edit-year-field,
+    .input[type="datetime-local"][format="small"]::-webkit-inner-spin-button,
     
-    .input-contenedor[type="file"] .f-label{
+    .input[type="time"][format="small"]::-webkit-calendar-picker-indicator,
+    .input[type="time"][format="small"]::-webkit-datetime-edit,
+    .input[type="time"][format="small"]::-webkit-datetime-edit-fields-wrapper,
+    .input[type="time"][format="small"]::-webkit-datetime-edit-text,
+    .input[type="time"][format="small"]::-webkit-datetime-edit-month-field,
+    .input[type="time"][format="small"]::-webkit-datetime-edit-day-field,
+    .input[type="time"][format="small"]::-webkit-datetime-edit-year-field,
+    .input[type="time"][format="small"]::-webkit-inner-spin-button,
+    
+    .input[type="month"][format="small"]::-webkit-calendar-picker-indicator,
+    .input[type="month"][format="small"]::-webkit-datetime-edit,
+    .input[type="month"][format="small"]::-webkit-datetime-edit-fields-wrapper,
+    .input[type="month"][format="small"]::-webkit-datetime-edit-text,
+    .input[type="month"][format="small"]::-webkit-datetime-edit-month-field,
+    .input[type="month"][format="small"]::-webkit-datetime-edit-day-field,
+    .input[type="month"][format="small"]::-webkit-datetime-edit-year-field,
+    .input[type="month"][format="small"]::-webkit-inner-spin-button
+    {
+        display: none;
+        border: none;
+    }
+
+    .input-contenedor[type="date"] .date-label,
+    .input-contenedor[type="datetime-local"] .date-label,
+    .input-contenedor[type="time"] .date-label,
+    .input-contenedor[type="month"] .date-label,
+    .input-contenedor[type="file"] .file-label,
+    .input[type="search"]~.search-icon{
         display: unset;
     }
 
-    .input-contenedor[type="date"] .d-label,
-    .input-contenedor[type="datetime-local"] .d-label,
-    .input-contenedor[type="time"] .d-label,
-    .input-contenedor[type="month"] .d-label{
-        display: unset;
-    }  
+.input-contenedor[type="date"][format="small"] label,
+.input-contenedor[type="datetime-local"][format="small"] label,
+.input-contenedor[type="time"][format="small"] label,
+.input-contenedor[type="month"][format="small"] label,
 
-.d-label{
+.input-contenedor[type="date"][format="small"] .input,
+.input-contenedor[type="datetime-local"][format="small"] .input,
+.input-contenedor[type="time"][format="small"] .input,
+.input-contenedor[type="month"][format="small"] .input{
+    box-shadow: none !important;
+    border-radius: var(--border-radius-small);
+    margin: 0;
+    padding: 0;
+}
+
+.input-contenedor[type="date"][format="small"] .date-label,
+.input-contenedor[type="datetime-local"][format="small"] .date-label,
+.input-contenedor[type="time"][format="small"] .date-label,
+.input-contenedor[type="month"][format="small"] .date-label{
+    padding: .35em .25em;
+    color: rgba(255,255,255,1) !important;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+.date-label,
+.search-icon,
+.file-label,
+.small-icon{
     display: none;
+}
+
+.date-label{
     padding: .5em 0 .5em .8em;
     font-size: .9em;
     color: rgba(255,255,255,.8);
 }
 
-.s-icono{
-    display: none;
+.search-icon{
     padding: 0 .8em;
     border: none;
     color: inherit;
 }
 
-    .s-icono i{
+    .search-icon i{
         font-size: 1.3em;
     }
 
-.f-label{
+.file-label{
     width: 100%;
     border: none !important;
-    display: none;
-    padding: .65em;
-    border: solid 1px red;
+    text-align: center;
 }
 
-    .f-label i{
+    .file-label i{
+        display: none;
         font-size: 1.3em;
+    }
+
+    .file-label .upload{
         margin-right: 1em;
+    }
+
+    .file-label[icon="upload"] .upload,
+    .file-label[icon="agregar"] .agregar{
+        display: unset;
+    }
+    
+
+.input-contenedor[type="date"][format="small"] .small-icon,
+.input-contenedor[type="datetime-local"][format="small"] .small-icon,
+.input-contenedor[type="time"][format="small"] .small-icon,
+.input-contenedor[type="month"][format="small"] .small-icon{
+    display: unset;
+    font-size: 1.3em;
+}
+
+.small-icon i{
+    display: none;
+}
+
+    .small-icon[icon="calendario"] .calendario,
+    .small-icon[icon="reloj"] .reloj{
+        display: unset;
     }
 
 

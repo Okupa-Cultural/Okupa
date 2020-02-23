@@ -23,6 +23,28 @@
             margin-top: 0 !important;
         }
 
+.s-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: .25em;
+}
+
+    .s-flex button,
+    .s-flex span{
+        margin-top: 10px;
+    }
+
+    .s-flex span{
+        margin-left: .6em;
+        margin-right: .4em;
+    }
+
+    .s-flex input{
+        width: 40%;
+    }
+
+
 .titulo{
     font-size: 1.5em;
     font-weight: 600;
@@ -34,18 +56,15 @@
         font-size: .76em;
     }
 
-.top-info *,
-.fyh *{
-    margin: 0;
-}
-
 .top-info{
     background: #2a333c;
     box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    border-top: solid 1px rgba(255,255,255,.1);
+    border-bottom: solid 1px rgba(255,255,255,.1);
 }
 
     .top-info .nombre{
-        margin: .5em 0;
+        margin-bottom: .5em;
     }
 
 .fyh{
@@ -55,98 +74,17 @@
     padding-bottom: .5em;
 }
 
-.periodicidad{
-    padding: .65em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-    grid-auto-rows: 1fr;
-    grid-gap: 5px;
-}
-
-.casillero{
+.scrolling-wrapper{
     display: flex;
-    align-items: center;
-    font-size: .9em;
-    text-transform: uppercase;
-}
-
-.periodo-doble,
-.direccion{
-    flex-direction: row !important;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-    .periodo-doble *{
-        margin-right: 1em;
-    }
-
-    .direccion *{
-        font-size: .8em;
-    }
-
-    .direccion span{
-        margin: 0 1em;
-    }
-
-.input-linea{
-    border: none;
-    border-bottom: solid 2px white;
-    background: transparent;
-    font-size: 1em;
-}
-
-    .dias{
-        width: 2em;
-    }
-
-    .dir{
-        width: 45%;
-    }
-    .dir::placeholder{
-        font-size: .85em;
-    }
-
-select,
-option{
-    font-size: .9em;
-    font-weight: 600;
-}
-
-select{
-    border: none;
-    background-image: linear-gradient(135deg, #04a5f0, #023c75);
-    border-radius: .25em;
-    padding: .25em;
-    box-shadow: 0 3px 5px rgba(0,0,0,.25);
-}
-
-option{
-    color: black;
-    border: none;
-}
-
-.s-label{
-    font-size: .9em;
-}
-
-.radio{
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1em;
+    padding-left: .25em;
 }
     .card {
-      display: inline-block;
-      margin-right: .5em;
+      flex: 0 0 auto;
+      margin-right: 1em;
     }
-
 
 .card img{
     width: 5em;
@@ -155,3 +93,4 @@ option{
     object-position: center top;
     box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
+

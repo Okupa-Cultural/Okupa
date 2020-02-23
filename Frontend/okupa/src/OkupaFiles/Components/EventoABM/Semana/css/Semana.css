@@ -1,0 +1,14 @@
+.semana{
+    padding: .65em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+}
+
+.casillero{
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    text-transform: uppercase;
+}

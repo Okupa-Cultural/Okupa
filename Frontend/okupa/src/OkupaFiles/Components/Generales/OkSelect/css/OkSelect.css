@@ -1,0 +1,12 @@
+.select{
+    border: none;
+    background-image: linear-gradient(135deg, #04a5f0, #023c75);
+    border-radius: .25em;
+    padding: .25em;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+
+    .select option{
+        color: black;
+        border: none;
+    }
