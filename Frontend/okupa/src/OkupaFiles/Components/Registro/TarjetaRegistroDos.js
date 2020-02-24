@@ -27,9 +27,9 @@ export default class TarjetaRegistroUno extends Component {
                         </form>
                         <p className="tyc">
                             Si continuás, aceptás nuestras&nbsp;
-                            <Link><u>políticas de privacidad&nbsp;</u></Link>
+                            <Link to=""><u>políticas de privacidad&nbsp;</u></Link>
                             y nuestros&nbsp; 
-                            <Link><u>términos de uso</u>.</Link>
+                            <Link to=""><u>términos de uso</u>.</Link>
                         </p>
                     </div>
             </section>

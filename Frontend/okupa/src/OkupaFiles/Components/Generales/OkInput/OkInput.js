@@ -11,6 +11,7 @@ export default class OkInput extends Component {
             className="input-contenedor" 
             type={this.props.Type}
             format={this.props.Format}
+            htmlFor={this.props.Name}
             >
 
                 <label 
@@ -18,8 +19,8 @@ export default class OkInput extends Component {
                 htmlFor={this.props.Name}
                 icon={this.props.Icon}
                 >
-                    <i class="fal fa-upload upload"></i>
-                    <i class="fal fa-plus-circle agregar"></i>
+                    <i className="fal fa-upload upload"></i>
+                    <i className="fal fa-plus-circle agregar"></i>
                     {this.props.Placeholder}
                 </label>
 
@@ -51,7 +52,7 @@ export default class OkInput extends Component {
                 className="small-icon" 
                 icon={this.props.Icon}
                 >
-                    <i class="fal fa-calendar-alt calendario"></i>
+                    <i className="fal fa-calendar-alt calendario"></i>
                     <i className="fal fa-clock reloj"></i>
                 </label>
 

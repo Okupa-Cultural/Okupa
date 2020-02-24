@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //Componentes
 import NavBar from './../Components/Navigation/NavBar';
-import Post from '../Components/Tarjeta/Post';
+import Post from '../Components/Post/Post';
 
 //CSS
 import './css/EstilosGenerales.css';

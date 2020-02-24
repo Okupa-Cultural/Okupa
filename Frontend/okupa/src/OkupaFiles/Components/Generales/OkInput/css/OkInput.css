@@ -29,7 +29,11 @@
     .input-contenedor[type="file"][format="portada"]{
         background: #b8b8ba !important;
         border: solid 1px white;
-        padding: 2em 0;
+        padding: 2em 0 !important;
+    }
+
+    .input-contenedor[type="file"]{
+        padding: 1em 0;
     }
 
     .input-contenedor[type="submit"]{

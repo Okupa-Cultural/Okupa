@@ -27,7 +27,7 @@ export default class EventoABM extends Component {
 				<i className="far fa-chevron-left"></i>
 				Nuevo evento
 			</h1>
-			<OkInput Type="file" Format="portada" Icon="agregar" Placeholder="Agregar foto de portada" TabIndex="1" />
+			<OkInput Type="file" Format="portada" Icon="agregar" Name="portada" Placeholder="Agregar foto de portada" TabIndex="1" />
 			</section>
 			<section className="top-info">
 				<div className="nombre">
@@ -77,36 +77,36 @@ export default class EventoABM extends Component {
 			</section>
 			<section>
 				<h2>participantes</h2>
-				<div class="scrolling-horizontal">
+				<div className="scrolling-horizontal">
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 				</div>
 			</section>

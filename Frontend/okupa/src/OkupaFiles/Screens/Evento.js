@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 //Componentes
 import NavBar from './../Components/Navigation/NavBar';
 import CasillaComentarios from './../Components/CasillaComentarios/CasillaComentarios';
-import TarjetaPie from './../Components/Tarjeta/TarjetaPie.js';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -59,8 +58,6 @@ export default class Evento extends Component {
               Laudantium obcaecati natus, 
               corrupti, aliquid possimus soluta.
             </p>
-
-            <TarjetaPie />
 
           </div>
 

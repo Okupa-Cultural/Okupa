@@ -12,7 +12,7 @@ export default class TarjetaCuerpo extends Component {
             <div className="tarjeta-cuerpo">
                     <Link to="/evento">
                         <h4 className="tarjeta-titulo">
-                            <i class="far fa-calendar-alt"></i>
+                            <i className="far fa-calendar-alt"></i>
                             Jony Mitchell: en vivo en Plaza Bomberitos
                         </h4>
                         <img src="https://sc2.elpais.com.uy/files/article_default_content/uploads/2017/09/10/59b5d5d0e150f.jpeg" alt="" className="tarjeta-imagen"/>
