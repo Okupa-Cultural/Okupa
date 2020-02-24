@@ -47,10 +47,13 @@
         margin-right: .4em;
     }
 
-    .s-flex input{
-        width: 40%;
+    .s-flex .input-contenedor{
+        width: 100%;
     }
 
+    .s-flex .boton{
+        min-width: 10em;
+    }
 
 .titulo{
     font-size: 1.5em;
@@ -81,7 +84,7 @@
     padding-bottom: .5em;
 }
 
-    .cada input{
+    .cada .input-contenedor{
         width: 2em !important;
     }
     
@@ -111,7 +114,10 @@
 }
 
 @media (max-width: 320px){
-    input::placeholder{
-        font-size: .85em;
+    .s-flex .input-contenedor{
+        width: 50%;
     }
+        .s-flex .input-contenedor .input{
+            padding-left: 3px;
+        }
 }
