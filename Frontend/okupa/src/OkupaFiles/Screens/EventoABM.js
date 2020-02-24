@@ -45,7 +45,7 @@ export default class EventoABM extends Component {
 				<Semana />
 			</section>
 			<section>
-				<div className="s-flex">
+				<div className="s-flex cada">
 					<label htmlFor="">
 						cada
 					</label>
@@ -77,38 +77,37 @@ export default class EventoABM extends Component {
 			</section>
 			<section>
 				<h2>participantes</h2>
-				<div class="scrolling-wrapper">
+				<div class="scrolling-horizontal">
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
 					<Link to="/perfil">
-						<div class="card"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
+						<div class="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
 					</Link>
-					
 				</div>
 			</section>
 			

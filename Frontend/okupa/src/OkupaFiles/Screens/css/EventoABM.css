@@ -1,6 +1,13 @@
-.evento-abm *{
+.evento-abm *,
+.evento-abm input::placeholder,
+.evento-abm textarea::placeholder{
     text-transform: uppercase;
 }
+
+    .evento-abm input,
+    .evento-abm textarea{
+        text-transform: none;
+    }
 
     .evento-abm h1{
         font-size: 1.2em;
@@ -74,23 +81,37 @@
     padding-bottom: .5em;
 }
 
-.scrolling-wrapper{
+    .cada input{
+        width: 2em !important;
+    }
+    
+    .cada .input-contenedor{
+        margin: 0 1em;
+    }
+
+.scrolling-horizontal{
+    margin-top: .65em;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 1em;
     padding-left: .25em;
 }
-    .card {
+    .sh-tarjeta {
       flex: 0 0 auto;
       margin-right: 1em;
     }
 
-.card img{
-    width: 5em;
-    height: 5em;
+.sh-tarjeta img{
+    width: 8em;
+    height: 8em;
     object-fit: cover;
     object-position: center top;
     box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 }
 
+@media (max-width: 320px){
+    input::placeholder{
+        font-size: .85em;
+    }
+}
