@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 //Componentes
-import OkTabla from '../Generales/OkTabla/OkTabla';
 import OkInput from '../Generales/OkInput/OkInput';
+import OkTabla from '../Generales/OkTabla/OkTabla';
 import OkRegistro from '../Generales/OkTabla/OkRegistro';
 
 export default class TarjetaRegistroCuatro extends Component {

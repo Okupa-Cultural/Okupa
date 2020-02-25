@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 
 //Imagenes
 //import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
@@ -11,6 +10,8 @@ import OkRadio from '../Components/Generales/OkRadio/OkRadio';
 import OkTextarea from '../Components/Generales/OkTextarea/OkTextarea';
 import OkSelect from '../Components/Generales/OkSelect/OkSelect';
 import Semana from '../Components/EventoABM/Semana/Semana';
+import ScrollingHorizontal from '../Components/ScrollingHorizontal/ScrollingHorizontal';
+import ShTarjeta from '../Components/ScrollingHorizontal/ShTarjeta';
 
 //CSS
 import './css/EstilosGenerales.css'
@@ -77,38 +78,68 @@ export default class EventoABM extends Component {
 			</section>
 			<section>
 				<h2>participantes</h2>
-				<div className="scrolling-horizontal">
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-					<Link to="/perfil">
-						<div className="sh-tarjeta"><img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" alt="participante"/></div>
-					</Link>
-				</div>
+				<ScrollingHorizontal>
+					<ShTarjeta Link="" Type="text">
+						<div>
+							Tarjeta tipo texto
+						</div>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img" Titulo="Tarjeta con título">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Pomplamoose_2014_2.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img" Titulo="Tarjeta con título largo Tarjeta con título largo">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+					<ShTarjeta Link="" Type="img">
+						<img 
+						src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+						alt="participante"
+						/>
+					</ShTarjeta>
+
+				</ScrollingHorizontal>
 			</section>
 			
 			<section>

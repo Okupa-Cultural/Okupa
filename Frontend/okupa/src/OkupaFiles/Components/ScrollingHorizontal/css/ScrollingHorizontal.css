@@ -1,0 +1,91 @@
+:root{
+    --size-txt: 5.7em;
+    --size-img: 8em;
+    --box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    --size-titulo: 7em;
+}
+
+/*------------------------------*/
+
+.scrolling-horizontal{
+    margin-top: .65em;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(var(--size-img), 1fr) );
+    grid-gap: 1em; 
+}
+
+.sh-tarjeta {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-height: var(--size-img);
+}
+
+    .shTarjetaTitulo{
+        display: none;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        z-index: 10;
+        align-self: flex-end;
+        max-height: var(--size-txt);
+        max-width: var(--size-titulo);
+        padding: .5em;
+        padding-top: 1em;
+        background: linear-gradient(0deg, #0464be 20%, rgba(0, 0, 0, 0));
+        text-align: left;
+        font-weight: 600;
+        color: rgba(255,255,255,.9);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+        .shTarjetaTitulo:empty{
+            background: none;
+        }
+
+    .sh-tarjeta img{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        width: var(--size-img);
+        height: var(--size-img);
+        max-height: var(--size-img);
+        object-fit: cover;
+        object-position: center top;
+        box-shadow: var(--box-shadow);
+    }
+
+    .sh-tarjeta[type="text"]{
+        width: var(--size-txt);
+        height: var(--size-txt);
+        padding: 1em;
+        border: solid 2px white;
+        border-radius: .65em;
+        background: grey;
+        box-shadow: var(--box-shadow);
+    }
+
+    .sh-tarjeta[type="text"] *{
+        font-weight: 600;
+    }
+        
+
+    .sh-tarjeta[type="img"] .shTarjetaTitulo{
+        display: unset;
+    }
+
+@media (max-width: 500px){
+
+    .scrolling-horizontal{
+        margin-top: .65em;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1em;
+        padding-left: .25em;
+    }
+
+    .sh-tarjeta{
+        margin-right: .75em;
+    }
+}

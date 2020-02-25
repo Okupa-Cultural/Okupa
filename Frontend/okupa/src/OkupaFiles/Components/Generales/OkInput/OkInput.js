@@ -55,7 +55,7 @@ export default class OkInput extends Component {
                     <i className="fal fa-calendar-alt calendario"></i>
                     <i className="fal fa-clock reloj"></i>
                 </label>
-
+                
             </div>
 
         );

@@ -26,18 +26,6 @@ button{
 	cursor: pointer;
 }
 
-	button:active, 
-	button:active div, 
-	input:active,
-	textarea:active{
-		box-shadow: inset 0 100em 100em rgba(255,255,255,.3) !important;
-	}
- 
-	button:active i{
-		text-shadow: inset 0 0 0 rgba(255,255,255,1) !important;
-	}
-
-
 a, 
 a:visited{
 	text-decoration: none;
@@ -258,4 +246,51 @@ table{
 		-moz-tap-highlight-color:rgba(255,255,255,0);
 	}
 	
+}
+
+@media (hover: none){
+	button:active, 
+	button:active div, 
+	input:active,
+	textarea:active{
+		box-shadow: inset 0 100em 100em rgba(255,255,255,.3) !important;
+	}
+
+	button:active i{
+		text-shadow: inset 0 0 0 rgba(255,255,255,1) !important;
+	}
+}
+
+@media (pointer: coarse){
+	button:active, 
+	button:active div, 
+	input:active,
+	textarea:active{
+		box-shadow: inset 0 100em 100em rgba(255,255,255,.3) !important;
+	}
+
+	button:active i{
+		text-shadow: inset 0 0 0 rgba(255,255,255,1) !important;
+	}
+}
+
+@media (pointer: fine){
+	input,
+	textarea{
+		transition: all .25s ease-in-out;
+	}
+
+	input:focus,
+	textarea:focus{
+		box-shadow: 0 0 10px rgba(0, 204, 255, 0.5) !important;
+	}
+
+	.input[format="linea"]:focus{
+		box-shadow: none !important;
+		
+	}
+		.input[format="linea"]:focus::placeholder{
+			text-shadow: 0 0 5px rgba(0, 204, 255, 1);
+		}
+
 }

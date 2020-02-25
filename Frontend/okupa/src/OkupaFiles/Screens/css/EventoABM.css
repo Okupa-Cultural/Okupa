@@ -84,34 +84,14 @@
     padding-bottom: .5em;
 }
 
-    .cada .input-contenedor{
-        width: 2em !important;
+    .cada .input-contenedor,
+    .cada .input{
+        width: 3em !important;
     }
     
     .cada .input-contenedor{
         margin: 0 1em;
     }
-
-.scrolling-horizontal{
-    margin-top: .65em;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 1em;
-    padding-left: .25em;
-}
-    .sh-tarjeta {
-      flex: 0 0 auto;
-      margin-right: 1em;
-    }
-
-.sh-tarjeta img{
-    width: 8em;
-    height: 8em;
-    object-fit: cover;
-    object-position: center top;
-    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
-}
 
 @media (max-width: 320px){
     .s-flex .input-contenedor{
