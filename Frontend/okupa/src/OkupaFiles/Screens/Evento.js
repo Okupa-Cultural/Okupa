@@ -57,8 +57,9 @@ export default class Evento extends Component {
               blanditiis, facere nobis. 
               Laudantium obcaecati natus, 
               corrupti, aliquid possimus soluta.
+              lalala.
             </p>
-
+            <div>llala</div>
           </div>
 
           <CasillaComentarios/>
