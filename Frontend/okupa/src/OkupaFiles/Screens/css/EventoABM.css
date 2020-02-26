@@ -84,7 +84,10 @@
     padding-bottom: .5em;
 }
 
-    .cada .input-contenedor,
+    .cada .input-contenedor{
+        width: 4em !important;
+    }
+
     .cada .input{
         width: 3em !important;
     }

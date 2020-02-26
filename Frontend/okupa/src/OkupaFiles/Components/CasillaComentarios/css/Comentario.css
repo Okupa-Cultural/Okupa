@@ -1,42 +1,33 @@
 .comentario-contenedor{
-	max-width: 43em;
-	background-color: #24292E;
-	padding: 10px;
 	margin:10px;
-	border-radius: 16px;
 }
 
 .comentario{
 	display: block;
 	font-size: .8em;
 	text-align: left;
-	padding:.5em;
-	border-top: solid 1px #606060;
-	box-shadow: 0 -2px 0 rgba(0,0,0,.5);
 }
 
 .comentario-cabecera{
-	margin:.5em 0;
-}
-
-.comentario-foto, .comentario-datos{
-	display: inline-block;
-	vertical-align: top;
+	display: flex;
+	align-items: center;
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+	border-bottom: solid 1px #ffffff60;
 }
 
 .comentario-foto{
-	width: 3em;
-	height: 3em;
+	width: 1.5em;
+	height: 1.5em;
 	margin-right: 1em;
 	border-radius: 3em;
 	background-image: url(https://st.depositphotos.com/1292351/4225/v/950/depositphotos_42250441-stock-illustration-cartoon-milkman-delivering-milk.jpg);
-	background-size: 3em;
-	box-shadow: .3em .3em .3em rgba(0,0,0,.8);
+	background-size: 1.5em;
 }
 
 .comentario-usuario{
 	font-size: 1.2em;
-	font-weight: 400;
+	font-weight: 600;
 	color: white;
 }
 

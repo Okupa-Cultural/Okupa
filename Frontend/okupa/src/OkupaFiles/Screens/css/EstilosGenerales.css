@@ -160,32 +160,6 @@ p{
 	margin: 0;
 }
 
-/*Elementos comunes*/
-.solo-en-moviles{
-	display: none;
-}
-
-.form-boton{
-    padding: 1em !important;
-    margin-top: 2em !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border:none !important;
-    border-radius: 2em !important;
-    color: rgba(255,255,255,.8) !important;
-    font-size: .8em !important;
-    text-align: center !important;
-    text-transform: uppercase !important;
-    letter-spacing: .15em !important;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    box-shadow: 0 .1em .3em rgba(0,0,0,.3) !important;
-}
-
-.form-boton:hover{
-	cursor: pointer !important;
-}
-
 /*============= Iconos de FontAwesome a medida =============*/
 
 /*Facebook*/
@@ -232,14 +206,6 @@ p{
 	display:none !important;
 }
 
-.invisible{
-	visibility: hidden !important;
-}
-
-.sin-bordes{
-	border: 0 !important;
-}
-
 /*============= Mediaquerys =============*/
 
 @media (max-width: 500px) {
@@ -264,7 +230,7 @@ p{
 	textarea:active,
 	.sh-tarjeta:active,
 	.imgSombra:active{
-		box-shadow: inset 0 0 10em rgba(255,255,255,.3) !important;
+		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
 
 	button:active i{
@@ -280,15 +246,11 @@ p{
 
 	input:focus,
 	textarea:focus{
-		box-shadow: 0 0 10px rgba(0, 204, 255, 0.5) !important;
+		box-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
 	}
 
 	.input[format="linea"]:focus{
-		box-shadow: none !important;
-		
+		z-index: -1;
+		box-shadow: 0 10px 5px -5px rgba(0, 204, 255, 0.5) !important;
 	}
-		.input[format="linea"]:focus::placeholder{
-			text-shadow: 0 0 5px rgba(0, 204, 255, 1);
-		}
-
 }
