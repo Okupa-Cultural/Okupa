@@ -58,80 +58,103 @@ export default class Post extends Component {
 
     render() {
         return(
-            <div className="post">
-                <div className="usuario">
-                    <img src={this.props.userImg} 
-                    alt={this.props.userName}
-                    className="usuario-foto"
-                    />
-                    <h3 className="usuario-nombre">
-                        {this.props.userName}
-                    </h3>
-                </div>
-                <div className="foto">
-                    <div className="tipo-evento">
-                        <span>{this.props.eventType}</span>
-                    </div>    
-                    <img 
+            <div>
+                <div className="post">
+                    <div className="usuario">
+                        <img
+                        src={this.props.userImg} 
+                        alt={this.props.userName}
+                        title={this.props.userName}
+                        className="usuario-foto"
+                        />
+                        <h3 className="usuario-nombre" title={this.props.userName}>
+                            {this.props.userName}
+                        </h3>
+                    </div>
+                    <div className="foto">
+                        <div className="tipo-evento">
+                            <span title={this.props.eventType}>
+                                {this.props.eventType}
+                            </span>
+                        </div>    
+                        <img 
                         src={this.props.eventImg} 
                         alt={this.props.eventName}
-                    />
-                </div>
-                <div className="cuerpo">
-                    <div className="info">
-                        <div className="fecha">
-                            <div className="mes">
-                                {this.props.eventMonth}
-                            </div>
-                            <div className="dia">
-                                {this.props.eventDay}
-                            </div>
-                            <div className="hora">
-                                {this.props.eventHour}
-                            </div>
-                        </div>
-                        <div className="cabecera">
-                            <div className="nombre">
-                                {this.props.eventName}
-                            </div>
-                            <div className="ubicacion">
-                                <div className="direccion">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    {this.props.eventAdress}
+                        title={this.props.eventName}
+                        />
+                    </div>
+                    <div className="cuerpo">
+                        <div className="info">
+                            <div className="fecha">
+                                <div className="mes">
+                                    {this.props.eventMonth}
                                 </div>
-                                <div className="cercania">
-                                    a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
+                                <div className="dia">
+                                    {this.props.eventDay}
+                                </div>
+                                <div className="hora">
+                                    {this.props.eventHour}
                                 </div>
                             </div>
+                            <div className="cabecera">
+                                <div className="nombre" title={this.props.eventName}>
+                                    {this.props.eventName}
+                                </div>
+                                <div className="ubicacion">
+                                    <div className="direccion" title={this.props.eventAdress}>
+                                        <i className="fas fa-map-marker-alt"></i>
+                                        {this.props.eventAdress}
+                                    </div>
+                                    <div className="cercania">
+                                        a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        <p className="descripcion">
+                            {this.props.eventDescrition}
+                        </p>
+                        </div>
+
+                        <div className="divisor"></div>
+
+                        <div className="estadisticas">
+                            <i className="fad fa-user"></i>
+                            {this.state.claps} aplausos
+                            &nbsp; &nbsp;
+                            <i className="fad fa-calendar-alt"></i>
+                            veces agendado
+                            &nbsp; &nbsp;
+                            <i className="fad fa-comment-dots"></i>
+                            comentarios
                         </div>
                     </div>
-                    <div>
-                    <p className="descripcion">
-                        {this.props.eventDescrition}
-                    </p>
+                    <div className="botonera">
+                        <div 
+                        onClick={() => this.touchedButton(1)} 
+                        className={"post-boton " + this.displayButton(1)}
+                        title="Aplaudir"
+                        >
+                            <i className="fal fa-sign-language"></i>
+                        </div>
+                        <div 
+                        onClick={() => this.touchedButton(2)} 
+                        className={"post-boton " + this.displayButton(2)}
+                        title="Agendar"
+                        >
+                            <i className="fal fa-calendar-alt"></i>
+                        </div>
+                        <div 
+                        className="post-boton post-boton-comentar"
+                        title="Comentar"
+                        >
+                            <i className="fal fa-comment-dots"></i>
+                        </div>
                     </div>
-                    <div className="estadisticas">
-                        <i className="fad fa-user"></i>
-                        {this.state.claps} aplausos
-                        &nbsp; &nbsp;
-                        <i className="fad fa-calendar-alt"></i>
-                        veces agendado
-                        &nbsp; &nbsp;
-                        <i className="fad fa-comment-dots"></i>
-                        comentarios
-                    </div>
-                </div>
-                <div className="botonera">
-                    <div onClick={() => this.touchedButton(1)} className={"post-boton " + this.displayButton(1)}>
-                        <i className="fal fa-sign-language"></i>
-                    </div>
-                    <div onClick={() => this.touchedButton(2)} className={"post-boton " + this.displayButton(2)}>
-                        <i className="fal fa-calendar-alt"></i>
-                    </div>
-                    <div className="post-boton post-boton-comentar">
-                        <i className="fal fa-comment-dots"></i>
-                    </div>
-                </div>
+
+                </div> {/*--Fin del post--*/}
+
                 <div className="ultimo-comentario">
                     <Comentario username="Mauricio Macri" content="Larai larai larai larai" />
                 </div>
