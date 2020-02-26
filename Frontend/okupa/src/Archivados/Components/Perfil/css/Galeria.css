@@ -10,7 +10,6 @@
 .galeria-elemento{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	background-image: linear-gradient(#3c175f, #ae1639);
 	cursor: pointer;
 	transition: 250ms ease;

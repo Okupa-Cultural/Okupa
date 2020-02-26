@@ -50,10 +50,15 @@
         width: var(--size-img);
         height: var(--size-img);
         max-height: var(--size-img);
-        object-fit: cover;
-        object-position: center top;
         box-shadow: var(--box-shadow);
     }
+
+        .imgSombra{
+            display: none;
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+            z-index: 20;
+        }
 
     .sh-tarjeta[type="text"]{
         width: var(--size-txt);
@@ -70,7 +75,8 @@
     }
         
 
-    .sh-tarjeta[type="img"] .shTarjetaTitulo{
+    .sh-tarjeta[type="img"] .shTarjetaTitulo,
+    .sh-tarjeta[type="img"] .imgSombra{
         display: unset;
     }
 

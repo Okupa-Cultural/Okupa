@@ -66,14 +66,14 @@ export default class EventoABM extends Component {
 					<OkRadio name="semanas" Id="3" Label="ninguna" />
 			</section>
 			<section>
-				<OkTextarea Placeholder="Descripcion del evento" Rows="4" />
+				<OkTextarea Placeholder="Descripción del evento" Rows="4" />
 			</section>
 			<section className="ubicacion">
 				<h2>Ubicación</h2>
 				<div className="s-flex">
 					<OkBoton Value="Contactar espacio" Format="small" Icon="contacto" />
 					<span>ó</span>
-					<OkInput Type="text" Format="linea" Placeholder="escrbí la dirección" />
+					<OkInput Type="text" Format="linea" Placeholder="escribí la dirección" />
 				</div>
 			</section>
 			<section>
