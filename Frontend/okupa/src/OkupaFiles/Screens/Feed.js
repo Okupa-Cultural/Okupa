@@ -20,7 +20,7 @@ export default class Feed extends Component {
             
             distance="2,6"
             
-            eventType="Espectáctulo"
+            eventType="Espectáculo"
             eventImg="https://lastfm.freetls.fastly.net/i/u/770x0/b1d30477a02f48c2c8a9bdc8515e0d59.jpg" 
             eventName="Kyuss - Live at plaza Bomberitos"
             eventAdress="Centro cultural plaza de Bomberitos"
@@ -43,7 +43,7 @@ export default class Feed extends Component {
             
             distance="0,9"
             
-            eventType="Espectáctulo"
+            eventType="Espectáculo"
             eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
             eventName="Circ du Solei - Séptimo día"
             eventAdress="Centro cultural plaza de Bomberitos"
@@ -63,7 +63,7 @@ export default class Feed extends Component {
             
             distance="55,2"
             
-            eventType="Taller/seminario"
+            eventType="Taller/Seminario"
             eventImg="https://static3.a24.com/images/2019/8/26/HyRswT-SS-768x000.jpeg" 
             eventName="Clases de Parkour: cómo volarse los dientes"
             eventAdress="Ramos mejía, Buenos Aires"
@@ -86,7 +86,7 @@ export default class Feed extends Component {
             
             eventType="Convención/Feria"
             eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
-            eventName="Congreso internacional de verdulerías"
+            eventName="Congreso internacional de verduras"
             eventAdress="Haedo, Buenos Aires"
             eventMonth="mar"
             eventDay="17"

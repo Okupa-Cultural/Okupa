@@ -1,0 +1,266 @@
+.perfil{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* === Foto de perfil móvil === */
+.foto-perfil-movil,
+.foto-perfil-movil-fullscreen,
+.foto-perfil-movil img,
+.foto-perfil-movil-fullscreen img{
+    transition: all .3s ease;
+    display: none;
+}
+
+.foto-perfil-movil,
+.foto-perfil-movil img,
+.foto-perfil-movil{
+    max-height: 70vh;
+}
+
+.foto-perfil-movil-fullscreen,
+.foto-perfil-movil-fullscreen img{
+    max-height: 110vh;
+}
+
+.foto-perfil-movil img,
+.foto-perfil-movil-fullscreen img{
+    width: 100vw;
+}
+
+.foto-perfil-movil img{
+    object-position: 0 -3vh;
+}
+
+.fp-fullscreen img{
+    object-position: 0 0vh;
+}
+/* === fin de Foto de perfil móvil === */
+
+.p-cabecera{
+    box-shadow: 0 3px 5px rgba(0,0,0,.8);
+    padding: .5em .5em 0 .5em !important;
+}
+
+.p-cabecera .p-nombre{
+    padding-left: .25em;
+    font-weight: 600;
+    font-size: 1.25em;
+    text-align: left;
+    text-shadow: var(--text-shadow);
+}
+
+.p-etiquetas{
+    display: flex;
+    justify-content: flex-start;
+    margin: .5em 0;
+}
+
+.p-estadisticas{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+
+    .p-estadisticas .estadisticas-elemento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-estadisticas .cantidad{
+        font-weight: 600 !important;
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    .p-estadisticas .leyenda{
+        margin-top: .25em;
+        font-weight: 100;
+        font-size: .8em;
+    }
+
+    .p-divisor{
+        width: 1px;
+        height: 2.25em;
+        background: rgba(255,255,255,.3);
+        align-self: center;
+    }
+
+.p-botonera{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: .75em 0 1em 0;
+
+}
+
+    .p-botonera button{
+        width: 10em;
+        padding: .5em !important;
+        font-weight: 600;
+    }
+
+
+
+.perfil section{
+    padding: 1em;
+    border-bottom: solid 1px rgba(255,255,255,.1)
+}
+    .perfil section h2,
+    .perfil section span{
+        font-weight: 600;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .perfil section h2{
+        text-shadow: var(--text-shadow);
+    }
+
+    .fecha-formacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: .5em 0 1em 0;
+    }
+
+    .bio{
+        background: rgba(255, 255, 255, .15);
+        box-shadow: var(--box-shadow);
+    }
+
+        .bio h2{
+            padding: .5em;
+            background: rgba(0,0,0,.35);
+        }
+
+        .bio p{
+            padding: .5em;
+        }
+
+.enlaces-contenedor{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5px;
+    margin-top: .5em;
+}
+
+        .enlaces-contenedor button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        background-image: linear-gradient(135deg, #04a5f0, #023c75);
+        border-radius: .25em;
+        border: none;
+        box-shadow: var(--box-shadow);
+    }
+
+        .enlaces-contenedor button i{
+            width: 100%;
+            font-size: 2em;
+        }
+
+        .enlaces-contenedor button .leyenda{
+            font-weight: 100;
+            font-size: .9em;
+            text-align: center;
+        }
+
+@media(max-width: 500px){
+    .perfil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto-perfil{
+        display: none;
+    }
+
+    .foto-perfil-movil,
+    .foto-perfil-movil-fullscreen,
+    .foto-perfil-movil img,
+    .foto-perfil-movil-fullscreen img{
+        display: unset;
+    }
+}
+
+
+
+
+
+
+/* ======================================================
+Este código añadía una sombra interior a la foto de perfil
+en dispositivos móviles, y una animación muy cool cuando
+se cambia a FullScreen. Lo descarto porque se laguea un
+poquito, pero no estaría nada mal para más adelante!
+
+Instrucciones para que funcione:
+
+1) Debe haber un div con la clase "img-sombra" y 
+tiene que estar dentro de .foto-perfil-movil, justo 
+por encima del img.
+
+2) Reemplazar todo el código que está marcado como
+"Foto de perfil móvil" por el que está acá abajo :B
+========================================================*/
+/*
+.foto-perfil-movil,
+.foto-perfil-movil-fullscreen{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+    .foto-perfil-movil,
+    .foto-perfil-movil-fullscreen,
+    .foto-perfil-movil img,
+    .foto-perfil-movil-fullscreen img,
+    .img-sombra{
+        transition: all .3s ease;
+    }
+
+    .foto-perfil-movil,
+    .foto-perfil-movil img,
+    .foto-perfil-movil .img-sombra{
+        max-height: 73vh;
+    }
+
+    .foto-perfil-movil-fullscreen,
+    .foto-perfil-movil-fullscreen img,
+    .foto-perfil-movil-fullscreen .img-sombra{
+        max-height: 100vh;
+    }
+
+    .foto-perfil-movil img,
+    .foto-perfil-movil-fullscreen img,
+    .img-sombra{
+        width: 100vw;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .foto-perfil-movil img{
+        object-position: 0 -3vh;
+    }
+
+    .fp-fullscreen img{
+        object-position: 0 0vh;
+    }
+    
+    .img-sombra{
+        z-index: 10;
+    }
+
+    .foto-perfil-movil .img-sombra{
+        box-shadow: inset 0 -1em 3em rgba(0,0,0,1);
+    }
+    .foto-perfil-movil-fullscreen .img-sombra{
+        box-shadow: inset 0 0 0 rgba(0,0,0,0);
+    }
+========================================================*/

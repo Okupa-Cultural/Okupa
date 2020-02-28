@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
     grid-auto-rows: 1fr;
-    grid-gap: 5px;
+    gap: 5px;
 }
 
 .casillero{

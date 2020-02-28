@@ -11,8 +11,21 @@
     box-shadow: 0 3px 4px rgba(0,0,0,.25);
 }
 
-.x{
+    .etiqueta[editable="0"]{
+        padding: .3em .6em;
+    }
+
+    .etiqueta[format="small"]{
+        font-size: .75em;
+    }
+
+.x[editable="1"]{
+    display: unset;
     margin-left: .6em;
+}
+
+.x[editable="0"]{
+    display: none;
 }
 
 @media (max-width: 320px){

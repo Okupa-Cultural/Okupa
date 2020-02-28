@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 //Componentes
 import Comentario from '../CasillaComentarios/Comentario';
@@ -60,6 +61,7 @@ export default class Post extends Component {
         return(
             <div>
                 <div className="post">
+                    <Link to="/perfil">
                     <div className="usuario">
                         <img
                         src={this.props.userImg} 
@@ -71,9 +73,10 @@ export default class Post extends Component {
                             {this.props.userName}
                         </h3>
                     </div>
+                    </Link>
                     <div className="foto">
                         <div className="tipo-evento">
-                            <span title={this.props.eventType}>
+                            <span type={this.props.eventType} title={this.props.eventType}>
                                 {this.props.eventType}
                             </span>
                         </div>    
@@ -156,8 +159,9 @@ export default class Post extends Component {
                 </div> {/*--Fin del post--*/}
 
                 <div className="ultimo-comentario">
-                    <Comentario username="Mauricio Macri" content="Larai larai larai larai" />
+                    <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
                 </div>
+                
             </div>
         );
     }

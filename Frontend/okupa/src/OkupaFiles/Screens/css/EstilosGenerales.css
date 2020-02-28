@@ -11,7 +11,7 @@ html, body {
 	overflow-x: hidden;
 }
 
-body, div, li, span, p, input, textarea, select, option{
+*{
 	font-family: 'Source sans pro', sans-serif;
 	font-weight: 400;
 	color: rgb(255,255,255);
@@ -160,45 +160,17 @@ p{
 	margin: 0;
 }
 
+/*============= Variables generales =============*/
+:root{
+	--box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	--box-shadow-light: 0 3px 5px rgba(0,0,0,.25);
+	--text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+	--text-shadow-light: 2px 2px 2px rgba(0,0,0,.5);
+}
+
 /*============= Iconos de FontAwesome a medida =============*/
 
-/*Facebook*/
-.fa-facebook-square{
-	background: -webkit-linear-gradient(0.2turn, #3B5998, #6582BE);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
-/*Twitter*/
-.fa-twitter-square{
-	background: -webkit-linear-gradient(0.2turn, #00ACEE, #42CBFF);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-/*Instagram*/
-.fa-instagram{
-	background: -webkit-linear-gradient(0.2turn, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-/*Spotify*/
-.fa-spotify{
-	background: -webkit-linear-gradient(1turn, #1ED761, #36e374);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding: .05em 0 0 0;
-	font-size: .92em;
-}
-
-/*Soundcloud*/
-.fa-soundcloud{
-	background: -webkit-linear-gradient(#FF9533, #FF4137);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: .7em;
-}
 
 
 /*============= Estados generales =============*/

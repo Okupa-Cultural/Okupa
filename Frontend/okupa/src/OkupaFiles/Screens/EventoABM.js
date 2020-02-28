@@ -78,7 +78,7 @@ export default class EventoABM extends Component {
 			</section>
 			<section>
 				<h2>participantes</h2>
-				<ScrollingHorizontal>
+				<ScrollingHorizontal Size="small">
 					<ShTarjeta Link="" Type="text">
 						<div>
 							Tarjeta tipo texto

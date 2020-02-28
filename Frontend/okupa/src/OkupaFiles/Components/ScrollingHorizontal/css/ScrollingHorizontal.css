@@ -1,7 +1,6 @@
 :root{
     --size-txt: 5.7em;
     --size-img: 8em;
-    --box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     --size-titulo: 7em;
 }
 
@@ -11,7 +10,7 @@
     margin-top: .65em;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(var(--size-img), 1fr) );
-    grid-gap: 1em; 
+    gap: 1em;
 }
 
 .sh-tarjeta {
@@ -86,7 +85,7 @@
         margin-top: .65em;
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: scroll;
         padding-bottom: 1em;
         padding-left: .25em;
     }
