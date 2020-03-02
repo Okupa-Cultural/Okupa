@@ -1,12 +1,11 @@
 /*============= Elementos básicos =============*/
-
-
 body {
 	background-color: #272732;
+	padding: 0 !important;
 }
 
 html, body {
-	padding: 0 !important;
+	
 	margin: 0 !important;
 	overflow-x: hidden;
 }
@@ -97,6 +96,16 @@ input:-webkit-autofill:focus{
 	font-weight: 700;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 textarea{
 	resize: none;
 }
@@ -137,8 +146,11 @@ table{
 	
 	table td, 
 	table th{
-		border-bottom: solid 1px rgba(123,133,139,.5);
 		padding: .25em .5em;
+	}
+
+	table td{
+		border-top: solid 1px rgba(123,133,139,.5);
 	}
 
 	table td:first-child, 
@@ -158,6 +170,10 @@ img {
 
 p{
 	margin: 0;
+}
+
+b{
+	font-weight: 700;
 }
 
 /*============= Variables generales =============*/
@@ -195,25 +211,31 @@ p{
 	
 }
 
+/*=== Respuesta tactil, para dispositivos TouchScreen ===*/
+
 @media (hover: none){
 	button:active, 
 	button:active div, 
 	input:active,
 	textarea:active,
+	label:active,
 	.sh-tarjeta:active,
-	.imgSombra:active{
+	.imgSombra:active,
+	.link:active{
 		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
-
+	
 	button:active i{
 		text-shadow: inset 0 0 0 rgba(255,255,255,1) !important;
 	}
 }
 
+/*=== Respuesta en focus, para dispositivos con Mouse ===*/
+
 @media (pointer: fine){
 	input,
 	textarea{
-		transition: all .25s ease-in-out;
+		transition: box-shadow .25s ease-in-out;
 	}
 
 	input:focus,

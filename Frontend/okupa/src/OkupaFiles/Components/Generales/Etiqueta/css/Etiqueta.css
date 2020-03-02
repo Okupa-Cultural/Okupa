@@ -19,7 +19,7 @@
         font-size: .75em;
     }
 
-.x[editable="1"]{
+.x{
     display: unset;
     margin-left: .6em;
 }

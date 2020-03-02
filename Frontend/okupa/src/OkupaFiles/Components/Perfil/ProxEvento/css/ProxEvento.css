@@ -1,6 +1,7 @@
 .proximoEvento{
 	background-image: linear-gradient(45deg, #04a5f01e 10%, #023c75df 70%);
 	padding: 1em 1em .5em 1em;
+	background-attachment: fixed;
 	flex-shrink: 0;
 	max-width: 15.5em;
 	margin-right: 1em;
@@ -121,7 +122,8 @@
 	.pe-pie span{
 		padding: .25em .5em;
 		border-radius: .3em;
-		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+		font-weight: 100 !important;
+		text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 	}
 
 		.pe-pie span[type="Espectáculo"]{
@@ -134,15 +136,30 @@
 			background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 		}
 
-.pe-boton{
+.pe-boton,
+.pe-boton-transparente{
 	padding: .75em;
 	border: none;
 	border-radius: .25em;
-	background-image: linear-gradient(135deg, #04a5f0, #023c75);
+	background-size: 6em 6em;
+	background-position: 0 -1em;
+}
+
+.pe-boton-transparente{
+	margin-right: .5em;
+}
+
+.pe-boton{
+	background-image: linear-gradient(180deg, #04a5f0, #04a5f000);
 	box-shadow: var(--box-shadow-light);
 }
 
-	.pe-boton i{
+	.pe-boton i,
+	.pe-boton-transparente i{
 		font-size: 1.4em;
+	}
+
+	.pe-boton-transparente i{
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 	}
 

@@ -1,111 +1,89 @@
 .articulo{
 	background-image: linear-gradient(45deg, #04a5f000, #ffffff27 65%);
 	flex-shrink: 0;
-	max-width: 15.5em;
 	margin-right: 1em;
 	box-shadow: 0 3px 10px rgba(0,0,0,.8);
 }
-/* --- Características compartidas --- */	
-	.art-fecha *,
-	.art-cabecera .art-nombre,
-	.art-cabecera .art-ubicacion .art-direccion{
-		font-weight: 600;
+
+.articulo,
+.art-foto{
+	max-width: 16em;
+}
+
+	.art-foto img{
+		width: 100%;
+		height: 18em;
+		object-fit: cover;
 	}
 
-	.art-fecha .art-mes,
-	.art-fecha .art-dia,
-	.art-cabecera .art-nombre{
-		text-shadow: 3px 2px 3px rgba(0,0,0,.5);
-	}
+.art-cabecera{
+	display: flex;
+	flex-direction: column;
+	height: 4em;
+	padding: .5em 1em;
+}
 
-	.art-fecha .art-mes,
-	.art-fecha .art-dia{
-		color: #00b3ff;
-	}
-
-	.art-cabecera *,
-	.art-descripcion{
+	.art-cabecera *{
 		text-align: left;
 	}
 
-/* --- */
-
-.art-foto img{
-	width: 100%;
-	max-height: 25em;
-	box-shadow: 0 2px 5px rgba(0,0,0,.65);
-}
-
-.art-info{
-	margin-top: 1.25em;
-}
-
-
-.art-cabecera{
-	padding-left: 1em;
-}
-
-	.art-cabecera .art-nombre{
-		align-self: center;
-		font-size: 1em; 
+	.art-nombre{
 		font-weight: 600;
 	}
 
-	.art-cabecera .art-ubicacion{
-		font-size: .9em;
-		margin-top: .5em;
+	.art-subtitulo{
+		font-weight: 100;
+		font-size: 1em;
 	}
 
-		.art-cabecera .art-ubicacion .art-zona{
-			padding-left: 1.4em;
-			font-weight: 100;
-		}
-
-		.art-cabecera .art-ubicacion i{
-			margin: 0 .5em 0 .05em;
-		}
-
-.art-ubicacion .art-direccion{
-	max-height: 2.4em;
-	max-width: 17em;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+.art-precio{
+	text-align: right;
+	font-weight: 600;
+	font-size: 1.2em;
+	padding: 0 1em .5em 1em;
 }
 
-.art-pie{
+.art-botonera{
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: .5em;
+	max-width: 90%;
+	padding:.5em 0;
 	border-top: solid 1px rgba(255,255,255,.15);
 }
 
-	.art-pie span{
-		padding: .25em .5em;
-		border-radius: .3em;
-		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
-	}
-
-		.art-pie span[type="Espectáculo"]{
-			background:linear-gradient(0.45turn, #faad70, #eb6b85);
-		}
-		.art-pie span[type="Taller/Seminario"]{
-			background-image: linear-gradient(-135deg, #9be15d 0%, #00e3ae 100%);
-		}
-		.art-pie span[type="Convención/Feria"]{
-			background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-		}
-
-.art-boton{
+.art-boton,
+.art-boton-transparente,
+.art-boton-transparente-Activo{
 	padding: .75em;
 	border: none;
 	border-radius: .25em;
-	background-image: linear-gradient(135deg, #04a5f0, #023c75);
+	background-size: 6em 6em;
+	background-position: 0 -1em;
+}
+
+.art-boton-transparente{
+	margin-right: .5em;
+}
+
+.art-boton{
+	background-image: linear-gradient(180deg, #04a5f0, #04a5f000);
 	box-shadow: var(--box-shadow-light);
 }
 
-	.art-boton i{
+	.art-boton i,
+	.art-boton-transparente i,
+	.art-boton-transparente-Activo i{
 		font-size: 1.4em;
 	}
 
+	.art-boton-transparente-Activo i{
+		color:#ff2222e5;
+		text-shadow: 0 0 5px #ff1919;
+	}
+
+
+	.art-boton-transparente i{
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	}

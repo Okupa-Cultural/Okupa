@@ -4,6 +4,11 @@
     text-transform: uppercase;
 }
 
+.evento-abm form{
+    display: flex;
+    flex-direction: unset;
+}
+
     .evento-abm input,
     .evento-abm textarea{
         text-transform: none;

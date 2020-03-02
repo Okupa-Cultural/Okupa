@@ -16,8 +16,12 @@ export default class OkTabla extends Component {
                         </th>
                     </tr>
                         <tr>
-                            <th>Descripción</th>
-                            <th>Cantidad</th>
+                            <th>
+                                Descripción
+                            </th>
+                            <th className="t-cantidad-contenedor">
+                                Cantidad
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,7 +30,7 @@ export default class OkTabla extends Component {
                 </table>
 
                 <div className="agregar">
-                <i className="fal fa-plus-circle"></i>
+                <i  onClick={this.props.onClickFunction} className="fal fa-plus-circle"></i>
                 </div>
 
             </div>

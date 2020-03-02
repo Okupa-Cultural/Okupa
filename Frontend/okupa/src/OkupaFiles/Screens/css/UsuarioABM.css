@@ -1,3 +1,11 @@
+.usuario-abm{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	height: 100vh;
+	align-items: center;
+	overflow: ;
+}
+
 .circulo,
 .circuloActivo{
 	font-size: .5em;
@@ -13,13 +21,6 @@
 
 .circuloActivo{
 	opacity: .8;
-}
-
-.usuario-abm{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	height: 100vh;
-	align-items: center;
 }
 
 .abm-seccion{
@@ -47,10 +48,29 @@
 		margin: .5em 0;
 	}
 
+	.abm-seccion .subir-planos{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+		.subir-planos .input-contenedor{
+			width: 45%;
+		}
+
 .tyc{
 	font-size: .9em;
 }
 
+@media (max-width: 500px){
+	.abm-seccion .subir-planos{
+		flex-wrap: wrap;
+	}
+
+	.subir-planos .input-contenedor{
+		width: 100%;
+	}
+}
 
 @media (max-width: 320px){
 	h2,

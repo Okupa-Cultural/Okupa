@@ -9,6 +9,7 @@ export default class OkBoton extends Component {
         return(
             <div>
                 <button 
+                type="button"
                 className="boton" 
                 name={this.props.Name} 
                 id={this.props.Name}
@@ -16,6 +17,7 @@ export default class OkBoton extends Component {
                 desplegable={this.props.Desplegable}
                 format={this.props.Format}
                 icon={this.props.Icon}
+                onClick={this.props.onClick}
                 >
                     {this.props.Value}
 

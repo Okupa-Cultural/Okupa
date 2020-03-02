@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
 
-//Componentes de terceros
-
-
 //Components
-/*import PerfilEtiquetas from './../Components/Perfil/PerfilEtiquetas';
-import PerfilBotonera from './../Components/Perfil/PerfilBotonera';
-import Estadisticas from './../Components/Perfil/Estadisticas';
-import Bio from '../Components/Perfil/Bio';
-import MainNav from './../Components/Perfil/MainNav';
-import FechaDeFormacion from './../Components/Perfil/FechaDeFormacion';
-import NavBar from '../Components/Navigation/NavBar';
-import EnlacesExternos from './../Components/Perfil/EnlacesExternos';*/
-import Galeria from './../Components/Perfil/Galeria';
-//import ProxEventos from './../Components/Perfil/ProxEventos';
 import OkBoton from '../Components/Generales/OkBoton/OkBoton';
 import Etiqueta from '../Components/Generales/Etiqueta/Etiqueta';
 import ScrollingHorizontal from '../Components/ScrollingHorizontal/ScrollingHorizontal';
 import ProxEvento from '../Components/Perfil/ProxEvento/ProxEvento';
 import Articulo from '../Components/Perfil/Articulo/Articulo';
-
-//import vaina from '../../Images/Logo/okupa-logo-blanco-transparente.png';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -38,8 +23,9 @@ export default class Perfil extends Component {
       fotoPerfil: 0,
     };
 
-    this.TabNavigator = this.TabNavigator.bind(this);
+//    this.TabNavigator = this.TabNavigator.bind(this);
     this.switchToFullScreen = this.switchToFullScreen.bind(this);
+
   }
 
   
@@ -48,21 +34,6 @@ export default class Perfil extends Component {
     fetch('https://api.unsplash.com/photos/?client_id=05883571daf3b1e01c789ef7cd850e9fb242f48d3b9432b46fae325a7eba6c0b')
       .then(response => response.json())
       .then(json => { this.setState({ imagenes: json});});
-  }
-
-  TabNavigator() {
-    switch(this.state.pantallaActual) {
-      //case 1: return <ProxEventos />;
-      case 2: return <Galeria imagenes={this.state.imagenes}/>;
-      case 3: return <Galeria imagenes={this.state.imagenes}/>;
-      default: break;
-    }
-  }
-
-  TabNavigatorCallback = (dataFromChild) => {
-      this.setState({
-        pantallaActual: dataFromChild
-      });
   }
 
   switchToFullScreen() {
@@ -75,10 +46,7 @@ export default class Perfil extends Component {
     }
   }
 
-
 render() {
-
-  var PantallaActual = this.TabNavigator();
 
   return (
     <div className="perfil">
@@ -97,7 +65,7 @@ render() {
       </div>
       <section className="p-cabecera">
         <h1 className="p-nombre">
-          La manzana cromática protoplasmática
+          Leslie Knope
         </h1>
         <div className="p-etiquetas">
           <Etiqueta Value="Actuación" Editable="0" Format="small" />
@@ -203,7 +171,8 @@ render() {
         </h2>
         <div className="proximos-eventos-scrolling">
           <ScrollingHorizontal Size="original">
-            <ProxEvento            
+            <ProxEvento
+              eventType="Espectáculo"            
               eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
               eventName="Messi: firma de autógrafos en Villa Celina"
               eventAdress="Celina kultura"
@@ -258,49 +227,45 @@ render() {
         <h2>Tienda</h2>
           <ScrollingHorizontal Size="original">
             <Articulo            
-              eventType="Espectáculo"
-              eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
-              eventName="Messi: firma de autógrafos en Villa Celina"
-              eventAdress="Celina kultura"
-              eventZone="Villa Celina, Buenos Aires"
-              eventMonth="jun"
-              eventDay="06"
-              eventHour="13:00"
+              articleImg="https://i.pinimg.com/474x/f7/d9/61/f7d961ca26c1d9fa14ee9a68a6a61340.jpg" 
+              articleName="Sticker grande serigrafiado sin borde"
+              articleSubtitle="Medidas: 45x50 cm"
+              articlePrice="75"
             />
-
-            <Articulo          
-              eventType="Convención/Feria"
-              eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
-              eventName="Congreso internacional de verdulerías"
-              eventAdress="Zeugma Cultural"
-              eventZone="Haedo, Buenos Aires"
-              eventMonth="mar"
-              eventDay="19"
-              eventHour="00:00"
+            <Articulo            
+              articleImg="https://i.pinimg.com/originals/20/52/d4/2052d48c1dfd47991e952011bca4e4c5.jpg"
+              articleName="Pulseras hechas a mano"
+              articlePrice="200"
             />
-            
-            <Articulo           
-              eventType="Espectáculo"
-              eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
-              eventName="Messi: firma de autógrafos en Villa Celina"
-              eventAdress="Celina kultura"
-              eventZone="Villa Celina, Buenos Aires"
-              eventMonth="jun"
-              eventDay="06"
-              eventHour="13:00"
+            <Articulo            
+              articleImg="https://apod.nasa.gov/apod/image/9906/sudbury_sno.jpg"
+              articleName="Bomba de neutrinos, como nueva"
+              articleSubtitle="Perfecto estado, no se usó nunca"
+              articlePrice="6"
             />
-
-            <Articulo         
-              eventType="Convención/Feria"
-              eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
-              eventName="Congreso internacional de verdulerías"
-              eventAdress="Zeugma Cultural"
-              eventZone="Haedo, Buenos Aires"
-              eventMonth="mar"
-              eventDay="19"
-              eventHour="00:00"
+            <Articulo            
+              articleImg="https://http2.mlstatic.com/remeras-de-pink-floyd-varios-modelos-todas-las-bandas-rock-D_NQ_NP_700543-MLA25598254561_052017-F.jpg"
+              articleName="Remera de mi hermano"
+              articleSubtitle="Talle L. Y...un poquito baqueteada está"
+              articlePrice="100.000"
             />
           </ScrollingHorizontal>
+      </section>
+      <section className="footer">
+        <h2>Compartir&nbsp;<i class="fas fa-share-alt"></i></h2>
+          <div className="share">
+            <h3>Link</h3>
+            <div className="link" id="profileLink">https://www.okupa.com.ar/perfil$sarasa=leslie$knope#piripipi</div>
+          </div>
+          <div className="url">
+            Compartir en facebook
+          </div>
+          <div className="url">
+            Compartir en twitter
+          </div>
+          <div className="url">
+            Compartir en Instagram storys (creo que se puede)
+          </div>
       </section>
     </div>
   );

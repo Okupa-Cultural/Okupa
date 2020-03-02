@@ -26,6 +26,7 @@ export default class UsuarioABM extends Component {
       username: '',
       email: '',
       password: '',
+      user_type: 0,
       name: '',
       fechaInicio: '',
       bio: '',
@@ -37,18 +38,22 @@ export default class UsuarioABM extends Component {
     switch(pantallaNueva) {
       case 1:
           this.setState({
+            user_type : formPantalla.get('user_type')
+          }); break;
+      case 2:
+          this.setState({
             username : formPantalla.get('username'),
             email: formPantalla.get('mail'),
             password: formPantalla.get('password'),
           }); break;
-      case 2: 
+      case 3: 
         this.setState({
           name : formPantalla.get('name'),
           fechaInicio: formPantalla.get('fechaInicio'),
           bio: formPantalla.get('bio'),
       }); break;
-      case 3: this.postJson(); break;
       case 4: this.postJson(); break;
+      case 5: this.postJson(); break;
       default: break;
     }
 
@@ -61,9 +66,9 @@ export default class UsuarioABM extends Component {
 
   postJson = () => {
     console.log("entro");
-    var url = 'http://127.0.0.1:8000/users';
+    var url = 'http://localhost:4000/api/test';
     var data = this.state;
-    
+    console.log(JSON.stringify(data));
     fetch(url, {
       method: 'POST', // or 'PUT'
       body: JSON.stringify(data), // data can be `string` or {object}!
