@@ -55,12 +55,16 @@ render() {
       id="fotoPerfil" 
       onClick={this.switchToFullScreen} 
       >
-
-        <div className="img-sombra"></div>
-
         <img src="https://i.imgur.com/5NXgWQe.jpg" 
         alt="Leslie Knope"
         title="Leslie Knope"
+        />
+      </div>
+      <div className="foto-perfil-escritorio">
+        <img 
+          src="https://i.imgur.com/5NXgWQe.jpg" 
+          alt="Leslie Knope"
+          title="Leslie Knope"
         />
       </div>
       <section className="p-cabecera">
@@ -165,92 +169,92 @@ render() {
             
           </form>
       </section>
-      <section className="proximos-eventos">
-        <h2>
-          Proximos eventos
-        </h2>
-        <div className="proximos-eventos-scrolling">
-          <ScrollingHorizontal Size="original">
-            <ProxEvento
-              eventType="Espectáculo"            
-              eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
-              eventName="Messi: firma de autógrafos en Villa Celina"
-              eventAdress="Celina kultura"
-              eventZone="Villa Celina, Buenos Aires"
-              eventMonth="jun"
-              eventDay="06"
-              eventHour="13:00"
-            />
+      <main>
+        <section className="proximos-eventos">
+          <h2>
+            Proximos eventos
+          </h2>
+            <div className="scrolling-container">
+              <ProxEvento
+                eventType="Espectáculo"            
+                eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
+                eventName="Messi: firma de autógrafos en Villa Celina"
+                eventAdress="Celina kultura"
+                eventZone="Villa Celina, Buenos Aires"
+                eventMonth="jun"
+                eventDay="06"
+                eventHour="13:00"
+              />
 
-            <ProxEvento            
-              eventType="Convención/Feria"
-              eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
-              eventName="Congreso internacional de verdulerías"
-              eventAdress="Zeugma Cultural"
-              eventZone="Haedo, Buenos Aires"
-              eventMonth="mar"
-              eventDay="19"
-              eventHour="00:00"
-            />
+              <ProxEvento            
+                eventType="Convención/Feria"
+                eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
+                eventName="Congreso internacional de verdulerías"
+                eventAdress="Zeugma Cultural"
+                eventZone="Haedo, Buenos Aires"
+                eventMonth="mar"
+                eventDay="19"
+                eventHour="00:00"
+              />
+              
+              <ProxEvento            
+                eventType="Espectáculo"
+                eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
+                eventName="Messi: firma de autógrafos en Villa Celina"
+                eventAdress="Celina kultura"
+                eventZone="Villa Celina, Buenos Aires"
+                eventMonth="jun"
+                eventDay="06"
+                eventHour="13:00"
+              />
+
+              <ProxEvento            
+                eventType="Convención/Feria"
+                eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
+                eventName="Congreso internacional de verdulerías"
+                eventAdress="Zeugma Cultural"
+                eventZone="Haedo, Buenos Aires"
+                eventMonth="mar"
+                eventDay="19"
+                eventHour="00:00"
+              />
+            </div>
+        </section>
+
+        <section className="galeria">
+          <h2>Galería</h2>
             
-            <ProxEvento            
-              eventType="Espectáculo"
-              eventImg="https://www.vuenosairez.com/images/eventos/messi10-de-921865.jpg" 
-              eventName="Messi: firma de autógrafos en Villa Celina"
-              eventAdress="Celina kultura"
-              eventZone="Villa Celina, Buenos Aires"
-              eventMonth="jun"
-              eventDay="06"
-              eventHour="13:00"
-            />
+        </section>
 
-            <ProxEvento            
-              eventType="Convención/Feria"
-              eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
-              eventName="Congreso internacional de verdulerías"
-              eventAdress="Zeugma Cultural"
-              eventZone="Haedo, Buenos Aires"
-              eventMonth="mar"
-              eventDay="19"
-              eventHour="00:00"
-            />
-          </ScrollingHorizontal>
-        </div>
-      </section>
-
-      <section className="galeria">
-        <h2>Galería</h2>
-          
-      </section>
-
-      <section className="tienda">
-        <h2>Tienda</h2>
-          <ScrollingHorizontal Size="original">
-            <Articulo            
-              articleImg="https://i.pinimg.com/474x/f7/d9/61/f7d961ca26c1d9fa14ee9a68a6a61340.jpg" 
-              articleName="Sticker grande serigrafiado sin borde"
-              articleSubtitle="Medidas: 45x50 cm"
-              articlePrice="75"
-            />
-            <Articulo            
-              articleImg="https://i.pinimg.com/originals/20/52/d4/2052d48c1dfd47991e952011bca4e4c5.jpg"
-              articleName="Pulseras hechas a mano"
-              articlePrice="200"
-            />
-            <Articulo            
-              articleImg="https://apod.nasa.gov/apod/image/9906/sudbury_sno.jpg"
-              articleName="Bomba de neutrinos, como nueva"
-              articleSubtitle="Perfecto estado, no se usó nunca"
-              articlePrice="6"
-            />
-            <Articulo            
-              articleImg="https://http2.mlstatic.com/remeras-de-pink-floyd-varios-modelos-todas-las-bandas-rock-D_NQ_NP_700543-MLA25598254561_052017-F.jpg"
-              articleName="Remera de mi hermano"
-              articleSubtitle="Talle L. Y...un poquito baqueteada está"
-              articlePrice="100.000"
-            />
-          </ScrollingHorizontal>
-      </section>
+        <section className="tienda">
+          <h2>Tienda</h2>
+            <div className="scrolling-container">
+              <Articulo            
+                articleImg="https://i.pinimg.com/474x/f7/d9/61/f7d961ca26c1d9fa14ee9a68a6a61340.jpg" 
+                articleName="Sticker grande serigrafiado sin borde"
+                articleSubtitle="Medidas: 45x50 cm"
+                articlePrice="75"
+              />
+              <Articulo            
+                articleImg="https://i.pinimg.com/originals/20/52/d4/2052d48c1dfd47991e952011bca4e4c5.jpg"
+                articleName="Pulseras hechas a mano"
+                articlePrice="200"
+              />
+              <Articulo            
+                articleImg="https://apod.nasa.gov/apod/image/9906/sudbury_sno.jpg"
+                articleName="Bomba de neutrinos, como nueva"
+                articleSubtitle="Perfecto estado, no se usó nunca"
+                articlePrice="6"
+              />
+              <Articulo            
+                articleImg="https://http2.mlstatic.com/remeras-de-pink-floyd-varios-modelos-todas-las-bandas-rock-D_NQ_NP_700543-MLA25598254561_052017-F.jpg"
+                articleName="Remera de mi hermano"
+                articleSubtitle="Talle L. Y...un poquito baqueteada está"
+                articlePrice="100.000"
+              />
+            </div>
+        </section>
+      </main>
       <section className="footer">
         <h2>Compartir&nbsp;<i class="fas fa-share-alt"></i></h2>
           <div className="share">

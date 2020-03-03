@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 //CSS
 import './css/Articulo.css';
-import OkBoton from '../../Generales/OkBoton/OkBoton';
 
 export default class Articulo extends Component {
 

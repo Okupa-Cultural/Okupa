@@ -9,7 +9,7 @@ export default class ShTarjeta extends Component {
     render() {
         return(
             <Link to={this.props.Link}>
-                <div className="sh-tarjeta" type={this.props.Type}>
+                <div className="sh-tarjeta" type={this.props.Type} size={this.props.size}>
                     <div className="imgSombra">
                     </div>
                     

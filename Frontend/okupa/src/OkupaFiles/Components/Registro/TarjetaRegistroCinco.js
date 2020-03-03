@@ -42,6 +42,7 @@ export default class TarjetaRegistroCuatro extends Component {
 
     };
 
+    
     eliminarRow = (tabla, index) => {
         if(!tabla) {
             let rowsEscenario = this.state.rowsEscenario;
@@ -57,9 +58,9 @@ export default class TarjetaRegistroCuatro extends Component {
     }
 
     renderRowsEscenario = (index) => {
-        return <OkRegistro key={index} onRemove={() => this.eliminarRow(0, index)}/>
+        return <OkRegistro key={index}  onRemove={() => this.eliminarRow(0, index)}/>
     }
-
+    
     render() {
 
         let rowsEscenario = [];

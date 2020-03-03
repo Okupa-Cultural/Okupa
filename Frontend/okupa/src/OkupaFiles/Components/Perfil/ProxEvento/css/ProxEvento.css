@@ -3,8 +3,8 @@
 	padding: 1em 1em .5em 1em;
 	background-attachment: fixed;
 	flex-shrink: 0;
-	max-width: 15.5em;
 	margin-right: 1em;
+	max-width: 15.5em;
 	box-shadow: 0 3px 10px rgba(0,0,0,.8);
 }
 /* --- Características compartidas --- */	
@@ -163,3 +163,14 @@
 		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 	}
 
+@media (max-width: 799px){
+	.proximoEvento{
+		margin-right: 1em;
+	}
+}
+
+@media (min-width: 799x){
+	.pe-pie{
+		padding-top: 1em;
+	}
+}

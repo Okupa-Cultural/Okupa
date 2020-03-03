@@ -116,60 +116,60 @@ export default class EventoABM extends Component {
 				<section>
 					<h2>participantes</h2>
 					<ScrollingHorizontal Size="small">
-						<ShTarjeta Link="" Type="text">
+						<ShTarjeta Link="" Size="small" Type="text">
 							<div>
 								Tarjeta tipo texto
 							</div>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img" Titulo="Tarjeta con título">
+						<ShTarjeta Link="" Size="small" Type="img" Titulo="Tarjeta con título">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Pomplamoose_2014_2.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img" Titulo="Tarjeta con título largo Tarjeta con título largo">
+						<ShTarjeta Link="" Size="small" Type="img" Titulo="Tarjeta con título largo Tarjeta con título largo">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link=""  Size="small"Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
 							/>
 						</ShTarjeta>
-						<ShTarjeta Link="" Type="img">
+						<ShTarjeta Link="" Size="small" Type="img">
 							<img 
 							src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
 							alt="participante"
