@@ -21,11 +21,11 @@ export default class Perfil extends Component {
       claseInactiva: 'invisible',
       imagenes: [{ urls : {small:''}}, {urls : {small:''}  }],
       fotoPerfil: 0,
+      profileLink: 'https://www.okupa.com.ar/perfil$sarasa=leslie$knope#piripipi',
     };
 
 //    this.TabNavigator = this.TabNavigator.bind(this);
     this.switchToFullScreen = this.switchToFullScreen.bind(this);
-
   }
 
   
@@ -259,7 +259,9 @@ render() {
         <h2>Compartir&nbsp;<i class="fas fa-share-alt"></i></h2>
           <div className="share">
             <h3>Link</h3>
-            <div className="link" id="profileLink">https://www.okupa.com.ar/perfil$sarasa=leslie$knope#piripipi</div>
+            <div className="link" id="profileLink" onClick={() => this.copyCodeToClipboard()}>
+              {this.state.profileLink}
+            </div>
           </div>
           <div className="url">
             Compartir en facebook

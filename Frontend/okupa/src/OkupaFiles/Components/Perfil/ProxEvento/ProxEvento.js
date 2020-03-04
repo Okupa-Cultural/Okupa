@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+//Componentes
+import PieEvento from '../../PieEvento/PieEvento';
+
 //CSS
 import './css/ProxEvento.css';
 
@@ -53,19 +56,7 @@ export default class ProxEvento extends Component {
 
                 <div className="pe-divisor"></div>
 
-                <div className="pe-pie" >   
-                    <span type={this.props.eventType} title={this.props.eventType}>
-                        {this.props.eventType}
-                    </span>
-                    <div className="">
-                        <button className="pe-boton-transparente" title="Agendar">
-                            <i class="fas fa-share-alt"></i>
-                        </button>
-                        <button className="pe-boton" title="Agendar">
-                            <i className="fal fa-calendar-alt"></i>
-                        </button>
-                    </div>
-                </div>
+                <PieEvento eventType={this.props.eventType} />
 
             </div>
         );

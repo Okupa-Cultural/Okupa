@@ -5,26 +5,6 @@ import './css/Articulo.css';
 
 export default class Articulo extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            markedArticle: 0,
-        };
-
-        this.marcarArticulo = this.marcarArticulo.bind(this);
-    }
-
-    marcarArticulo() {
-        if(!this.state.markedArticle){
-            document.getElementById('favorito').className ='art-boton-transparente-Activo';
-            this.setState({markedArticle: 1,});
-        }else{
-            document.getElementById('favorito').className ='art-boton-transparente';
-            this.setState({markedArticle: 0,});
-        }
-    }
-
     render() {
         return(
             <div className="articulo">
@@ -58,8 +38,7 @@ export default class Articulo extends Component {
                     <button 
                     className="art-boton-transparente" 
                     title="Agendar" 
-                    id="favorito"
-                    onClick={this.marcarArticulo}>
+                    id="favorito">
                         <i class="fas fa-bookmark"></i>
                     </button>
                     <div>

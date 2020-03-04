@@ -317,11 +317,14 @@ por encima del img.
             object-fit: cover;
         }
     
+    .perfil section{
+        padding: 1em 0 !important;
+    }
+    
     .proyecto-info,
     .enlaces-externos,
     .footer{
         grid-column: 2 / 3;
-        padding: 1em 0 !important;
     }
 
         .fecha-formacion{
@@ -336,6 +339,7 @@ por encima del img.
 
     main{
         grid-row-start: 2;
+        margin: 0 2em;
     }
 
     .footer{
@@ -357,6 +361,8 @@ por encima del img.
         grid-row-start: 1;
         display: grid;
         grid-template-columns: var(--columnas);
+        background-image: url(https://www.adue.digital/wp-content/uploads/2019/11/b01cc60b5fcff0eb58a020325e786e7e.jpg);
+        background-size: cover;
     }
         .p-cabecera *{
             grid-column-start: 3;
@@ -365,7 +371,7 @@ por encima del img.
         .p-cabecera .p-nombre{
             font-size: 3em;
             padding: 0;
-            margin-left: .25em;
+            margin-left: .5em;
             line-height: 1em;
         }
 
@@ -373,7 +379,16 @@ por encima del img.
         .p-cabecera .p-botonera,
         .p-cabecera .p-etiquetas{
             justify-content: flex-start;
-            margin-left: 1em;
+        }
+
+        .p-cabecera .p-botonera,
+        .p-cabecera .p-etiquetas{
+            margin-left: 1.5em;
+        }
+
+
+        .p-cabecera .p-estadisticas{
+            margin-left: 1.8em;
         }
 
             .p-cabecera .p-estadisticas .estadisticas-elemento,
