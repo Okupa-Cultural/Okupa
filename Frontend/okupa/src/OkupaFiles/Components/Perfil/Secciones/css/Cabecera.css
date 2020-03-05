@@ -1,0 +1,111 @@
+/* === Vista de Escritorio === */
+@media (min-width: 800px){
+    .p-cabecera{
+        grid-column: 1 / 4;
+        grid-row-start: 1;
+        display: grid;
+        grid-template-columns: var(--columnas);
+        background-image: url(https://www.adue.digital/wp-content/uploads/2019/11/b01cc60b5fcff0eb58a020325e786e7e.jpg);
+        background-size: cover;
+    }
+        .p-cabecera *{
+            grid-column-start: 3;
+        }
+
+        .p-cabecera .p-nombre{
+            font-size: 2.3em !important;
+            margin-left: .4em;
+        }
+
+        .p-cabecera .p-estadisticas,
+        .p-cabecera .p-botonera,
+        .p-cabecera .p-etiquetas{
+            justify-content: flex-start;
+        }
+
+        .p-cabecera .p-botonera,
+        .p-cabecera .p-etiquetas{
+            margin-left: 1.5em;
+        }
+
+
+        .p-cabecera .p-estadisticas{
+            margin-left: 1.8em;
+        }
+
+            .p-cabecera .p-estadisticas .estadisticas-elemento,
+            .p-divisor,
+            .p-botonera button{
+                margin-right: 2em;
+            }
+        
+        .p-etiquetas{
+            max-height: 2em;
+        }
+}
+
+
+/* === Generales / Vista en móviles === */
+.p-cabecera{
+    box-shadow: 0 3px 5px rgba(0,0,0,.8);
+    padding: .5em .5em 0 .5em !important;
+}
+
+.p-cabecera .p-nombre{
+    padding-left: .25em;
+    font-weight: 600;
+    font-size: 1.25em;
+    text-align: left;
+    text-shadow: var(--text-shadow);
+}
+
+.p-etiquetas{
+    display: flex;
+    justify-content: flex-start;
+    margin: .5em 0;
+}
+
+.p-estadisticas{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+
+    .p-estadisticas .estadisticas-elemento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-estadisticas .cantidad{
+        font-weight: 600 !important;
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    .p-estadisticas .leyenda{
+        margin-top: .25em;
+        font-weight: 100;
+        font-size: .8em;
+    }
+
+    .p-divisor{
+        width: 1px;
+        height: 2.25em;
+        background: rgba(255,255,255,.3);
+        align-self: center;
+    }
+
+.p-botonera{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: .75em 0 1em 0;
+
+}
+
+    .p-botonera button{
+        width: 10em;
+        padding: .5em !important;
+        font-weight: 600;
+    }

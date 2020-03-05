@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
-//Components
-import OkBoton from '../Components/Generales/OkBoton/OkBoton';
-import Etiqueta from '../Components/Generales/Etiqueta/Etiqueta';
-import ScrollingHorizontal from '../Components/ScrollingHorizontal/ScrollingHorizontal';
+//Secciones
+import Cabecera from '../Components/Perfil/Secciones/Cabecera';
+import ProyectoInfo from '../Components/Perfil/Secciones/ProyectoInfo';
+import EnlacesExternos from '../Components/Perfil/Secciones/EnlacesExternos';
+import Pie from '../Components/Perfil/Secciones/Pie';
+
+//Componentes
 import ProxEvento from '../Components/Perfil/ProxEvento/ProxEvento';
 import Articulo from '../Components/Perfil/Articulo/Articulo';
 
@@ -21,7 +24,7 @@ export default class Perfil extends Component {
       claseInactiva: 'invisible',
       imagenes: [{ urls : {small:''}}, {urls : {small:''}  }],
       fotoPerfil: 0,
-      profileLink: 'https://www.okupa.com.ar/perfil$sarasa=leslie$knope#piripipi',
+      profileDirectLink: 'https://www.okupa.com.ar/LinkFalso$=leslie$knope#piripipi',
     };
 
 //    this.TabNavigator = this.TabNavigator.bind(this);
@@ -60,115 +63,24 @@ render() {
         title="Leslie Knope"
         />
       </div>
-      <div className="foto-perfil-escritorio">
-        <img 
+
+      <Cabecera />
+
+      <div className="columna-izquierda">
+          <img 
           src="https://i.imgur.com/5NXgWQe.jpg" 
           alt="Leslie Knope"
           title="Leslie Knope"
-        />
+          className="foto-perfil-escritorio"
+          />
+
+        <ProyectoInfo />
+
+        <EnlacesExternos />
+
+        <Pie profileDirectLink={this.state.profileDirectLink} ocultoEnMoviles="1" />
       </div>
-      <section className="p-cabecera">
-        <h1 className="p-nombre">
-          Leslie Knope
-        </h1>
-        <div className="p-etiquetas">
-          <Etiqueta Value="Actuación" Editable="0" Format="small" />
-          <Etiqueta Value="Teatro" Editable="0" Format="small" />
-          <Etiqueta Value="Cine" Editable="0" Format="small" />
-          <Etiqueta Value="Música" Editable="0" Format="small" />
-          <Etiqueta Value="Tango" Editable="0" Format="small" />
-        </div>
-        <div className="p-estadisticas">
-          <div className="estadisticas-elemento">
-            <span className="cantidad">150 K</span>
-            <span className="leyenda">
-              <i className="fad fa-users"></i>
-              &nbsp;
-              Seguidores
-            </span>
-          </div>
 
-          <div className="p-divisor"></div>
-
-          <div className="estadisticas-elemento">
-            <span className="cantidad">6</span>
-            <span className="leyenda">
-              <i className="fad fa-hiking"></i>
-              &nbsp;
-              Seguidos
-            </span>
-          </div>
-
-          <div className="p-divisor"></div>
-
-          <div className="estadisticas-elemento">
-            <span className="cantidad">960</span>
-            <span className="leyenda">
-              <i className="fad fa-calendar-alt"></i>
-              &nbsp;
-              Eventos
-            </span>
-          </div>
-        </div>
-
-        <nav className="p-botonera">
-          <OkBoton Value="Seguir" />
-          <OkBoton Value="Invitar" />
-        </nav>
-      </section>
-      <section className="proyecto-info">
-        <div className="fecha-formacion">
-          <h2>
-            Fecha de formación
-          </h2>
-          <span className="fecha">
-            01-06-2008
-          </span>
-        </div>
-        <div className="bio">
-          <h2>
-            Biografía
-          </h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur 
-            adipisicing elit. Provident magni 
-            recusandae quae voluptatum aut cum atque 
-            consequuntur unde in modi ullam quam 
-            officia repudiandae fugiat placeat rerum, 
-            veritatis qui assumenda!
-          </p>
-        </div>
-      </section>
-      <section className="enlaces-externos">
-          <h2>Enlaces externos</h2>
-          <form className="enlaces-contenedor">
-            <button formAction="https://instagram.com" formTarget="_blank">
-              <i className="fab fa-instagram"></i>
-              <span className="leyenda">Instagram</span>
-            </button>
-            <button formAction="https://soundcloud.com" formTarget="_blank">
-              <i className="fab fa-soundcloud"></i>
-              <span className="leyenda">Soundcloud</span>
-            </button>
-            <button formAction="https://Bandcamp.com" formTarget="_blank">
-              <i className="fab fa-bandcamp"></i>
-              <span className="leyenda">Bandcamp</span>
-            </button>
-            <button formAction="https://facebook.com" formTarget="_blank">
-              <i className="fab fa-facebook-square"></i>
-              <span className="leyenda">Facebook</span>
-            </button>
-            <button formAction="http://www.alternativateatral.com" formTarget="_blank">
-              <i className="fas fa-link"></i>
-              <span className="leyenda">Alternativa teatral</span>
-            </button>
-            <button formAction="https://twitter.com" formTarget="_blank">
-              <i className="fab fa-twitter"></i>
-              <span className="leyenda">Twitter</span>
-            </button>
-            
-          </form>
-      </section>
       <main>
         <section className="proximos-eventos">
           <h2>
@@ -255,24 +167,9 @@ render() {
             </div>
         </section>
       </main>
-      <section className="footer">
-        <h2>Compartir&nbsp;<i class="fas fa-share-alt"></i></h2>
-          <div className="share">
-            <h3>Link</h3>
-            <div className="link" id="profileLink" onClick={() => this.copyCodeToClipboard()}>
-              {this.state.profileLink}
-            </div>
-          </div>
-          <div className="url">
-            Compartir en facebook
-          </div>
-          <div className="url">
-            Compartir en twitter
-          </div>
-          <div className="url">
-            Compartir en Instagram storys (creo que se puede)
-          </div>
-      </section>
+
+      <Pie profileDirectLink={this.state.profileDirectLink} ocultoEnMoviles="0" />
+
     </div>
   );
 }

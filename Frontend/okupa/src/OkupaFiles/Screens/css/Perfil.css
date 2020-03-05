@@ -2,18 +2,92 @@
     --columnas: 1em 320px 1fr;
 }
 
-.perfil{
-    display: grid;
-    grid-template-rows: 16em 13em 1fr;
+/* === Vista de Escritorio === */
+@media (min-width: 800px){
+
+    .perfil{
+        display: grid;
+        grid-template-columns: var(--columnas);
+    }
+
+    .foto-perfil-movil,
+    .foto-perfil-movil-fullscreen,
+    .foto-perfil-movil img,
+    .foto-perfil-movil-fullscreen img{
+        display: none;
+    }
+
+    .foto-perfil-escritorio{
+        display: unset;
+        grid-column: 1 / 2;
+        grid-row-start: 1;
+        max-width: 100%;
+        box-shadow: 0 3px 20px rgba(0,0,0,.8);
+    }
+
+    .columna-izquierda{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, minmax(100px, max-content));
+        z-index: 10;
+    }
+    
+    .perfil section{
+        padding: 1em 0 !important;
+    }
+
+    main{
+        grid-column: 3 / 4;
+        grid-row-start: 2;
+        margin: 0 2em;
+    }
+
+    .scrolling-container{
+        flex-wrap: wrap;
+    }
+
+        .scrolling-container .proximoEvento,
+        .scrolling-container .articulo{
+            margin: 0 .5em .5em 0 !important
+
+        }
+
 }
 
-/* === Foto de perfil móvil === */
+
+/* === Vista en dispositivos móviles ===*/
+@media(max-width: 799px){
+    .perfil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto-perfil-escritorio{
+        display: none;
+    }
+
+    .foto-perfil-movil,
+    .foto-perfil-movil-fullscreen,
+    .foto-perfil-movil img,
+    .foto-perfil-movil-fullscreen img{
+        display: unset;
+    }
+
+    .scrolling-container{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+}
+
+/* === Foto de perfil en móviles === */
 .foto-perfil-movil,
 .foto-perfil-movil-fullscreen,
 .foto-perfil-movil img,
 .foto-perfil-movil-fullscreen img{
     transition: all .3s ease;
-    display: none;
 }
 
 .foto-perfil-movil,
@@ -40,77 +114,7 @@
     object-position: 0 0vh;
 }
 
-.foto-perfil-escritorio{
-    display: none;
-}
-/* === fin de Foto de perfil móvil === */
-
-.p-cabecera{
-    box-shadow: 0 3px 5px rgba(0,0,0,.8);
-    padding: .5em .5em 0 .5em !important;
-}
-
-.p-cabecera .p-nombre{
-    padding-left: .25em;
-    font-weight: 600;
-    font-size: 1.25em;
-    text-align: left;
-    text-shadow: var(--text-shadow);
-}
-
-.p-etiquetas{
-    display: flex;
-    justify-content: flex-start;
-    margin: .5em 0;
-}
-
-.p-estadisticas{
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-}
-
-
-    .p-estadisticas .estadisticas-elemento{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .p-estadisticas .cantidad{
-        font-weight: 600 !important;
-        font-size: 1em;
-        line-height: 1em;
-    }
-
-    .p-estadisticas .leyenda{
-        margin-top: .25em;
-        font-weight: 100;
-        font-size: .8em;
-    }
-
-    .p-divisor{
-        width: 1px;
-        height: 2.25em;
-        background: rgba(255,255,255,.3);
-        align-self: center;
-    }
-
-.p-botonera{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin: .75em 0 1em 0;
-
-}
-
-    .p-botonera button{
-        width: 10em;
-        padding: .5em !important;
-        font-weight: 600;
-    }
-
-
-
+/* === Generales de la página === */
 .perfil section{
     padding: 1em;
     border-bottom: solid 1px rgba(255,255,255,.1)
@@ -126,83 +130,11 @@
         text-shadow: var(--text-shadow);
     }
 
-    .fecha-formacion{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: .5em 0 1em 0;
-    }
-
-    .bio{
-        background: rgba(255, 255, 255, .15);
-        box-shadow: var(--box-shadow);
-    }
-
-        .bio h2{
-            padding: .5em;
-            background: rgba(0,0,0,.35);
-        }
-
-        .bio p{
-            padding: .5em;
-        }
-
-.enlaces-contenedor{
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 5px;
-    margin-top: .5em;
-}
-
-        .enlaces-contenedor button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        padding: 1em;
-        background-image: linear-gradient(135deg, #04a5f0, #023c75);
-        border-radius: .25em;
-        border: none;
-        box-shadow: var(--box-shadow);
-    }
-
-        .enlaces-contenedor button i{
-            width: 100%;
-            font-size: 2em;
-        }
-
-        .enlaces-contenedor button .leyenda{
-            font-weight: 100;
-            font-size: .9em;
-            text-align: center;
-        }
 
 .scrolling-container{
     display: flex;
     margin-top: .5em;
 }
-
-.footer *{
-    text-align: left;
-}
-
-    .footer h3{
-        font-size: 1em;
-    }
-
-    .footer .share,
-    .footer .url{
-        margin: 1em 0;
-        word-wrap: break-word;
-    }
-
-    .footer .share .link{
-        font-weight: 100;
-        padding: .5em;
-        background: rgba(255, 255, 255, 0.274);
-    }
-
 
 
 
@@ -278,126 +210,4 @@ por encima del img.
     }
 ========================================================*/
 
-@media(max-width: 799px){
-    .perfil{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .foto-perfil-movil,
-    .foto-perfil-movil-fullscreen,
-    .foto-perfil-movil img,
-    .foto-perfil-movil-fullscreen img{
-        display: unset;
-    }
-
-    .scrolling-container{
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-    }
-
-}
-
-
-@media (min-width: 800px){
-    .perfil{
-        grid-template-columns: var(--columnas);
-    }
-
-    .foto-perfil-escritorio{
-        display: unset;
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        box-shadow: 0 3px 20px rgba(0,0,0,.8);
-        z-index: 10;
-    }
-        .foto-perfil-escritorio img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    
-    .perfil section{
-        padding: 1em 0 !important;
-    }
-    
-    .proyecto-info,
-    .enlaces-externos,
-    .footer{
-        grid-column: 2 / 3;
-    }
-
-        .fecha-formacion{
-            padding: .5em;
-            border-bottom: solid 1px rgba(255, 255, 255, .15);
-        }
-
-    main,
-    .p-cabecera{
-        grid-column: 3 / 4;
-    }
-
-    main{
-        grid-row-start: 2;
-        margin: 0 2em;
-    }
-
-    .footer{
-        grid-row-start: 5;
-    }
-
-    .scrolling-container{
-        flex-wrap: wrap;
-    }
-
-        .scrolling-container .proximoEvento,
-        .scrolling-container .articulo{
-            margin: 0 1em 1em 0;
-
-        }
-
-    .p-cabecera{
-        grid-column-start: 1;
-        grid-row-start: 1;
-        display: grid;
-        grid-template-columns: var(--columnas);
-        background-image: url(https://www.adue.digital/wp-content/uploads/2019/11/b01cc60b5fcff0eb58a020325e786e7e.jpg);
-        background-size: cover;
-    }
-        .p-cabecera *{
-            grid-column-start: 3;
-        }
-
-        .p-cabecera .p-nombre{
-            font-size: 3em;
-            padding: 0;
-            margin-left: .5em;
-            line-height: 1em;
-        }
-
-        .p-cabecera .p-estadisticas,
-        .p-cabecera .p-botonera,
-        .p-cabecera .p-etiquetas{
-            justify-content: flex-start;
-        }
-
-        .p-cabecera .p-botonera,
-        .p-cabecera .p-etiquetas{
-            margin-left: 1.5em;
-        }
-
-
-        .p-cabecera .p-estadisticas{
-            margin-left: 1.8em;
-        }
-
-            .p-cabecera .p-estadisticas .estadisticas-elemento,
-            .p-divisor,
-            .p-botonera button{
-                margin-right: 2em;
-            }
-        
-        .p-etiquetas{
-            max-height: 2em;
-        }
-}
