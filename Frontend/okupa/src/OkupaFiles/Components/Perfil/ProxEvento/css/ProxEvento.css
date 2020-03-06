@@ -111,7 +111,6 @@
 	text-overflow: ellipsis;
 }
 
-
 @media (max-width: 799px){
 	.proximoEvento{
 		margin-right: 1em;

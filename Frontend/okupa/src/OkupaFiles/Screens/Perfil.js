@@ -135,7 +135,7 @@ render() {
 
         <section className="galeria">
           <h2>Galería</h2>
-            
+
         </section>
 
         <section className="tienda">

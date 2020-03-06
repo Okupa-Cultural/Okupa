@@ -134,8 +134,8 @@
 .scrolling-container{
     display: flex;
     margin-top: .5em;
+    padding-bottom: 1em;
 }
-
 
 
 /* ======================================================

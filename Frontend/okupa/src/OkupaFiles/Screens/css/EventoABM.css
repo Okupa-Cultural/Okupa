@@ -6,7 +6,7 @@
 }
 
 .evento-abm form{
-    display: flex;
+    display: unset;
     flex-direction: unset;
 }
 

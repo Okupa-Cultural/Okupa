@@ -57,7 +57,6 @@ export default class ProxEvento extends Component {
                 <div className="pe-divisor"></div>
 
                 <PieEvento eventType={this.props.eventType} />
-
             </div>
         );
     }
