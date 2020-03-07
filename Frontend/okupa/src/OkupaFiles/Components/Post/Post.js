@@ -62,30 +62,32 @@ export default class Post extends Component {
             <div>
                 <div className="post">
                     <Link to="/perfil">
-                    <div className="usuario">
-                        <img
-                        src={this.props.userImg} 
-                        alt={this.props.userName}
-                        title={this.props.userName}
-                        className="usuario-foto"
-                        />
-                        <h3 className="usuario-nombre" title={this.props.userName}>
-                            {this.props.userName}
-                        </h3>
-                    </div>
+                        <div className="usuario">
+                            <img
+                            src={this.props.userImg} 
+                            alt={this.props.userName}
+                            title={this.props.userName}
+                            className="usuario-foto"
+                            />
+                            <h3 className="usuario-nombre" title={this.props.userName}>
+                                {this.props.userName}
+                            </h3>
+                        </div>
                     </Link>
-                    <div className="foto">
-                        <div className="tipo-evento">
-                            <span type={this.props.eventType} title={this.props.eventType}>
-                                {this.props.eventType}
-                            </span>
-                        </div>    
-                        <img 
-                        src={this.props.eventImg} 
-                        alt={this.props.eventName}
-                        title={this.props.eventName}
-                        />
-                    </div>
+                    <Link to="/evento">
+                        <div className="foto">
+                            <div className="tipo-evento">
+                                <span type={this.props.eventType} title={this.props.eventType}>
+                                    {this.props.eventType}
+                                </span>
+                            </div>    
+                            <img 
+                            src={this.props.eventImg} 
+                            alt={this.props.eventName}
+                            title={this.props.eventName}
+                            />
+                        </div>
+                    </Link>
                     <div className="cuerpo">
                         <div className="info">
                             <div className="fecha">
@@ -100,14 +102,14 @@ export default class Post extends Component {
                                 </div>
                             </div>
                             <div className="cabecera">
-                                <div className="nombre" title={this.props.eventName}>
+                                <Link to="/evento" className="nombre" title={this.props.eventName}>
                                     {this.props.eventName}
-                                </div>
+                                </Link>
                                 <div className="ubicacion">
-                                    <div className="direccion" title={this.props.eventAdress}>
+                                    <Link to="/perfil" className="direccion" title={this.props.eventAdress}>
                                         <i className="fas fa-map-marker-alt"></i>
                                         {this.props.eventAdress}
-                                    </div>
+                                    </Link>
                                     <div className="cercania">
                                         a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
                                     </div>

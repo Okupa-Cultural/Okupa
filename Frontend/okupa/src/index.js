@@ -5,11 +5,12 @@ import App from './App';
 import './Redux/index';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter, Route } from 'react-router-dom';
-
+import ScrollToTop from './OkupaFiles/Components/App/ScrollToTop/ScrollToTop';
 ReactDOM.render(
     <HashRouter>
+        <ScrollToTop />
        <Route path="/" component={App}/>
-    </HashRouter>
+    </HashRouter>    
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

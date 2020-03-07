@@ -1,16 +1,16 @@
 @media (min-width: 800px){
-    .footer[ocultoEnMoviles="0"]{
+    .footer[ocultoenmoviles="0"]{
         display: none;
     }
-    .footer[ocultoEnMoviles="1"]{
+    .footer[ocultoenmoviles="1"]{
         display: unset !important;
     }
 }
 @media (max-width: 799px){
-    .footer[ocultoEnMoviles="0"]{
+    .footer[ocultoenmoviles="0"]{
         display: unset;
     }
-    .footer[ocultoEnMoviles="1"]{
+    .footer[ocultoenmoviles="1"]{
         display: none !important;
     }
 }

@@ -24,6 +24,7 @@ export default class Perfil extends Component {
       claseInactiva: 'invisible',
       imagenes: [{ urls : {small:''}}, {urls : {small:''}  }],
       fotoPerfil: 0,
+      fotoPerfilSource: 'https://i.imgur.com/84TBSr0.jpg',
       profileDirectLink: 'https://www.okupa.com.ar/LinkFalso$=leslie$knope#piripipi',
     };
 
@@ -58,7 +59,7 @@ render() {
       id="fotoPerfil" 
       onClick={this.switchToFullScreen} 
       >
-        <img src="https://i.imgur.com/5NXgWQe.jpg" 
+        <img src={this.state.fotoPerfilSource}
         alt="Leslie Knope"
         title="Leslie Knope"
         />
@@ -68,7 +69,7 @@ render() {
 
       <div className="columna-izquierda">
           <img 
-          src="https://i.imgur.com/5NXgWQe.jpg" 
+          src={this.state.fotoPerfilSource}
           alt="Leslie Knope"
           title="Leslie Knope"
           className="foto-perfil-escritorio"

@@ -94,4 +94,8 @@
     .sh-tarjeta{
         margin-right: .75em;
     }
+
+    .sh-tarjeta[type="img"][size="extraSmall"]{
+        border: solid 3px red;
+    }
 }

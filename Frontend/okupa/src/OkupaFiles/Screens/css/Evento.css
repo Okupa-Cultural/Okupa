@@ -1,7 +1,118 @@
+.evento h2{
+	font-weight: 600;
+	font-size: 12.5pt;
+	text-align: left;
+	margin: 0 .7em auto;
+	margin-top: .5em;
+	padding-top: .5em;
+	border-top: solid .25px rgba(255,255,255,.4);
+	text-shadow: var(--box-shadow-light);
+}
+
+.evento .post{
+	max-width: unset;
+}
+
+.evento-info{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;	
+}
+
+
+.evento-fecha{
+	display: flex;
+	flex-direction: column;
+	margin: 0 1em;
+}
+
+	.evento-fecha *{
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.evento-fecha .mes,
+	.evento-fecha .dia,
+	.evento-nombre{
+		text-shadow: 3px 2px 3px rgba(0,0,0,.5);
+	}
+
+	.evento-fecha .mes,
+	.evento-fecha .dia{
+		color: #00b3ff;
+	}
+	
+	.evento-fecha .mes{
+		margin-top: .25em;
+		font-size: 1.2em;
+	}
+
+	.evento-fecha .dia{
+		font-size: 2.3em;
+		line-height: .8em;
+	}
+
+	.evento-fecha .hora{
+		font-size: 1em;
+		line-height: 1.7em;
+	}
+
+.evento-cabecera{
+	text-align: left;
+	padding: .25em;
+}
+	.evento-nombre{
+		font-weight: 600;
+		font-size: 1.3em;
+		padding-bottom: .25em;
+	}
+
+	.evento-direccion i{
+		margin-right: .5em;
+	}
+
+.participantes{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 150px);
+	gap: 1em;
+	grid-gap: 1em;
+	padding: 1em;
+}
+
+	.participantes a{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: left;
+	}
+
+	.participantes img{
+		width: 2em;
+		height: 2em;
+		border-radius: 50%;
+		margin-right: .5em;
+		box-shadow: var(--box-shadow-light);
+	}
+
+	.participantes h4{
+		font-weight: 400;
+		font-size: 1.1em;
+		font-size: 11pt;
+	}
+
+.evento-descripcion{
+	padding: .5em 1em 1em 1em;
+	text-align: left;
+	font-weight: 100;
+	font-size: 11pt;
+}
+
 .evento-botonera{
 	display: flex;
 	justify-content: space-around;
 	padding: 1em 0;
+	background: rgba(0,0,0,.2);
 }
 
 	.separador-vertical{
@@ -10,8 +121,8 @@
 		background: rgba(255,255,255,.3);
 	}
 
-.evento-nombre{
-	font-weight: 600;
-	font-size: 1.3em;
-	padding-bottom: .25em;
+@media (max-width: 320px){
+	.evento-fecha{
+		margin-left: 0;
+	}
 }

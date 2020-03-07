@@ -9,23 +9,23 @@ export default class Pie extends Component {
         const el = this.textArea
         el.select()
         document.execCommand("copy")
-        alert('Link copiado correctamente!')
+        alert('Enlace copiado correctamente!')
       }
 
     render() {
         return(
-            <section className="footer" ocultoEnMoviles={this.props.ocultoEnMoviles}>
-                <h2>Compartir&nbsp;<i class="fas fa-share-alt"></i></h2>
+            <section className="footer" ocultoenmoviles={this.props.ocultoEnMoviles}>
+                <h2>Compartir&nbsp;<i className="fas fa-share-alt"></i></h2>
                 <div className="share">
                     <h3>Link</h3>
                     <textarea
                     ref={(textarea) => this.textArea = textarea} 
-                    readonly 
+                    readOnly 
                     className="link" 
                     id="profileDirectLink"
                     onClick={() => this.copyCodeToClipboard()}
+                    value={this.props.profileDirectLink}
                     >
-                        {this.props.profileDirectLink}
                     </textarea>
                     
                 </div>

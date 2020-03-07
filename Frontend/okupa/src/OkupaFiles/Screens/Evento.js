@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 //Componentes
 import Comentario from '../Components/CasillaComentarios/Comentario';
 import PieEvento from '../Components/PieEvento/PieEvento';
+import ScrollingHorizontal from '../Components/ScrollingHorizontal/ScrollingHorizontal';
+import ShTarjeta from '../Components/ScrollingHorizontal/ShTarjeta';
 
 //CSS
 import './css/Evento.css';
@@ -59,21 +61,9 @@ export default class Evento extends Component {
 
     render() {
         return(
-            <div>
+            <div className="evento">
                 <div className="post">
-                    <Link to="/perfil">
-                    <div className="usuario">
-                        <img
-                        src="https://cdn.tn.com.ar/sites/default/files/styles/1366x765/public/2018/09/09/dady-brieva-kirchnerismo_0.jpg"
-                        alt="Foto de perfil"
-                        title="Wos Oficial"
-                        className="usuario-foto"
-                        />
-                        <h3 className="usuario-nombre" title="Wos Oficial">
-                            Wos Oficial
-                        </h3>
-                    </div>
-                    </Link>
+                    
                     <div className="foto">
                         <img 
                         src="https://cdn.tn.com.ar/sites/default/files/styles/1366x765/public/2019/11/15/wos_ph_guido_adler_.jpg"
@@ -82,8 +72,8 @@ export default class Evento extends Component {
                         />
                     </div>
                     <div className="cuerpo">
-                        <div className="info">
-                            <div className="fecha">
+                        <div className="evento-info">
+                            <div className="evento-fecha">
                                 <div className="mes">
                                     ago
                                 </div>
@@ -94,45 +84,78 @@ export default class Evento extends Component {
                                     22:15
                                 </div>
                             </div>
-                            <div className="cabecera">
+                            <div className="evento-cabecera">
                                 <div className="evento-nombre" title="En vivo en Palacio de la Papa Frita">
-                                    En vivo en Palacio de la Papa Frita
+                                    En vivo en el Palacio de la Papa Frita
                                 </div>
-                                <div className="ubicacion">
-                                    <div className="direccion" title="PAlacio de la Papa Frita">
+                                <Link to="/perfil">
+                                    <div className="evento-direccion" title="PAlacio de la Papa Frita">
                                         <i className="fas fa-map-marker-alt"></i>
                                         Palacio de la Papa Frita, CABA
                                     </div>
-                                    <div className="cercania">
-                                        a&nbsp;1.2&nbsp;km de tu ubicación
-                                    </div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
-                        <div>
-                        <p className="descripcion">
-                            Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit.
-                            <br /> 
-                            Aperiam minima deserunt alias ad. 
-                            Voluptatem porro vero laboriosam 
-                            ipsum fugiat velit dicta dignissimos 
-                            libero! Labore assumenda harum perferendis, 
-                            ducimus adipisci tempora!
-                            <br />
-                            Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit.
-                            <br /> 
-                            Aperiam minima deserunt alias ad. 
-                            Voluptatem porro vero laboriosam 
-                            ipsum fugiat velit dicta dignissimos 
-                            libero! Labore assumenda harum perferendis, 
-                            ducimus adipisci tempora!
-                        </p>
+
+                        <PieEvento eventType="Espectáculo" Format="evento" />
+
+                        <div className="participantes-contenedor">
+                            <h2>Participantes</h2>
+                            <div className="participantes">
+                                <Link to="/perfil">
+                                    <img src="https://www.filo.news/__export/1574200038049/sites/claro/img/2019/11/19/wos_agoto_otro_luna_park.jpg_423682103.jpg" 
+                                    alt="Wos"
+                                    title="Wos"
+                                    />
+                                    <h4>Wos</h4>
+                                </Link>
+                                <Link to="/perfil">
+                                    <img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/10/20191011150705_foofighters-900x600.jpg" 
+                                    alt="Foo fighters"
+                                    title="Foo fighters"
+                                    />
+                                    <h4>Red Hot Chili Peppers</h4>
+                                </Link>
+                                <Link to="/perfil">
+                                    <img src="https://vignette.wikia.nocookie.net/grimadventures/images/1/19/Yogi_Bear.jpg/revision/latest/top-crop/width/360/height/450?cb=20171026023635" 
+                                    alt="El oso Yogi"
+                                    title="El oso Yogi"
+                                    />
+                                    <h4>El Oso Yogi</h4>
+                                </Link>
+                                <Link to="/perfil">
+                                    <img src="https://i.ytimg.com/vi/GP_c7GyrTVU/hqdefault.jpg" 
+                                    alt="Dibu"
+                                    title="Dibu"
+                                    />
+                                    <h4>Dibu</h4>
+                                </Link> 
+                            </div>
                         </div>
-
-                        <PieEvento eventType="Espectáculo" />
-
+                        
+                        <div>
+                            <h2>Descripción</h2>
+                            <p className="evento-descripcion">
+                                Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit.
+                                <br /> 
+                                Aperiam minima deserunt alias ad. 
+                                Voluptatem porro vero laboriosam 
+                                ipsum fugiat velit dicta dignissimos 
+                                libero! Labore assumenda harum perferendis, 
+                                ducimus adipisci tempora!
+                                <br />
+                                Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit.
+                                <br /> 
+                                Aperiam minima deserunt alias ad. 
+                                Voluptatem porro vero laboriosam 
+                                ipsum fugiat velit dicta dignissimos 
+                                libero! Labore assumenda harum perferendis, 
+                                ducimus adipisci tempora!
+                            </p>
+                        </div>
+                        
                     </div>
                     <div className="evento-botonera">
                         <div 

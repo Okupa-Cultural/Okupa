@@ -3,7 +3,10 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FullScreenImage from './OkupaFiles/Components/Generales/FullScreenImage';
 import './Redux/index';
+
 //import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
+
 //Pantallas
 import HomeScreen from './OkupaFiles/Screens/HomeScreen';
 import Login from './OkupaFiles/Screens/Login';

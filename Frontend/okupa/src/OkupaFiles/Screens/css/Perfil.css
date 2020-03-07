@@ -87,7 +87,7 @@
 .foto-perfil-movil-fullscreen,
 .foto-perfil-movil img,
 .foto-perfil-movil-fullscreen img{
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .foto-perfil-movil,
@@ -98,7 +98,7 @@
 
 .foto-perfil-movil-fullscreen,
 .foto-perfil-movil-fullscreen img{
-    max-height: 110vh;
+    max-height: 140vh;
 }
 
 .foto-perfil-movil img,

@@ -39,14 +39,14 @@ export default class Articulo extends Component {
                     className="art-boton-transparente" 
                     title="Agendar" 
                     id="favorito">
-                        <i class="fas fa-bookmark"></i>
+                        <i className="fas fa-bookmark"></i>
                     </button>
                     <div>
                         <button className="art-boton-transparente" title="Agendar">
-                            <i class="fas fa-share-alt"></i>
+                            <i className="fas fa-share-alt"></i>
                         </button>
                         <button className="art-boton" title="Añadir al carrito">
-                            <i class="fal fa-shopping-cart"></i>
+                            <i className="fal fa-shopping-cart"></i>
                         </button>
                     </div>
                 </div>
