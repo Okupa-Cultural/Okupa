@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 //Componentes
 import Comentario from '../Components/CasillaComentarios/Comentario';
 import PieEvento from '../Components/PieEvento/PieEvento';
-import ScrollingHorizontal from '../Components/ScrollingHorizontal/ScrollingHorizontal';
-import ShTarjeta from '../Components/ScrollingHorizontal/ShTarjeta';
+
 
 //CSS
 import './css/Evento.css';

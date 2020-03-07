@@ -1,6 +1,6 @@
 {
   "short_name": "Okupa",
-  "name": "Crea, difunde, Okupa",
+  "name": "Okupa",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0d0d1f",
-  "background_color": "#0d0d1f"
+  "theme_color": "#272732",
+  "background_color": "#272732"
 }

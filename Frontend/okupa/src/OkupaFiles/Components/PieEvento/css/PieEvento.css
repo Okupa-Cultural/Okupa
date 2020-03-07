@@ -62,6 +62,14 @@
 	display: none;
 }
 
+.pie-evento .boton{
+	display: none;
+}
+
+.pie-evento[format="evento"] .boton{
+	display: unset;
+}
+
 @media (min-width: 799x){
 	.pie-evento{
 		padding-top: 1em;
