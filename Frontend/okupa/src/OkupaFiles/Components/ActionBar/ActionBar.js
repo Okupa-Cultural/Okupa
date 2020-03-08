@@ -51,19 +51,19 @@ export default class ActionBar extends Component {
               <div className="nuevo-contenedor action-boton">
                 <button type="button" className="nuevo" id="nuevo" onClick={this.revelarOcultar}><i className="fal fa-plus"></i></button>
 
-                <Link className="link-oculto" to="/feed">
+                <Link className="link-oculto" to="/eventoabm">
                   <button className="action-boton-oculto" id="primero">
                   <div>Espectáculo</div>
                 </button>
                 </Link>
 
-                <Link className="link-oculto" to="/feed">
+                <Link className="link-oculto" to="/eventoabm">
                   <button className="action-boton-oculto" id="segundo">
                     <div>Taller/Seminario</div>
                   </button>
                 </Link>
                 
-                <Link className="link-oculto" to="/feed">
+                <Link className="link-oculto" to="/eventoabm">
                   <button className="action-boton-oculto" id="tercero">
                     <div>Convención/Feria</div>
                   </button>

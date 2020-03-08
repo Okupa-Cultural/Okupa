@@ -37,3 +37,31 @@
         font-weight: 100;
         font-size: 1em;
     }
+
+    .footer .share .link::selection {
+        background-color: transparent;
+    }
+
+    .footer .url{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .url .url-boton{
+        margin-top: .5em;
+    }
+
+    .tw-share-button{
+        width: 5.9em;
+        padding: .25em;
+        background: #00acee;
+        border-radius: 3px;
+    }
+
+        .tw-share-button i{
+            margin: 0 .35em;
+        }
+
+        .tw-share-button span{
+            font-weight: 100;
+        }

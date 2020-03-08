@@ -25,7 +25,8 @@ export default class Perfil extends Component {
       imagenes: [{ urls : {small:''}}, {urls : {small:''}  }],
       fotoPerfil: 0,
       fotoPerfilSource: 'https://i.imgur.com/84TBSr0.jpg',
-      profileDirectLink: 'https://www.okupa.com.ar/LinkFalso$=leslie$knope#piripipi',
+      profileName: 'Leslie Knope',
+      profileDirectLink: 'okupa.com.ar/LinkFalso=123',
     };
 
 //    this.TabNavigator = this.TabNavigator.bind(this);
@@ -60,12 +61,12 @@ render() {
       onClick={this.switchToFullScreen} 
       >
         <img src={this.state.fotoPerfilSource}
-        alt="Leslie Knope"
-        title="Leslie Knope"
+        alt={this.state.profileName}
+        title={this.state.profileName}
         />
       </div>
 
-      <Cabecera />
+      <Cabecera profileName={this.state.profileName} />
 
       <div className="columna-izquierda">
           <img 
@@ -169,7 +170,7 @@ render() {
         </section>
       </main>
 
-      <Pie profileDirectLink={this.state.profileDirectLink} ocultoEnMoviles="0" />
+      <Pie profileDirectLink={this.state.profileDirectLink} profileName={this.state.profileName} ocultoEnMoviles="0" />
 
     </div>
   );

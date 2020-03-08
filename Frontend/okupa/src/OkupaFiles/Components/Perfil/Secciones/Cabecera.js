@@ -13,7 +13,7 @@ export default class Cabecera extends Component {
         return(
             <section className="p-cabecera">
                 <h1 className="p-nombre">
-                    Leslie Knope
+                    {this.props.profileName}
                 </h1>
                 <div className="p-etiquetas">
                     <Etiqueta Value="Actuación" Editable="0" Format="small" />

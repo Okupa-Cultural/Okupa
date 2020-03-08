@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding-bottom: 1em;
 }
 
 .App-logo {
@@ -33,3 +32,8 @@
   }
 }
 
+@media(max-width: 500px){
+  .App{
+    padding-bottom: 8vh;
+  }
+}

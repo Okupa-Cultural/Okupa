@@ -19,7 +19,7 @@ import EventoABM from './OkupaFiles/Screens/EventoABM';
 import Notificaciones from './OkupaFiles/Screens/Notificaciones';     
 
 //Componentes
-//import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
 
 //CSS
 import './App.css';
@@ -44,7 +44,7 @@ function App() {
         </Switch>
       )} />
 
-     {/*<ActionBar ocultar={window.store.getState().ocultarActionBar}/>*/}
+     <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
     </div>
   );
 }

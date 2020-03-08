@@ -6,10 +6,14 @@
 	height: 8vh;
 	justify-content: space-around;
 	align-items: center;
-	background: #EFEFE8;
+	background: #272732;
 	background-position: center;
-	box-shadow: 0 .3em .5em rgba(0,0,0,1);
+	box-shadow: 0 -.1em .5em rgba(0,0,0,.5);
 	z-index: 100;
+}
+
+.actionbar button{
+	border: none;
 }
 
 .actionbar a,
@@ -34,11 +38,10 @@
 .nuevo i,
 .nuevo-revelado i{
 	font-size: 1.5em;
-	padding: .125em .25em;
-	border: solid 2px rgba(0,0,0,1);
-	border-radius: 2em;
+	padding: .1em .245em .1em .255em;
+	border: solid 2px rgb(255, 255, 255);
+	border-radius: 50%;
 	transform: rotate(0deg);
-	z-index: 10;
 }
 
 .nuevo,
@@ -46,12 +49,6 @@
 .nuevo-revelado,
 .nuevo-revelado i{
 	transition: 250ms ease;
-}
-
-.nuevo, .nuevo-revelado{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .nuevo-revelado i{
@@ -62,6 +59,8 @@
 	font-size: 2.5em;
 	box-shadow: 0 0 5px rgba(255,50,50,.5);
 	transform: translateY(-8vh) rotate(45deg);
+	background-size: 50px 50px;
+	background-position: 0 -2px;
 }
 
 .action-boton-oculto, 
