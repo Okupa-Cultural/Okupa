@@ -10,6 +10,9 @@ import Pie from '../Components/Perfil/Secciones/Pie';
 import ProxEvento from '../Components/Perfil/ProxEvento/ProxEvento';
 import Articulo from '../Components/Perfil/Articulo/Articulo';
 
+//Placeholders
+import Placeholders from '../Lib/placeholder';
+
 //CSS
 import './css/EstilosGenerales.css';
 import './css/Perfil.css';
@@ -24,7 +27,7 @@ export default class Perfil extends Component {
       claseInactiva: 'invisible',
       imagenes: [{ urls : {small:''}}, {urls : {small:''}  }],
       fotoPerfil: 0,
-      fotoPerfilSource: 'https://i.imgur.com/84TBSr0.jpg',
+      fotoPerfilSource: '',
       profileName: 'Leslie Knope',
       profileDirectLink: 'okupa.com.ar/LinkFalso=123',
     };
@@ -60,7 +63,7 @@ render() {
       id="fotoPerfil" 
       onClick={this.switchToFullScreen} 
       >
-        <img src={this.state.fotoPerfilSource}
+        <img src={Placeholders.Image.ProphilePhoto}
         alt={this.state.profileName}
         title={this.state.profileName}
         />
@@ -69,12 +72,12 @@ render() {
       <Cabecera profileName={this.state.profileName} />
 
       <div className="columna-izquierda">
-          <img 
-          src={this.state.fotoPerfilSource}
-          alt="Leslie Knope"
-          title="Leslie Knope"
-          className="foto-perfil-escritorio"
-          />
+        <img 
+        src={this.state.fotoPerfilSource}
+        alt="Leslie Knope"
+        title="Leslie Knope"
+        className="foto-perfil-escritorio"
+        />
 
         <ProyectoInfo />
 

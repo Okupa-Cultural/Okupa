@@ -118,7 +118,7 @@ export default class Post extends Component {
                         </div>
                         <div>
                         <p className="descripcion">
-                            {this.props.eventDescrition}
+                            {this.props.eventDescription}
                         </p>
                         </div>
 

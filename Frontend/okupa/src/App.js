@@ -1,50 +1,41 @@
 //Componentes
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import FullScreenImage from './OkupaFiles/Components/Generales/FullScreenImage';
-import './Redux/index';
-
-//import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
-
-//Pantallas
-import HomeScreen from './OkupaFiles/Screens/HomeScreen';
-import Login from './OkupaFiles/Screens/Login';
-import Perfil from './OkupaFiles/Screens/Perfil';
-import Evento from './OkupaFiles/Screens/Evento';
-import Feed from './OkupaFiles/Screens/Feed';
-import Mantenimiento from './OkupaFiles/Screens/Mantenimiento/Mantenimiento';
-import UsuarioABM from './OkupaFiles/Screens/UsuarioABM';
-import EventoABM from './OkupaFiles/Screens/EventoABM';     
-import Notificaciones from './OkupaFiles/Screens/Notificaciones';     
+import { useSelector } from 'react-redux';
+import './Redux/index';     
 
 //Componentes
 import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
+
+//Routes
+import Routes from './OkupaFiles/Lib/routes';
 
 //CSS
 import './App.css';
 
 function App() {
+
+  const showActionBar = useSelector( state => state.showActionBar );
+
   return (
     <div className="App">
 
-      <FullScreenImage selectedImage={window.store.getState().selectedImage} estado={window.store.getState().fullscreenState}/>
-
       <Route render={({location}) => (
         <Switch>
-          <Route exact path="/" component={HomeScreen}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/perfil" component={Perfil}/>
-          <Route path="/soporte" component={Mantenimiento}/>
-          <Route path="/evento" component={Evento}/>
-          <Route path="/feed" component={Feed}/>
-          <Route path="/usuarioAbm" component={UsuarioABM}/>
-          <Route path="/eventoAbm" component={EventoABM}/>
-          <Route path="/notifications" component={Notificaciones}/>
+          <Route exact path="/" component={Routes.Homescreen}/>
+          <Route path="/login" component={Routes.Login}/>
+          <Route path="/perfil" component={Routes.Prophile}/>
+          <Route path="/soporte" component={Routes.Manteinance}/>
+          <Route path="/evento" component={Routes.Event}/>
+          <Route path="/feed" component={Routes.Feed}/>
+          <Route path="/usuarioAbm" component={Routes.UserABM}/>
+          <Route path="/eventoAbm" component={Routes.EventABM}/>
+          <Route path="/notifications" component={Routes.Notifications}/>
+          <Route path="/testing" component={Routes.Testing}/>
         </Switch>
       )} />
 
-     <ActionBar ocultar={window.store.getState().ocultarActionBar}/>
+     <ActionBar ocultar={ showActionBar }/>
     </div>
   );
 }

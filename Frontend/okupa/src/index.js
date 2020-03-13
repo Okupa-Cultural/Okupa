@@ -2,15 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import './Redux/index';
+//import './Redux/index';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter, Route } from 'react-router-dom';
 import ScrollToTop from './OkupaFiles/Components/App/ScrollToTop/ScrollToTop';
+
+//Redux
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './Redux/reducers/index';
+
+const store = createStore(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 ReactDOM.render(
-    <HashRouter>
-        <ScrollToTop />
-       <Route path="/" component={App}/>
-    </HashRouter>    
+    <Provider store={store}>
+        <HashRouter>
+            <ScrollToTop />
+            <Route path="/" component={App}/>
+        </HashRouter>
+    </Provider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

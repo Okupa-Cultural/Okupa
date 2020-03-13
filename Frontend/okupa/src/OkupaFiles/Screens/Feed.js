@@ -27,7 +27,7 @@ export default class Feed extends Component {
             eventMonth="jun"
             eventDay="06"
             eventHour="21:30"
-            eventDescrition="
+            eventDescription="
               Lorem ipsum dolor sit, amet 
               consectetur adipisicing elit. 
               Porro, quis autem. Adipisci 
@@ -50,7 +50,7 @@ export default class Feed extends Component {
             eventMonth="nov"
             eventDay="26"
             eventHour="18:00"
-            eventDescrition="
+            eventDescription="
               Última fecha del año!! en vivo
               en la casa de Calamardo!.
               Un espectáctulo para toda la familia,
@@ -70,7 +70,7 @@ export default class Feed extends Component {
             eventMonth="abr"
             eventDay="19"
             eventHour="09:00"
-            eventDescrition="
+            eventDescription="
               Todos los sábados nos encontramos
               a rompernos los dientes al saltar de edificios.
               Ejercicio para toda la familia!
@@ -91,7 +91,7 @@ export default class Feed extends Component {
             eventMonth="mar"
             eventDay="17"
             eventHour="00:00"
-            eventDescrition="
+            eventDescription="
               El congreso nacional de verdulerías busca
               establecer vínculos entre trabajadores y
               trabajadoras del rubro verdulístico para 
