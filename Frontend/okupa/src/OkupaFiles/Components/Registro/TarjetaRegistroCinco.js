@@ -46,7 +46,6 @@ export default class TarjetaRegistroCuatro extends Component {
     eliminarRow = (tabla, index) => {
         if(!tabla) {
             let rowsEscenario = this.state.rowsEscenario;
-            const indice = rowsEscenario.indexOf(index);
         
             rowsEscenario.splice(index, 1);
             
@@ -68,7 +67,7 @@ export default class TarjetaRegistroCuatro extends Component {
             rowsEscenario[i] = this.renderRowsEscenario(i);
         }
         
-        if(rowsEscenario == this.state.rowsEscenario) {
+        if(rowsEscenario === this.state.rowsEscenario) {
             this.setState({
                 rowsEscenario: rowsEscenario,
             });

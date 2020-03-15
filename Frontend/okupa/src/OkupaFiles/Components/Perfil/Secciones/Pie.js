@@ -44,7 +44,9 @@ export default class Pie extends Component {
                     className="fb-share-button url-boton" 
                     data-href={'https://'+this.props.profileDirectLink}
                     data-layout="button" data-size="large">
-                        <a target="_blank" 
+                        <a 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.okupa.com.ar%2F&amp;src=sdkpreparse"
                         className="fb-xfbml-parse-ignore">
                             Compartir
@@ -56,7 +58,9 @@ export default class Pie extends Component {
                     <div className="tw-share-button url-boton">
                         <a 
                         href={this.state.tweet+this.props.profileName+this.state.tweetUrl+this.props.profileDirectLink+this.state.hashtags} 
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
                             <i className="fab fa-twitter"></i>
                             <span>Twittear</span>
                         </a>

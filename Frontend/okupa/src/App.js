@@ -36,6 +36,7 @@ function App() {
       )} />
 
      <ActionBar ocultar={ showActionBar }/>
+     
     </div>
   );
 }
