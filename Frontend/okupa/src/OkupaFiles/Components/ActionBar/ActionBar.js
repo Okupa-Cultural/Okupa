@@ -30,18 +30,18 @@ export default function ActionBar(props) {
 
     if(props.ocultar === false) {
         return(
-          <nav className="actionbar">
-            <Link to="/Notifications" className="link-visible">
-              <button type="button" className="action-boton"><i className="fal fa-bell"></i></button>
-            </Link>
+          <nav className="actionbar">            
             <Link to="/feed" className="link-visible">
               <button type="button" className="action-boton"><i className="fal fa-calendar-alt"></i></button>
+            </Link>
+            <Link to="/perfil" className="link-visible">
+              <button type="button" className="action-boton"><i className="fal fa-user-circle"></i></button>
             </Link>
             <Link to="/feed" className="link-visible">
               <button type="button" className="action-boton"><i className="fal fa-home-alt"></i></button>
             </Link>
-            <Link to="/perfil" className="link-visible">
-              <button type="button" className="action-boton"><i className="fal fa-user-circle"></i></button>
+            <Link to="/Notifications" className="link-visible">
+              <button type="button" className="action-boton"><i className="fal fa-bell"></i></button>
             </Link>
             <div className="nuevo-contenedor action-boton">
               <button type="button" className="nuevo" id="nuevo" onClick={() => revelarOcultar()}><i className="fal fa-plus"></i></button>

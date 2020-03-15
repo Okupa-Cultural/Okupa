@@ -1,40 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 //Components
 import NavBar from './../Components/Navigation/NavBar';
 import Notification from './../Components/Notifications/Notification';
 //CSS
 import './css/Notificaciones.css';
 
-export default class Notificaciones extends Component {
+export default function Notificaciones() {
 
-    constructor(props) {
-        super(props);
+    const isLogged = useSelector( state => state.isLogged );
 
-        this.state = {
-            notificaciones: [{ message: '¡Un usuario te ha aplaudido!', type: 0,},
-                             { message: '¡Un usuario te ha seguido!', type: 1,},
-                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
-                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
-                             { message: '¡Un usuario te ha seguido!', type: 1,},
-                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
-                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
-                             { message: '¡Un usuario te ha seguido!', type: 1,},
-                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
-                             { message: '¡Un usuario te ha aplaudido!', type: 0,},
-                             { message: '¡Un usuario te ha seguido!', type: 1,},
-                             { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
-                            ],
-        };
-    }
+    const state = {
+        notificaciones: [{ message: '¡Un usuario te ha aplaudido!', type: 0,},
+                            { message: '¡Un usuario te ha seguido!', type: 1,},
+                            { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                            { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                            { message: '¡Un usuario te ha seguido!', type: 1,},
+                            { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                            { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                            { message: '¡Un usuario te ha seguido!', type: 1,},
+                            { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                            { message: '¡Un usuario te ha aplaudido!', type: 0,},
+                            { message: '¡Un usuario te ha seguido!', type: 1,},
+                            { message: '¡Un usuario ha comentado tu publicación!', type: 2,},
+                        ],
+    };
 
-    renderNotificaciones = (data, index) => {
+    const renderNotificaciones = (data, index) => {
         return <Notification key={index} type={data.type} message={data.message} />;
     }
 
-    render() {
+    let ContenedorDeNotificaciones = state.notificaciones.map(renderNotificaciones);
 
-        let ContenedorDeNotificaciones = this.state.notificaciones.map(this.renderNotificaciones);
-
+    if(isLogged) {
         return(
             <div className="notificacion-screen">
                 <nav className="notificacion-nav">
@@ -49,5 +48,7 @@ export default class Notificaciones extends Component {
                 </div>
             </div>
         );
+    } else {
+        return <Redirect to="/login" />;
     }
 }

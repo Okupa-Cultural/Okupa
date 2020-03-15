@@ -9,7 +9,7 @@ export default class OkBoton extends Component {
         return(
             <div>
                 <button 
-                type="button"
+                type={ this.props.Type || "button" }
                 className="boton" 
                 name={this.props.Name} 
                 id={this.props.Name}

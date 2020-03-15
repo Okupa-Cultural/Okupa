@@ -1,8 +1,10 @@
 //Componentes
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import './Redux/index';     
+import { useSelector , useDispatch } from 'react-redux';
+import './Redux/index';
+import { getToken } from './OkupaFiles/Api/auth';
+import { setLogin } from './Redux/actions/test';
 
 //Componentes
 import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';
@@ -16,6 +18,12 @@ import './App.css';
 function App() {
 
   const showActionBar = useSelector( state => state.showActionBar );
+  const dispatch = useDispatch();
+  const token = getToken();
+
+  if(token) {
+    dispatch(setLogin(true));
+  }
 
   return (
     <div className="App">

@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-
-//Imagenes
-//import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
-
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 //Componentes
 import OkInput from '../Components/Generales/OkInput/OkInput';
 import OkBoton from '../Components/Generales/OkBoton/OkBoton';
@@ -17,27 +15,26 @@ import ShTarjeta from '../Components/ScrollingHorizontal/ShTarjeta';
 import './css/EstilosGenerales.css'
 import './css/EventoABM.css';
 
-export default class EventoABM extends Component {
+export default function EventoABM() {
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			title:'',
-			startDate:'',
-			startTime:'',
-			endDate:'',
-			endTime:'',
-			periodicity:[],
-			eachWeeksMonths: { frequence:0, timeType:''}, //timeType = "Months" or "Weeks"
-			each15daystype: 0, //0:none 1: first 2 weeks of month, 2:last ones
-			description:'',
-			location:'',
-			participants:[]
-		};
+	const isLogged = useSelector( state => state.isLogged );
+	
+	/*
+	let state = {
+		title:'',
+		startDate:'',
+		startTime:'',
+		endDate:'',
+		endTime:'',
+		periodicity:[],
+		eachWeeksMonths: { frequence:0, timeType:''}, //timeType = "Months" or "Weeks"
+		each15daystype: 0, //0:none 1: first 2 weeks of month, 2:last ones
+		description:'',
+		location:'',
+		participants:[]
 	};
-
-	sendData = (event) => {
+	
+	const sendData = (event) => {
 		let formData = new FormData(event.target);
 		let json = JSON.stringify(formData);
 
@@ -54,9 +51,8 @@ export default class EventoABM extends Component {
 		.catch(error => console.error('Error:', error))
 		.then(response => console.log('Success:', response));
 	};
-
-	render() {
-
+*/
+	if(isLogged) {
 		return (
 			<div className="evento-abm">
 				<form>
@@ -184,5 +180,7 @@ export default class EventoABM extends Component {
 				</form>
 			</div>
 		);
+	} else {
+		return <Redirect to="/login" />;
 	}
 }

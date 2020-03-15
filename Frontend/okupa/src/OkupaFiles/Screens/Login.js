@@ -1,8 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-
-//Imagenes
-//import logo from './../../Images/Logo/okupa-logo-color-transparente.png';
 
 //Componentes
 import OkInput from '../Components/Generales/OkInput/OkInput';
@@ -11,17 +8,41 @@ import Triangulos from '../Components/FondoAnimado/Triangulos/Triangulos';
 import Ondas from '../Components/FondoAnimado/Ondas/Ondas';
 
 //Redux
-import { useSelector } from 'react-redux';
+import { useSelector , useDispatch } from 'react-redux';
+import { setLogin } from '../../Redux/actions/test';
+import { loginUser } from '../Api/auth';
 
 //CSS
 import './css/EstilosGenerales.css'
 import './css/Login.css';
 
-export default function Login(props) {
+export default function Login() {
 
+	//eslint-disable-next-line
+	const [ redirectAfterLogin , setRedirectAfterLogin ] = useState(false);
 	const isLogged = useSelector( state => state.isLogged );
+	const dispatch = useDispatch();
 
-	console.log(props.location.pathname);
+	const login = async data => {
+        await loginUser(data.username, data.password)
+            .then(value => {
+                if(value) {
+					dispatch(setLogin(true));
+					setRedirectAfterLogin(true);
+                }
+            });
+	}
+	
+	const handleSubmit = async form => {
+		
+		const data = {
+			username : document.getElementById("test-user").value,
+			password : document.getElementById("test-pass").value
+		}
+
+		await login(data);
+		form.preventDefault();
+	}
 
 	if(!isLogged) {
 		return (
@@ -32,15 +53,16 @@ export default function Login(props) {
 
 				<div className="contenedor">
 					<h2>Ingresa tus datos para acceder</h2>
-					<form>
-						<OkInput Type="text" Placeholder="Tu nombre" Name="Login"/>
-						<OkInput Type="password" Placeholder="Tu contraseña" Name="Password"/>
+					
+					<form onSubmit={ handleSubmit } action="localhost:4000/api/login" method="POST">
+						<OkInput Type="text" Id="test-user" Placeholder="Nombre de usuario" Name="username"/>
+						<OkInput Type="password" Id="test-pass" Placeholder="Tu contraseña" Name="password"/>
 
 						<div className="recupero">
 							¿Olvidaste tu contraseña?
 						</div>
 
-						<OkBoton Value="Ingresar" Name="Submit" />
+						<OkBoton Type="submit" Value="Ingresar" Name="Submit" />
 					</form>
 
 					<Link to="/UsuarioABM">

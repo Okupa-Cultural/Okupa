@@ -8,4 +8,4 @@ export const endpoints = {
     LOGOUT : '/api/logout'
 };
 
-export const baseUri = `https://localhost:4000`;
+export const baseUri = `http://localhost:4000`;

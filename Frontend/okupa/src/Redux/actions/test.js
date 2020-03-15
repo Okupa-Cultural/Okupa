@@ -3,3 +3,10 @@ export const increment = () => {
         type: 'INCREMENT'
     }
 }
+
+export const setLogin = success => {
+    return {
+        type: 'LOGIN',
+        payload: success
+    } 
+}
