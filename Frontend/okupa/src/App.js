@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import { useSelector , useDispatch } from 'react-redux';
 import './Redux/index';
 import { getToken } from './OkupaFiles/Api/auth';
-import { setLogin } from './Redux/actions/test';
+import { setLogin } from './Redux/actions/auth';
 
 //Componentes
 import ActionBar from './OkupaFiles/Components/ActionBar/ActionBar';

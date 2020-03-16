@@ -9,7 +9,7 @@ import Ondas from '../Components/FondoAnimado/Ondas/Ondas';
 
 //Redux
 import { useSelector , useDispatch } from 'react-redux';
-import { setLogin } from '../../Redux/actions/test';
+import { setLogin } from '../../Redux/actions/auth';
 import { loginUser } from '../Api/auth';
 
 //CSS

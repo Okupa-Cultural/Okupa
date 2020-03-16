@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector , useDispatch } from 'react-redux';
-import { setLogin } from '../../../Redux/actions/test';
+import { setLogin } from '../../../Redux/actions/auth';
 import { logoutUser , getToken , removeToken} from  '../../Api/auth';
 
 function Testing(props) {
