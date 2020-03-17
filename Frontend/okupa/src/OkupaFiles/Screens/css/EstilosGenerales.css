@@ -233,13 +233,26 @@ b{
 
 @media (pointer: fine){
 	input,
-	textarea{
+	textarea,
+	.input-contenedor[type="date"],
+	.input-contenedor[type="search"]{
 		transition: box-shadow .25s ease-in-out;
 	}
 
 	input:focus,
-	textarea:focus{
+	textarea:focus,
+	.input-contenedor[type="date"]:focus-within,
+	.input-contenedor[type="search"]:focus-within{
 		box-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
+	}
+
+	.input[type="date"]:focus,
+	.input[type="search"]:focus{
+		box-shadow: none !important;
+	}
+
+	{
+		box-shadow: 0 0 10px red;
 	}
 
 	.input[format="linea"]:focus{

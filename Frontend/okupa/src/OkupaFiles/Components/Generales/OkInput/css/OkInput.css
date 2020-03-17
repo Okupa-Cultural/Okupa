@@ -4,6 +4,9 @@
     --margin-top-movil: .5em;
     --margin-top-movil-doble: .9em;
 
+    --border-size: solid 1px;
+    --border-color: rgba(255,255,255,.6);
+
     --border-radius: .65em;
     --border-radius-small: .35em;
 }
@@ -14,10 +17,14 @@
     align-content: center;
     flex-wrap: nowrap;
     margin-top: var(--margin-top);
-    border: solid 1px rgba(255,255,255,.8);
     border-radius:  var(--border-radius);
-    overflow: hidden;
 }
+
+    .input-contenedor[type="date"],
+    .input-contenedor[type="search"]{
+        border: var(--border-size);
+        border-color: var(--border-color);
+    }
 
     .input-contenedor[type="submit"],
     .input-contenedor[type="file"]{
@@ -69,13 +76,20 @@
     padding: .8em;
     background-color: transparent;
     border: none;
-    color: #FFF;
     font-size: .9em;
+    border: var(--border-size);
+    border-color: var(--border-color) !important;
+    
     border-radius: var(--border-radius);
 }
 
     .input::placeholder{
         color: rgba(255,255,255,.8);
+    }
+
+    .input[type="date"],
+    .input[type="search"]{
+        border: none;
     }
 
     .input[type="submit"]{
@@ -139,6 +153,10 @@
     .input-contenedor[type="file"] .file-label,
     .input[type="search"]~.search-icon{
         display: unset;
+    }
+
+    .input:active{
+        border-color: var(--border-color) !important;
     }
 
 .input-contenedor[type="date"][format="small"] label,
