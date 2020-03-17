@@ -9,6 +9,7 @@ import UsuarioABM from '../Screens/UsuarioABM';
 import EventoABM from '../Screens/EventoABM';     
 import Notificaciones from '../Screens/Notificaciones';
 import Test from '../Screens/Testing/Testing';
+import Config from '../Screens/Config';
 
 const routes = {
     Homescreen : HomeScreen,
@@ -20,7 +21,8 @@ const routes = {
     UserABM: UsuarioABM,
     EventABM: EventoABM,
     Notifications: Notificaciones,
-    Testing: Test
+    Testing: Test,
+    Config: Config,
 };
 
 export default routes;
