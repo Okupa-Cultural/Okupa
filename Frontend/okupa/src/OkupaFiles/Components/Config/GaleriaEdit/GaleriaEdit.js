@@ -8,7 +8,7 @@ export default class GaleriaEdit extends Component {
     render() {
         return(
             <section className="enlaces-externos  config-seccion">
-                <h2 className="seccion-titulo">Enlaces externos</h2>
+                <h2 className="seccion-titulo sin-margen">Enlaces externos</h2>
                 <form className="enlaces-contenedor">
                     <button formAction="https://instagram.com" formTarget="_blank">
                     <i className="fab fa-instagram"></i>

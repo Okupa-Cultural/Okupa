@@ -175,6 +175,7 @@ b{
 	font-weight: 700;
 }
 
+
 /*============= Variables generales =============*/
 :root{
 	--box-shadow: 5px 5px 10px rgba(0,0,0,.5);
@@ -183,14 +184,13 @@ b{
 	--text-shadow-light: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-/*============= Iconos de FontAwesome a medida =============*/
-
-
-
-
 /*============= Estados generales =============*/
 .oculto{
 	display:none !important;
+}
+
+.sin-margen{
+	margin: 0 !important;
 }
 
 /*============= Mediaquerys =============*/
@@ -220,7 +220,8 @@ b{
 	label:active,
 	.sh-tarjeta:active,
 	.imgSombra:active,
-	.link:active{
+	.link:active,
+	.icono:active{
 		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
 	
@@ -260,7 +261,8 @@ b{
 	button:active div, 
 	.sh-tarjeta:active,
 	.imgSombra:active,
-	.link:active{
+	.link:active,
+	.icono:active{
 		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
 }

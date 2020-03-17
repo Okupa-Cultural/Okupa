@@ -102,7 +102,7 @@ export default class Config extends Component{
                 <EnlacesExternosEdit />
 
                 <section className="rider config-seccion">
-                    <h2 className="seccion-titulo">Rider técnico</h2>
+                    <h2 className="seccion-titulo sin-margen">Rider técnico</h2>
                     <OkTabla  Titulo="Elementos de escenario">
                         <OkRegistro Cantidad="100" Descripcion="Me siento feliz" />
                     </OkTabla>
