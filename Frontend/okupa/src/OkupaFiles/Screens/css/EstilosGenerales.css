@@ -21,7 +21,7 @@ button{
 	margin:0;
 	padding:0;
 	background: none;
-	cursor: pointer;
+	cursor: pointer !important;
 }
 
 a, 
@@ -258,7 +258,6 @@ b{
 
 	button:active, 
 	button:active div, 
-	label:active,
 	.sh-tarjeta:active,
 	.imgSombra:active,
 	.link:active{

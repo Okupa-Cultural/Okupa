@@ -12,6 +12,7 @@ export default class OkInput extends Component {
                 type={this.props.Type}
                 format={this.props.Format}
                 htmlFor={this.props.Name}
+                label={this.props.Label}
             >
 
                 <label 

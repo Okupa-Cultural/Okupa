@@ -68,10 +68,10 @@ export default function EventoABM() {
 						<OkInput Type="text" Id="titulo-evento-abm" Placeholder="Nombre del evento" Name="title" TabIndex="1" />
 					</div>
 					<div className="fyh">
-						<OkInput Type="date" Format="small" Placeholder="Fecha de inicio" Icon="calendario" Name="startdate" TabIndex="1" />
-						<OkInput Type="time" Format="small" Placeholder="Hora de inicio" Icon="reloj" Name="starthour" TabIndex="1" />
-						<OkInput Type="date" Format="small" Placeholder="Fecha de fin" Icon="calendario" Name="enddate" TabIndex="1" />
-						<OkInput Type="time" Format="small" Placeholder="Hora de fin" Icon="reloj" Name="endhour" TabIndex="1" />
+						<OkInput Type="date" Format="small" Label="true" Placeholder="Fecha de inicio" Icon="calendario" Name="startdate" TabIndex="1" />
+						<OkInput Type="time" Format="small" Label="true" Placeholder="Hora de inicio" Icon="reloj" Name="starthour" TabIndex="1" />
+						<OkInput Type="date" Format="small" Label="true" Placeholder="Fecha de fin" Icon="calendario" Name="enddate" TabIndex="1" />
+						<OkInput Type="time" Format="small" Label="true" Placeholder="Hora de fin" Icon="reloj" Name="endhour" TabIndex="1" />
 					</div>
 				</section>
 				<section>

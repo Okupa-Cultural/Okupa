@@ -5,10 +5,18 @@
     border-radius: .6em;
 }
 
-    .etiquetas-contenedor label{
+    .etiquetas-contenedor .titulo{
         padding-left: 1em;
         padding-top: .6em;
+        margin: 0 !important;
         text-align: left;
+        text-transform: none;
+        font-size: 12pt;
+        font-weight: 400;
+    }
+
+    .slk-etiquetas button{
+        margin: 1em 0;
     }
 
 .etiquetas{

@@ -93,6 +93,7 @@
     }
 
     .input[type="submit"]{
+        border: none;
         background-image: linear-gradient(135deg, #04a5f0, #023c75);
         border-radius:  var(--border-radius);
         color:rgba(255,255,255,.9);
@@ -146,11 +147,11 @@
         border: none;
     }
 
-    .input-contenedor[type="date"] .date-label,
-    .input-contenedor[type="datetime-local"] .date-label,
-    .input-contenedor[type="time"] .date-label,
-    .input-contenedor[type="month"] .date-label,
-    .input-contenedor[type="file"] .file-label,
+    .input-contenedor[type="date"][label="true"] .date-label,
+    .input-contenedor[type="datetime-local"][label="true"] .date-label,
+    .input-contenedor[type="time"][label="true"] .date-label,
+    .input-contenedor[type="month"][label="true"] .date-label,
+    .input-contenedor[type="file"][label="true"] .file-label,
     .input[type="search"]~.search-icon{
         display: unset;
     }
