@@ -21,7 +21,7 @@ button{
 	margin:0;
 	padding:0;
 	background: none;
-	cursor: pointer;
+	cursor: pointer !important;
 }
 
 a, 
@@ -175,6 +175,7 @@ b{
 	font-weight: 700;
 }
 
+
 /*============= Variables generales =============*/
 :root{
 	--box-shadow: 5px 5px 10px rgba(0,0,0,.5);
@@ -183,14 +184,13 @@ b{
 	--text-shadow-light: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-/*============= Iconos de FontAwesome a medida =============*/
-
-
-
-
 /*============= Estados generales =============*/
 .oculto{
 	display:none !important;
+}
+
+.sin-margen{
+	margin: 0 !important;
 }
 
 /*============= Mediaquerys =============*/
@@ -220,7 +220,8 @@ b{
 	label:active,
 	.sh-tarjeta:active,
 	.imgSombra:active,
-	.link:active{
+	.link:active,
+	.icono:active{
 		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
 	
@@ -233,13 +234,22 @@ b{
 
 @media (pointer: fine){
 	input,
-	textarea{
+	textarea,
+	.input-contenedor[type="date"],
+	.input-contenedor[type="search"]{
 		transition: box-shadow .25s ease-in-out;
 	}
 
 	input:focus,
-	textarea:focus{
+	textarea:focus,
+	.input-contenedor[type="date"]:focus-within,
+	.input-contenedor[type="search"]:focus-within{
 		box-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
+	}
+
+	.input[type="date"]:focus,
+	.input[type="search"]:focus{
+		box-shadow: none !important;
 	}
 
 	.input[format="linea"]:focus{
@@ -249,10 +259,10 @@ b{
 
 	button:active, 
 	button:active div, 
-	label:active,
 	.sh-tarjeta:active,
 	.imgSombra:active,
-	.link:active{
+	.link:active,
+	.icono:active{
 		box-shadow: inset 0 0 100px rgba(255,255,255,.3) !important;
 	}
 }

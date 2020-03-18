@@ -16,7 +16,7 @@ export default class SelectorEtiquetas extends Component {
                 <OkInput Type="search" Placeholder="Buscá tus etiquetas" Name="tags" TabIndex="1" />
                 <OkBoton Value="Etiquetas populares" Desplegable="1" />
                 <div className="etiquetas-contenedor">
-                    <label>
+                    <label className="titulo">
                         Tus etiquetas
                     </label>
                     <div className="etiquetas">

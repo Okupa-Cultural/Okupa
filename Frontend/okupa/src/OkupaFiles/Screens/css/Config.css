@@ -1,0 +1,48 @@
+.config *{
+    text-align: left;
+}
+
+.config h2,
+.config label{
+    text-transform: uppercase;
+}
+
+.config .seccion-titulo{
+    padding: 0 1em;
+    margin: 1em 0 .25em 0;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.seccion-cuerpo{
+    background-color: rgba(255,255,255,.1);
+    padding: 0 1em 1em 1em;
+}
+
+.rider{
+    border-bottom: none;
+    margin: 1em;
+}
+
+.config label{
+    margin: 1em 0 .5em .25em;
+}
+
+.config .config-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.config-input input,
+.config-input textarea,
+.config-input label{
+    font-size: 9pt;
+}
+
+.config .input-contenedor{
+    margin: 0;
+}
+
+.config .slk-etiquetas{
+    margin: 1em;
+}

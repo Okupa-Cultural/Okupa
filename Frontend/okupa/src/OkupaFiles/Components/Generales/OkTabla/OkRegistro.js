@@ -17,7 +17,9 @@ export default class OkRegistro extends Component {
                 <td className="t-cantidad-contenedor" htmlFor="cantidad">
                     <label className="t-cantidad" htmlFor="cantidad">
                         <input type="number" id="cantidad" />
-                        <i onClick={this.props.onRemove} className="fal fa-minus-circle"></i>
+                        <button type="button" className="remover" onClick={this.props.onRemove}>
+                            <i className="fal fa-minus-circle"></i>
+                        </button>
                     </label>
                 </td>
             </tr>

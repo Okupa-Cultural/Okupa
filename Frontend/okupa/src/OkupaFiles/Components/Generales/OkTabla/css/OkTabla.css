@@ -1,3 +1,8 @@
+.t-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
 .table{
     margin-top: 1em;
     width: 100%;
@@ -56,14 +61,23 @@
 
 
 .agregar{
-    widows: 100%;
-    text-align: right;
-    padding: .6em;
-    margin-top: .6em;
+    border: none;
+    border-radius: 50%;
+    margin: 1em .4em 0 0;
+    align-self: flex-end;
 }
 
     .agregar i{
-        font-size: 1.3em;
+        font-size: 20pt;
+    }
+
+.remover{
+    border: none;
+    padding: 0;
+}
+
+    .remover i{
+        font-size: 14pt;
     }
 
 @media (max-width: 500px){

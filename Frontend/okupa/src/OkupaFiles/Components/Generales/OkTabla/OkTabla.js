@@ -28,10 +28,10 @@ export default class OkTabla extends Component {
                         {this.props.children}
                     </tbody>
                 </table>
-
-                <div className="agregar">
-                <i  onClick={this.props.onClickFunction} className="fal fa-plus-circle"></i>
-                </div>
+                
+                <button type="button" className="agregar">
+                    <i  onClick={this.props.onClickFunction} className="fal fa-plus-circle"></i>
+                </button>
 
             </div>
         );
