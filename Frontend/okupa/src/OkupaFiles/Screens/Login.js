@@ -6,6 +6,7 @@ import OkInput from '../Components/Generales/OkInput/OkInput';
 import OkBoton from '../Components/Generales/OkBoton/OkBoton';
 import Triangulos from '../Components/FondoAnimado/Triangulos/Triangulos';
 import Ondas from '../Components/FondoAnimado/Ondas/Ondas';
+import FacebookLogin from 'react-facebook-login';
 
 //Redux
 import { useSelector , useDispatch } from 'react-redux';
@@ -22,6 +23,10 @@ export default function Login() {
 	const [ redirectAfterLogin , setRedirectAfterLogin ] = useState(false);
 	const isLogged = useSelector( state => state.isLogged );
 	const dispatch = useDispatch();
+
+	const responseFacebook = data => {
+		console.log(data);
+	}
 
 	const login = async data => {
         await loginUser(data.username, data.password)
@@ -63,6 +68,15 @@ export default function Login() {
 						</div>
 
 						<OkBoton Type="submit" Value="Ingresar" Name="Submit" />
+						<FacebookLogin
+							appId="258526358875977"
+							autoload={true}
+							fields="email"
+							callback={responseFacebook}
+							cssClass="boton-fb"
+							icon="fa-facebook"
+							textButton="Ingresar con Facebook"
+						/>
 					</form>
 
 					<Link to="/UsuarioABM">

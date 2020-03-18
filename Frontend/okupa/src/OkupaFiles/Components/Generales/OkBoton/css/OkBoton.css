@@ -7,7 +7,7 @@
     --border-radius:.65em;
 }
 
-.boton{
+.boton, .boton-fb{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,20 @@
     color:rgba(255,255,255,.9);
     font-size: .9em;
     box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+
+.boton-fb {
+    background-color: #3b5998;
+    background-image: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.boton-fb i {
+    position: absolute;
+    transform:translateX(-110px);
 }
 
 .boton[format="small"]{
