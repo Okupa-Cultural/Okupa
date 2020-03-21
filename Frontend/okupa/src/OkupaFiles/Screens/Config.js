@@ -94,21 +94,35 @@ export default class Config extends Component{
                 </section>
                 <section className="config-seccion">
                     <h2 className="seccion-titulo">Etiquetas</h2>
-                    <SelectorEtiquetas />
+                    <div className="seccion-cuerpo">
+                        <SelectorEtiquetas />
+                    </div>
                 </section>
 
-                <GaleriaEdit />
+                <section className="config-seccion">
+                    <h2 className="seccion-titulo">Galería</h2>
+                    <div className="seccion-cuerpo">
+                        <GaleriaEdit />
+                    </div>
+                </section>
 
-                <EnlacesExternosEdit />
+                <section className="config-seccion">
+                    <h2 className="seccion-titulo">Enlaces externos</h2>
+                    <div className="seccion-cuerpo">
+                        <EnlacesExternosEdit />
+                    </div>
+                </section>
 
                 <section className="rider config-seccion">
                     <h2 className="seccion-titulo sin-margen">Rider técnico</h2>
+                    <div className="seccion-cuerpo">
                     <OkTabla  Titulo="Elementos de escenario">
                         <OkRegistro Cantidad="100" Descripcion="Me siento feliz" />
                     </OkTabla>
                     <OkTabla  Titulo="Elementos de iluminacion">
                         <OkRegistro Cantidad="100" Descripcion="Me siento feliz" />
                     </OkTabla>
+                    </div>
                 </section>
                 
             </div>

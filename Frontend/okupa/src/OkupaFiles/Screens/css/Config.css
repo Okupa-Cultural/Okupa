@@ -14,9 +14,16 @@
     font-weight: 600;
 }
 
+.config-seccion{
+    margin-top: 1em;
+}
+
 .seccion-cuerpo{
     background-color: rgba(255,255,255,.1);
-    padding: 0 1em 1em 1em;
+}
+
+.seccion-cuerpo{
+    padding: .25em 1em 1em 1em;
 }
 
 .rider{

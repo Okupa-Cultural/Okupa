@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+//Componentes
+import OkInput from '../../Generales/OkInput/OkInput';
+
 //CSS
 import '../css/GaleriaEdit.css'
 
@@ -7,35 +10,97 @@ export default class GaleriaEdit extends Component {
 
     render() {
         return(
-            <section className="enlaces-externos  config-seccion">
-                <h2 className="seccion-titulo sin-margen">Enlaces externos</h2>
-                <form className="enlaces-contenedor">
-                    <button formAction="https://instagram.com" formTarget="_blank">
-                    <i className="fab fa-instagram"></i>
-                    <span className="leyenda">Instagram</span>
-                    </button>
-                    <button formAction="https://soundcloud.com" formTarget="_blank">
-                    <i className="fab fa-soundcloud"></i>
-                    <span className="leyenda">Soundcloud</span>
-                    </button>
-                    <button formAction="https://Bandcamp.com" formTarget="_blank">
-                    <i className="fab fa-bandcamp"></i>
-                    <span className="leyenda">Bandcamp</span>
-                    </button>
-                    <button formAction="https://facebook.com" formTarget="_blank">
-                    <i className="fab fa-facebook-square"></i>
-                    <span className="leyenda">Facebook</span>
-                    </button>
-                    <button formAction="http://www.alternativateatral.com" formTarget="_blank">
-                    <i className="fas fa-link"></i>
-                    <span className="leyenda">Alternativa teatral</span>
-                    </button>
-                    <button formAction="https://twitter.com" formTarget="_blank">
-                    <i className="fab fa-twitter"></i>
-                    <span className="leyenda">Twitter</span>
-                    </button>
+            <section className="galeria-edit config-seccion">
+                <div className="galeria-edit-contenedor">
+                    <div className="galeria-edit-elemento">
+                        <OkInput Type="file" Format="portada" Icon="agregar" Name="newPicture" Placeholder="añadir" Label="true" />
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
+
+                    <div className="galeria-edit-elemento">
+                        <div className="boton-eliminar">
+                            <i class="fal fa-trash-alt"></i>
+                        </div>
+                        <img src="https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/GH-Band-Playing-jpg-1559750190.jpg" alt="foto1"/>
+                    </div>
                     
-                </form>
+                </div>
             </section>
         );
     }

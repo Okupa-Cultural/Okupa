@@ -6,7 +6,7 @@ import Evento from '../Screens/Evento';
 import Feed from '../Screens/Feed';
 import Mantenimiento from '../Screens/Mantenimiento/Mantenimiento';
 import UsuarioABM from '../Screens/UsuarioABM';
-import EventoABM from '../Screens/EventoABM';     
+import EventoABM from '../Screens/EventoABM';
 import Notificaciones from '../Screens/Notificaciones';
 import Test from '../Screens/Testing/Testing';
 import Config from '../Screens/Config';
@@ -19,7 +19,7 @@ const routes = {
     Feed: Feed,
     Manteinance: Mantenimiento,
     UserABM: UsuarioABM,
-    EventABM: EventoABM,
+    EventoABM: EventoABM,
     Notifications: Notificaciones,
     Testing: Test,
     Config: Config,

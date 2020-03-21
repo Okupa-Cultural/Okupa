@@ -37,7 +37,7 @@ function App() {
           <Route path="/evento" component={Routes.Event}/>
           <Route path="/feed" component={Routes.Feed}/>
           <Route path="/usuarioAbm" component={Routes.UserABM}/>
-          <Route path="/eventoAbm" component={Routes.EventABM}/>
+          <Route path="/eventoAbm" component={Routes.EventoABM}/>
           <Route path="/notifications" component={Routes.Notifications}/>
           <Route path="/testing" component={Routes.Testing}/>
           <Route path="/config" component={Routes.Config}/>

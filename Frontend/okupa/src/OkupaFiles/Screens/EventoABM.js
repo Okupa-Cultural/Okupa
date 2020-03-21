@@ -18,7 +18,7 @@ import './css/EventoABM.css';
 export default function EventoABM() {
 
 	const isLogged = useSelector( state => state.isLogged );
-	
+
 	/*
 	let state = {
 		title:'',
@@ -56,12 +56,12 @@ export default function EventoABM() {
 		return (
 			<div className="evento-abm">
 				<form>
-				<section>
+				<section className="cabecera">
 				<h1 className="titulo">
 					<i className="far fa-chevron-left"></i>
 					Nuevo evento
 				</h1>
-				<OkInput Type="file" Format="portada" Icon="agregar" Name="bannerImage" Placeholder="Agregar foto de portada" TabIndex="1" />
+				<OkInput Type="file" Format="portada" Label="true" Icon="agregar" Name="bannerImage" Placeholder="Agregar foto de portada" TabIndex="1" />
 				</section>
 				<section className="top-info">
 					<div className="nombre">

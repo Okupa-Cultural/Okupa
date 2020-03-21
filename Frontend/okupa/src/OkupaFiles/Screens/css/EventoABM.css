@@ -61,6 +61,10 @@
         min-width: 10em;
     }
 
+.evento-abm .cabecera{
+    height: 15em;
+}
+
 .titulo{
     font-size: 1.5em;
     font-weight: 600;

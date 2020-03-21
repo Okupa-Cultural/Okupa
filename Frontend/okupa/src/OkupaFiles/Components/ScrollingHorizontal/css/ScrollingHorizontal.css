@@ -10,7 +10,7 @@
 .scrolling-horizontal{
     margin-top: .65em;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(var(--size-img), 1fr) );
+    grid-template-columns: repeat( auto-fit, var(--size-img) );
     gap: 1em;
 }
 
