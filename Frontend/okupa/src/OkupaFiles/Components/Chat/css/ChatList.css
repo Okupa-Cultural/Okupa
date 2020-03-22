@@ -1,0 +1,83 @@
+/* ==== Estados de converzación ==== */
+.converzaciones li[visto="0"]{
+    background-image: linear-gradient(135deg, #04a5f0, #023c75);
+}
+
+.converzaciones li[visto="1"] .chatAlerta{
+    display: none;
+}
+
+.converzaciones li[visto="1"] .ultimoMensaje{
+    font-weight: 100;
+}
+
+.converzaciones li[visto="0"] .chatAlerta{
+    display: flex;
+}
+
+.converzaciones li[visto="0"] .ultimoMensaje{
+    font-weight: 600;
+}
+/*===================================*/
+
+.chatRadio:checked ~ .chatListElemento{
+    background-color: var(--background-light);
+}
+
+.converzaciones li label{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 1em;
+    gap: 10px;
+    grid-gap: 10px;
+    cursor: pointer;
+}
+
+    .converzaciones .fotoPerfilContacto{
+        grid-column: 1 / 2;
+        width: 3em;
+        height: 3em;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 3px 1px 5px rgba(0,0,0,.8);
+    }
+
+    .converzaciones .contacto{
+        grid-column: 2 / 3;
+        font-weight: 600;
+        text-align: left;
+    }
+
+        .contacto h4{
+            font-weight: 600;
+            font-size: 12pt;
+        }
+
+        .contacto .ultimoMensaje{
+            font-size: 10pt;
+        }
+
+.converzacionInfo{
+    grid-column: 3 / 4;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+    .converzacionInfo .entrega{
+        grid-row: 1 / 2;
+        font-size: 9pt;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .converzacionInfo .chatAlerta{
+        grid-row: 2 / 3;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+    }
+
+
+

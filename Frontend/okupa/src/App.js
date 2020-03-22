@@ -41,6 +41,7 @@ function App() {
           <Route path="/notifications" component={Routes.Notifications}/>
           <Route path="/testing" component={Routes.Testing}/>
           <Route path="/config" component={Routes.Config}/>
+          <Route path="/chat" component={Routes.Chat} />
         </Switch>
       )} />
 

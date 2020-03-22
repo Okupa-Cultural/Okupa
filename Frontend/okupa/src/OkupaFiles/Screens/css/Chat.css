@@ -1,0 +1,71 @@
+:root{
+    --chat-columns: 1.75fr 3fr 1.25fr;
+    --background-light: rgba(255, 255, 255, 0.062);
+}
+
+.chatRoom{
+    display: grid;
+    grid-template-columns: var(--chat-columns);
+    height: 100vh;
+}
+
+    .chatRoom section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3em 1fr;
+    }
+
+        .chatSectionHeader{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .chatSectionBody{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin: 0;
+            padding: 0;
+        }
+
+    .chatList,
+    .chatInfo{
+        background: #272732;
+        z-index: 1;
+    }
+
+/* ChatList*/
+
+.chatList{
+    grid-column: 1 / 2;
+}
+
+.searchBar{
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+/*Chat*/
+
+.chat{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 4em;
+    padding-top: 1em;
+    background-color: var(--background-light);
+}
+
+    .mensajes{
+        grid-row: 1 / 2;
+    }
+
+    .chatInput{
+        grid-row: 2 / 3;
+        justify-content: flex-end;
+        box-shadow: 0 -10px 25px rgba(0,0,0,.5);
+    }
+
+/* ChatInfo*/
+
+.chatInfo{
+    grid-column: 3 / 4;
+}

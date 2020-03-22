@@ -10,6 +10,7 @@ import EventoABM from '../Screens/EventoABM';
 import Notificaciones from '../Screens/Notificaciones';
 import Test from '../Screens/Testing/Testing';
 import Config from '../Screens/Config';
+import Chat from '../Screens/Chat';
 
 const routes = {
     Homescreen : HomeScreen,
@@ -23,6 +24,7 @@ const routes = {
     Notifications: Notificaciones,
     Testing: Test,
     Config: Config,
+    Chat: Chat,
 };
 
 export default routes;
