@@ -13,19 +13,20 @@ export default class ChatListElement extends Component {
         };
     }
 
-    vistoActual = this.props.Visto;
-
     updateVisto = (vistoActual) => {
-        if(!this.state.Visto){
+        if(!vistoActual){
             this.setState({visto: 1});
         }
     }
 
     render() {
+
+        const vistoActual = this.props.Visto;
+
         return(
             <li visto={this.state.visto}>
                 <input className="oculto chatRadio" type="radio" name="converzacion" id={this.props.ChatId} />
-                <label className="chatListElemento" htmlFor={this.props.ChatId} onClick={this.updateVisto}>
+                <label className="chatListElemento" htmlFor={this.props.ChatId} onClick={this.updateVisto(vistoActual)}>
                     <img src={this.props.ContactoImg} 
                     alt={this.props.Contacto} 
                     className="fotoPerfilContacto"
@@ -35,7 +36,7 @@ export default class ChatListElement extends Component {
                             {this.props.Contacto}
                         </h4>
                         <p className="ultimoMensaje">
-                            {this.props.UltimoMensaje}
+                            {this.props.UltimoMensaje} 
                         </p>
                     </div>
                     <div className="converzacionInfo">
