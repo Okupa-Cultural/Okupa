@@ -76,94 +76,94 @@ export default class EnlacesExternosEdit extends Component {
                             <div className="selector-icono">
                                 <h4>Icono</h4>
                                 <div className="iconos-contenedor">
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="fb" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="fb" className="icono">
                                             <i className="fab fa-facebook-square"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="tw" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="tw" className="icono">
-                                            <i class="fab fa-twitter"></i>
+                                            <i className="fab fa-twitter"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="yt" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="yt" className="icono">
-                                            <i class="fab fa-youtube"></i>
+                                            <i className="fab fa-youtube"></i>
                                         </label>
                                     </div>
                                     
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="g+" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="g+" className="icono">
-                                            <i class="fab fa-google-plus-g"></i>
+                                            <i className="fab fa-google-plus-g"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="ig" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="ig" className="icono">
-                                            <i class="fab fa-instagram"></i>
+                                            <i className="fab fa-instagram"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="tc" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="tc" className="icono">
-                                            <i class="fab fa-twitch"></i>
+                                            <i className="fab fa-twitch"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="sc" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="sc" className="icono">
-                                            <i class="fab fa-soundcloud"></i>
+                                            <i className="fab fa-soundcloud"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="bc" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="bc" className="icono">
-                                            <i class="fab fa-bandcamp"></i>
+                                            <i className="fab fa-bandcamp"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="da" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="da" className="icono">
-                                            <i class="fab fa-deviantart"></i>
+                                            <i className="fab fa-deviantart"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="rd" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="rd" className="icono">
-                                            <i class="fab fa-reddit"></i>
+                                            <i className="fab fa-reddit"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="bg" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="bg" className="icono">
-                                            <i class="fab fa-blogger"></i>
+                                            <i className="fab fa-blogger"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="li" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="li" className="icono">
-                                            <i class="fab fa-linkedin"></i>
+                                            <i className="fab fa-linkedin"></i>
                                         </label>
                                     </div>
 
-                                    <div class="inner-block">
+                                    <div className="inner-block">
                                         <input id="otros" className="radio-icono" name="radio-group" type="radio" />
                                         <label htmlFor="otros" className="icono">
-                                            <i class="fas fa-link"></i>
+                                            <i className="fas fa-link"></i>
                                         </label>
                                         <span className="leyenda">Otros</span>
                                     </div>

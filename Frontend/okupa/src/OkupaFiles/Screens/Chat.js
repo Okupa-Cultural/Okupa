@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
+//Componentes externos
+import TextareaAutosize from 'react-textarea-autosize';
+
 //Componentes
 import OkInput from '../Components/Generales/OkInput/OkInput';
+import OkSelect from '../Components/Generales/OkSelect/OkSelect';
 import ChatList from '../Components/Chat/ChatList/ChatList';
 import ChatListElement from '../Components/Chat/ChatList/ChatListElement';
 
@@ -13,91 +17,98 @@ import './css/Chat.css';
 
 export default function Chat() {
 
+	/*useEffect(() => {
+		var input = document.getElementById('chatinput');
+		input.focus();
+	});*/
+
 	//const isLogged = useSelector( state => state.isLogged );
 	const isLogged = true;
 
+	/*useEffect(() => {
+    	document.getElementById('chatinput').current.focus();
+  	});*/
 
 	if(isLogged) {
 		return (
 			<div className="chatRoom">
-				<section className="chatList">
-					<header className="chatSectionHeader">
+				<div>
+					<section className="chatSection chatList">
+						<header className="chatSectionHeader">
+							<nav>
+							</nav>
+							<div className="searchBar">
+								<OkInput Type="search" Name="searchBar" Placeholder="Buscar..." />
+							</div>
+						</header>
+						<div class="scrollableContent">
+							<ChatList>
+								<ChatListElement
+									ChatId="chat1"
+									ContactoImg="https://lasillarotarm.blob.core.windows.net.optimalcdn.com/images/2019/10/12/gokumuertedragonball.1-focus-0-0-983-557.jpg"
+									Contacto="Son Goku"
+									UltimoMensaje="Hola! Soy Goku. Estoy organizando la Henki Dama fest 2020 y..."
+									Entrega="12:35 am"
+									CantMensajes="1"
+								/>
 
-					</header>
-					<main className="chatSectionBody">
-						<div className="searchBar">
-							<OkInput Type="search" Name="contacts" Placeholder="Buscar" />
+								<ChatListElement
+									ChatId="chat2"
+									ContactoImg="https://i.pinimg.com/474x/4d/9b/a9/4d9ba9a5cb079194ef884d75105c12dc.jpg"
+									Contacto="Freezer"
+									UltimoMensaje="Escucha insecto! No permitas a Kakaroto organice su fiesta. Si.."
+									Entrega="12:16 am"
+									CantMensajes="1"
+								/>
+
+								<ChatListElement
+									ChatId="chat3"
+									ContactoImg="https://i2.wp.com/www.bitme.gg/wp-content/uploads/2020/02/Dragon-Ball_-Mira-a-esta-chica-darle-vida-al-Supremo-Kaiosama-en-increible-cosplay.jpg?fit=1280%2C720&ssl=1"
+									Contacto="Supremo Kaiosama"
+									UltimoMensaje="Buenas tardes. Quisiera organizar mi cumpleaños nro 6125 en tu espacio."
+									Entrega="ayer"
+									CantMensajes="1"
+								/>
+
+								<ChatListElement
+									ChatId="chat4"
+									ContactoImg="https://vignette.wikia.nocookie.net/dragonball/images/f/f8/Gran_Saiyaman_2013.png/revision/latest?cb=20130918232734&path-prefix=es"
+									Contacto="Gran Saiyaman"
+									UltimoMensaje="Hola ciudadano! Busco organizar el encuentro de mi club de fans"
+									Entrega="Hace una semana"
+									CantMensajes="1"
+								/>
+
+								<ChatListElement
+									ChatId="chat5"
+									ContactoImg="https://pm1.narvii.com/6002/dc30c4b5d65ea15a59318956d2bafb4f391c0cfa_hq.jpg"
+									Contacto="Gohan"
+									UltimoMensaje="Holiis! Solo pasaba a decir que yo no soy el Gran Saiyaman jeje besis!"
+									Entrega="Hace una semana"
+									CantMensajes="1"
+								/>
+
+								<ChatListElement
+									ChatId="chat6"
+									ContactoImg="https://vignette.wikia.nocookie.net/dragonballfanon/images/f/f1/Piccolodragonballsuper.jpg/revision/latest?cb=20190121075007&path-prefix=es"
+									Contacto="Piccolo"
+									UltimoMensaje="Hola, viejo amigo. Cómo has estado. Tengo un problema con mi..."
+									Entrega="Hace una semana"
+									CantMensajes="1"
+								/>
+
+								<ChatListElement
+									ChatId="chat7"
+									ContactoImg="https://i.ytimg.com/vi/il04sCXD1mw/hqdefault.jpg"
+									Contacto="Milk"
+									UltimoMensaje="Goku está contigo, no es así!!?? Seguro están entrenando otra vez!"
+									Entrega="Hace dos semana"
+									CantMensajes="1"
+								/>
+							</ChatList>
 						</div>
-						
-						<ChatList>
-							<ChatListElement 
-							Visto="0" 
-							ChatId="chat1" 
-							Contacto="Son Gonku" 
-							ContactoImg="https://assets.tonica.la/__export/1584386415176/sites/debate/img/2020/03/16/goku_saludando_portada.jpg_1359985867.jpg"
-							Entrega="12:35 hs"
-							CantMensajes="1"
-							UltimoMensaje="Hola! Soy Goku. Estoy organizando la Henki Dama fest 2020 y..."
-							/>
-
-							<ChatListElement 
-							Visto="1" 
-							ChatId="chat2" 
-							Contacto="Freezer" 
-							ContactoImg="https://fr.screenja.com/static/img/thumbs/frieza-dbz-normal-636.png"
-							Entrega="11:26 hs"
-							CantMensajes="1"
-							UltimoMensaje="Escucha, insecto. No permitas a Goku organizar su evento. Si lo logra..."
-							/>
-
-							<ChatListElement 
-							Visto="1" 
-							ChatId="chat3" 
-							Contacto="Supremo Kaiosama" 
-							ContactoImg="https://i2.wp.com/www.bitme.gg/wp-content/uploads/2020/02/Dragon-Ball_-Mira-a-esta-chica-darle-vida-al-Supremo-Kaiosama-en-increible-cosplay.jpg?fit=1280%2C720&ssl=1"
-							Entrega="Ayer"
-							CantMensajes="1"
-							UltimoMensaje="Buenas tardes, quisiera organizar en tu espacio mi cumpleaños nro 6171 el..."
-							/>
-							
-							<ChatListElement 
-							Visto="1" 
-							ChatId="chat4" 
-							Contacto="Gran Saiyaman" 
-							ContactoImg="https://cde.peru.com//ima/0/0/9/6/0/960499/611x458/dragon-ball-xenoverse.jpg"
-							Entrega="Hace una semana"
-							CantMensajes="1"
-							UltimoMensaje="Hola ciudadano! busco organizar el encuentro de mi club de fans..."
-							/>
-
-							<ChatListElement 
-							Visto="1" 
-							ChatId="chat5" 
-							Contacto="Gohan" 
-							ContactoImg="https://pm1.narvii.com/6002/dc30c4b5d65ea15a59318956d2bafb4f391c0cfa_hq.jpg"
-							Entrega="Hace una semana"
-							CantMensajes="1"
-							UltimoMensaje="Holiis solo pasaba a avisar que no soy el Gran Saiyaman jeje saludos!"
-							/>
-						</ChatList>
-					</main>
-				</section>
-				<section className="chat">
-
-					<div className="mensajes">
-						<div className="mensaje" origen="1">
-							<img src="" alt=""/>
-
-						</div>
-					</div>
-					<div className="chatInput">
-						toguín
-					</div>
-				</section>
-				<section className="chatInfo">
-
-
-				</section>
+					</section>
+				</div>
 			</div>
 		);
 	} else {

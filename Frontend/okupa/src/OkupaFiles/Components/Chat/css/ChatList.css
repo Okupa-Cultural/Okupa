@@ -20,6 +20,7 @@
 }
 /*===================================*/
 
+
 .chatRadio:checked ~ .chatListElemento{
     background-color: var(--background-light);
 }
