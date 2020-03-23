@@ -32,7 +32,6 @@ export default function Chat() {
 	if(isLogged) {
 		return (
 			<div className="chatRoom">
-				<div>
 					<section className="chatSection chatList">
 						<header className="chatSectionHeader">
 							<nav>
@@ -108,7 +107,6 @@ export default function Chat() {
 							</ChatList>
 						</div>
 					</section>
-				</div>
 			</div>
 		);
 	} else {
