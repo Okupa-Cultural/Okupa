@@ -1,5 +1,5 @@
 :root{
-    --chat-columns: 1.75fr 3fr 1.25fr;
+    --chat-columns: 1.5fr 3.5fr 1fr;
     
     --header-heigh: 4em;
 
@@ -17,16 +17,47 @@
     max-height: 100vh;
 }
 
-    .chatSection header nav{
+.chatSectionHeader{
+    min-height: 2.5em;
+    max-height: 2.5em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .chatSectionHeader .nombre{
         display: flex;
-        justify-content: space-around;
-        margin: 1em 1em 0 1em;
+        align-items: center;
     }
 
-        .chatSection header nav label{
-            margin-right: 1em;
-            font-size: 10pt;
-            font-weight: 600;
+    .chatSectionHeader h1{
+        margin-left: 1em;
+        font-weight: 600;
+    }
+
+    .chatSectionHeader h2,
+    .chatInfoTitle h2{
+        width: 100%;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .chatSectionHeader h2{
+        font-size: 12pt;
+    }
+
+    .navMensajes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .navMensajes button,
+        .chatInput button{
+            border: none;
+            font-size: 18pt;
+            padding: 0 .5em;
         }
 
 .scrollableContent {
@@ -35,14 +66,146 @@
     min-height: 0;
 }
 
-    .scrollableContent::-webkit-scrollbar{
-       display: none;
+    .chatList .scrollableContent,
+    .chat .scrollableContent{
+        box-shadow: inset 0 7px 5px -5px rgba(0,0,0,.25);
     }
+
+/* === Secciones ===*/
 
 .chatList{
     grid-column: 1 / 2;
 }
 
-    .searchBar{
-        margin: 1em;
+.chat{
+    grid-column: 2 / 3;
+}
+
+.chatInfo{
+    grid-column: 3 / 4;
+}
+
+.chatList,
+.chatInfo{
+    background: #272732;
+    z-index: 1;
+}
+
+/* =================*/
+
+.chatSearchBar{
+    width: 100%;
+}
+
+    .chatSearchBar .input-contenedor{
+        margin: 0 !important;
+        padding: 0 !important;
     }
+
+    .chatSearchBar .input-contenedor input{
+        padding: .75em;
+    }
+
+
+.fotoPerfilContacto{
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 5px rgba(0,0,0,.8);
+}
+
+    .grande{
+        width: 10em;
+        height: 10em;
+        box-shadow: none;
+        justify-content: center;
+    }
+
+.chatInput{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1em;
+    box-shadow: 0 -5px 10px rgba(0,0,0,.8);
+}
+
+    .chatInput textarea{
+        width: 100%;
+        background: var(--background-light);
+        padding: 1em 2em;
+        border: none;
+        border-color: rgba(255, 255, 255, .65) !important;
+        border-radius: .75em;
+    }
+
+    .chatInput textarea:focus{
+        box-shadow: none !important;
+    }
+
+    .chatInput textarea::placeholder{
+        color: rgba(255, 255, 255, .65);
+    }
+
+    .chatInput textarea::-webkit-scrollbar{
+        display: none;
+    }
+
+    .chatInput button{
+        align-self: flex-end;
+        margin-bottom: .25em;
+    }
+
+.chatInfoTitle{
+    width: 100%;
+}
+
+    .chatInfoTitle h2{
+        margin-top: .25em;
+        font-size: 20pt;
+    }
+
+    .chatInfoTitle h3{
+        margin-top: 3em;
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
+.eventoCompartido{
+    padding: 0 1em;
+    border-bottom: solid .5px rgba(255, 255, 255, .2);
+}
+    
+    .eventoCompartido:first-child{
+        border-top: solid .5px rgba(255, 255, 255, .2);
+        margin-top: 1em;
+    }
+
+    .eventoCompartido .fecha{
+        transform: scale(.7, .7);
+        margin-right: 1em;
+    }
+
+    .eventoCompartido .nombreEvento,
+    .eventoCompartido .espacioEvento{
+        text-align: left;
+    }
+
+    .eventoCompartido .nombreEvento{
+        align-self: center;
+        font-size: 11pt;
+        font-weight: 600;
+    }
+
+    .eventoCompartido .espacioEvento{
+        font-size: 10pt;
+        font-weight: 100;
+        color: rgba(255, 255, 255, .65);
+    }
+
+@media(min-width: 768px){
+    .scrollableContent::-webkit-scrollbar{
+        display: none;
+     }
+}

@@ -10,6 +10,8 @@ import OkInput from '../Components/Generales/OkInput/OkInput';
 import OkSelect from '../Components/Generales/OkSelect/OkSelect';
 import ChatList from '../Components/Chat/ChatList/ChatList';
 import ChatListElement from '../Components/Chat/ChatList/ChatListElement';
+import ChatMessagesTimeLine	from '../Components/Chat/Messages/MessagesTimeLine';
+import Message from '../Components/Chat/Messages/Message';
 
 //CSS
 import './css/EstilosGenerales.css'
@@ -17,36 +19,29 @@ import './css/Chat.css';
 
 export default function Chat() {
 
-	/*useEffect(() => {
-		var input = document.getElementById('chatinput');
-		input.focus();
-	});*/
-
 	//const isLogged = useSelector( state => state.isLogged );
 	const isLogged = true;
 
-	/*useEffect(() => {
-    	document.getElementById('chatinput').current.focus();
-  	});*/
+	useEffect(() => {
+    	document.getElementById('chatinput').focus();
+  	});
 
 	if(isLogged) {
 		return (
 			<div className="chatRoom">
 					<section className="chatSection chatList">
 						<header className="chatSectionHeader">
-							<nav>
-							</nav>
-							<div className="searchBar">
+							<div className="chatSearchBar">
 								<OkInput Type="search" Name="searchBar" Placeholder="Buscar..." />
 							</div>
 						</header>
-						<div class="scrollableContent">
+						<div className="scrollableContent">
 							<ChatList>
 								<ChatListElement
 									ChatId="chat1"
 									ContactoImg="https://lasillarotarm.blob.core.windows.net.optimalcdn.com/images/2019/10/12/gokumuertedragonball.1-focus-0-0-983-557.jpg"
 									Contacto="Son Goku"
-									UltimoMensaje="Hola! Soy Goku. Estoy organizando la Henki Dama fest 2020 y..."
+									UltimoMensaje="Asombroso! Muchas gracias señor! nos vemos!!!"
 									Entrega="12:35 am"
 									CantMensajes="1"
 								/>
@@ -105,6 +100,260 @@ export default function Chat() {
 									CantMensajes="1"
 								/>
 							</ChatList>
+						</div>
+					</section>
+					<section className="chatSection chat">
+						<header className="chatSectionHeader">
+							<div className="nombre">
+								<img 
+								src="https://lasillarotarm.blob.core.windows.net.optimalcdn.com/images/2019/10/12/gokumuertedragonball.1-focus-0-0-983-557.jpg" 
+								alt="son Goku" 
+								className="fotoPerfilContacto"
+								/>
+
+								<h1>Son Goku</h1>
+							</div>
+							<nav className="navMensajes">
+								<button>
+									<i className="far fa-search"></i>
+								</button>
+								<button>
+									<i className="far fa-bars"></i>
+								</button>
+							</nav>
+						</header>
+						<div className="scrollableContent">
+							<ChatMessagesTimeLine>
+								
+								<Message
+								Origen="1"
+								Texto="Hola! Soy Goku. Estoy organizando la Henki Dama fest 2020 y sería asombroso que la hiciéramos en tu espacio!"
+								Hora="12:34 am" 
+								/>
+
+								<Message
+								Origen="1"
+								Texto="¿Tendrás disponibilidad para el segundo o tercer fin de semana de junio? Esperamos recibir a unas 300 personas, para que juntos levantemos las manos y compartamos nuesta energía!"
+								Hora="12:34 am" 
+								/>
+
+								<Message
+								Origen="1"
+								Texto="Y así finalmente derrotar a Freezer"
+								Hora="12:35 am" 
+								/>
+
+								<Message
+								Origen="0"
+								Texto="Hola Goku! Si, nos encantaría recibirles! Todo sea para derrotar a Freezer! 😱😱😱😱"
+								Hora="12:35 am" 
+								/>
+
+								<Message
+								Origen="0"
+								Texto="El segundo fin de semana lo tengo ocupado. Si el tercero les queda bien, ya se los dejo reservado y, cuando arreglemos el pago de la seña, ya dejamos la fecha confirmada y la anunciamos en nuestras redes"
+								Hora="12:35 am" 
+								/>
+
+								<Message
+								Origen="1"
+								Texto="Asombroso! Muchas gracias señor! nos vemos!!!"
+								Hora="12:35 am" 
+								/>
+
+							</ChatMessagesTimeLine>
+						</div>
+						<form className="chatInput">
+							<TextareaAutosize maxRows={5} Placeholder="Escribir mensaje..." id="chatinput" />
+							<button type="submit" className="send">
+								<i className="fas fa-paper-plane"></i>
+							</button>
+						</form>
+					</section>
+					<section className="chatSection chatInfo">
+						<header className="chatSectionHeader">
+							<h2>Información</h2>
+						</header>
+						<div className="chatInfoTitle">
+							<img 
+							src="https://lasillarotarm.blob.core.windows.net.optimalcdn.com/images/2019/10/12/gokumuertedragonball.1-focus-0-0-983-557.jpg" 
+							alt="Son Goku"
+							className="fotoPerfilContacto grande"
+							/>
+							<h2>Son Goku</h2>
+							<h3>Eventos que han compartido</h3>
+						</div>
+						<h3></h3>
+						<div className="scrollableContent">
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
+
+							<div className="eventoCompartido info">
+								<div className="fecha">
+									<div className="mes">
+										ago
+									</div>
+									<div className="dia">
+										26
+									</div>
+								</div>
+								<div className="nombreEvento">
+									Henkidama fest 2019
+									<div className="espacioEvento">
+										Zeugma cultural
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 			</div>

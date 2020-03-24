@@ -37,12 +37,7 @@
 
     .converzaciones .fotoPerfilContacto{
         grid-column: 1 / 2;
-        width: 3em;
-        height: 3em;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 3px 1px 5px rgba(0,0,0,.8);
-    }
+    }        
 
     .converzaciones .contacto{
         grid-column: 2 / 3;

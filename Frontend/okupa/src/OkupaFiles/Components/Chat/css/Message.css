@@ -1,0 +1,47 @@
+.mensajes{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1em 5em;
+    background: var(--background-light);
+
+}
+
+.mensaje{
+    font-size: 11pt;
+    max-width: 25em;
+    padding: .75em;
+    margin-bottom: 3.5em;
+    border-radius: .85em;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+}
+
+    .mensaje[origen="1"]{
+        align-self: flex-start;
+        text-align: left;
+        background-image: linear-gradient(135deg, #04a5f075, #023c7588);
+        color: rgb(3, 58, 47);
+        border-top-left-radius: 0;
+    }
+
+    .mensaje[origen="0"]{
+        align-self: flex-end;
+        text-align: right;
+        background-image: linear-gradient(135deg, #04a5f0de, #023c75de);
+        background-size: 150%;
+        color: rgb(3, 31, 58);
+        border-top-right-radius: 0;
+    }
+
+    .mensaje p,
+    .mensaje .hora{
+        color: inherit;
+    }
+
+    .mensaje .hora{
+        margin-top: .5em;
+        font-size: 10pt;
+        text-align: right;
+        opacity: .75;
+    }
