@@ -11,6 +11,7 @@ import Notificaciones from '../Screens/Notificaciones';
 import Test from '../Screens/Testing/Testing';
 import Config from '../Screens/Config';
 import Chat from '../Screens/Chat';
+import Landing from '../Screens/Landing';
 
 const routes = {
     Homescreen : HomeScreen,
@@ -25,6 +26,7 @@ const routes = {
     Testing: Test,
     Config: Config,
     Chat: Chat,
+    Landing: Landing
 };
 
 export default routes;

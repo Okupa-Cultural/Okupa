@@ -30,7 +30,8 @@ function App() {
 
       <Route render={({location}) => (
         <Switch>
-          <Route exact path="/" component={Routes.Homescreen}/>
+          <Route exact path="/" component={Routes.Landing}/>
+          <Route path="/home" component={Routes.Homescreen}/>
           <Route path="/login" component={Routes.Login}/>
           <Route path="/perfil" component={Routes.Prophile}/>
           <Route path="/soporte" component={Routes.Manteinance}/>

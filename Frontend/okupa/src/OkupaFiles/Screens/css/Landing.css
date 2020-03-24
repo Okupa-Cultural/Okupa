@@ -1,0 +1,142 @@
+.landing-screen {
+    display: flex;
+}
+
+.landing-navbar {
+    margin: 1em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 4em;
+    display: flex;
+}
+
+.landing-navbar {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-navbar h1 {
+    font-size: 3em;
+    align-self: center;
+    margin-left: 0.3em;
+    font-weight: 200;
+    color: lightgray;
+}
+
+.landing-navbar .landing-login {
+    display: flex;
+    margin-right: 6em;
+    margin-left: auto;
+}
+
+.landing-navbar .input-contenedor {
+    align-self: center;
+    
+    margin: 1em;
+    margin-left: auto;
+}
+
+.landing-navbar .div-boton {
+    width: 8em;
+    margin-left: 1em;
+    align-self: center;
+}
+
+.landing-navbar .boton {
+    align-self: center;
+}
+
+.landing-waves {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    bottom: 0;
+    opacity: .1;
+}
+
+.landing-slogan {
+    position: absolute;
+    padding: 3em;
+    margin:15em;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-slogan .div-boton {
+    margin: 5em;
+}
+
+.landing-navbar .landing-logo {
+    height: 3em;
+    opacity: .5;
+    margin-left: 2em;
+}
+
+.landing-slogan h2 {
+    font-size:3em;
+    text-align: left;
+}
+
+.landing-slogan span {
+    font-weight: 700;
+}
+
+body {
+    background: rgb(25,25,33);
+    background: linear-gradient(90deg, rgba(25,25,33,1) 0%, rgba(34,34,34,1) 44%, rgba(19,19,19,1) 100%);
+}
+
+.desktop-register {
+    margin-top: 2em;
+}
+
+.mobile-buttons {
+    margin-top: 3em;
+}
+
+@media(max-width: 500px) {
+
+    .landing-screen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-slogan {
+        position: static;
+        padding: 3em;
+        margin:0;
+        margin-top:5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-slogan h2 {
+        text-align: center;
+        font-size: 2.3em;
+    }
+    .landing-screen .landing-waves {
+        position: fixed;
+        margin-bottom: 4em;
+    }
+
+    .landing-navbar {
+        height: 5em;
+    }
+
+    .landing-navbar .landing-login {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .landing-navbar .landing-logo {
+        height: 3em;
+        opacity: .5;
+        margin-left: 0em;
+    }
+
+}

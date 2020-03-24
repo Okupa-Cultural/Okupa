@@ -193,6 +193,10 @@ b{
 	padding: 0 !important;
 }
 
+.mostrar-solo-mobile {
+	display: none;
+}
+
 /*============= Mediaquerys =============*/
 
 @media (max-width: 500px) {
@@ -208,6 +212,13 @@ b{
 		-moz-tap-highlight-color:rgba(255,255,255,0);
 	}
 	
+	.mostrar-solo-mobile {
+		display: block;
+	}
+
+	.mostrar-solo-escritorio {
+		display: none;
+	}
 }
 
 /*=== Respuesta tactil, para dispositivos TouchScreen ===*/
