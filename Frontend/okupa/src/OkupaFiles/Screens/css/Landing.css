@@ -96,6 +96,18 @@ body {
     margin-top: 3em;
 }
 
+
+@media(min-width: 600px) and (max-width: 1366px) {
+    .landing-screen .landing-slogan {
+        margin: 12em;
+    }
+
+    .landing-navbar .landing-login {
+        margin-right: 2em;
+    }
+    
+}
+
 @media(max-width: 500px) {
 
     .landing-screen {

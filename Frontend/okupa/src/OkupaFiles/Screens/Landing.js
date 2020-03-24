@@ -26,7 +26,7 @@ export default function Landing() {
                 <h2>con el arte independiente</h2>
 
                 <div className="mostrar-solo-mobile mobile-buttons">
-                    <OkBoton Type="link" To="/login" Value="Iniciar sesion" />
+                    <OkBoton Type="link" To="/login" Value="Iniciar Sesión" />
                     <OkBoton Type="link" To="/usuarioabm" Value="Registrarse" />
                 </div>
 
