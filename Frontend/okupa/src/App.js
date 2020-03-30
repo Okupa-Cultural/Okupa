@@ -43,10 +43,11 @@ function App() {
           <Route path="/testing" component={Routes.Testing}/>
           <Route path="/config" component={Routes.Config}/>
           <Route path="/chat" component={Routes.Chat} />
+          <Route path="/chatmobile" component={Routes.ChatMobile} />
         </Switch>
       )} />
 
-     <ActionBar ocultar={ showActionBar }/>
+     {/*<ActionBar ocultar={ showActionBar }/>*/}
      
     </div>
   );

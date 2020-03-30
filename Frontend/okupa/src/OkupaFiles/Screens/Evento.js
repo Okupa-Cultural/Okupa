@@ -60,7 +60,7 @@ export default class Evento extends Component {
 
     render() {
         return(
-            <div className="evento">
+            <div className="evento mainScreen">
                 <div className="post">
                     
                     <div className="foto">

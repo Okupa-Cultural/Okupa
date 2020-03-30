@@ -6,9 +6,17 @@
     --background-light: rgba(255, 255, 255, 0.062);
 }
 
-.chatRoom{
+.chatRoom,
+.chatRoomMobile{
     display: grid;
+}
+
+.chatRoom{
     grid-template-columns: var(--chat-columns);
+}
+
+.chatRoomMobile{
+    grid-template-columns: 1fr;
 }
   
 .chatSection {
@@ -26,6 +34,11 @@
     align-items: center;
 }
 
+    .chatRoomMobile .chatSectionHeader{
+        min-height: 1em;
+        max-height: 1em;
+    }
+
     .chatSectionHeader .nombre{
         display: flex;
         align-items: center;
@@ -34,6 +47,10 @@
     .chatSectionHeader h1{
         margin-left: 1em;
         font-weight: 600;
+    }
+
+    .chatRoomMobile .chatSectionHeader h1{
+        font-size: 12pt;
     }
 
     .chatSectionHeader h2,
@@ -87,8 +104,12 @@
 
 .chatList,
 .chatInfo{
-    background: #272732;
+    background: var(--main-color);
     z-index: 1;
+}
+
+.chatRoomMobile section{
+    grid-column: 1 / 2 !important;
 }
 
 /* =================*/
@@ -114,6 +135,12 @@
     border-radius: 50%;
     box-shadow: 3px 1px 5px rgba(0,0,0,.8);
 }
+
+    .chatRoomMobile .fotoPerfilContacto{
+        width: 2em;
+        height: 2em;
+        margin: 1em 0 1em 0;
+    }
 
     .grande{
         width: 10em;

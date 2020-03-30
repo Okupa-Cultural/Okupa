@@ -57,6 +57,7 @@ export default function HomeScreen() {
 					<div className="home-presentacion">
 
 						<p className="home-intro">
+							Próximamente<br />
 							Una nueva forma de <span>difundir&nbsp;</span>y <span>conectar&nbsp;</span>
 							con el arte independiente
 						</p>

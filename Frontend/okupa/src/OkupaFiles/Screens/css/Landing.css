@@ -83,10 +83,10 @@
     font-weight: 700;
 }
 
-body {
+/*body {
     background: rgb(25,25,33);
     background: linear-gradient(90deg, rgba(25,25,33,1) 0%, rgba(34,34,34,1) 44%, rgba(19,19,19,1) 100%);
-}
+}*/
 
 .desktop-register {
     margin-top: 2em;

@@ -43,7 +43,7 @@ export default function Perfil() {
     return <Redirect to="/login" />;
   } else {
     return (
-      <div className="perfil">
+      <div className="perfil mainScreen">
         <div 
         className="foto-perfil-movil" 
         id="fotoPerfil" 

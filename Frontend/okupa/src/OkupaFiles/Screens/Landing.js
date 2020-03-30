@@ -59,7 +59,7 @@ export default function Landing() {
                 </nav>
     
                 <div className="landing-slogan">
-                    <h2>Una nueva forma de</h2>
+                    <h2>Próximamente <br/> Una nueva forma de</h2>
                     <h2><span>Difundir</span> y <span>Conectar</span></h2>
                     <h2>con el arte independiente</h2>
     
@@ -69,7 +69,7 @@ export default function Landing() {
                     </div>
     
                     <div className="mostrar-solo-escritorio desktop-register">
-                        <OkBoton Type="link" To="/usuarioabm" Value="Registrarse" />
+                        <OkBoton Type="link" To="/" Value="Registrarse" />
                     </div>
                 </div>
     
