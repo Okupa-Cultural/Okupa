@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
 
 //Componentes externos
@@ -183,7 +182,7 @@ export default function ChatDesktop() {
 							</Link>
 							<h3>Eventos que han compartido</h3>
 						</div>
-						<h3></h3>
+						
 						<div className="scrollableContent">
 							<div>EVENTO</div>
 							<div>EVENTO</div>

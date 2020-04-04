@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import Post from '../Components/Post/Post';
 
 //Redux
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 
 //CSS
 import './css/EstilosGenerales.css';
@@ -13,7 +13,7 @@ import './css/Feed.css';
 
 export default function Feed() {
 
-  {/*const isLogged = useSelector( state => state.isLogged );*/}
+  //{/*const isLogged = useSelector( state => state.isLogged );*/}
 
   const isLogged = true;
 

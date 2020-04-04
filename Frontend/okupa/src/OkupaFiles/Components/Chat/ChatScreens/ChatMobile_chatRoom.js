@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react';
+//import { useSelector } from 'react-redux';
 import { Redirect, Link } from 'react-router-dom';
 
 //Componentes externos
 import TextareaAutosize from 'react-textarea-autosize';
 
 //Componentes
-import OkInput from '../../Generales/OkInput/OkInput';
+//import OkInput from '../../Generales/OkInput/OkInput';
 import ChatMessagesTimeLine	from '../Messages/MessagesTimeLine';
 import Message from '../Messages/Message';
 
@@ -15,10 +15,6 @@ export default function ChatDesktop() {
 
 	//const isLogged = useSelector( state => state.isLogged );
 	const isLogged = true;
-
-	{/* useEffect(() => {
-    	document.getElementById('chatinput').focus();
-  	}); */}
 
 	if(isLogged) {
 		return (

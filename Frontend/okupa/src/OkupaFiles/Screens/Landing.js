@@ -17,6 +17,7 @@ import './css/Landing.css';
 
 export default function Landing() {
 
+    //eslint-disable-next-line
     const [ redirectAfterLogin , setRedirectAfterLogin ] = useState(false);
 	const isLogged = useSelector( state => state.isLogged );
     const dispatch = useDispatch();
