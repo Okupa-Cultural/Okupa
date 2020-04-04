@@ -212,6 +212,9 @@ b{
 		-moz-tap-highlight-color:rgba(255,255,255,0);
 	}
 	
+}
+
+@media(max-width: 800px) {
 	.mostrar-solo-mobile {
 		display: block;
 	}
@@ -220,7 +223,6 @@ b{
 		display: none;
 	}
 }
-
 /*=== Respuesta tactil, para dispositivos TouchScreen ===*/
 
 @media (hover: none){
