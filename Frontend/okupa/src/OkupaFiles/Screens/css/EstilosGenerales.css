@@ -1,6 +1,6 @@
 /*============= Elementos básicos =============*/
 body {
-	background-color: #272732;
+	background-color: var(--main-color);
 	padding: 0 !important;
 }
 
@@ -178,6 +178,10 @@ b{
 
 /*============= Variables generales =============*/
 :root{
+	/*--main-color:#272732;*/
+	--main-color: rgb(25,25,33);
+    /*--main-color: linear-gradient(90deg, rgba(25,25,33,1) 0%, rgba(34,34,34,1) 44%, rgba(19,19,19,1) 100%);*/
+
 	--box-shadow: 5px 5px 10px rgba(0,0,0,.5);
 	--box-shadow-light: 0 3px 5px rgba(0,0,0,.25);
 	--text-shadow: 2px 2px 2px rgba(0,0,0,.8);

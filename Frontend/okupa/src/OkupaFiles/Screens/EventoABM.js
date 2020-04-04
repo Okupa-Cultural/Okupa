@@ -54,7 +54,7 @@ export default function EventoABM() {
 */
 	if(isLogged) {
 		return (
-			<div className="evento-abm">
+			<div className="evento-abm mainScreen">
 				<form>
 				<section className="cabecera">
 				<h1 className="titulo">

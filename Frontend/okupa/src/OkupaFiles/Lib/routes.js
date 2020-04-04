@@ -11,6 +11,7 @@ import Notificaciones from '../Screens/Notificaciones';
 import Test from '../Screens/Testing/Testing';
 import Config from '../Screens/Config';
 import Chat from '../Screens/Chat';
+import ChatMobile from '../Components/Chat/ChatScreens/ChatMobile_chatRoom';
 import Landing from '../Screens/Landing';
 
 const routes = {
@@ -26,7 +27,8 @@ const routes = {
     Testing: Test,
     Config: Config,
     Chat: Chat,
-    Landing: Landing
+    ChatMobile: ChatMobile,
+    Landing: Landing,
 };
 
 export default routes;

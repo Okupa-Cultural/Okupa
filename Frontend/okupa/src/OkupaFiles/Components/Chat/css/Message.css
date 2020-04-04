@@ -4,14 +4,17 @@
     height: 100%;
     padding: 1em 5em;
     background: var(--background-light);
+}
 
+.chatRoomMobile .mensajes{
+    padding: 1em !important;
 }
 
 .mensaje{
     font-size: 11pt;
     max-width: 25em;
     padding: .75em;
-    margin-bottom: 3.5em;
+    margin-bottom: 2em;
     border-radius: .85em;
     background-color: white;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);

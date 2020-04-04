@@ -17,7 +17,7 @@ export default function Feed() {
 
   if(isLogged) {
   return (
-    <div className="feed">
+    <div className="feed mainScreen">
       <Post
         userName="Centro cultural Nicolas Queish"
         userImg="https://vignette.wikia.nocookie.net/doblaje/images/4/46/Nicolas_cage.jpg/revision/latest?cb=20190207035634&path-prefix=es"

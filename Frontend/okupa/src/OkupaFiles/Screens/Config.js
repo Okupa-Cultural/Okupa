@@ -39,7 +39,7 @@ export default class Config extends Component{
 
     render(){
         return(
-            <div className="config">
+            <div className="config mainScreen">
                 <section>
                     <h1 className="titulo">
                         <i className="far fa-chevron-left"></i>

@@ -19,6 +19,8 @@ export default class ChatList extends Component {
     this.scrollToBottom()
     }
 
+    //scrollIntoView()
+
     render() {
 
         return(
