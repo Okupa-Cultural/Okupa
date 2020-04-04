@@ -186,7 +186,7 @@
 .botonera{
 	display: flex;
 	justify-content: flex-start;
-	padding: 1em 1em 1em 0;
+	padding: 1em 1em 0 0;
 }
 
 .post-boton {
@@ -216,10 +216,6 @@
 		.post-boton-comentar:active i {
 			color: turquoise;
 		}
-
-.ultimo-comentario{
-	box-shadow: 0 5px 5px rgba(0,0,0,.8);
-}
 
 	.verTodos{
 		padding-left: .75em;
