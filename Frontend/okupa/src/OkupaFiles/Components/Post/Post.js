@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 //Componentes
 import Comentario from '../CasillaComentarios/Comentario';
-
+import CasillaComentarios from '../CasillaComentarios/CasillaComentarios';
 
 //CSS
 import './css/Post.css';
@@ -116,55 +116,51 @@ export default class Post extends Component {
                         </p>
                         </div>
 
-                        <div className="divisor"></div>
-
                         <div className="estadisticas">
                             <div>
-                                <i className="fad fa-sign-language"></i>
-                                {this.state.claps}
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                <i className="fad fa-calendar-alt"></i>
+                                <i class="fad fa-sign-language"></i>
                                 {this.state.claps}
                             </div>
                             <div>
                                 {this.state.claps}
-                                &nbsp;
                                 &nbsp;
                                 comentarios
                                 {/*<i className="fad fa-comment-dots"></i>*/}
                             </div>
                         </div>
-                    </div>
-                    <div className="botonera">
-                        <div 
-                        onClick={() => this.touchedButton(1)} 
-                        className={"post-boton " + this.displayButton(1)}
-                        title="Aplaudir"
-                        >
-                            <i className="fal fa-sign-language"></i>
-                        </div>
-                        <div 
-                        onClick={() => this.touchedButton(2)} 
-                        className={"post-boton " + this.displayButton(2)}
-                        title="Agendar"
-                        >
-                            <i className="fal fa-calendar-alt"></i>
-                        </div>
-                        <div 
-                        className="post-boton post-boton-comentar"
-                        title="Comentar"
-                        >
-                            <i className="fal fa-comment-dots"></i>
+
+                        <div className="divisor"></div>
+
+                        <div className="botonera">
+                            <div 
+                            onClick={() => this.touchedButton(1)} 
+                            className={"post-boton " + this.displayButton(1)}
+                            title="Aplaudir"
+                            >
+                                <i className="fal fa-sign-language"></i>
+                            </div>
+                            <div 
+                            onClick={() => this.touchedButton(2)} 
+                            className={"post-boton " + this.displayButton(2)}
+                            title="Agendar"
+                            >
+                                <i className="fal fa-calendar-alt"></i>
+                            </div>
                         </div>
                     </div>
+
+                    <CasillaComentarios>
+                        <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
+                    </CasillaComentarios>
+
+                    {/*<div className="ultimo-comentario">
+                        <div className="verTodos">
+                            <button tye="button">Ver todos los comentarios</button>
+                        </div>
+                        <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
+                    </div>*/}
 
                 </div> {/*--Fin del post--*/}
-
-                <div className="ultimo-comentario">
-                    <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
-                </div>
                 
             </div>
         );
