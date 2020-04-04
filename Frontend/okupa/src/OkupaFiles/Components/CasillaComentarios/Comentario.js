@@ -32,30 +32,11 @@ export default class Comentario extends Component {
                         &nbsp;&nbsp;
                         {this.props.content}
                     </p>
-
+                    <div className="comentarioFecha">
+                        Hace 1 año
+                    </div>
                 </div>
 
-                {/* 
-                <div className="comentario">
-                    <Link to="/perfil">
-                        <div className="comentario-cabecera">
-                            <div className="comentario-datos">
-                                <div className="comentario-foto">
-                                    <img src={this.state.fotoPerfil} alt={this.props.username} title={this.state.username} />
-                                </div>
-                                <div className="comentario-usuario">
-                                    {this.props.username}
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </Link>
-                    <p className="comentario-texto">
-                        {this.props.content}
-                    </p>
-                </div>
-                
-                */}
             </div>
         );
     }

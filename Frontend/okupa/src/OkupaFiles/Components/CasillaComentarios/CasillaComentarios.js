@@ -30,7 +30,7 @@ export default class CasillaComentarios extends Component {
             <div className="casillaComentarios">
                 <div className="listaComentarios">
                   <div className="forceAlign">
-                    <button className="mostrarTodos">Mostrar todos los comentarios</button>
+                    <button className="mostrarTodos">Mostrar más comentarios</button>
                   </div>
                   {this.props.children}
                 </div>
