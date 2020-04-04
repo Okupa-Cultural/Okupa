@@ -13,7 +13,9 @@ import './css/Feed.css';
 
 export default function Feed() {
 
-  const isLogged = useSelector( state => state.isLogged );
+  {/*const isLogged = useSelector( state => state.isLogged );*/}
+
+  const isLogged = true;
 
   if(isLogged) {
   return (
@@ -35,10 +37,7 @@ export default function Feed() {
           Lorem ipsum dolor sit, amet 
           consectetur adipisicing elit. 
           Porro, quis autem. Adipisci 
-          labore laborum dolore aut fugiat 
-          blanditiis corporis quasi accusamus, 
-          totam commodi sunt velit in dolor 
-          quos cupiditate obcaecati!"
+          labore laborum dolore aut fugiat."
       />
 
       <Post
@@ -76,10 +75,7 @@ export default function Feed() {
         eventHour="09:00"
         eventDescription="
           Todos los sábados nos encontramos
-          a rompernos los dientes al saltar de edificios.
-          Ejercicio para toda la familia!
-          Y para todos tus dientes!!!
-          ....dame esos preciosos dientes."
+          a rompernos los dientes al saltar de edificios."
       />
       
       <Post

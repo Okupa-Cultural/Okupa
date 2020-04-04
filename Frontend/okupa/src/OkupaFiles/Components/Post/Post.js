@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 //Componentes
 import Comentario from '../CasillaComentarios/Comentario';
-
+import CasillaComentarios from '../CasillaComentarios/CasillaComentarios';
 
 //CSS
 import './css/Post.css';
@@ -75,12 +75,7 @@ export default class Post extends Component {
                         </div>
                     </Link>
                     <Link to="/evento">
-                        <div className="foto">
-                            <div className="tipo-evento">
-                                <span type={this.props.eventType} title={this.props.eventType}>
-                                    {this.props.eventType}
-                                </span>
-                            </div>    
+                        <div className="foto">    
                             <img 
                             src={this.props.eventImg} 
                             alt={this.props.eventName}
@@ -105,14 +100,13 @@ export default class Post extends Component {
                                 <Link to="/evento" className="nombre" title={this.props.eventName}>
                                     {this.props.eventName}
                                 </Link>
-                                <div className="ubicacion">
-                                    <Link to="/perfil" className="direccion" title={this.props.eventAdress}>
-                                        <i className="fas fa-map-marker-alt"></i>
-                                        {this.props.eventAdress}
-                                    </Link>
-                                    <div className="cercania">
-                                        a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
-                                    </div>
+                                <div className="cercania">
+                                    a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
+                                </div>
+                                <div className="tipo-evento">
+                                    <span type={this.props.eventType} title={this.props.eventType}>
+                                        {this.props.eventType}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -122,47 +116,51 @@ export default class Post extends Component {
                         </p>
                         </div>
 
+                        <div className="estadisticas">
+                            <div>
+                                <i class="fad fa-sign-language"></i>
+                                {this.state.claps}
+                            </div>
+                            <div>
+                                {this.state.claps}
+                                &nbsp;
+                                comentarios
+                                {/*<i className="fad fa-comment-dots"></i>*/}
+                            </div>
+                        </div>
+
                         <div className="divisor"></div>
 
-                        <div className="estadisticas">
-                            <i className="fad fa-user"></i>
-                            {this.state.claps} aplausos
-                            &nbsp; &nbsp;
-                            <i className="fad fa-calendar-alt"></i>
-                            veces agendado
-                            &nbsp; &nbsp;
-                            <i className="fad fa-comment-dots"></i>
-                            comentarios
+                        <div className="botonera">
+                            <div 
+                            onClick={() => this.touchedButton(1)} 
+                            className={"post-boton " + this.displayButton(1)}
+                            title="Aplaudir"
+                            >
+                                <i className="fal fa-sign-language"></i>
+                            </div>
+                            <div 
+                            onClick={() => this.touchedButton(2)} 
+                            className={"post-boton " + this.displayButton(2)}
+                            title="Agendar"
+                            >
+                                <i className="fal fa-calendar-alt"></i>
+                            </div>
                         </div>
                     </div>
-                    <div className="botonera">
-                        <div 
-                        onClick={() => this.touchedButton(1)} 
-                        className={"post-boton " + this.displayButton(1)}
-                        title="Aplaudir"
-                        >
-                            <i className="fal fa-sign-language"></i>
+
+                    <CasillaComentarios>
+                        <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
+                    </CasillaComentarios>
+
+                    {/*<div className="ultimo-comentario">
+                        <div className="verTodos">
+                            <button tye="button">Ver todos los comentarios</button>
                         </div>
-                        <div 
-                        onClick={() => this.touchedButton(2)} 
-                        className={"post-boton " + this.displayButton(2)}
-                        title="Agendar"
-                        >
-                            <i className="fal fa-calendar-alt"></i>
-                        </div>
-                        <div 
-                        className="post-boton post-boton-comentar"
-                        title="Comentar"
-                        >
-                            <i className="fal fa-comment-dots"></i>
-                        </div>
-                    </div>
+                        <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
+                    </div>*/}
 
                 </div> {/*--Fin del post--*/}
-
-                <div className="ultimo-comentario">
-                    <Comentario username="Mauricio Macri" content="‍Qué es esta banda??? La puedo devaluar??? Besis! ❤️❤️" />
-                </div>
                 
             </div>
         );

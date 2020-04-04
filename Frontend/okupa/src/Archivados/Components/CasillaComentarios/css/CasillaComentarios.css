@@ -1,0 +1,31 @@
+.casilla-comentarios {
+	text-align: left;
+	max-width: 43em;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.comentario-textbox{
+	font-size: 1em;
+	color: #212121;
+	height: 4em;
+	margin-bottom: 1em;
+	padding: .5em;
+}
+
+
+.btn-enviar{
+	flex-basis: 3em;
+	width: 10em;
+	background: #4287f5;
+	border: none;
+	border-radius: 1em;
+	margin: 1em 0;
+}
+
+@media (max-width: 500px) {
+	.btn-enviar{
+		width: unset;
+	}
+}
