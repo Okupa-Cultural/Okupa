@@ -75,12 +75,7 @@ export default class Post extends Component {
                         </div>
                     </Link>
                     <Link to="/evento">
-                        <div className="foto">
-                            <div className="tipo-evento">
-                                <span type={this.props.eventType} title={this.props.eventType}>
-                                    {this.props.eventType}
-                                </span>
-                            </div>    
+                        <div className="foto">    
                             <img 
                             src={this.props.eventImg} 
                             alt={this.props.eventName}
@@ -105,14 +100,13 @@ export default class Post extends Component {
                                 <Link to="/evento" className="nombre" title={this.props.eventName}>
                                     {this.props.eventName}
                                 </Link>
-                                <div className="ubicacion">
-                                    <Link to="/perfil" className="direccion" title={this.props.eventAdress}>
-                                        <i className="fas fa-map-marker-alt"></i>
-                                        {this.props.eventAdress}
-                                    </Link>
-                                    <div className="cercania">
-                                        a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
-                                    </div>
+                                <div className="cercania">
+                                    a&nbsp;{this.props.distance}&nbsp;km de tu ubicación
+                                </div>
+                                <div className="tipo-evento">
+                                    <span type={this.props.eventType} title={this.props.eventType}>
+                                        {this.props.eventType}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -125,14 +119,22 @@ export default class Post extends Component {
                         <div className="divisor"></div>
 
                         <div className="estadisticas">
-                            <i className="fad fa-user"></i>
-                            {this.state.claps} aplausos
-                            &nbsp; &nbsp;
-                            <i className="fad fa-calendar-alt"></i>
-                            veces agendado
-                            &nbsp; &nbsp;
-                            <i className="fad fa-comment-dots"></i>
-                            comentarios
+                            <div>
+                                <i className="fad fa-sign-language"></i>
+                                {this.state.claps}
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <i className="fad fa-calendar-alt"></i>
+                                {this.state.claps}
+                            </div>
+                            <div>
+                                {this.state.claps}
+                                &nbsp;
+                                &nbsp;
+                                comentarios
+                                {/*<i className="fad fa-comment-dots"></i>*/}
+                            </div>
                         </div>
                     </div>
                     <div className="botonera">
