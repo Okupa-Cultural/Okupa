@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
+//Componentes externos
+import ToggleButton from 'react-toggle-button';
+
 //Componentes
 import OkInput from '../Components/Generales/OkInput/OkInput';
+import OkBoton from '../Components/Generales/OkBoton/OkBoton';
 import OkTextarea from '../Components/Generales/OkTextarea/OkTextarea';
 import SelectorEtiquetas from '../Components/Generales/SelectorEtiquetas/SelectorEtiquetas';
 import GaleriaEdit from '../Components/Config/GaleriaEdit/GaleriaEdit';
@@ -24,29 +28,38 @@ export default class Config extends Component{
             proyectname: 'Leslie Knope',
             formationdate: '21/10/2010',
             bio: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, asperiores. Recusandae vel provident iste deserunt assumenda laboriosam ipsam sint explicabo, dolores aut, quam itaque hic. Aperiam, ipsa! Totam, sunt voluptas!',
+            AllowLocation: false,
+            AllowNotifications: false,
         };
     }
 
-    componentDidMount (){
+    setValues = () => {
         document.getElementById('username').defaultValue = this.state.username;
         document.getElementById('email').defaultValue = this.state.email;
         document.getElementById('password').defaultValue = this.state.password;
         document.getElementById('proyectname').defaultValue = this.state.proyectname;
         document.getElementById('formationdate').defaultValue = this.state.formationdate;
         document.getElementById('bio').defaultValue = this.state.bio;
+    }
 
+    componentDidMount (){
+        this.setValues()
+    }
+
+    componentDidUpdate(){
+        this.setValues()
     }
 
     render(){
         return(
-            <div className="config mainScreen">
+            <form className="config mainScreen">
                 <section>
                     <h1 className="titulo">
                         <i className="far fa-chevron-left"></i>
                         Configuración
                     </h1>
 				</section>
-                <section className="config-seccion">
+                <section className="config-seccion general">
                     <h2 className="seccion-titulo">General</h2>
                     <div className="seccion-cuerpo">
                         <div className="config-input">
@@ -67,6 +80,37 @@ export default class Config extends Component{
                             </label>
                             <OkInput Type="password" Name="password" />
                         </div>
+                        
+                        <section className="interacciones">
+                            <label>
+                                Interacciones
+                            </label>
+                            <div className="triggersContainer">
+                                
+                                <div className="trigger">
+                                    <label>Activar notificaciones</label>
+                                    <ToggleButton
+                                    value={ this.state.AllowNotifications || false }
+                                    onToggle={(AllowNotifications) => {
+                                        this.setState({
+                                            AllowNotifications: !AllowNotifications,
+                                        })
+                                    }} />
+                                </div>
+                                <div className="trigger">
+                                    <label>Permitir acceso a ubicación</label>
+                                    <ToggleButton
+                                    value={ this.state.AllowLocation || false }
+                                    onToggle={(AllowLocation) => {
+                                        this.setState({
+                                            AllowLocation: !AllowLocation,
+                                        })
+                                    }} />
+                                </div>
+
+                                <OkBoton Type="button" Value="Agregar a pantalla de inicio" />
+                            </div>
+                        </section>
                     </div>
                 </section>
                 <section className="config-seccion">
@@ -125,7 +169,7 @@ export default class Config extends Component{
                     </div>
                 </section>
                 
-            </div>
+            </form>
         );
     }
 }
