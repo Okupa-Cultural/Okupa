@@ -6,17 +6,10 @@
 }
 
 .bio{
-    background: rgba(255, 255, 255, .15);
-    box-shadow: var(--box-shadow);
+    text-align: left;
 }
-
-    .bio h2{
-        padding: .5em;
-        background: rgba(0,0,0,.35);
-    }
-
     .bio p{
-        padding: .5em;
+        font-weight: 100;
     }
 
 @media (min-width: 800px){

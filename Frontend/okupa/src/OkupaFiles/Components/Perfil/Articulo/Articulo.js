@@ -35,12 +35,6 @@ export default class Articulo extends Component {
                 </div>
 
                 <div className="art-botonera" >
-                    <button 
-                    className="art-boton-transparente" 
-                    title="Agendar" 
-                    id="favorito">
-                        <i className="fas fa-bookmark"></i>
-                    </button>
                     <div>
                         <button className="art-boton-transparente" title="Agendar">
                             <i className="fas fa-share-alt"></i>

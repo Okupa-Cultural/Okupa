@@ -17,9 +17,6 @@ export default class ProyectoInfo extends Component {
                 </span>
                 </div>
                 <div className="bio">
-                    <h2>
-                        Biografía
-                    </h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur 
                         adipisicing elit. Provident magni 

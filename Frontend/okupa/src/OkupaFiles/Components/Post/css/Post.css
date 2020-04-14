@@ -1,6 +1,6 @@
 .post{
 	max-width: 30em;
-	background: rgba(255, 255, 255, 0.062);
+	background: var(--secundary-color);
 	overflow: hidden;
 	margin-bottom: 2em;
 	border-bottom-left-radius: 1em;

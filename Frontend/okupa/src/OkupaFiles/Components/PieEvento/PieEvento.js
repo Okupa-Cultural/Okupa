@@ -22,7 +22,7 @@ export default class PieEvento extends Component {
                         <i className="fas fa-share-alt"></i>
                     </button>
                     <button className="pe-boton" title="Agendar">
-                        <i className="fal fa-calendar-alt"></i>
+                        <i className="fal fa-bookmark"></i>
                     </button>
                 </div>
             </div>

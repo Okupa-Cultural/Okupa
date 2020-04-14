@@ -41,11 +41,8 @@ export default class ProxEvento extends Component {
                                 {this.props.eventName}
                             </div>
                             <div className="pe-ubicacion">
-                                <div className="pe-direccion" title={this.props.eventAdress}>
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    {this.props.eventAdress}
-                                </div>
                                 <div className="pe-zona">
+                                    <i className="fas fa-map-marker-alt"></i>
                                     {this.props.eventZone}
                                 </div>
                             </div>
