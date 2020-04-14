@@ -1,11 +1,12 @@
 .post{
 	max-width: 30em;
-	background: rgba(255, 255, 255, 0.062);
+	background-image: linear-gradient(135deg, #04a5f000, #023c7549);
 	overflow: hidden;
 	margin-bottom: 2em;
+	box-shadow: var(--box-shadow);
 }
 	.post:first-child{
-		margin-top: .25em;
+		margin-top: 0;
 	}
 
 /* --- Características compartidas --- */
@@ -19,7 +20,7 @@
 	.fecha .mes,
 	.fecha .dia,
 	.cabecera .nombre{
-		
+		text-shadow: 3px 2px 3px rgba(0,0,0,.5);
 	}
 
 	.fecha .mes,
@@ -48,6 +49,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	padding: .5em .8em;
+	background-image: linear-gradient(135deg, #04a5f000, #023c7549);
 }
 
 	.post .usuario .usuario-foto{
@@ -69,6 +71,7 @@
 	.foto img{
 		width: 100%;
 		max-height: 15em;
+		box-shadow: 0 2px 10px rgba(0,0,0,.65);
 	}
 
 .info{
@@ -90,7 +93,7 @@
 
 	.fecha .mes{
 		margin-top: .25em;
-		font-size: 1.25em;
+		font-size: 1.2em;
 	}
 
 	.fecha .dia{
@@ -115,7 +118,7 @@
 		padding-right: 5px;
 		align-self: center;
 		font-size: 1.3em;
-		font-weight: 600;
+		font-weight: 400;
 	}
 
 	.cabecera .cercania{
@@ -133,21 +136,20 @@
 	}
 
 		.tipo-evento span{
-			padding: .1em .5em;
-			font-weight: 700;
+			padding: .25em .5em;
+			border-radius: .3em;
 			font-size: 9pt;
-			text-transform: uppercase;
-			color: var(--main-color);
+			box-shadow: 2px 2px 5px rgba(0,0,0,.8);
 		}
 
 		.tipo-evento span[type="Espectáculo"]{
 			background:linear-gradient(0.45turn, #faad70, #eb6b85);
 		}
-		.tipo-evento span[type="Taller - Seminario"]{
-			background-image: linear-gradient(-135deg, rgb(40, 221, 160) 0%, #4b85e4 100%);
+		.tipo-evento span[type="Taller/Seminario"]{
+			background-image: linear-gradient(-135deg, #9be15d 0%, #00e3ae 100%);
 		}
-		.tipo-evento span[type="Convención - Feria"]{
-			background-image: linear-gradient(120deg, #c46bd7 0%, #6a59c4 100%);
+		.tipo-evento span[type="Convención/Feria"]{
+			background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 		}
 
 .descripcion{
@@ -207,8 +209,8 @@
 		}
 
 		.post-boton-agendarActivo i{
-			color: #ca1065;
-			text-shadow: 0 0 5px #ca1065;
+			color: #ff3392;
+			text-shadow: 0 0 5px #ff33cc;
 		}
 
 		.post-boton-comentar:active i {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 //Redux
 import { useSelector, useDispatch } from 'react-redux';
@@ -67,6 +67,7 @@ export default function Landing() {
                     <div className="mostrar-solo-mobile mobile-buttons">
                         <OkBoton Type="link" To="/login" Value="Iniciar Sesión" />
                         <OkBoton Type="link" To="/usuarioabm" Value="Registrarse" />
+                        <div><Link to="/feed">Feed</Link></div>
                     </div>
     
                     <div className="mostrar-solo-escritorio desktop-register">

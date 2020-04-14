@@ -94,7 +94,7 @@ export default class Config extends Component{
                                     onToggle={(AllowNotifications) => {
                                         this.setState({
                                             AllowNotifications: !AllowNotifications,
-                                        })
+                                        }) 
                                     }} />
                                 </div>
                                 <div className="trigger">

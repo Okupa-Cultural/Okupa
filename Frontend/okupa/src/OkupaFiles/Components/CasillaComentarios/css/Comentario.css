@@ -1,6 +1,5 @@
 .comentario{
 	display: grid;
-	grid-template-columns: 3em 1fr;
 	padding: 0 1em;
 	margin-bottom: 1em;
 }
@@ -10,10 +9,11 @@
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
+	display: none;
 }
 
 .contenidoComentario{
-	font-size: 11pt;
+	font-size: 10pt;
 	text-align: left;
 }
 
@@ -28,6 +28,6 @@
 
 .comentarioFecha{
 	margin-top: .5em;
-	font-size: 9pt;
+	font-size: 8pt;
 	opacity: .7;
 }

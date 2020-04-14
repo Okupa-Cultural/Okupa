@@ -66,7 +66,7 @@ export default function Feed() {
         
         distance="55,2"
         
-        eventType="Taller/Seminario"
+        eventType="Taller - seminario"
         eventImg="https://static3.a24.com/images/2019/8/26/HyRswT-SS-768x000.jpeg" 
         eventName="Clases de Parkour: cómo volarse los dientes"
         eventAdress="Ramos mejía, Buenos Aires"
@@ -84,7 +84,7 @@ export default function Feed() {
         
         distance="0,0003"
         
-        eventType="Convención/Feria"
+        eventType="Convención - Feria"
         eventImg="https://www.infobae.com/new-resizer/74aJKM7Ju05vdQxqqNP7cVUyhkY=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NNKXXFKOEBDVZLLVPYLFPBNG7A" 
         eventName="Congreso internacional de verduras"
         eventAdress="Haedo, Buenos Aires"

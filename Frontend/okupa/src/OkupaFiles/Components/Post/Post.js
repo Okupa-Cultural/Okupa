@@ -144,7 +144,7 @@ export default class Post extends Component {
                             className={"post-boton " + this.displayButton(2)}
                             title="Agendar"
                             >
-                                <i className="fal fa-calendar-alt"></i>
+                                <i className="fal fa-bookmark"></i>
                             </div>
                         </div>
                     </div>
