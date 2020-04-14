@@ -3,9 +3,11 @@
 	background: rgba(255, 255, 255, 0.062);
 	overflow: hidden;
 	margin-bottom: 2em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 	.post:first-child{
-		margin-top: .25em;
+		margin-top: 0em;
 	}
 
 /* --- Características compartidas --- */
