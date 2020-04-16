@@ -27,7 +27,6 @@ function App() {
 
   return (
     <div className="App">
-
       <Route render={({location}) => (
         <Switch>
           <Route exact path="/" component={Routes.Landing}/>

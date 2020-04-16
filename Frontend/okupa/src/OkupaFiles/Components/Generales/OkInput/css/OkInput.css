@@ -21,6 +21,7 @@
 }
 
     .input-contenedor[type="date"],
+    .input-contenedor[type="datetime-local"],
     .input-contenedor[type="search"]{
         border: var(--border-size);
         border-color: var(--border-color);
@@ -93,6 +94,7 @@
     }
 
     .input[type="date"],
+    .input[type="datetime-local"],
     .input[type="search"],
     .input[type="time"],
     .input[format="linea"]{

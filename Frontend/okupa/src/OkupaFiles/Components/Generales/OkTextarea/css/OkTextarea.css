@@ -8,6 +8,7 @@
     color: #FFF;
     border: solid 1px white;
     font-size: 1em;
+    width: inherit;
 }
 .textarea::placeholder{
     color: rgba(255,255,255,.8);

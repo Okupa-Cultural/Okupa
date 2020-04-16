@@ -12,7 +12,7 @@ import ProxEvento from '../Components/Perfil/ProxEvento/ProxEvento';
 import Articulo from '../Components/Perfil/Articulo/Articulo';
 
 //Redux
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 
 //Placeholders
 import Placeholders from '../Lib/placeholder';
@@ -27,7 +27,9 @@ export default function Perfil() {
   const prophileDirectLink = 'okupa.com.ar/LinkFalso=123';
 
   const [ btn , setBtn ] = useState(0);
-  const isLogged = useSelector( state => state.isLogged );
+  /*const isLogged = useSelector( state => state.isLogged );
+  */
+  const isLogged = true;
 
   const switchToFullScreen = () => {
     if(!btn){

@@ -2,7 +2,10 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 
 //Componentes
+import Navbar from '../Components/Navbar';
 import Post from '../Components/Post/Post';
+import OkInput from '../Components/Generales/OkInput/OkInput';
+import OkTextarea from '../Components/Generales/OkTextarea/OkTextarea';
 
 //Redux
 //import { useSelector } from 'react-redux';
@@ -20,6 +23,25 @@ export default function Feed() {
   if(isLogged) {
   return (
     <div className="feed mainScreen">
+      <Navbar />
+
+      <div className="contentGenerator" style={{width: "100%", margin: "1em"}}>
+        <form action="">
+          <fieldset style={{border: "solid 1px rgba(255,255,255,.65)", borderRadius: "1em", padding: "0 1em 1em 1em"}}>
+            <legend style={{padding: "0 .5em", textAlign: "left"}}>Generador de contenido</legend>
+            <OkInput Name="user" Type="text" Placeholder="Usuario" />
+            <OkInput Name="eventName" Type="text" Placeholder="Nombre del evento" />
+            <OkInput Name="Date" Type="datetime-local" Label="true" Placeholder="Fecha" />
+            <OkInput Name="" Type="Text" Placeholder="Tipo de evento" />
+            <OkInput Name="" Type="number" Placeholder="Distancia" />
+            <div style={{width: "95.7%"}}>
+              <OkTextarea Name="" Rows="5" Placeholder="Descripción" />
+            </div>
+            <OkInput Name="" Type="submit" Placeholder="Nombre del evento" />
+          </fieldset>
+        </form>
+      </div>
+
       <Post
         userName="Centro cultural Nicolas Queish"
         userImg="https://vignette.wikia.nocookie.net/doblaje/images/4/46/Nicolas_cage.jpg/revision/latest?cb=20190207035634&path-prefix=es"
