@@ -32,12 +32,12 @@ export default function Feed() {
             <OkInput Name="user" Type="text" Placeholder="Usuario" />
             <OkInput Name="eventName" Type="text" Placeholder="Nombre del evento" />
             <OkInput Name="Date" Type="datetime-local" Label="true" Placeholder="Fecha" />
-            <OkInput Name="" Type="Text" Placeholder="Tipo de evento" />
-            <OkInput Name="" Type="number" Placeholder="Distancia" />
+            <OkInput Name="eventType" Type="Text" Placeholder="Tipo de evento" />
+            <OkInput Name="distance" Type="number" Placeholder="Distancia" />
             <div style={{display: "flex", flexDirection: "column"}}>
-              <OkTextarea Name="" Rows="5" Placeholder="Descripción" />
+              <OkTextarea Name="description" Rows="5" Placeholder="Descripción" />
             </div>
-            <OkInput Name="" Type="submit" Placeholder="Nombre del evento" />
+            <OkInput Name="send" Type="submit" Placeholder="Nombre del evento" />
           </fieldset>
         </form>
       </div>
