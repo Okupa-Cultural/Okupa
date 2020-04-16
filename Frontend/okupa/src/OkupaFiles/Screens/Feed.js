@@ -31,7 +31,7 @@ export default function Feed() {
             <legend style={{padding: "0 .5em", textAlign: "left"}}>Generador de contenido</legend>
             <OkInput Name="user" Type="text" Placeholder="Usuario" />
             <OkInput Name="eventName" Type="text" Placeholder="Nombre del evento" />
-            <OkInput Name="Date" Type="datetime-local" Label="true" Placeholder="Fecha" />
+            <OkInput Name="date" Type="datetime-local" Label="true" Placeholder="Fecha" />
             <OkInput Name="eventType" Type="Text" Placeholder="Tipo de evento" />
             <OkInput Name="distance" Type="number" Placeholder="Distancia" />
             <div style={{display: "flex", flexDirection: "column"}}>
