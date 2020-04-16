@@ -254,6 +254,7 @@ b{
 	input,
 	textarea,
 	.input-contenedor[type="date"],
+	.input-contenedor[type="datetime-local"],
 	.input-contenedor[type="search"]{
 		transition: box-shadow .25s ease-in-out;
 	}
@@ -261,13 +262,25 @@ b{
 	input:focus,
 	textarea:focus,
 	.input-contenedor[type="date"]:focus-within,
+	.input-contenedor[type="datetime-local"]:focus-within,
 	.input-contenedor[type="search"]:focus-within{
 		box-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
 	}
 
 	.input[type="date"]:focus,
+	.input[type="datetime-local"]:focus,
 	.input[type="search"]:focus{
 		box-shadow: none !important;
+	}
+
+	.input[type="date"]::-webkit-calendar-picker-indicator,
+	.input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+		display: none;
+	}
+
+	.input[type="date"]::-webkit-input-placeholder,
+	.input[type="datetime-local"]::-webkit-input-placeholder{ 
+		visibility: hidden !important;
 	}
 
 	.input[format="linea"]:focus{
